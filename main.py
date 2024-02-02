@@ -6,4 +6,5 @@ seed = None
 pg = PopulationGenerator(seed)
 
 pg.create()
-pg.print_pop()
+# pg.print_pop()
+pg.csv_pop()

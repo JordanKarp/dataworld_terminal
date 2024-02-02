@@ -9,11 +9,11 @@ from classes.vehicle import Vehicle
 
 @dataclass
 class Person:
-    first_name: str = "defFirstName"
+    first_name: str = ""
     middle_name: str = ""
     last_name: str = ""
-    nickname: str = ""
-    title: str = "defTitle"
+    nickname: str = "NotImplemented"
+    title: str = "Mr."
     gender: str = "Male"
     sexual_orientation: str = "Heterosexual"
     ssn: str = "000-00-0000"
@@ -29,7 +29,7 @@ class Person:
     email: Email = None
     home: Location = None
     vehicle: Vehicle = None
-    siblings: list[str] = field(default_factory=list)
+    siblings: list[str] = field(default_factory=list, repr=True)
 
     @property
     def age(self):

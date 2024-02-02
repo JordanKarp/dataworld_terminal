@@ -41,7 +41,7 @@ class PersonGenerator:
         mannerisms = kwargs.get("mannerisms", self.gen.mannerisms())
         home = kwargs.get("home", self.gen.home())
 
-        date_of_birth = kwargs.get("date_of_birth", date(2000, 1, 1))
+        date_of_birth = kwargs.get("date_of_birth", self.gen.date_of_birth())
 
         ssn = kwargs.get("ssn", self.gen.ssn())
 
@@ -50,6 +50,7 @@ class PersonGenerator:
         )
         phone_number = PhoneNumber(kwargs.get("phone_number", self.gen.phone_number()))
 
+        siblings = kwargs.get("siblings", [])
         vehicle = kwargs.get("vehicle", self.gen.personal_vehicle())
         sexual_orientation = kwargs.get(
             "sexual_orientation", self.gen.sexual_orientation()
@@ -74,4 +75,5 @@ class PersonGenerator:
             home=home,
             vehicle=vehicle,
             sexual_orientation=sexual_orientation,
+            siblings=siblings,
         )
