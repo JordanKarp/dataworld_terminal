@@ -1,10 +1,12 @@
 from faker import Faker
 from datetime import date
+
 from classes.person import Person
 from classes.email import Email
 from classes.phone_number import PhoneNumber
 from generator_utilities.personalDetailsProvider import PersonalDetailsProvider
 from generator_utilities.locationProvider import LocationProvider
+from generator_utilities.vehicleProvider import VehicleProvider
 
 
 class PersonGenerator:
@@ -14,6 +16,7 @@ class PersonGenerator:
             Faker.seed(seed)
         self.gen.add_provider(PersonalDetailsProvider)
         self.gen.add_provider(LocationProvider)
+        self.gen.add_provider(VehicleProvider)
 
     def new(self, **kwargs):
         gender = kwargs.get("gender", self.gen.gender())
@@ -40,10 +43,14 @@ class PersonGenerator:
 
         date_of_birth = kwargs.get("date_of_birth", date(2000, 1, 1))
 
+        ssn = kwargs.get("ssn", self.gen.ssn())
+
         email = Email(
             kwargs.get("email", self.gen.email(first_name, last_name, date_of_birth))
         )
         phone_number = PhoneNumber(kwargs.get("phone_number", self.gen.phone_number()))
+
+        vehicle = kwargs.get("vehicle", self.gen.personal_vehicle())
 
         return Person(
             gender=gender,
@@ -58,7 +65,9 @@ class PersonGenerator:
             eye_color=eye_color,
             mannerisms=mannerisms,
             date_of_birth=date_of_birth,
+            ssn=ssn,
             email=email,
             phone_number=phone_number,
             home=home,
+            vehicle=vehicle,
         )

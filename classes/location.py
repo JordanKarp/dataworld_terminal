@@ -26,5 +26,16 @@ class Location:
     type: LocationTypes = LocationTypes.OTHER
     subtype: HomeTypes = HomeTypes.OTHER
 
+    @property
     def state_abbr(self):
         return STATE_ABBR_DICT[self.state]
+
+    @property
+    def address(self):
+        if self.street_address_2:
+            return f"{self.street_address_1} - {self.street_address_2}, {self.city}, {self.state_abbr} - {self.zipcode}"
+        else:
+            return f"{self.street_address_1}, {self.city}, {self.state_abbr} - {self.zipcode}"
+
+    def __repr__(self):
+        return f"{self.type.name.title()}: {self.address}"

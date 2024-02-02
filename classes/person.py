@@ -4,19 +4,20 @@ from datetime import date
 from classes.email import Email
 from classes.phone_number import PhoneNumber
 from classes.location import Location
+from classes.vehicle import Vehicle
 
 
 @dataclass
 class Person:
     first_name: str = "defFirstName"
-    middle_name: str = "defMiddlename"
-    last_name: str = "defLastname"
-    nickname: str = "defNickname"
+    middle_name: str = ""
+    last_name: str = ""
+    nickname: str = ""
     title: str = "defTitle"
     gender: str = "Male"
     ssn: str = "000-00-0000"
-    date_of_birth: date = "01/01/2000"
-    date_of_death: str = "01/01/2000"
+    date_of_birth: date = "None"
+    date_of_death: date = None
     hair_color: str = "color"
     hair_type: str = "type"
     eye_color: str = "color"
@@ -26,6 +27,11 @@ class Person:
     phone_number: PhoneNumber = None
     email: Email = None
     home: Location = None
+    vehicle: Vehicle = None
+
+    @property
+    def age(self):
+        return "TBD"
 
     @property
     def gender_abbr(self):
