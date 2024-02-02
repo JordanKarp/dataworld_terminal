@@ -19,6 +19,7 @@ class PersonGenerator:
         self.gen.add_provider(VehicleProvider)
 
     def new(self, **kwargs):
+        print(self.gen.vin())
         gender = kwargs.get("gender", self.gen.gender())
         if gender == "Male":
             first_name = kwargs.get("first_name", self.gen.first_name_male())
@@ -39,7 +40,7 @@ class PersonGenerator:
         hair_type = kwargs.get("hair_type", self.gen.hair_type())
         eye_color = kwargs.get("eye_color", self.gen.eye_color())
         mannerisms = kwargs.get("mannerisms", self.gen.mannerisms())
-        home = kwargs.get("home_", self.gen.home())
+        home = kwargs.get("home", self.gen.home())
 
         date_of_birth = kwargs.get("date_of_birth", date(2000, 1, 1))
 

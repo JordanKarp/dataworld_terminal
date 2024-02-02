@@ -17,7 +17,7 @@ class Vehicle:
     color: str
     license_plate_num: str
     type: str
-    # vin: str
+    vin: str
 
     def __repr__(self):
-        return f"{self.color} {self.year} {self.make} {self.model} - {self.license_plate_num}"
+        return f"{self.color} {self.year} {self.make} {self.model} - {self.type} - {self.license_plate_num}"
