@@ -1,4 +1,4 @@
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from datetime import date
 
 from classes.email import Email
@@ -15,6 +15,7 @@ class Person:
     nickname: str = ""
     title: str = "defTitle"
     gender: str = "Male"
+    sexual_orientation: str = "Heterosexual"
     ssn: str = "000-00-0000"
     date_of_birth: date = "None"
     date_of_death: date = None
@@ -28,6 +29,7 @@ class Person:
     email: Email = None
     home: Location = None
     vehicle: Vehicle = None
+    siblings: list[str] = field(default_factory=list)
 
     @property
     def age(self):
@@ -45,3 +47,9 @@ class Person:
     def format_height(self):
         ft, inch = divmod(self.height, 12)
         return f"{int(ft)}' " + f'{round(inch)}"'
+
+    def __repr__(self):
+        return f"{self.first_name}, {self.date_of_birth} "
+
+    def __str__(self):
+        return f"{self.first_name} {self.last_name} - {self.sexual_orientation}"

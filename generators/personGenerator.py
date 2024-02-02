@@ -19,7 +19,6 @@ class PersonGenerator:
         self.gen.add_provider(VehicleProvider)
 
     def new(self, **kwargs):
-        print(self.gen.vin())
         gender = kwargs.get("gender", self.gen.gender())
         if gender == "Male":
             first_name = kwargs.get("first_name", self.gen.first_name_male())
@@ -52,6 +51,9 @@ class PersonGenerator:
         phone_number = PhoneNumber(kwargs.get("phone_number", self.gen.phone_number()))
 
         vehicle = kwargs.get("vehicle", self.gen.personal_vehicle())
+        sexual_orientation = kwargs.get(
+            "sexual_orientation", self.gen.sexual_orientation()
+        )
 
         return Person(
             gender=gender,
@@ -71,4 +73,5 @@ class PersonGenerator:
             phone_number=phone_number,
             home=home,
             vehicle=vehicle,
+            sexual_orientation=sexual_orientation,
         )

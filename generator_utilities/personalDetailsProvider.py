@@ -35,6 +35,9 @@ class PersonalDetailsProvider(BaseProvider):
     eye_colors, eye_color_weights = load_weighted_csv(EYE_COLORS_PATH)
     genders, gender_weights = load_weighted_csv(GENDER_PATH)
     mannerisms_options = load_txt(MANNERISMS_PATH)
+    sexual_orientations, sexual_orientation_weights = load_weighted_csv(
+        SEXUAL_ORIENTATION_PATH
+    )
 
     def gender(self):
         return choices(self.genders, self.gender_weights)[0]
@@ -59,6 +62,9 @@ class PersonalDetailsProvider(BaseProvider):
 
     def eye_color(self):
         return choices(self.eye_colors, self.eye_color_weights)[0]
+
+    def sexual_orientation(self):
+        return choices(self.sexual_orientations, self.sexual_orientation_weights)[0]
 
     def mannerisms(self):
         return choice(self.mannerisms_options)

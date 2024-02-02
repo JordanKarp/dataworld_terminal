@@ -1,9 +1,9 @@
-from generators.personGenerator import PersonGenerator
+from generators.populationGenerator import PopulationGenerator
 
 # seed = "ABC123"
 seed = None
 
-pg = PersonGenerator(seed)
+pg = PopulationGenerator(seed)
 
-new_person = pg.new()
-print(new_person)
+pg.create()
+pg.print_pop()
