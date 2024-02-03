@@ -30,6 +30,8 @@ class Person:
     home: Location = None
     vehicle: Vehicle = None
     siblings: list[str] = field(default_factory=list, repr=True)
+    marital_status: str = "Single"
+    spouse: str = None
 
     @property
     def age(self):

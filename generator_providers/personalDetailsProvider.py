@@ -1,7 +1,9 @@
-from random import choice, choices
+from datetime import date
 from faker import Faker
 from faker.providers import BaseProvider
 from pathlib import Path
+from random import choice, choices, randint
+
 
 from generator_utilities.load_tools import load_txt, load_weighted_csv
 from generator_utilities.random_tools import norm_dist_rand
@@ -16,6 +18,9 @@ from data.person.person_averages import (
     WOMENS_W_STDEV,
 )
 
+BIRTHDAY_YEAR_DELTA = 10
+
+
 HAIR_COLORS_PATH = Path("./data/person/hair_color_weights.csv")
 HAIR_TYPES_PATH = Path("./data/person/hair_types.txt")
 EYE_COLORS_PATH = Path("./data/person/eye_color_weights.csv")
@@ -25,6 +30,7 @@ SEXUAL_ORIENTATION_PATH = Path("./data/person/sexual_orientation_weights.csv")
 # NEUTRAL_TRAITS_PATH = Path("./data/person/neutral_traits.txt")
 # NEGATIVE_TRAITS_PATH = Path("./data/person/negative_traits.txt")
 MANNERISMS_PATH = Path("./data/person/mannerisms.txt")
+AGES_PATH = Path("./data/person/age_weights.csv")
 
 
 class PersonalDetailsProvider(BaseProvider):
@@ -38,6 +44,32 @@ class PersonalDetailsProvider(BaseProvider):
     sexual_orientations, sexual_orientation_weights = load_weighted_csv(
         SEXUAL_ORIENTATION_PATH
     )
+    ages, ages_weights = load_weighted_csv(AGES_PATH)
+
+    def birthday(self, starting_dob):
+        if starting_dob:
+            start_year = starting_dob.year
+            bd = self.gen.date_between_dates(
+                date(
+                    start_year - BIRTHDAY_YEAR_DELTA,
+                    starting_dob.month,
+                    starting_dob.day,
+                ),
+                date(
+                    start_year + BIRTHDAY_YEAR_DELTA,
+                    starting_dob.month,
+                    starting_dob.day,
+                ),
+            )
+        else:
+            start_year = date.today().year
+            min_age, max_age = choices(self.ages, self.ages_weights)[0].split("-")
+            year_delta = randint(int(min_age), int(max_age))
+            bd = self.gen.date_between_dates(
+                date(start_year, 1, 1), date(start_year, 12, 31)
+            )
+            bd = bd.replace(year=(start_year - year_delta))
+        return bd
 
     def gender(self):
         return choices(self.genders, self.gender_weights)[0]
@@ -68,21 +100,6 @@ class PersonalDetailsProvider(BaseProvider):
 
     def mannerisms(self):
         return choice(self.mannerisms_options)
-
-    def email(self, first, last, dob):
-        year = str(dob.year)[2:]
-        md = str(dob.month) + str(dob.day)
-        options = [
-            first + last,
-            first[0] + last,
-            first + last + str(self.gen.random_int(max=99)),
-            first[0] + last + str(self.gen.random_int(max=99)),
-            first + last + year,
-            first[0] + last + year,
-            first + last + md,
-            first[0] + last + md,
-        ]
-        return choice(options).lower() + "@" + self.gen.free_email_domain()
 
     def phone_number(self):
         return self.gen.numerify(text="(%#%) %##-####")

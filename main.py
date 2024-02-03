@@ -1,7 +1,7 @@
 from generators.populationGenerator import PopulationGenerator
 
-# seed = "ABC123"
-seed = None
+seed = "ABC123"
+# seed = None
 
 pg = PopulationGenerator(seed)
 

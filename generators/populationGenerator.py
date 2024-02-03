@@ -7,8 +7,9 @@ from classes.person import Person
 from generators.personGenerator import PersonGenerator
 from generator_utilities.load_tools import load_weighted_csv
 
-FIRST_PASS_POP_SIZE = 10
+FIRST_PASS_POP_SIZE = 3
 SIBLING_DATA_PATH = Path("data/population/num_children_weights.csv")
+MARRIAGE_RATE_PATH = Path("data/population/marrage_rates_weights.csv")
 
 EXPORT_CSV_NAME = f"TestPopulation - {date.today()}.csv"
 
@@ -22,6 +23,7 @@ class PopulationGenerator:
     def create(self):
         self.initial_pop()
         self.add_siblings()
+        self.add_spouses()
 
     def initial_pop(self):
         for i in range(FIRST_PASS_POP_SIZE):
@@ -36,7 +38,9 @@ class PopulationGenerator:
             if numSibs:
                 family = [person]
                 for _ in range(numSibs):
-                    new = self.personGen.new(last_name=person.last_name)
+                    new = self.personGen.new(
+                        last_name=person.last_name, date_of_birth=person.date_of_birth
+                    )
                     family.append(new)
                     new_pop.append(new)
                 for p in family:
@@ -46,7 +50,13 @@ class PopulationGenerator:
         self.population.extend(new_pop)
 
     def add_spouses(self):
-        pass
+        marriages, marriage_weights = load_weighted_csv(MARRIAGE_RATE_PATH)
+        # new_pop = []
+        for person in self.population:
+            married = choices(marriages, marriage_weights)[0]
+
+            if married == "Married":
+                person.marital_status = "Married"
 
     def print_pop(self):
         for person in self.population:
