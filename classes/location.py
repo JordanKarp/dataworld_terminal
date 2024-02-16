@@ -23,7 +23,8 @@ class Location:
     city: str = "DefaultCity"
     state: str = "DefaultState"
     zipcode: str = "00000"
-    type: LocationTypes = LocationTypes.OTHER
+    country: str = "United States of America"
+    loc_type: LocationTypes = LocationTypes.OTHER
     subtype: HomeTypes = HomeTypes.OTHER
 
     @property
@@ -37,5 +38,8 @@ class Location:
         else:
             return f"{self.street_address_1}, {self.city}, {self.state_abbr} - {self.zipcode}"
 
+    def __getitem__(self, item):
+        return getattr(self, item, "")
+
     def __repr__(self):
-        return f"{self.type.name.title()}: {self.address}"
+        return f"{self.loc_type.name.title()}: {self.address}"

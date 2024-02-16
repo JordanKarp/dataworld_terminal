@@ -14,5 +14,8 @@ class PhoneNumber:
     number: str = "defPhoneNumber"
     type: PhoneNumberTypes = PhoneNumberTypes.CELL
 
+    def __getitem__(self, item):
+        return getattr(self, item, "")
+
     def __repr__(self):
         return f"{self.type.name.title()}: {self.number}"

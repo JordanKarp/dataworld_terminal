@@ -1,0 +1,4 @@
+Passports,"full_name,home~address,gender_abbr,format_height,format_weight,eye_color,passport_num,passport_issue_date,passport_exp_date,home~country"
+BirthCertificates,"gender,date_of_birth,time_of_birth,first_name,middle_name,last_name"
+VehicleRegistrations,"full_name,vehicle~make,vehicle~model,vehicle~year,vehicle~color,vehicle~body_type,vehicle~license_plate_num,vehicle~vin"
+DriversLicenses,"full_name,drivers_license~number,drivers_license~issue_date,drivers_license~exp_date,drivers_license~restrictions,home~state,height,format_height,format_weight"

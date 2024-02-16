@@ -10,7 +10,7 @@ class LocationProvider(BaseProvider):
 
     def home(self):
         state_abbr = self.generator.state_abbr()
-        state = STATE_DICT[state_abbr]
+        state = str(STATE_DICT[state_abbr])
         addr = self.generator.street_address()
         if "Suite" in addr:
             street_address_1 = addr[: addr.index("Suite") - 1]
@@ -23,7 +23,8 @@ class LocationProvider(BaseProvider):
             street_address_2 = ""
         city = self.generator.city()
         zipcode = self.generator.zipcode_in_state(state_abbr)
-        type = LocationTypes.HOME
+        country = "United States of America"
+        loc_type = LocationTypes.HOME
         subtype = (
             HomeTypes.APARTMENT
             if "Suite" in street_address_1 or "Apt." in street_address_1
@@ -31,5 +32,12 @@ class LocationProvider(BaseProvider):
         )
 
         return Location(
-            street_address_1, street_address_2, city, state, zipcode, type, subtype
+            street_address_1=street_address_1,
+            street_address_2=street_address_2,
+            city=city,
+            state=state,
+            zipcode=zipcode,
+            country=country,
+            loc_type=loc_type,
+            subtype=subtype,
         )

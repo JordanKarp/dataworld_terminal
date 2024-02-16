@@ -13,5 +13,8 @@ class Email:
     address: str = "defEmail"
     type: EmailTypes = EmailTypes.PERSONAL
 
+    def __getitem__(self, item):
+        return getattr(self, item, "")
+
     def __repr__(self):
         return f"{self.type.name.title()}: {self.address}"

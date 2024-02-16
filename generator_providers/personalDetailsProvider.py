@@ -1,12 +1,15 @@
 from datetime import date
+from dateutil.relativedelta import relativedelta
+
+import string
 from faker import Faker
 from faker.providers import BaseProvider
 from pathlib import Path
-from random import choice, choices, randint
 
 
-from generator_utilities.load_tools import load_txt, load_weighted_csv
-from generator_utilities.random_tools import norm_dist_rand
+from generator_providers.choicesProvider import ChoicesProvider
+from generator_utilities.load_tools import load_txt, load_weighted_csv, load_csv_as_dict
+from generator_utilities.random_tools import norm_dist_rand, blank_or
 from data.person.person_averages import (
     MENS_H_MEAN,
     MENS_H_STDEV,
@@ -19,6 +22,7 @@ from data.person.person_averages import (
 )
 
 BIRTHDAY_YEAR_DELTA = 10
+NICKNAME_PCT_CHANCE = 0.6
 
 
 HAIR_COLORS_PATH = Path("./data/person/hair_color_weights.csv")
@@ -31,10 +35,12 @@ SEXUAL_ORIENTATION_PATH = Path("./data/person/sexual_orientation_weights.csv")
 # NEGATIVE_TRAITS_PATH = Path("./data/person/negative_traits.txt")
 MANNERISMS_PATH = Path("./data/person/mannerisms.txt")
 AGES_PATH = Path("./data/person/age_weights.csv")
+NICKNAMES_PATH = Path("./data/person/names.csv")
 
 
 class PersonalDetailsProvider(BaseProvider):
     gen = Faker()
+    gen.add_provider(ChoicesProvider)
 
     hair_colors, hair_color_weights = load_weighted_csv(HAIR_COLORS_PATH)
     hair_types = load_txt(HAIR_TYPES_PATH)
@@ -45,61 +51,100 @@ class PersonalDetailsProvider(BaseProvider):
         SEXUAL_ORIENTATION_PATH
     )
     ages, ages_weights = load_weighted_csv(AGES_PATH)
+    nicknames_dict = load_csv_as_dict(NICKNAMES_PATH)
 
-    def birthday(self, starting_dob):
-        if starting_dob:
-            start_year = starting_dob.year
-            bd = self.gen.date_between_dates(
-                date(
-                    start_year - BIRTHDAY_YEAR_DELTA,
-                    starting_dob.month,
-                    starting_dob.day,
-                ),
+    def _birthday_with_starting_dob(self, starting_dob):
+        start_year = starting_dob.year
+        return self.gen.date_between_dates(
+            date(
+                start_year - BIRTHDAY_YEAR_DELTA, starting_dob.month, starting_dob.day
+            ),
+            min(
                 date(
                     start_year + BIRTHDAY_YEAR_DELTA,
                     starting_dob.month,
                     starting_dob.day,
                 ),
-            )
+                date.today(),
+            ),
+        )
+
+    def _birthday_without_starting_dob(self):
+        start_year = date.today().year
+        min_age, max_age = self.gen.weighted_choice(self.ages, self.ages_weights).split(
+            "-"
+        )
+        year_delta = self.gen.random_int(int(min_age), int(max_age))
+        bd = self.gen.date_between_dates(
+            date(start_year, 1, 1), date(start_year, 12, 31)
+        )
+        return bd.replace(year=(start_year - year_delta))
+
+    def birthday(self, starting_dob):
+        if starting_dob:
+            return self._birthday_with_starting_dob(starting_dob)
         else:
-            start_year = date.today().year
-            min_age, max_age = choices(self.ages, self.ages_weights)[0].split("-")
-            year_delta = randint(int(min_age), int(max_age))
-            bd = self.gen.date_between_dates(
-                date(start_year, 1, 1), date(start_year, 12, 31)
-            )
-            bd = bd.replace(year=(start_year - year_delta))
-        return bd
+            return self._birthday_without_starting_dob()
+
+    def time_of_birth(self):
+        return self.gen.time(pattern="%I:%M %p")
 
     def gender(self):
-        return choices(self.genders, self.gender_weights)[0]
+        return self.gen.weighted_choice(self.genders, self.gender_weights)
 
-    def height(self):
-        if self.gender == "Male":
-            return round(norm_dist_rand(MENS_H_MEAN, MENS_H_STDEV), 1)
+    def height(self, gender):
+        if gender == "Male":
+            mean = MENS_H_MEAN
+            stdev = MENS_H_STDEV
         else:
-            return round(norm_dist_rand(WOMENS_H_MEAN, WOMENS_H_STDEV), 1)
+            mean = WOMENS_H_MEAN
+            stdev = WOMENS_H_STDEV
+        return round(norm_dist_rand(mean, stdev), 1)
 
-    def weight(self):
-        if self.gender == "Male":
-            return round(norm_dist_rand(MENS_W_MEAN, MENS_W_STDEV), 1)
+    def weight(self, gender):
+        if gender == "Male":
+            mean = MENS_W_MEAN
+            stdev = MENS_W_STDEV
         else:
-            return round(norm_dist_rand(WOMENS_W_MEAN, WOMENS_W_STDEV), 1)
+            mean = WOMENS_W_MEAN
+            stdev = WOMENS_W_STDEV
+        return round(norm_dist_rand(mean, stdev), 1)
 
     def hair_color(self):
-        return choices(self.hair_colors, self.hair_color_weights)[0]
+        return self.gen.weighted_choice(self.hair_colors, self.hair_color_weights)
 
     def hair_type(self):
-        return choice(self.hair_types)
+        return self.gen.random_element(self.hair_types)
 
     def eye_color(self):
-        return choices(self.eye_colors, self.eye_color_weights)[0]
+        return self.gen.weighted_choice(self.eye_colors, self.eye_color_weights)
 
     def sexual_orientation(self):
-        return choices(self.sexual_orientations, self.sexual_orientation_weights)[0]
+        return self.gen.weighted_choice(
+            self.sexual_orientations, self.sexual_orientation_weights
+        )
 
     def mannerisms(self):
-        return choice(self.mannerisms_options)
+        return self.gen.random_element(self.mannerisms_options)
 
     def phone_number(self):
         return self.gen.numerify(text="(%#%) %##-####")
+
+    def passport_num(self):
+        return self.gen.bothify("?########", letters=string.ascii_uppercase)
+
+    def passport_issue_date(self):
+        return self.gen.date_between(date.today() - relativedelta(years=10))
+
+    def nickname(self, first_name, middle_name=None):
+        options = [
+            nickname.title()
+            for name in [first_name, middle_name]
+            if name and name.lower() in self.nicknames_dict
+            for nickname in self.nicknames_dict[name.lower()]
+        ]
+        return (
+            blank_or(self.gen.random_element(options), NICKNAME_PCT_CHANCE)
+            if options
+            else ""
+        )

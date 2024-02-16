@@ -1,5 +1,6 @@
 from dataclasses import dataclass
-from enum import Enum, auto
+
+# from enum import Enum, auto
 
 
 # class VehicleTypes(Enum):
@@ -15,9 +16,24 @@ class Vehicle:
     model: str
     year: int
     color: str
+    body_type: str
     license_plate_num: str
-    type: str
     vin: str
 
+    @property
+    def vehicle_fields(self):
+        return [
+            self.make,
+            self.model,
+            self.year,
+            self.color,
+            self.body_type,
+            self.license_plate_num,
+            self.vin,
+        ]
+
+    def __getitem__(self, item):
+        return getattr(self, item, "")
+
     def __repr__(self):
-        return f"{self.color} {self.year} {self.make} {self.model} - {self.type} - {self.license_plate_num}"
+        return f"{self.color} {self.year} {self.make} {self.model} - {self.body_type} - {self.license_plate_num}"

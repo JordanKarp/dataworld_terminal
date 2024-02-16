@@ -1,8 +1,9 @@
 from faker import Faker
 from faker.providers import BaseProvider
+from generator_providers.choicesProvider import ChoicesProvider
 
 from pathlib import Path
-from random import choices, choice
+
 
 from generator_utilities.load_tools import load_weighted_csv
 
@@ -13,11 +14,12 @@ DOMAINS_PATH = Path("./data/internet/domains_weights.csv")
 
 class InternetProvider(BaseProvider):
     gen = Faker()
+    gen.add_provider(ChoicesProvider)
 
     domains, domain_weights = load_weighted_csv(DOMAINS_PATH)
 
     def email(self, first, last, dob):
-        return self.user_name(first, last, dob) + "@" + self.domain()
+        return f"{self.user_name(first, last, dob)}@{self.email_domain()}"
 
     def user_name(self, first, last, dob):
         year = str(dob.year)[2:]
@@ -33,13 +35,7 @@ class InternetProvider(BaseProvider):
             first + last + md,
             first[0] + last + md,
         ]
-        return choice(options).lower()
+        return self.gen.random_element(options).lower()
 
-    def domain(self):
-        return choices(self.domains, self.domain_weights)[0]
-
-    # def drivers_license(self):
-    #     self.gen.bothify("?##????#")
-
-    # def vin(self):
-    #     return self.gen.lexify(text="?" * 17, letters=ALL_CHAR_NUM)
+    def email_domain(self):
+        return self.gen.weighted_choice(self.domains, self.domain_weights)
