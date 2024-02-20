@@ -13,8 +13,8 @@ DOMAINS_PATH = Path("./data/internet/domains_weights.csv")
 
 
 class InternetProvider(BaseProvider):
-    gen = Faker()
-    gen.add_provider(ChoicesProvider)
+    def __post_init__(self):
+        self.generator.add_provider(ChoicesProvider)
 
     domains, domain_weights = load_weighted_csv(DOMAINS_PATH)
 
@@ -25,17 +25,17 @@ class InternetProvider(BaseProvider):
         year = str(dob.year)[2:]
         md = str(dob.month) + str(dob.day)
         options = [
-            last + str(self.gen.random_int(max=999)),
+            last + str(self.generator.random_int(max=999)),
             first + last,
             first[0] + last,
-            first + last + str(self.gen.random_int(max=999)),
-            first[0] + last + str(self.gen.random_int(max=999)),
+            first + last + str(self.generator.random_int(max=999)),
+            first[0] + last + str(self.generator.random_int(max=999)),
             first + last + year,
             first[0] + last + year,
             first + last + md,
             first[0] + last + md,
         ]
-        return self.gen.random_element(options).lower()
+        return self.generator.random_element(options).lower()
 
     def email_domain(self):
-        return self.gen.weighted_choice(self.domains, self.domain_weights)
+        return self.generator.weighted_choice(self.domains, self.domain_weights)

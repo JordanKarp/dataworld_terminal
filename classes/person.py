@@ -90,4 +90,4 @@ class Person:
         return f"{self.first_name}, {self.date_of_birth} "
 
     def __str__(self):
-        return f"{self.first_name} {self.last_name} - {self.date_of_birth}"
+        return f"{self.first_name} {self.last_name} - {self.email}"

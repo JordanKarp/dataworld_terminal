@@ -6,7 +6,7 @@ from classes.email import Email
 from classes.phone_number import PhoneNumber
 from generator_providers.personalDetailsProvider import PersonalDetailsProvider
 from generator_providers.locationProvider import LocationProvider
-from generator_providers.vehicleProvider import VehicleProvider
+from generator_providers.vehicleProvider import CustomVehicleProvider
 from generator_providers.internetProvider import InternetProvider
 from generator_providers.choicesProvider import ChoicesProvider
 from generator_utilities.random_tools import blank_or
@@ -26,7 +26,7 @@ class PersonGenerator:
             Faker.seed(seed)
         self.gen.add_provider(PersonalDetailsProvider)
         self.gen.add_provider(LocationProvider)
-        self.gen.add_provider(VehicleProvider)
+        self.gen.add_provider(CustomVehicleProvider)
         self.gen.add_provider(InternetProvider)
         self.gen.add_provider(ChoicesProvider)
 

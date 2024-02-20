@@ -37,7 +37,9 @@ class PopulationGenerator:
         for person in self.population:
             numSibs = int(self.personGen.gen.weighted_choice(sib_nums, sib_weights))
             if numSibs:
-                family = [person] + [self.personGen.new_sibling(person) for _ in range(numSibs)]
+                family = [person] + [
+                    self.personGen.new_sibling(person) for _ in range(numSibs)
+                ]
                 for p in family:
                     p.siblings = [sib for sib in family if sib != p]
                 new_pop.extend(family[1:])
@@ -49,9 +51,14 @@ class PopulationGenerator:
         marriages, marriage_weights = load_weighted_csv(MARRIAGE_RATE_PATH)
         for person in self.population:
             if person.age >= MINIMUM_MARRIAGE_AGE:
-                married_status = self.personGen.gen.weighted_choice(marriages, marriage_weights)
+                married_status = self.personGen.gen.weighted_choice(
+                    marriages, marriage_weights
+                )
                 person.marital_status = married_status
-                if married_status == "Married" and person.sexual_orientation != "Asexual":
+                if (
+                    married_status == "Married"
+                    and person.sexual_orientation != "Asexual"
+                ):
                     new_spouse = self.personGen.new_spouse(person)
                     person.spouse = new_spouse
                     self.population.append(new_spouse)
@@ -61,7 +68,7 @@ class PopulationGenerator:
             print(person)
 
     def csv_pop(self, filename=EXPORT_CSV_NAME):
-        fields = [k for k in Person.__dict__.keys() if not k.startswith("__")
+        fields = [k for k in Person.__dict__.keys() if not k.startswith("__")]
 
         # writing to csv file
         with open(filename, "w") as csvfile:

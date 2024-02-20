@@ -13,13 +13,16 @@ class CompanyGenerator:
             Faker.seed(seed)
         self.gen.add_provider(CompanyProvider)
 
-    def new_company(self, **kwargs):
+    def new(self, **kwargs):
         industry = kwargs.get("industry", self.gen.industry())
         sub_industry = kwargs.get("sub_industry", self.gen.sub_industry(industry))
 
-        name = kwargs.get("name", self.gen.company_name(sub_industry))
+        name = kwargs.get("name", self.gen.company_name(industry, sub_industry))
+        employee_structure = kwargs.get(
+            "employee_structure", self.gen.employee_structure(industry, sub_industry)
+        )
+
         website = kwargs.get("website", self.gen.website(name))
-        sub_industry = "test"
         main_phone = kwargs.get("phone_number", self.gen.company_phone_number())
         # locations = ["test"]
         social_media = ["test"]
@@ -31,9 +34,10 @@ class CompanyGenerator:
             website=website,
             industry=industry,
             sub_industry=sub_industry,
+            employee_structure=employee_structure,
             main_phone=main_phone,
             # locations=locations,
-            social_media=social_media,
+            # social_media=social_media,
             # staff=staff,
-            data=data,
+            # data=data,
         )

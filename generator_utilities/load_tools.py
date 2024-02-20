@@ -1,10 +1,15 @@
 import csv
+import json
 
 
 def load_txt(file_name):
     with open(file_name, "r") as text_file:
-        lines = [line.strip() for line in text_file]
-        return lines
+        return [line.strip() for line in text_file]
+
+
+def load_json(file_name):
+    with open(file_name) as f:
+        return json.load(f)
 
 
 def load_csv(file_name):

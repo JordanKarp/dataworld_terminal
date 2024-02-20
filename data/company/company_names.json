@@ -1,0 +1,615 @@
+{
+    "AUTOMOTIVE": {
+        "FIRST_OPTIONS": [
+            "Auto",
+            "Zoom",
+            "City",
+            "Drive",
+            "Speed",
+            "Cruise",
+            "Go"
+        ],
+        "SECOND_OPTIONS": [
+            "Ways",
+            "Wagon",
+            "Trails",
+            "Path",
+            ""
+        ],
+        "MANUFACTURER": [
+            "Motors",
+            "Cars",
+            "Autos",
+            "Precision"
+        ],
+        "DEALERSHIP": [
+            "Motors",
+            "R Us",
+            "Dealer",
+            "Dealership",
+            "Autos"
+        ],
+        "MECHANIC": [
+            "Repair",
+            "Shop"
+        ],
+        "RENTAL": [
+            "Rentals",
+            "Travel Cars",
+            "To Go"
+        ],
+        "SUPPLIERS": [
+            "Parts",
+            "Suppliers",
+            "Automotive"
+        ]
+    },
+    "EDUCATION": {
+        "FIRST_OPTIONS": [
+            "Learn",
+            "Educate",
+            "Knowledge",
+            "Study",
+            "School",
+            "Academy",
+            "Institute"
+        ],
+        "SECOND_OPTIONS": [
+            "Hub",
+            "Center",
+            "Place",
+            "Campus",
+            "Institution",
+            ""
+        ],
+        "PUBLIC K-6": [
+            "Elementary",
+            "Primary",
+            "Elementary School",
+            "School"
+        ],
+        "PUBLIC 7-9": [
+            "Middle",
+            "Middle School",
+            "Junior",
+            "Junior High",
+            "School"
+        ],
+        "PUBLIC 10-12": [
+            "High",
+            "High School",
+            "",
+            "Public"
+        ],
+        "PRIVATE / RELIGIOUS SCHOOL": [
+            "Faith",
+            "Private",
+            "Religious",
+            "Academy"
+        ],
+        "COMMUNITY COLLEGE": [
+            "Community",
+            "College",
+            "Learning",
+            "Center"
+        ],
+        "COLLEGE": [
+            "College",
+            "Academic",
+            "Learn",
+            "Institute"
+        ],
+        "UNIVERSITY": [
+            "University",
+            "Campus",
+            "Learn",
+            "Institute"
+        ],
+        "TECHNICAL / TRADE SCHOOL": [
+            "Tech",
+            "Trade",
+            "Learn",
+            "School"
+        ]
+    },
+    "ENTERTAINMENT": {
+        "FIRST_OPTIONS": [
+            "Star",
+            "Cine",
+            "Sound",
+            "Play",
+            "Style",
+            "Story",
+            "Art"
+        ],
+        "SECOND_OPTIONS": [
+            "Flicks",
+            "World",
+            "Beat",
+            "Quest",
+            "Chic",
+            ""
+        ],
+        "FILM / TV": [
+            "Productions",
+            "Studios",
+            "Entertainment",
+            "Cinema"
+        ],
+        "SPORTS": [
+            "Arena",
+            "Champs",
+            "Play",
+            "Sports"
+        ],
+        "MUSIC": [
+            "Sound",
+            "Harmony",
+            "Beats",
+            "Music"
+        ],
+        "GAMING": [
+            "Games",
+            "Play",
+            "Gaming",
+            "E-Sports"
+        ],
+        "FASHION / CELEBRITY": [
+            "Style",
+            "Glam",
+            "Celeb",
+            "Fashion",
+            "Insider"
+        ],
+        "JOURNALISM": [
+            "News",
+            "Press",
+            "Media",
+            "Journal"
+        ],
+        "HOBBIES": [
+            "Leisure",
+            "Pastime",
+            "Hobbies",
+            "Joy"
+        ],
+        "BOOKS": [
+            "Reads",
+            "Books",
+            "Pages",
+            "Novels"
+        ]
+    },
+    "FINANCE": {
+        "FIRST_OPTIONS": [
+            "Capital",
+            "Invest",
+            "Wealth",
+            "Finance",
+            "Money",
+            "Fund",
+            "Dinero"
+        ],
+        "SECOND_OPTIONS": [
+            "Hub",
+            "Edge",
+            "Wise",
+            "Vault",
+            "Tech",
+            ""
+        ],
+        "BANK": [
+            "Bank",
+            "Trust",
+            "Capital",
+            "Finance"
+        ],
+        "INVESTMENT FIRM": [
+            "Invest",
+            "Wealth",
+            "Capital",
+            "Fund"
+        ],
+        "LOANS / MORTGAGE LENDER": [
+            "Loans",
+            "Lend",
+            "Mortgage",
+            "Finance"
+        ],
+        "HEDGE FUND": [
+            "Hedge",
+            "Fund",
+            "Capital",
+            "Wealth"
+        ],
+        "CRYPTO": [
+            "Crypto",
+            "Coin",
+            "Digital",
+            "Vault"
+        ]
+    },
+    "FOOD AND BEVERAGE": {
+        "FIRST_OPTIONS": [
+            "Taste",
+            "Flavor",
+            "A Taste of ",
+            "Bite",
+            "Feast",
+            "Delicious",
+            "Crave",
+            "Yum"
+        ],
+        "SECOND_OPTIONS": [
+            "Dine",
+            "Delight",
+            "Cuisine",
+            "Bite",
+            "Sip",
+            "Eats"
+        ],
+        "RESTAURANT": [
+            "Bistro",
+            "Cuisine",
+            "Dine",
+            "Taste"
+        ],
+        "FAST FOOD": [
+            "Quick",
+            "Bite",
+            "Fast",
+            "To-Go",
+            "Go"
+        ],
+        "BAKERY": [
+            "Bake",
+            "Bread",
+            "Sweet",
+            "Treats"
+        ],
+        "FOOD TRUCK": [
+            "Mobile",
+            "Street",
+            "Food",
+            "Wheels"
+        ],
+        "BEVERAGE MANUFACTURE": [
+            "Brew",
+            "Craft",
+            "Sip",
+            "Beverage"
+        ],
+        "DRINKS": [
+            "Sips",
+            "Quench",
+            "Drinks",
+            "Beverage"
+        ],
+        "DESSERTS": [
+            "Sweet",
+            "Indulge",
+            "Desserts",
+            "Treats"
+        ],
+        "CATERING": [
+            "Catering",
+            "Feast",
+            "Events",
+            "Cuisine"
+        ]
+    },
+    "HEALTHCARE": {
+        "FIRST_OPTIONS": [
+            "Health",
+            "Well",
+            "Care",
+            "Med",
+            "Fit",
+            "Rehab",
+            "Doc"
+        ],
+        "SECOND_OPTIONS": [
+            "Hub",
+            "Life",
+            "Wellness",
+            "Care",
+            "Med"
+        ],
+        "DOCTOR": [
+            "Heal",
+            "Doc",
+            "M.D.",
+            "Med"
+        ],
+        "HOSPITAL": [
+            "Care",
+            "Urgent Care",
+            "Medical",
+            "Hospital"
+        ],
+        "SPECIALIZED CLINICS": [
+            "Clinic",
+            "Special",
+            "Health",
+            "Medicine"
+        ],
+        "FITNESS CENTER": [
+            "Fit",
+            "Fitness",
+            "Gym",
+            "Center"
+        ],
+        "ELDERLY CARE": [
+            "Elder",
+            "Care",
+            "Senior",
+            "Living"
+        ],
+        "REHABILITATION": [
+            "Rehab",
+            "Heal",
+            "Journies",
+            "Well"
+        ],
+        "PHARMACEUTICAL": [
+            "Pharma",
+            "Medical",
+            "Health",
+            "Care"
+        ],
+        "WELLNESS": [
+            "Well",
+            "Health",
+            "Life",
+            "Wellness"
+        ]
+    },
+    "HOSPITALITY": {
+        "FIRST_OPTIONS": [
+            "Stay",
+            "Vacay",
+            "Tour",
+            "Leisure",
+            "Relax",
+            "Explore",
+            "Cruise"
+        ],
+        "SECOND_OPTIONS": [
+            "Getaway",
+            "Escape",
+            "Journey",
+            "Charm",
+            "Haven"
+        ],
+        "HOTELS": [
+            "Stay",
+            "Inn",
+            "Hotel",
+            "Lodge"
+        ],
+        "CRUISES": [
+            "Cruise",
+            "Voyage",
+            "Sea",
+            "Sail"
+        ],
+        "THEME PARK": [
+            "Park",
+            "World",
+            "Amuse",
+            "Fun"
+        ],
+        "PRIVATE HOUSE RENTAL": [
+            "Home",
+            "Stay",
+            "Rental",
+            "Retreat"
+        ],
+        "VACATIONS": [
+            "Vacay",
+            "Escape",
+            "Journey",
+            "Haven"
+        ],
+        "CLEANING SERVICES": [
+            "Clean",
+            "Sparkle",
+            "Services",
+            "Tidy"
+        ],
+        "REPAIR": [
+            "Fix",
+            "Mend",
+            "Repair",
+            "Service"
+        ],
+        "OTHER": [
+            "Explore",
+            "Discover",
+            "Adventures",
+            "Journey"
+        ]
+    },
+    "RETAIL": {
+        "FIRST_OPTIONS": [
+            "Shop",
+            "Buy",
+            "Style",
+            "Select",
+            "Trend",
+            "Market",
+            "Select"
+        ],
+        "SECOND_OPTIONS": [
+            "Mall",
+            "Hub",
+            "Place",
+            "Outlet",
+            "Store"
+        ],
+        "CLOTHING": [
+            "Wear",
+            "Cloth",
+            "Style",
+            "Fashion"
+        ],
+        "ELECTRONICS": [
+            "Tech",
+            "Gadget",
+            "Electro",
+            "Gizmo"
+        ],
+        "HARDWARE": [
+            "Tools",
+            "Hardware",
+            "Fix",
+            "Build"
+        ],
+        "GROCERY": [
+            "Grocer",
+            "Mart",
+            "Market",
+            "Fresh"
+        ],
+        "WHOLESALE": [
+            "Bulk",
+            "Wholesale",
+            "Market",
+            "Trade"
+        ],
+        "JEWELER": [
+            "Gems",
+            "Jewel",
+            "Spark",
+            "Glam"
+        ],
+        "HIGH-END FASHION": [
+            "Lux",
+            "Chic",
+            "Elite",
+            "Fashion"
+        ],
+        "CONVENIENCE": [
+            "Quick",
+            "Easy",
+            "Convenient",
+            "Mart"
+        ]
+    },
+    "TECHNOLOGY": {
+        "FIRST_OPTIONS": [
+            "Tech",
+            "Byte",
+            "Code",
+            "Logic",
+            "Inno",
+            "Circuit",
+            "Cyber"
+        ],
+        "SECOND_OPTIONS": [
+            "Solutions",
+            "Systems",
+            "Hub",
+            "Ware",
+            "Sync",
+            ""
+        ],
+        "SOCIAL MEDIA": [
+            "Connect",
+            "Hub",
+            "Media",
+            "Net"
+        ],
+        "COMMUNITY": [
+            "Connect",
+            "Hub",
+            "Community",
+            "Network"
+        ],
+        "INTERNET SERVICE PROVIDERS": [
+            "Connect",
+            "Net",
+            "ISP",
+            "Web"
+        ],
+        "MOBILE PROVIDERS": [
+            "Mobile",
+            "Connect",
+            "Wireless",
+            "Net"
+        ],
+        "MANUFACTURERS": [
+            "Tech",
+            "Innovate",
+            "Manufacture",
+            "Produce"
+        ]
+    },
+    "TRANSPORTATION": {
+        "FIRST_OPTIONS": [
+            "Move",
+            "Transit",
+            "Journey",
+            "Route",
+            "Speed",
+            "Cargo",
+            "Commute"
+        ],
+        "SECOND_OPTIONS": [
+            "Express",
+            "Ways",
+            "Lines",
+            "Path",
+            "Routes",
+            ""
+        ],
+        "AIRLINE": [
+            "Air",
+            "Wings",
+            "Fly",
+            "Sky"
+        ],
+        "SHIPPING / FREIGHT": [
+            "Ship",
+            "Cargo",
+            "Freight",
+            "Logistics"
+        ],
+        "BUS": [
+            "Bus",
+            "Transit",
+            "Route",
+            "Shuttle"
+        ],
+        "RIDE SHARING / TAXI": [
+            "Rides",
+            "Share",
+            "Taxi",
+            "Commute"
+        ],
+        "RELOCATION": [
+            "Relo",
+            "Move",
+            "Shift",
+            "Transfer"
+        ],
+        "COURIER / DELIVERY": [
+            "Courier",
+            "Delivery",
+            "Express",
+            "Shipping"
+        ],
+        "TRAIN": [
+            "Trains",
+            "Rails",
+            "Express",
+            "Transit"
+        ],
+        "BOAT": [
+            "Ships",
+            "Sail",
+            "Nautical",
+            "Boating"
+        ]
+    }
+}

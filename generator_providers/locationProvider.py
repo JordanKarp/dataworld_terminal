@@ -6,18 +6,18 @@ from classes.location import Location, LocationTypes, HomeTypes
 
 
 class LocationProvider(BaseProvider):
-    gen = Faker()
-
     def home(self):
         state_abbr = self.generator.state_abbr()
         state = str(STATE_DICT[state_abbr])
         addr = self.generator.street_address()
         if "Suite" in addr:
-            street_address_1 = addr[: addr.index("Suite") - 1]
-            street_address_2 = addr[addr.index("Suite") :]
+            idx = addr.index("Suite")
+            street_address_1 = addr[: idx - 1]
+            street_address_2 = addr[idx:]
         elif "Apt" in addr:
-            street_address_1 = addr[: addr.index("Apt") - 1]
-            street_address_2 = addr[addr.index("Apt") :]
+            idx = addr.index("Apt")
+            street_address_1 = addr[: idx - 1]
+            street_address_2 = addr[idx:]
         else:
             street_address_1 = addr
             street_address_2 = ""
@@ -27,7 +27,7 @@ class LocationProvider(BaseProvider):
         loc_type = LocationTypes.HOME
         subtype = (
             HomeTypes.APARTMENT
-            if "Suite" in street_address_1 or "Apt." in street_address_1
+            if "Suite" in street_address_2 or "Apt." in street_address_2
             else HomeTypes.SINGLE_FAMILY_HOME
         )
 

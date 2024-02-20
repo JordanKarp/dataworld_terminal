@@ -7,7 +7,7 @@ from dateutil.relativedelta import relativedelta
 
 from data.person.person_averages import YEARS_TIL_DL_EXP
 
-from generator_utilities.random_tools import blank_or
+# from generator_utilities.random_tools import blank_or
 from classes.vehicle import Vehicle
 from classes.drivers_license import DriversLicense
 from generator_utilities.load_tools import load_weighted_csv
@@ -18,10 +18,10 @@ DL_RESTRICTIONS_PATH = Path("data/vehicle/dl_restrictions_weights.csv")
 ALL_CHAR_NUM = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 
 
-class VehicleProvider(BaseProvider):
+class CustomVehicleProvider(ChoicesProvider):
+
     gen = Faker()
     gen.add_provider(VehicleProvider)
-    gen.add_provider(ChoicesProvider)
 
     car_colors, car_color_weights = load_weighted_csv(CAR_COLORS_PATH)
     dl_restrictions_list, dl_restrictions_weights = load_weighted_csv(
@@ -29,7 +29,7 @@ class VehicleProvider(BaseProvider):
     )
 
     def car_color(self):
-        return self.gen.weighted_choice(self.car_colors, self.car_color_weights)
+        return self.weighted_choice(self.car_colors, self.car_color_weights)
 
     def dl_num(self):
         return self.gen.bothify("?##????#", letters=string.ascii_uppercase)
@@ -38,7 +38,7 @@ class VehicleProvider(BaseProvider):
         return self.gen.date_this_decade(after_today=False)
 
     def dl_restrictions(self):
-        return self.gen.weighted_choice(
+        return self.weighted_choice(
             self.dl_restrictions_list, self.dl_restrictions_weights
         )
 

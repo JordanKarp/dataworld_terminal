@@ -10,8 +10,13 @@ class EmailTypes(Enum):
 
 @dataclass
 class Email:
-    address: str = "defEmail"
+    address: str = "defEmail@test.com"
     type: EmailTypes = EmailTypes.PERSONAL
+
+    @property
+    def domain(self):
+        full_domain = self.address.split("@")[1] or "unknown.com"
+        return full_domain.split(".")[0]
 
     def __getitem__(self, item):
         return getattr(self, item, "")

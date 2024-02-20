@@ -1,10 +1,22 @@
-gender,date_of_birth,time_of_birth,first_name,middle_name,last_name
-Male,1970-08-07,02:21 AM,Donald, ,Brown
-Male,2001-04-22,11:18 AM,Christopher,Nicholas,Lopez
-Male,2006-04-01,04:13 AM,Anthony,Hector,Wolf
-Female,1972-12-04,10:52 AM,Nicole,Jessica,Russell
-Male,2002-12-12,04:45 PM,Michael,Garrett,Mcdonald
-Female,2010-05-15,07:08 PM,Carol,Karen,Lopez
-Female,2008-05-17,10:24 AM,Debra,April,Wolf
-Male,1972-04-14,11:47 AM,Brendan,Tyler,Russell
-Female,1972-06-25,07:15 PM,Anne,Brittany,Russell
+gender,date_of_birth,time_of_birth,first_name,middle_name,last_name,email~domain
+Male,2021-03-29,02:05 PM,Donald,Adam,Brown,kcloud
+Female,2018-05-20,01:48 AM,Cathy, ,James,kmail
+Male,2020-06-24,05:16 PM,Luis,Jason,Owens,kmail
+Female,1958-04-08,07:48 PM,Tammy,Cynthia,Sims,outkook
+Female,2002-07-14,04:53 AM,Barbara,Danielle,Brown,kmail
+Male,1954-09-30,02:55 AM,Dylan,Allen,Sims,kmail
+Female,1952-08-14,08:54 PM,Kathryn,Michele,Snyder,hokmail
+Male,1947-12-03,06:02 AM,Daniel, ,Carroll,kmail
+Male,2014-04-19,06:24 AM,Jorge,Brandon,Brown,kmail
+Male,2013-12-07,12:08 AM,Robert,Joseph,Brown,hokmail
+Female,2014-02-04,06:12 AM,Stephanie,Tina,James,kmail
+Female,2012-04-19,03:59 PM,Phyllis,Karen,James,hokmail
+Male,2012-05-04,07:06 AM,Stephen, ,James,outkook
+Female,2020-02-20,08:42 AM,Teresa,Andrea,Owens,kmail
+Male,2020-12-09,12:10 PM,Robert,Gregory,Owens,kmail
+Male,2021-02-02,01:38 AM,Sean,Frank,Owens,kmail
+Female,1952-01-22,10:22 PM,Leah,Phyllis,Sims,outkook
+Female,1952-08-27,08:15 AM,Kendra,Laurie,Sims,kmail
+Female,1999-12-27,05:26 PM,Megan,Lynn,Brown,kmail
+Female,1996-02-29,03:31 AM,Joann, ,Brown,kcloud
+Female,1943-05-15,10:46 AM,Kelly,Christy,Snyder,kmail

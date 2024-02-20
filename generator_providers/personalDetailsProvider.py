@@ -38,9 +38,9 @@ AGES_PATH = Path("./data/person/age_weights.csv")
 NICKNAMES_PATH = Path("./data/person/names.csv")
 
 
-class PersonalDetailsProvider(BaseProvider):
-    gen = Faker()
-    gen.add_provider(ChoicesProvider)
+class PersonalDetailsProvider(ChoicesProvider):
+    # gen = Faker()
+    # gen.add_provider(ChoicesProvider)
 
     hair_colors, hair_color_weights = load_weighted_csv(HAIR_COLORS_PATH)
     hair_types = load_txt(HAIR_TYPES_PATH)
@@ -55,7 +55,7 @@ class PersonalDetailsProvider(BaseProvider):
 
     def _birthday_with_starting_dob(self, starting_dob):
         start_year = starting_dob.year
-        return self.gen.date_between_dates(
+        return self.generator.date_between_dates(
             date(
                 start_year - BIRTHDAY_YEAR_DELTA, starting_dob.month, starting_dob.day
             ),
@@ -71,11 +71,9 @@ class PersonalDetailsProvider(BaseProvider):
 
     def _birthday_without_starting_dob(self):
         start_year = date.today().year
-        min_age, max_age = self.gen.weighted_choice(self.ages, self.ages_weights).split(
-            "-"
-        )
-        year_delta = self.gen.random_int(int(min_age), int(max_age))
-        bd = self.gen.date_between_dates(
+        min_age, max_age = self.weighted_choice(self.ages, self.ages_weights).split("-")
+        year_delta = self.generator.random_int(int(min_age), int(max_age))
+        bd = self.generator.date_between_dates(
             date(start_year, 1, 1), date(start_year, 12, 31)
         )
         return bd.replace(year=(start_year - year_delta))
@@ -87,10 +85,10 @@ class PersonalDetailsProvider(BaseProvider):
             return self._birthday_without_starting_dob()
 
     def time_of_birth(self):
-        return self.gen.time(pattern="%I:%M %p")
+        return self.generator.time(pattern="%I:%M %p")
 
     def gender(self):
-        return self.gen.weighted_choice(self.genders, self.gender_weights)
+        return self.weighted_choice(self.genders, self.gender_weights)
 
     def height(self, gender):
         if gender == "Male":
@@ -111,30 +109,30 @@ class PersonalDetailsProvider(BaseProvider):
         return round(norm_dist_rand(mean, stdev), 1)
 
     def hair_color(self):
-        return self.gen.weighted_choice(self.hair_colors, self.hair_color_weights)
+        return self.weighted_choice(self.hair_colors, self.hair_color_weights)
 
     def hair_type(self):
-        return self.gen.random_element(self.hair_types)
+        return self.generator.random_element(self.hair_types)
 
     def eye_color(self):
-        return self.gen.weighted_choice(self.eye_colors, self.eye_color_weights)
+        return self.weighted_choice(self.eye_colors, self.eye_color_weights)
 
     def sexual_orientation(self):
-        return self.gen.weighted_choice(
+        return self.weighted_choice(
             self.sexual_orientations, self.sexual_orientation_weights
         )
 
     def mannerisms(self):
-        return self.gen.random_element(self.mannerisms_options)
+        return self.generator.random_element(self.mannerisms_options)
 
     def phone_number(self):
-        return self.gen.numerify(text="(%#%) %##-####")
+        return self.generator.numerify(text="(%#%) %##-####")
 
     def passport_num(self):
-        return self.gen.bothify("?########", letters=string.ascii_uppercase)
+        return self.generator.bothify("?########", letters=string.ascii_uppercase)
 
     def passport_issue_date(self):
-        return self.gen.date_between(date.today() - relativedelta(years=10))
+        return self.generator.date_between(date.today() - relativedelta(years=10))
 
     def nickname(self, first_name, middle_name=None):
         options = [
@@ -144,7 +142,7 @@ class PersonalDetailsProvider(BaseProvider):
             for nickname in self.nicknames_dict[name.lower()]
         ]
         return (
-            blank_or(self.gen.random_element(options), NICKNAME_PCT_CHANCE)
+            blank_or(self.generator.random_element(options), NICKNAME_PCT_CHANCE)
             if options
             else ""
         )
