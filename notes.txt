@@ -1,5 +1,10 @@
 "".join(self.random_element(list(itertools.product(["A", "B", "AB", "O"], ["+", "-"]))))
 
+def isAlive(age):
+    return randomInt(0, 100) > 0.8*age. 
+
+
+
  license_formats = (
         # Alabama
         "#??####",

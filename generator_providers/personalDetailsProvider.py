@@ -2,14 +2,12 @@ from datetime import date
 from dateutil.relativedelta import relativedelta
 
 import string
-from faker import Faker
-from faker.providers import BaseProvider
 from pathlib import Path
 
-
+from classes.phone_number import PhoneNumber
 from generator_providers.choicesProvider import ChoicesProvider
 from generator_utilities.load_tools import load_txt, load_weighted_csv, load_csv_as_dict
-from generator_utilities.random_tools import norm_dist_rand, blank_or
+
 from data.person.person_averages import (
     MENS_H_MEAN,
     MENS_H_STDEV,
@@ -19,10 +17,12 @@ from data.person.person_averages import (
     MENS_W_STDEV,
     WOMENS_W_MEAN,
     WOMENS_W_STDEV,
+    MIDDLE_NAME_PERC,
 )
 
 BIRTHDAY_YEAR_DELTA = 10
 NICKNAME_PCT_CHANCE = 0.6
+DEATH_AGE_FACTOR = 0.85
 
 
 HAIR_COLORS_PATH = Path("./data/person/hair_color_weights.csv")
@@ -39,8 +39,6 @@ NICKNAMES_PATH = Path("./data/person/names.csv")
 
 
 class PersonalDetailsProvider(ChoicesProvider):
-    # gen = Faker()
-    # gen.add_provider(ChoicesProvider)
 
     hair_colors, hair_color_weights = load_weighted_csv(HAIR_COLORS_PATH)
     hair_types = load_txt(HAIR_TYPES_PATH)
@@ -52,6 +50,27 @@ class PersonalDetailsProvider(ChoicesProvider):
     )
     ages, ages_weights = load_weighted_csv(AGES_PATH)
     nicknames_dict = load_csv_as_dict(NICKNAMES_PATH)
+
+    def gender(self):
+        return self.weighted_choice(self.genders, self.gender_weights)
+
+    def first_name_gender(self, gender):
+        if gender == "Male":
+            return self.generator.first_name_male()
+        elif gender == "Female":
+            return self.generator.first_name_female()
+        else:
+            return self.generator.first_name_nonbinary()
+
+    def middle_name_gender(self, gender):
+        name = ""
+        if gender == "Male":
+            name = self.generator.first_name_male()
+        elif gender == "Female":
+            name = self.generator.first_name_female()
+        else:
+            name = self.generator.first_name_nonbinary()
+        return self.blank_or(name, MIDDLE_NAME_PERC)
 
     def _birthday_with_starting_dob(self, starting_dob):
         start_year = starting_dob.year
@@ -87,8 +106,10 @@ class PersonalDetailsProvider(ChoicesProvider):
     def time_of_birth(self):
         return self.generator.time(pattern="%I:%M %p")
 
-    def gender(self):
-        return self.weighted_choice(self.genders, self.gender_weights)
+    def date_of_death(self, age):
+        if self.generator.random_int(0, 100) < age * DEATH_AGE_FACTOR:
+            return date.today()
+        return None
 
     def height(self, gender):
         if gender == "Male":
@@ -97,7 +118,7 @@ class PersonalDetailsProvider(ChoicesProvider):
         else:
             mean = WOMENS_H_MEAN
             stdev = WOMENS_H_STDEV
-        return round(norm_dist_rand(mean, stdev), 1)
+        return round(self.generator.norm_dist_rand(mean, stdev), 1)
 
     def weight(self, gender):
         if gender == "Male":
@@ -106,7 +127,7 @@ class PersonalDetailsProvider(ChoicesProvider):
         else:
             mean = WOMENS_W_MEAN
             stdev = WOMENS_W_STDEV
-        return round(norm_dist_rand(mean, stdev), 1)
+        return round(self.generator.norm_dist_rand(mean, stdev), 1)
 
     def hair_color(self):
         return self.weighted_choice(self.hair_colors, self.hair_color_weights)
@@ -126,7 +147,7 @@ class PersonalDetailsProvider(ChoicesProvider):
         return self.generator.random_element(self.mannerisms_options)
 
     def phone_number(self):
-        return self.generator.numerify(text="(%#%) %##-####")
+        return PhoneNumber(self.generator.numerify(text="(%#%) %##-####"))
 
     def passport_num(self):
         return self.generator.bothify("?########", letters=string.ascii_uppercase)
@@ -142,7 +163,9 @@ class PersonalDetailsProvider(ChoicesProvider):
             for nickname in self.nicknames_dict[name.lower()]
         ]
         return (
-            blank_or(self.generator.random_element(options), NICKNAME_PCT_CHANCE)
+            self.generator.blank_or(
+                self.generator.random_element(options), NICKNAME_PCT_CHANCE
+            )
             if options
             else ""
         )

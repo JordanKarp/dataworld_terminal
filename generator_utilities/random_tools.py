@@ -10,6 +10,4 @@ def norm_dist_rand(mean, st_dv):
 
 
 def blank_or(element, element_percent=0.5):
-    if random() <= element_percent:
-        return element
-    return ""
+    return element if random() <= element_percent else ""

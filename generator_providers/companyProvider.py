@@ -1,5 +1,3 @@
-from faker import Faker
-from faker.providers import BaseProvider
 from pathlib import Path
 
 from classes.employee import EmployeeRole, EmployeeDemand

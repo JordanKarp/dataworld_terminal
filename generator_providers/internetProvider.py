@@ -1,8 +1,9 @@
 from faker import Faker
 from faker.providers import BaseProvider
-from generator_providers.choicesProvider import ChoicesProvider
-
 from pathlib import Path
+
+from classes.email import Email, EmailTypes
+from generator_providers.choicesProvider import ChoicesProvider
 
 
 from generator_utilities.load_tools import load_weighted_csv
@@ -19,7 +20,10 @@ class InternetProvider(BaseProvider):
     domains, domain_weights = load_weighted_csv(DOMAINS_PATH)
 
     def email(self, first, last, dob):
-        return f"{self.user_name(first, last, dob)}@{self.email_domain()}"
+        return Email(
+            f"{self.user_name(first, last, dob)}@{self.email_domain()}",
+            EmailTypes.PERSONAL,
+        )
 
     def user_name(self, first, last, dob):
         year = str(dob.year)[2:]

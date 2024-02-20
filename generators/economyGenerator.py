@@ -7,7 +7,7 @@ from pathlib import Path
 # from datetime import date
 
 
-from classes.company import Company
+# from classes.company import Company
 from generators.companyGenerator import CompanyGenerator
 
 # from generator_utilities.load_tools import load_weighted_csv

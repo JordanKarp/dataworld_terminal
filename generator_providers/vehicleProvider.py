@@ -1,5 +1,4 @@
 from faker import Faker
-from faker.providers import BaseProvider
 from faker_vehicle import VehicleProvider
 from pathlib import Path
 import string
@@ -32,10 +31,10 @@ class CustomVehicleProvider(ChoicesProvider):
         return self.weighted_choice(self.car_colors, self.car_color_weights)
 
     def dl_num(self):
-        return self.gen.bothify("?##????#", letters=string.ascii_uppercase)
+        return self.generator.bothify("?##????#", letters=string.ascii_uppercase)
 
     def dl_issue_date(self):
-        return self.gen.date_this_decade(after_today=False)
+        return self.generator.date_this_decade(after_today=False)
 
     def dl_restrictions(self):
         return self.weighted_choice(

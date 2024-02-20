@@ -2,18 +2,13 @@ from faker import Faker
 from dateutil.relativedelta import relativedelta
 
 from classes.person import Person
-from classes.email import Email
-from classes.phone_number import PhoneNumber
 from generator_providers.personalDetailsProvider import PersonalDetailsProvider
 from generator_providers.locationProvider import LocationProvider
 from generator_providers.vehicleProvider import CustomVehicleProvider
 from generator_providers.internetProvider import InternetProvider
 from generator_providers.choicesProvider import ChoicesProvider
-from generator_utilities.random_tools import blank_or
 
 from data.person.person_averages import (
-    MIDDLE_NAME_PERC,
-    YEARS_TIL_DL_EXP,
     YEARS_TIL_PASSPORT_EXP,
     TAKE_NAME_PERCENT,
 )
@@ -64,112 +59,97 @@ class PersonGenerator:
             )
 
     def new(self, **kwargs):
+        person = Person()
         # NAME AND GENDER
-        gender = kwargs.get("gender", self.gen.gender())
-        if gender == "Male":
-            first_name = kwargs.get("first_name", self.gen.first_name_male())
-            middle_name = kwargs.get(
-                "middle_name",
-                blank_or(self.gen.first_name_male(), MIDDLE_NAME_PERC),
-            )
-            nickname = kwargs.get(
-                "nickname", self.gen.nickname(first_name, middle_name)
-            )
-            title = "Mr."
-
-        elif gender == "Female":
-            first_name = kwargs.get("first_name", self.gen.first_name_female())
-            middle_name = kwargs.get(
-                "middle_name",
-                blank_or(self.gen.first_name_female(), MIDDLE_NAME_PERC),
-            )
-            title = "Ms."
-
-        else:
-            first_name = kwargs.get("first_name", self.gen.first_name_nonbinary())
-            middle_name = kwargs.get(
-                "middle_name",
-                blank_or(self.gen.first_name_nonbinary(), MIDDLE_NAME_PERC),
-            )
-            title = "Mx."
-        last_name = kwargs.get("last_name", self.gen.last_name())
-        nickname = kwargs.get("nickname", self.gen.nickname(first_name, middle_name))
+        person.gender = kwargs.get("gender", self.gen.gender())
+        person.first_name = kwargs.get(
+            "first_name", self.gen.first_name_gender(person.gender)
+        )
+        person.middle_name = kwargs.get(
+            "middle_name", self.gen.middle_name_gender(person.gender)
+        )
+        person.last_name = kwargs.get("last_name", self.gen.last_name())
+        person.nickname = kwargs.get(
+            "nickname", self.gen.nickname(person.first_name, person.middle_name)
+        )
 
         # INFO
-        date_of_birth = self.gen.birthday(kwargs.get("date_of_birth", None))
-        time_of_birth = kwargs.get("time_of_birth", self.gen.time_of_birth())
+        person.date_of_birth = self.gen.birthday(kwargs.get("date_of_birth", None))
+        person.time_of_birth = kwargs.get("time_of_birth", self.gen.time_of_birth())
+        person.date_of_death = kwargs.get(
+            "date_of_death", self.gen.date_of_death(person.age)
+        )
 
         # BODY
-        height = kwargs.get("height", self.gen.height(gender))
-        weight = kwargs.get("weight", self.gen.weight(gender))
-        hair_color = kwargs.get("hair_color", self.gen.hair_color())
-        hair_type = kwargs.get("hair_type", self.gen.hair_type())
-        eye_color = kwargs.get("eye_color", self.gen.eye_color())
+        person.height = kwargs.get("height", self.gen.height(person.gender))
+        person.weight = kwargs.get("weight", self.gen.weight(person.gender))
+        person.hair_color = kwargs.get("hair_color", self.gen.hair_color())
+        person.hair_type = kwargs.get("hair_type", self.gen.hair_type())
+        person.eye_color = kwargs.get("eye_color", self.gen.eye_color())
 
         # PERSONALITY
-        mannerisms = kwargs.get("mannerisms", self.gen.mannerisms())
+        person.mannerisms = kwargs.get("mannerisms", self.gen.mannerisms())
 
         # LOCATIONS
-        home = kwargs.get("home", self.gen.home())
+        person.home = kwargs.get("home", self.gen.home())
 
         #
-        ssn = kwargs.get("ssn", self.gen.ssn())
-        email = Email(
-            kwargs.get("email", self.gen.email(first_name, last_name, date_of_birth))
+        person.ssn = kwargs.get("ssn", self.gen.ssn())
+        person.email = kwargs.get(
+            "email",
+            self.gen.email(person.first_name, person.last_name, person.date_of_birth),
         )
-        phone_number = PhoneNumber(kwargs.get("phone_number", self.gen.phone_number()))
-        sexual_orientation = kwargs.get(
+        person.phone_number = kwargs.get("phone_number", self.gen.phone_number())
+        person.sexual_orientation = kwargs.get(
             "sexual_orientation", self.gen.sexual_orientation()
         )
-        marital_status = kwargs.get("martial_status", "Single")
+        person.marital_status = kwargs.get("martial_status", "Single")
 
-        passport_num = kwargs.get("passport_num", self.gen.passport_num())
-        passport_issue_date = kwargs.get(
+        person.passport_num = kwargs.get("passport_num", self.gen.passport_num())
+        person.passport_issue_date = kwargs.get(
             "passport_issue_date", self.gen.passport_issue_date()
         )
-        passport_exp_date = kwargs.get(
+        person.passport_exp_date = kwargs.get(
             "passport_exp_date",
-            passport_issue_date + relativedelta(years=YEARS_TIL_PASSPORT_EXP),
+            person.passport_issue_date + relativedelta(years=YEARS_TIL_PASSPORT_EXP),
         )
 
         # FAMILY
-        siblings = kwargs.get("siblings", [])
-        spouse = kwargs.get("spouse", None)
+        person.siblings = kwargs.get("siblings", [])
+        person.spouse = kwargs.get("spouse", None)
 
         # CAR
-        vehicle = kwargs.get("vehicle", self.gen.personal_vehicle())
-        drivers_license = kwargs.get("drivers_license", self.gen.drivers_license())
-
-        return Person(
-            gender=gender,
-            first_name=first_name,
-            middle_name=middle_name,
-            last_name=last_name,
-            nickname=nickname,
-            title=title,
-            height=height,
-            weight=weight,
-            hair_color=hair_color,
-            hair_type=hair_type,
-            eye_color=eye_color,
-            mannerisms=mannerisms,
-            date_of_birth=date_of_birth,
-            time_of_birth=time_of_birth,
-            ssn=ssn,
-            email=email,
-            phone_number=phone_number,
-            home=home,
-            vehicle=vehicle,
-            drivers_license=drivers_license,
-            # dl_num=dl_num,
-            # dl_issue_date=dl_issue_date,
-            # dl_exp_date=dl_exp_date,
-            # dl_restrictions=dl_restrictions,
-            sexual_orientation=sexual_orientation,
-            siblings=siblings,
-            marital_status=marital_status,
-            passport_num=passport_num,
-            passport_issue_date=passport_issue_date,
-            passport_exp_date=passport_exp_date,
-            spouse=spouse,
+        person.vehicle = kwargs.get("vehicle", self.gen.personal_vehicle())
+        person.drivers_license = kwargs.get(
+            "drivers_license", self.gen.drivers_license()
         )
+
+        return person
+        # return Person(
+        #     gender=gender,
+        #     first_name=first_name,
+        #     middle_name=middle_name,
+        #     last_name=last_name,
+        #     nickname=nickname,
+        #     height=height,
+        #     weight=weight,
+        #     hair_color=hair_color,
+        #     hair_type=hair_type,
+        #     eye_color=eye_color,
+        #     mannerisms=mannerisms,
+        #     date_of_birth=date_of_birth,
+        #     time_of_birth=time_of_birth,
+        #     ssn=ssn,
+        #     email=email,
+        #     phone_number=phone_number,
+        #     home=home,
+        #     vehicle=vehicle,
+        #     drivers_license=drivers_license,
+        #     sexual_orientation=sexual_orientation,
+        #     siblings=siblings,
+        #     marital_status=marital_status,
+        #     passport_num=passport_num,
+        #     passport_issue_date=passport_issue_date,
+        #     passport_exp_date=passport_exp_date,
+        #     spouse=spouse,
+        # )

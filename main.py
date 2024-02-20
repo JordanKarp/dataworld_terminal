@@ -7,16 +7,17 @@ from generators.economyGenerator import EconomyGenerator
 
 
 def main(seed=None):
-    # pg = PopulationGenerator(seed)
-    # pop = pg.create()
+    pg = PopulationGenerator(seed)
+    pop = pg.create()
     # pg.print_pop()
-    # pg.csv_pop()
+    pg.csv_pop()
 
     # cg = CompanyGenerator()
     # print(cg.new())
-    eg = EconomyGenerator()
-    eg.create()
-    eg.print_eco()
+
+    # eg = EconomyGenerator()
+    # eg.create()
+    # eg.print_eco()
 
     # dsg = DataSourceGenerator(seed)
     # dsg.add_population(pop)
@@ -26,4 +27,5 @@ def main(seed=None):
 
 if __name__ == "__main__":
     seed = "ABC123"
+    # seed = None
     main(seed)

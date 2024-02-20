@@ -18,7 +18,7 @@ class HomeTypes(Enum):
 
 @dataclass
 class Location:
-    street_address_1: str = "1 default st."
+    street_address_1: str = "1 Default st."
     street_address_2: str = ""
     city: str = "DefaultCity"
     state: str = "DefaultState"

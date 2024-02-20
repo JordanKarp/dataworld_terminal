@@ -1,26 +1,10 @@
 from dataclasses import dataclass, field
-from enum import Enum, auto
 
-from classes.location import Location
-from classes.employee import Employee, EmployeeDemand
+# from classes.location import Location
+from classes.employee import EmployeeDemand
+from classes.industries import Industries
 
 # from classes.person import Person
-
-
-class Industries(Enum):
-    AUTOMOTIVE = auto()
-    EDUCATION = auto()
-    ENTERTAINMENT = auto()
-    FINANCE = auto()
-    FOOD_AND_BEVERAGE = auto()
-    HEALTHCARE = auto()
-    HOSPITALITY = auto()
-    RETAIL = auto()
-    TECHNOLOGY = auto()
-    TRANSPORTATION = auto()
-
-    def __repr__(self):
-        return self.name.replace("_", " ").title()
 
 
 @dataclass

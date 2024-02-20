@@ -7,18 +7,18 @@ from classes.phone_number import PhoneNumber
 from classes.location import Location
 from classes.vehicle import Vehicle
 from classes.drivers_license import DriversLicense
+from classes.age_groups import AgeGroups
 
 
 @dataclass
 class Person:
+    gender: str = "Male"
     first_name: str = ""
     middle_name: str = ""
     last_name: str = ""
-    nickname: str = "NotImplemented"
-    title: str = "Mr."
-    gender: str = "Male"
-    sexual_orientation: str = "Heterosexual"
+    nickname: str = ""
     ssn: str = "000-00-0000"
+    sexual_orientation: str = "Heterosexual"
     date_of_birth: date = date(1900, 1, 1)
     time_of_birth: str = ""
     date_of_death: Optional[date] = None
@@ -36,11 +36,6 @@ class Person:
     home: Optional[Location] = None
     vehicle: Optional[Vehicle] = None
     drivers_license: Optional[DriversLicense] = None
-    # dl_num: Optional[str] = None
-    # dl_issue_date: Optional[date] = None
-    # dl_exp_date: Optional[date] = None
-    # dl_restrictions: Optional[str] = None
-    vehicle: Optional[Vehicle] = None
     vehicle: Optional[Vehicle] = None
     siblings: list[str] = field(default_factory=list, repr=True)
     marital_status: str = "Single"
@@ -62,11 +57,27 @@ class Person:
         )
 
     @property
+    def age_group(self):
+        simple_age = round(self.age)
+        for group in AgeGroups:
+            if simple_age in group.value:
+                return AgeGroups(group.value).name.replace("_", " ").title()
+
+    @property
     def full_name(self):
         if self.middle_name:
             return f"{self.first_name} {self.middle_name} {self.last_name}"
         else:
             return f"{self.first_name} {self.last_name}"
+
+    @property
+    def title(self):
+        if self.gender == "Female":
+            return "Mrs." if self.marital_status == "Married" else "Ms."
+        elif self.gender == "Male":
+            return "Mr."
+        else:
+            return "Mx."
 
     @property
     def gender_abbr(self):
@@ -90,4 +101,4 @@ class Person:
         return f"{self.first_name}, {self.date_of_birth} "
 
     def __str__(self):
-        return f"{self.first_name} {self.last_name} - {self.email}"
+        return f"{self.first_name} {self.last_name} - {self.age} - {self.age_group}"
