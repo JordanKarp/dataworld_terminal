@@ -24,28 +24,28 @@ class PopulationGenerator:
     def create(self):
         self.initial_pop()
         self.add_spouses()
-        self.add_siblings()
+        # self.add_siblings()
         return self.population
 
     def initial_pop(self):
         for _ in range(FIRST_PASS_POP_SIZE):
             self.population.append(self.personGen.new())
 
-    def add_siblings(self):
-        sib_nums, sib_weights = load_weighted_csv(SIBLING_DATA_PATH)
-        new_pop = []
-        for person in self.population:
-            numSibs = int(self.personGen.gen.weighted_choice(sib_nums, sib_weights))
-            if numSibs:
-                family = [person] + [
-                    self.personGen.new_sibling(person) for _ in range(numSibs)
-                ]
-                for p in family:
-                    p.siblings = [sib for sib in family if sib != p]
-                new_pop.extend(family[1:])
-            else:
-                person.siblings = []
-        self.population.extend(new_pop)
+    # def add_siblings(self):
+    #     sib_nums, sib_weights = load_weighted_csv(SIBLING_DATA_PATH)
+    #     new_pop = []
+    #     for person in self.population:
+    #         numSibs = int(self.personGen.gen.weighted_choice(sib_nums, sib_weights))
+    #         if numSibs:
+    #             family = [person] + [
+    #                 self.personGen.new_sibling(person) for _ in range(numSibs)
+    #             ]
+    #             for p in family:
+    #                 p.siblings = [sib for sib in family if sib != p]
+    #             new_pop.extend(family[1:])
+    #         else:
+    #             person.siblings = []
+    #     self.population.extend(new_pop)
 
     def add_spouses(self):
         marriages, marriage_weights = load_weighted_csv(MARRIAGE_RATE_PATH)

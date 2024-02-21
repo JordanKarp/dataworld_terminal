@@ -12,32 +12,30 @@ class CompanyGenerator:
         if seed:
             Faker.seed(seed)
         self.gen.add_provider(CompanyProvider)
+        self.id_counter = 0
 
     def new(self, **kwargs):
-        industry = kwargs.get("industry", self.gen.industry())
-        sub_industry = kwargs.get("sub_industry", self.gen.sub_industry(industry))
+        self.id_counter += 1
+        company = Company(id=f"C{self.id_counter:05d}")
 
-        name = kwargs.get("name", self.gen.company_name(industry, sub_industry))
-        employee_structure = kwargs.get(
-            "employee_structure", self.gen.employee_structure(industry, sub_industry)
+        company.industry = kwargs.get("industry", self.gen.industry())
+        company.sub_industry = kwargs.get(
+            "sub_industry", self.gen.sub_industry(company.industry)
         )
 
-        website = kwargs.get("website", self.gen.website(name))
-        main_phone = kwargs.get("phone_number", self.gen.company_phone_number())
-        # locations = ["test"]
-        social_media = ["test"]
-        # staff = ["test"]
-        data = ["company_directory.txt"]
-
-        return Company(
-            name=name,
-            website=website,
-            industry=industry,
-            sub_industry=sub_industry,
-            employee_structure=employee_structure,
-            main_phone=main_phone,
-            # locations=locations,
-            # social_media=social_media,
-            # staff=staff,
-            # data=data,
+        company.name = kwargs.get(
+            "name", self.gen.company_name(company.industry, company.sub_industry)
         )
+        company.employee_structure = kwargs.get(
+            "employee_structure",
+            self.gen.employee_structure(company.industry, company.sub_industry),
+        )
+
+        company.website = kwargs.get("website", self.gen.website(company.name))
+        company.main_phone = kwargs.get("phone_number", self.gen.company_phone_number())
+        # company.locations = ["test"]
+        company.social_media = ["test"]
+        # company.staff = ["test"]
+        # company.data = ["company_directory.txt"]
+
+        return company

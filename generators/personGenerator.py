@@ -19,6 +19,7 @@ class PersonGenerator:
         self.gen = Faker()
         if seed:
             Faker.seed(seed)
+        self.counter = 0
         self.gen.add_provider(PersonalDetailsProvider)
         self.gen.add_provider(LocationProvider)
         self.gen.add_provider(CustomVehicleProvider)
@@ -59,7 +60,9 @@ class PersonGenerator:
             )
 
     def new(self, **kwargs):
-        person = Person()
+        self.counter += 1
+        person = Person(id=f"P{self.counter:05d}")
+
         # NAME AND GENDER
         person.gender = kwargs.get("gender", self.gen.gender())
         person.first_name = kwargs.get(
@@ -125,31 +128,3 @@ class PersonGenerator:
         )
 
         return person
-        # return Person(
-        #     gender=gender,
-        #     first_name=first_name,
-        #     middle_name=middle_name,
-        #     last_name=last_name,
-        #     nickname=nickname,
-        #     height=height,
-        #     weight=weight,
-        #     hair_color=hair_color,
-        #     hair_type=hair_type,
-        #     eye_color=eye_color,
-        #     mannerisms=mannerisms,
-        #     date_of_birth=date_of_birth,
-        #     time_of_birth=time_of_birth,
-        #     ssn=ssn,
-        #     email=email,
-        #     phone_number=phone_number,
-        #     home=home,
-        #     vehicle=vehicle,
-        #     drivers_license=drivers_license,
-        #     sexual_orientation=sexual_orientation,
-        #     siblings=siblings,
-        #     marital_status=marital_status,
-        #     passport_num=passport_num,
-        #     passport_issue_date=passport_issue_date,
-        #     passport_exp_date=passport_exp_date,
-        #     spouse=spouse,
-        # )

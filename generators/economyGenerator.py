@@ -1,13 +1,8 @@
 import csv
-from csv import DictWriter
 from pathlib import Path
-
-# from dataclasses import asdict, astuple
 
 # from datetime import date
 
-
-# from classes.company import Company
 from generators.companyGenerator import CompanyGenerator
 
 # from generator_utilities.load_tools import load_weighted_csv
@@ -19,7 +14,7 @@ from generators.companyGenerator import CompanyGenerator
 
 EXPORT_CSV_NAME = Path("results/TestCompanies.csv")
 
-FIRST_PASS_COMPANIES = 4
+FIRST_PASS_COMPANIES = 100
 
 
 class EconomyGenerator:
@@ -41,17 +36,13 @@ class EconomyGenerator:
             print(company)
 
     def csv_eco(self, filename=EXPORT_CSV_NAME):
-        pass
-        # fields = [k for k in self.all_companies[0] if not k.startswith("__")]
-        # print(Company.__dict__.keys())
-        # # writing to csv file
-        # with open(filename, "w") as csvfile:
-        #     # creating a csv dict writer object
-        #     writer = DictWriter(csvfile, fieldnames=fields)
-        #     # writing headers (field names)
-        #     writer.writeheader()
-        #     # writing data rows
-        #     for company in self.all_companies:
-        #         writer.writerow(
-        #             {k: v for k, v in company.__dict__.items() if k in fields}
-        #         )
+        with open(filename, "w") as csvfile:
+            writer = csv.writer(csvfile)
+            writer.writerow(
+                [
+                    attr
+                    for attr in self.all_companies[0].__dict__.keys()
+                    if not attr.startswith("__")
+                ]
+            )
+            writer.writerows(self.all_companies)

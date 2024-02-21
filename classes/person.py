@@ -12,6 +12,7 @@ from classes.age_groups import AgeGroups
 
 @dataclass
 class Person:
+    id: str = "P00000"
     gender: str = "Male"
     first_name: str = ""
     middle_name: str = ""

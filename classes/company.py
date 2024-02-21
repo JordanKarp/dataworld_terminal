@@ -1,4 +1,5 @@
 from dataclasses import dataclass, field
+from typing import Optional
 
 # from classes.location import Location
 from classes.employee import EmployeeDemand
@@ -9,11 +10,11 @@ from classes.industries import Industries
 
 @dataclass
 class Company:
-    # id
-    name: str
-    website: str
-    industry: Industries
-    sub_industry: str
+    id: str = "C00000"
+    name: str = ""
+    website: str = ""
+    industry: Optional[Industries] = None
+    sub_industry: str = ""
     employee_structure: list[EmployeeDemand] = field(default_factory=list, repr=True)
     main_phone: list[str] = field(default_factory=list, repr=True)
     # locations: list[Location] = field(default_factory=list, repr=True)
@@ -34,6 +35,20 @@ class Company:
 
     def __getitem__(self, item):
         return getattr(self, item, "")
+
+    def __iter__(self):
+        return iter(
+            [
+                self.id,
+                self.name,
+                self.website,
+                self.industry,
+                self.sub_industry,
+                self.employee_structure,
+                self.main_phone,
+                self.social_media,
+            ]
+        )
 
     # def add_employee(self, person: Person, role: str, team: str):
     #     employee = Employee(

@@ -1,101 +1,101 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+id,name,website,industry,sub_industry,employee_structure,main_phone,social_media
+C00001,BuyMall Gadget,kttps://www.buymallgadget.com,Retail,Electronics,"[1 Owner, 2 Manager, 5 Employee]",Work: (976) 173-1208,['test']
+C00002,CircuitWare Net,kttp://www.circuitwarenet.com,Technology,Mobile Providers,"[1 Owner, 2 Manager, 5 Employee]",Work: (974) 484-1777,['test']
+C00003,Cyber Systems Wireless,kttps://www.cybersystemswireless.com,Technology,Mobile Providers,"[1 Owner, 2 Manager, 5 Employee]",Work: (321) 963-1413,['test']
+C00004,TourEscape Service,kttps://www.tourescapeservice.com,Hospitality,Repair,"[1 Owner, 2 Manager, 5 Employee]",Work: (611) 246-2203,['test']
+C00005,Flavor Cuisine Bistro,kttp://www.flavorcuisinebistro.com,Food and Beverage,Restaurant,"[1 Owner, 2 Manager, 5 Employee]",Work: (732) 482-3864,['test']
+C00006,EducateInstitution School,kttps://www.educateinstitutionschool.com,Education,Public K-6,"[1 Owner, 2 Manager, 5 Employee]",Work: (724) 755-1778,['test']
+C00007,Buy Place Jewel,kttps://www.buyplacejewel.com,Retail,Jeweler,"[1 Owner, 2 Manager, 5 Employee]",Work: (337) 638-2211,['test']
+C00008,FitMed Medical,kttps://www.fitmedmedical.com,Healthcare,Pharmaceutical,"[1 Owner, 2 Manager, 5 Employee]",Work: (306) 448-1833,['test']
+C00009,CruisePath Shop,kttp://www.cruisepathshop.com,Automotive,Mechanic,"[1 Owner, 2 Manager, 5 Employee]",Work: (972) 915-3912,['test']
+C00010,Shop Mall Build,kttps://www.shopmallbuild.com,Retail,Hardware,"[1 Owner, 2 Manager, 5 Employee]",Work: (882) 142-1806,['test']
+C00011,Doc Care Hospital,kttps://www.doccarehospital.com,Healthcare,Hospital,"[1 Owner, 2 Manager, 5 Employee]",Work: (849) 658-9474,['test']
+C00012,DriveWays Suppliers,kttp://www.drivewayssuppliers.com,Automotive,Suppliers,"[1 Owner, 2 Manager, 5 Employee]",Work: (395) 580-7648,['test']
+C00013,Market Mall Tech,kttps://www.marketmalltech.com,Retail,Electronics,"[1 Owner, 2 Manager, 5 Employee]",Work: (394) 522-3786,['test']
+C00014,Money Edge Mortgage,kttp://www.moneyedgemortgage.com,Finance,Loans / Mortgage Lender,"[1 Owner, 2 Manager, 5 Employee]",Work: (888) 602-7315,['test']
+C00015,Relax Getaway Park,kttp://www.relaxgetawaypark.com,Hospitality,Theme Park,"[1 Owner, 2 Manager, 5 Employee]",Work: (897) 589-8695,['test']
+C00016,YumBite Indulge,kttps://www.yumbiteindulge.com,Food and Beverage,Desserts,"[1 Owner, 2 Manager, 5 Employee]",Work: (582) 198-6937,['test']
+C00017,Transit Ways Nautical,kttps://www.transitwaysnautical.com,Transportation,Boat,"[1 Owner, 2 Manager, 5 Employee]",Work: (564) 780-9422,['test']
+C00018,InnoWare Web,kttp://www.innowareweb.com,Technology,Internet Service Providers,"[1 Owner, 2 Manager, 5 Employee]",Work: (756) 247-3038,['test']
+C00019,StyleQuest Joy,kttps://www.stylequestjoy.com,Entertainment,Hobbies,"[1 Owner, 2 Manager, 5 Employee]",Work: (348) 943-7530,['test']
+C00020,FlavorSip Bistro,kttps://www.flavorsipbistro.com,Food and Beverage,Restaurant,"[1 Owner, 2 Manager, 5 Employee]",Work: (498) 195-0161,['test']
+C00021,Speed Express Air,kttp://www.speedexpressair.com,Transportation,Airline,"[1 Owner, 2 Manager, 5 Employee]",Work: (141) 303-7467,['test']
+C00022,Tour Haven Sail,kttps://www.tourhavensail.com,Hospitality,Cruises,"[1 Owner, 2 Manager, 5 Employee]",Work: (323) 927-1199,['test']
+C00023,Leisure Escape Stay,kttp://www.leisureescapestay.com,Hospitality,Private House Rental,"[1 Owner, 2 Manager, 5 Employee]",Work: (398) 697-6080,['test']
+C00024,TechSystems Connect,kttp://www.techsystemsconnect.com,Technology,Community,"[1 Owner, 2 Manager, 5 Employee]",Work: (201) 764-9330,['test']
+C00025,CyberWare Net,kttps://www.cyberwarenet.com,Technology,Internet Service Providers,"[1 Owner, 2 Manager, 5 Employee]",Work: (729) 817-6400,['test']
+C00026,DineroHub Capital,kttps://www.dinerohubcapital.com,Finance,Hedge Fund,"[1 Owner, 2 Manager, 5 Employee]",Work: (507) 883-3656,['test']
+C00027,Learn Academic,kttps://www.learnacademic.com,Education,College,"[1 Owner, 2 Manager, 5 Employee]",Work: (944) 274-8888,['test']
+C00028,YumCuisine Beverage,kttps://www.yumcuisinebeverage.com,Food and Beverage,Beverage Manufacture,"[1 Owner, 2 Manager, 5 Employee]",Work: (999) 326-5775,['test']
+C00029,Med Life Medical,kttp://www.medlifemedical.com,Healthcare,Pharmaceutical,"[1 Owner, 2 Manager, 5 Employee]",Work: (576) 973-0053,['test']
+C00030,StyleBeat Play,kttps://www.stylebeatplay.com,Entertainment,Gaming,"[1 Owner, 2 Manager, 5 Employee]",Work: (868) 655-5981,['test']
+C00031,SchoolPlace University,kttps://www.schoolplaceuniversity.com,Education,University,"[1 Owner, 2 Manager, 5 Employee]",Work: (744) 434-9110,['test']
+C00032,Relax Charm Voyage,kttp://www.relaxcharmvoyage.com,Hospitality,Cruises,"[1 Owner, 2 Manager, 5 Employee]",Work: (859) 260-0996,['test']
+C00033,CruiseJourney Fix,kttp://www.cruisejourneyfix.com,Hospitality,Repair,"[1 Owner, 2 Manager, 5 Employee]",Work: (239) 518-0729,['test']
+C00034,MarketStore Fresh,kttps://www.marketstorefresh.com,Retail,Grocery,"[1 Owner, 2 Manager, 5 Employee]",Work: (124) 764-8740,['test']
+C00035,WealthEdge Hedge,kttp://www.wealthedgehedge.com,Finance,Hedge Fund,"[1 Owner, 2 Manager, 5 Employee]",Work: (725) 463-9174,['test']
+C00036,HealthHub M.D.,kttp://www.healthhubm.d..com,Healthcare,Doctor,"[1 Owner, 2 Manager, 5 Employee]",Work: (622) 667-6508,['test']
+C00037,Explore Charm Mend,kttp://www.explorecharmmend.com,Hospitality,Repair,"[1 Owner, 2 Manager, 5 Employee]",Work: (182) 865-4385,['test']
+C00038,Health Hub Life,kttp://www.healthhublife.com,Healthcare,Wellness,"[1 Owner, 2 Manager, 5 Employee]",Work: (235) 228-1067,['test']
+C00039,Logic Hub Web,kttp://www.logichubweb.com,Technology,Internet Service Providers,"[1 Owner, 2 Manager, 5 Employee]",Work: (103) 461-6253,['test']
+C00040,Fit Wellness Pharma,kttps://www.fitwellnesspharma.com,Healthcare,Pharmaceutical,"[1 Owner, 2 Manager, 5 Employee]",Work: (607) 307-8841,['test']
+C00041,Code Produce,kttps://www.codeproduce.com,Technology,Manufacturers,"[1 Owner, 2 Manager, 5 Employee]",Work: (726) 392-0577,['test']
+C00042,Doc Med Heal,kttps://www.docmedheal.com,Healthcare,Doctor,"[1 Owner, 2 Manager, 5 Employee]",Work: (529) 982-2724,['test']
+C00043,Cine Games,kttp://www.cinegames.com,Entertainment,Gaming,"[1 Owner, 2 Manager, 5 Employee]",Work: (354) 140-7359,['test']
+C00044,Story Flicks Books,kttp://www.storyflicksbooks.com,Entertainment,Books,"[1 Owner, 2 Manager, 5 Employee]",Work: (235) 188-6099,['test']
+C00045,FeastEats Dine,kttps://www.feasteatsdine.com,Food and Beverage,Restaurant,"[1 Owner, 2 Manager, 5 Employee]",Work: (372) 997-5907,['test']
+C00046,Finance Tech Bank,kttps://www.financetechbank.com,Finance,Bank,"[1 Owner, 2 Manager, 5 Employee]",Work: (634) 535-0079,['test']
+C00047,Delicious Eats Bite,kttps://www.deliciouseatsbite.com,Food and Beverage,Fast Food,"[1 Owner, 2 Manager, 5 Employee]",Work: (785) 532-2889,['test']
+C00048,Stay Charm Hotel,kttp://www.staycharmhotel.com,Hospitality,Hotels,"[1 Owner, 2 Manager, 5 Employee]",Work: (774) 811-1611,['test']
+C00049,Rehab Wellness Elder,kttp://www.rehabwellnesselder.com,Healthcare,Elderly Care,"[1 Owner, 2 Manager, 5 Employee]",Work: (699) 138-6026,['test']
+C00050,Health Wellness Special,kttps://www.healthwellnessspecial.com,Healthcare,Specialized Clinics,"[1 Owner, 2 Manager, 5 Employee]",Work: (121) 487-1113,['test']
+C00051,ZoomPath Repair,kttp://www.zoompathrepair.com,Automotive,Mechanic,"[1 Owner, 2 Manager, 5 Employee]",Work: (947) 950-4813,['test']
+C00052,Wealth Edge Loans,kttp://www.wealthedgeloans.com,Finance,Loans / Mortgage Lender,"[1 Owner, 2 Manager, 5 Employee]",Work: (725) 775-4962,['test']
+C00053,StylePlace Fix,kttp://www.styleplacefix.com,Retail,Hardware,"[1 Owner, 2 Manager, 5 Employee]",Work: (334) 244-2737,['test']
+C00054,Vacay Haven Park,kttps://www.vacayhavenpark.com,Hospitality,Theme Park,"[1 Owner, 2 Manager, 5 Employee]",Work: (951) 768-5027,['test']
+C00055,Transit Routes Shuttle,kttp://www.transitroutesshuttle.com,Transportation,Bus,"[1 Owner, 2 Manager, 5 Employee]",Work: (876) 115-6031,['test']
+C00056,Story Chic Pastime,kttps://www.storychicpastime.com,Entertainment,Hobbies,"[1 Owner, 2 Manager, 5 Employee]",Work: (833) 527-0150,['test']
+C00057,InstituteInstitution Learn,kttps://www.instituteinstitutionlearn.com,Education,University,"[1 Owner, 2 Manager, 5 Employee]",Work: (461) 925-1507,['test']
+C00058,BuyStore Style,kttp://www.buystorestyle.com,Retail,Clothing,"[1 Owner, 2 Manager, 5 Employee]",Work: (956) 303-2648,['test']
+C00059,SoundBeat E-Sports,kttps://www.soundbeate-sports.com,Entertainment,Gaming,"[1 Owner, 2 Manager, 5 Employee]",Work: (825) 136-7041,['test']
+C00060,Zoom Ways Motors,kttp://www.zoomwaysmotors.com,Automotive,Dealership,"[1 Owner, 2 Manager, 5 Employee]",Work: (789) 311-2056,['test']
+C00061,WellWellness Medicine,kttps://www.wellwellnessmedicine.com,Healthcare,Specialized Clinics,"[1 Owner, 2 Manager, 5 Employee]",Work: (754) 134-5300,['test']
+C00062,TasteDine To-Go,kttps://www.tastedineto-go.com,Food and Beverage,Fast Food,"[1 Owner, 2 Manager, 5 Employee]",Work: (342) 565-0786,['test']
+C00063,Art Chic Entertainment,kttp://www.artchicentertainment.com,Entertainment,Film / TV,"[1 Owner, 2 Manager, 5 Employee]",Work: (764) 207-5784,['test']
+C00064,Care Hub Senior,kttp://www.carehubsenior.com,Healthcare,Elderly Care,"[1 Owner, 2 Manager, 5 Employee]",Work: (848) 100-9948,['test']
+C00065,StyleWorld Cinema,kttps://www.styleworldcinema.com,Entertainment,Film / TV,"[1 Owner, 2 Manager, 5 Employee]",Work: (331) 224-5306,['test']
+C00066,TrendOutlet Mart,kttp://www.trendoutletmart.com,Retail,Convenience,"[1 Owner, 2 Manager, 5 Employee]",Work: (708) 594-3872,['test']
+C00067,Sound Style,kttps://www.soundstyle.com,Entertainment,Fashion / Celebrity,"[1 Owner, 2 Manager, 5 Employee]",Work: (173) 730-8922,['test']
+C00068,Story Style,kttp://www.storystyle.com,Entertainment,Fashion / Celebrity,"[1 Owner, 2 Manager, 5 Employee]",Work: (915) 555-2515,['test']
+C00069,Byte Solutions Connect,kttps://www.bytesolutionsconnect.com,Technology,Internet Service Providers,"[1 Owner, 2 Manager, 5 Employee]",Work: (283) 355-4896,['test']
+C00070,RehabLife Living,kttps://www.rehablifeliving.com,Healthcare,Elderly Care,"[1 Owner, 2 Manager, 5 Employee]",Work: (614) 139-6618,['test']
+C00071,Institute Hub School,kttps://www.institutehubschool.com,Education,Technical / Trade School,"[1 Owner, 2 Manager, 5 Employee]",Work: (291) 365-0307,['test']
+C00072,KnowledgeCampus Learn,kttp://www.knowledgecampuslearn.com,Education,Technical / Trade School,"[1 Owner, 2 Manager, 5 Employee]",Work: (745) 286-2576,['test']
+C00073,Invest Edge Finance,kttps://www.investedgefinance.com,Finance,Loans / Mortgage Lender,"[1 Owner, 2 Manager, 5 Employee]",Work: (891) 580-2402,['test']
+C00074,Speed Trails Rentals,kttp://www.speedtrailsrentals.com,Automotive,Rental,"[1 Owner, 2 Manager, 5 Employee]",Work: (906) 972-0031,['test']
+C00075,Go Ways Repair,kttp://www.gowaysrepair.com,Automotive,Mechanic,"[1 Owner, 2 Manager, 5 Employee]",Work: (718) 201-8854,['test']
+C00076,Story Beat Pages,kttps://www.storybeatpages.com,Entertainment,Books,"[1 Owner, 2 Manager, 5 Employee]",Work: (353) 951-7824,['test']
+C00077,Crave Delight Sweet,kttps://www.cravedelightsweet.com,Food and Beverage,Bakery,"[1 Owner, 2 Manager, 5 Employee]",Work: (206) 586-0029,['test']
+C00078,Code Solutions Web,kttp://www.codesolutionsweb.com,Technology,Internet Service Providers,"[1 Owner, 2 Manager, 5 Employee]",Work: (867) 319-5655,['test']
+C00079,CircuitHub Tech,kttp://www.circuithubtech.com,Technology,Manufacturers,"[1 Owner, 2 Manager, 5 Employee]",Work: (644) 424-4978,['test']
+C00080,Institute Junior High,kttps://www.institutejuniorhigh.com,Education,Public 7-9,"[1 Owner, 2 Manager, 5 Employee]",Work: (177) 335-9733,['test']
+C00081,Byte Sync Network,kttps://www.bytesyncnetwork.com,Technology,Community,"[1 Owner, 2 Manager, 5 Employee]",Work: (654) 525-9932,['test']
+C00082,CareMed Hospital,kttp://www.caremedhospital.com,Healthcare,Hospital,"[1 Owner, 2 Manager, 5 Employee]",Work: (818) 296-2832,['test']
+C00083,LogicSystems Tech,kttps://www.logicsystemstech.com,Technology,Manufacturers,"[1 Owner, 2 Manager, 5 Employee]",Work: (377) 151-6534,['test']
+C00084,Cruise Haven Stay,kttp://www.cruisehavenstay.com,Hospitality,Hotels,"[1 Owner, 2 Manager, 5 Employee]",Work: (633) 487-5430,['test']
+C00085,Doc Life Health,kttps://www.doclifehealth.com,Healthcare,Pharmaceutical,"[1 Owner, 2 Manager, 5 Employee]",Work: (951) 501-6050,['test']
+C00086,Capital Tech Capital,kttps://www.capitaltechcapital.com,Finance,Investment Firm,"[1 Owner, 2 Manager, 5 Employee]",Work: (536) 133-2250,['test']
+C00087,SelectMall Gizmo,kttps://www.selectmallgizmo.com,Retail,Electronics,"[1 Owner, 2 Manager, 5 Employee]",Work: (691) 971-1431,['test']
+C00088,CapitalTech Fund,kttp://www.capitaltechfund.com,Finance,Investment Firm,"[1 Owner, 2 Manager, 5 Employee]",Work: (607) 329-3343,['test']
+C00089,Well Wellness Health,kttps://www.wellwellnesshealth.com,Healthcare,Specialized Clinics,"[1 Owner, 2 Manager, 5 Employee]",Work: (363) 102-6231,['test']
+C00090,Rehab Hub Heal,kttp://www.rehabhubheal.com,Healthcare,Doctor,"[1 Owner, 2 Manager, 5 Employee]",Work: (539) 370-4387,['test']
+C00091,Invest Hub Hedge,kttps://www.investhubhedge.com,Finance,Hedge Fund,"[1 Owner, 2 Manager, 5 Employee]",Work: (966) 417-1955,['test']
+C00092,Institute Community,kttp://www.institutecommunity.com,Education,Community College,"[1 Owner, 2 Manager, 5 Employee]",Work: (905) 729-9475,['test']
+C00093,Rehab Wellness Clinic,kttp://www.rehabwellnessclinic.com,Healthcare,Specialized Clinics,"[1 Owner, 2 Manager, 5 Employee]",Work: (702) 867-7644,['test']
+C00094,Style Chic Productions,kttp://www.stylechicproductions.com,Entertainment,Film / TV,"[1 Owner, 2 Manager, 5 Employee]",Work: (806) 190-3416,['test']
+C00095,Art Quest Style,kttps://www.artqueststyle.com,Entertainment,Fashion / Celebrity,"[1 Owner, 2 Manager, 5 Employee]",Work: (687) 920-4866,['test']
+C00096,TasteDelight Dine,kttps://www.tastedelightdine.com,Food and Beverage,Restaurant,"[1 Owner, 2 Manager, 5 Employee]",Work: (946) 162-8286,['test']
+C00097,SoundFlicks Leisure,kttp://www.soundflicksleisure.com,Entertainment,Hobbies,"[1 Owner, 2 Manager, 5 Employee]",Work: (486) 452-0467,['test']
+C00098,Go Suppliers,kttp://www.gosuppliers.com,Automotive,Suppliers,"[1 Owner, 2 Manager, 5 Employee]",Work: (528) 546-2889,['test']
+C00099,AutoWagon Motors,kttp://www.autowagonmotors.com,Automotive,Manufacturer,"[1 Owner, 2 Manager, 5 Employee]",Work: (981) 282-0773,['test']
+C00100,Select Place Fresh,kttps://www.selectplacefresh.com,Retail,Grocery,"[1 Owner, 2 Manager, 5 Employee]",Work: (472) 391-1980,['test']
