@@ -2,7 +2,7 @@ from faker import Faker
 from pathlib import Path
 import csv
 
-from generator_utilities.load_tools import load_csv
+from utilities.load_tools import load_csv
 from classes.data_source import DataSource
 
 # from classes.phone_number import PhoneNumber, PhoneNumberTypes

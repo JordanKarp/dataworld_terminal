@@ -5,7 +5,7 @@ from pathlib import Path
 
 from generators.companyGenerator import CompanyGenerator
 
-# from generator_utilities.load_tools import load_weighted_csv
+# from utilities.load_tools import load_weighted_csv
 
 # FIRST_PASS_POP_SIZE = 5
 # MINIMUM_MARRIAGE_AGE = 18
@@ -14,7 +14,7 @@ from generators.companyGenerator import CompanyGenerator
 
 EXPORT_CSV_NAME = Path("results/TestCompanies.csv")
 
-FIRST_PASS_COMPANIES = 100
+FIRST_PASS_COMPANIES = 500
 
 
 class EconomyGenerator:
@@ -38,11 +38,13 @@ class EconomyGenerator:
     def csv_eco(self, filename=EXPORT_CSV_NAME):
         with open(filename, "w") as csvfile:
             writer = csv.writer(csvfile)
+            # header
             writer.writerow(
                 [
-                    attr
-                    for attr in self.all_companies[0].__dict__.keys()
-                    if not attr.startswith("__")
+                    k
+                    for k in self.all_companies[0].__dict__.keys()
+                    if not k.startswith("__")
                 ]
             )
+            # rows
             writer.writerows(self.all_companies)

@@ -37,21 +37,4 @@ class Company:
         return getattr(self, item, "")
 
     def __iter__(self):
-        return iter(
-            [
-                self.id,
-                self.name,
-                self.website,
-                self.industry,
-                self.sub_industry,
-                self.employee_structure,
-                self.main_phone,
-                self.social_media,
-            ]
-        )
-
-    # def add_employee(self, person: Person, role: str, team: str):
-    #     employee = Employee(
-    #         company=self, person=person, role=role, team=team, id=self.create_id()
-    #     )
-    #     self.staff.append(employee)
+        return iter([v for k, v in self.__dict__.items() if not k.startswith("__")])

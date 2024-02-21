@@ -4,7 +4,7 @@ from classes.employee import EmployeeRole, EmployeeDemand
 from classes.phone_number import PhoneNumber, PhoneNumberTypes
 
 from generator_providers.choicesProvider import ChoicesProvider
-from generator_utilities.load_tools import load_weighted_csv, load_json
+from utilities.load_tools import load_weighted_csv, load_json
 
 COMPANY_NAMES_PATH = Path("./data/company/company_names.json")
 INDUSTRY_WEIGHTS_PATH = Path("./data/company/industry_weights.csv")

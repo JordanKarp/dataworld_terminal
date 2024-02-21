@@ -6,7 +6,7 @@ from pathlib import Path
 
 from classes.phone_number import PhoneNumber
 from generator_providers.choicesProvider import ChoicesProvider
-from generator_utilities.load_tools import load_txt, load_weighted_csv, load_csv_as_dict
+from utilities.load_tools import load_txt, load_weighted_csv, load_csv_as_dict
 
 from data.person.person_averages import (
     MENS_H_MEAN,

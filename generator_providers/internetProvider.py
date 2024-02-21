@@ -1,22 +1,14 @@
-from faker import Faker
-from faker.providers import BaseProvider
 from pathlib import Path
 
 from classes.email import Email, EmailTypes
 from generator_providers.choicesProvider import ChoicesProvider
 
-
-from generator_utilities.load_tools import load_weighted_csv
+from utilities.load_tools import load_weighted_csv
 
 DOMAINS_PATH = Path("./data/internet/domains_weights.csv")
 
-# ALL_CHAR_NUM = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 
-
-class InternetProvider(BaseProvider):
-    def __post_init__(self):
-        self.generator.add_provider(ChoicesProvider)
-
+class InternetProvider(ChoicesProvider):
     domains, domain_weights = load_weighted_csv(DOMAINS_PATH)
 
     def email(self, first, last, dob):

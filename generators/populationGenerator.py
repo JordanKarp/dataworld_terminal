@@ -5,7 +5,7 @@ from datetime import date
 
 from classes.person import Person
 from generators.personGenerator import PersonGenerator
-from generator_utilities.load_tools import load_weighted_csv
+from utilities.load_tools import load_weighted_csv
 
 FIRST_PASS_POP_SIZE = 5
 MINIMUM_MARRIAGE_AGE = 18

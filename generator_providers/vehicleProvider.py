@@ -6,10 +6,10 @@ from dateutil.relativedelta import relativedelta
 
 from data.person.person_averages import YEARS_TIL_DL_EXP
 
-# from generator_utilities.random_tools import blank_or
+# from utilities.random_tools import blank_or
 from classes.vehicle import Vehicle
 from classes.drivers_license import DriversLicense
-from generator_utilities.load_tools import load_weighted_csv
+from utilities.load_tools import load_weighted_csv
 from generator_providers.choicesProvider import ChoicesProvider
 
 CAR_COLORS_PATH = Path("data/vehicle/vehicle_color_weights.csv")

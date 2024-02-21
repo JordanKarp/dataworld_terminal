@@ -15,3 +15,9 @@ class Industries(Enum):
 
     def __repr__(self):
         return self.name.replace("_", " ").title()
+
+
+# class SubIndustry(Enum):
+#     pass
+
+# class AutomotiveSubIndustry(SubIndustry):
