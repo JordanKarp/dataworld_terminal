@@ -1,11 +1,11 @@
 from datetime import date
 from dateutil.relativedelta import relativedelta
 
-import string
 from pathlib import Path
 
 from classes.phone_number import PhoneNumber
 from generator_providers.choicesProvider import ChoicesProvider
+from generator_providers.dateProvider import DateProvider
 from utilities.load_tools import load_txt, load_weighted_csv, load_csv_as_dict
 
 from data.person.person_averages import (
@@ -38,7 +38,7 @@ AGES_PATH = Path("./data/person/age_weights.csv")
 NICKNAMES_PATH = Path("./data/person/names.csv")
 
 
-class PersonalDetailsProvider(ChoicesProvider):
+class PersonalDetailsProvider(ChoicesProvider, DateProvider):
 
     hair_colors, hair_color_weights = load_weighted_csv(HAIR_COLORS_PATH)
     hair_types = load_txt(HAIR_TYPES_PATH)
@@ -72,36 +72,43 @@ class PersonalDetailsProvider(ChoicesProvider):
             name = self.generator.first_name_nonbinary()
         return self.blank_or(name, MIDDLE_NAME_PERC)
 
-    def _birthday_with_starting_dob(self, starting_dob):
-        start_year = starting_dob.year
-        return self.generator.date_between_dates(
-            date(
-                start_year - BIRTHDAY_YEAR_DELTA, starting_dob.month, starting_dob.day
-            ),
-            min(
-                date(
-                    start_year + BIRTHDAY_YEAR_DELTA,
-                    starting_dob.month,
-                    starting_dob.day,
-                ),
-                date.today(),
-            ),
-        )
+    # def _birthday_with_starting_dob(self, starting_dob):
+    #     start_year = starting_dob.year
+    #     return self.generator.date_between_dates(
+    #         date(
+    #             start_year - BIRTHDAY_YEAR_DELTA, starting_dob.month, starting_dob.day
+    #         ),
+    #         min(
+    #             date(
+    #                 start_year + BIRTHDAY_YEAR_DELTA,
+    #                 starting_dob.month,
+    #                 starting_dob.day,
+    #             ),
+    #             date.today(),
+    #         ),
+    #     )
 
-    def _birthday_without_starting_dob(self):
-        start_year = date.today().year
-        min_age, max_age = self.weighted_choice(self.ages, self.ages_weights).split("-")
-        year_delta = self.generator.random_int(int(min_age), int(max_age))
-        bd = self.generator.date_between_dates(
-            date(start_year, 1, 1), date(start_year, 12, 31)
-        )
-        return bd.replace(year=(start_year - year_delta))
+    # def _birthday_without_starting_dob(self):
+    #     start_year = date.today().year
+    #     min_age, max_age = self.weighted_choice(self.ages, self.ages_weights).split("-")
+    #     year_delta = self.generator.random_int(int(min_age), int(max_age))
+    #     bd = self.generator.date_between_dates(
+    #         date(start_year, 1, 1), date(start_year, 12, 31)
+    #     )
+    #     return bd.replace(year=(start_year - year_delta))
 
-    def birthday(self, starting_dob):
-        if starting_dob:
-            return self._birthday_with_starting_dob(starting_dob)
-        else:
-            return self._birthday_without_starting_dob()
+    def age_generation(self, generation=0):
+        return self.generator.random_int(generation * 20 + 1, (generation + 1) * 20)
+
+    def birthday_by_age(self, age):
+        year = self.generator.today().year
+        return self.generator.random_date_range(year - age - 1, year - age)
+
+    # def birthday(self, starting_dob):
+    #     if starting_dob:
+    #         return self._birthday_with_starting_dob(starting_dob)
+    #     else:
+    #         return self._birthday_without_starting_dob()
 
     def time_of_birth(self):
         return self.generator.time(pattern="%I:%M %p")
@@ -148,12 +155,6 @@ class PersonalDetailsProvider(ChoicesProvider):
 
     def phone_number(self):
         return PhoneNumber(self.generator.numerify(text="(%#%) %##-####"))
-
-    def passport_num(self):
-        return self.generator.bothify("?########", letters=string.ascii_uppercase)
-
-    def passport_issue_date(self):
-        return self.generator.date_between(date.today() - relativedelta(years=10))
 
     def nickname(self, first_name, middle_name=None):
         options = [

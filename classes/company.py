@@ -17,6 +17,7 @@ class Company:
     sub_industry: str = ""
     employee_structure: list[EmployeeDemand] = field(default_factory=list, repr=True)
     main_phone: list[str] = field(default_factory=list, repr=True)
+    founded: int = 1900
     # locations: list[Location] = field(default_factory=list, repr=True)
     social_media: list[str] = field(default_factory=list, repr=True)
     # staff: list[Employee] = field(default_factory=list, repr=True)
@@ -31,7 +32,7 @@ class Company:
     #     return "".join((abbrev, num))
 
     def __repr__(self):
-        return f"{self.name} ({self.industry}:{self.sub_industry}) - {self.website}"
+        return f"{self.name} ({self.founded}) - {self.industry}: {self.sub_industry} - {self.website}"
 
     def __getitem__(self, item):
         return getattr(self, item, "")

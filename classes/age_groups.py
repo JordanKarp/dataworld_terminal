@@ -2,14 +2,35 @@ from enum import Enum
 
 
 class AgeGroups(Enum):
-    INFANT = range(2)
-    TODDLER = range(2, 4)
-    EARLY_CHILDHOOD = range(4, 8)
-    LATE_CHILDHOOD = range(8, 11)
-    EARLY_TEEN = range(11, 15)
-    LATE_TEEN = range(15, 20)
-    EARLY_YOUNG_ADULT = range(20, 30)
-    LATE_YOUNG_ADULT = range(30, 40)
-    MIDDLE_AGE = range(40, 60)
-    SENIOR = range(60, 80)
-    LATE_SENIOR = range(80, 120)
+    INFANT = (0, 2)
+    TODDLER = (2, 4)
+    EARLY_CHILDHOOD = (4, 8)
+    LATE_CHILDHOOD = (8, 11)
+    EARLY_TEEN = (11, 15)
+    LATE_TEEN = (15, 20)
+    EARLY_YOUNG_ADULT = (20, 30)
+    LATE_YOUNG_ADULT = (30, 40)
+    MIDDLE_AGE = (40, 60)
+    SENIOR = (60, 80)
+    LATE_SENIOR = (80, 120)
+
+    def __str__(self):
+        return self.name.replace("_", " ").title()
+
+    __repr__ = __str__
+
+    def __lt__(self, other):
+        if self.__class__ is other.__class__:
+            return self.value[1] < other.value[1]
+        return NotImplemented
+
+    @staticmethod
+    def contains(age):
+        return next(
+            (
+                age_group
+                for age_group in AgeGroups
+                if age_group.value[0] <= age < age_group.value[1]
+            ),
+            None,
+        )

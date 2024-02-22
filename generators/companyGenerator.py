@@ -1,8 +1,8 @@
 from faker import Faker
-from pathlib import Path
+
+# from pathlib import Path
 
 from classes.company import Company
-from classes.phone_number import PhoneNumber, PhoneNumberTypes
 from generator_providers.companyProvider import CompanyProvider
 
 
@@ -31,6 +31,7 @@ class CompanyGenerator:
             self.gen.employee_structure(company.industry, company.sub_industry),
         )
 
+        company.founded = kwargs.get("founded", self.gen.founded())
         company.website = kwargs.get("website", self.gen.website(company.name))
         company.main_phone = kwargs.get("phone_number", self.gen.company_phone_number())
         # company.locations = ["test"]

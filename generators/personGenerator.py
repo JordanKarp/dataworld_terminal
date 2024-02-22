@@ -2,11 +2,14 @@ from faker import Faker
 from dateutil.relativedelta import relativedelta
 
 from classes.person import Person
+from classes.age_groups import AgeGroups
 from generator_providers.personalDetailsProvider import PersonalDetailsProvider
 from generator_providers.locationProvider import LocationProvider
 from generator_providers.vehicleProvider import CustomVehicleProvider
 from generator_providers.internetProvider import InternetProvider
-from generator_providers.choicesProvider import ChoicesProvider
+
+# from generator_providers.choicesProvider import ChoicesProvider
+from generator_providers.documentProvider import DocumentProvider
 
 from data.person.person_averages import (
     YEARS_TIL_PASSPORT_EXP,
@@ -24,7 +27,9 @@ class PersonGenerator:
         self.gen.add_provider(LocationProvider)
         self.gen.add_provider(CustomVehicleProvider)
         self.gen.add_provider(InternetProvider)
-        self.gen.add_provider(ChoicesProvider)
+        self.gen.add_provider(DocumentProvider)
+        # self.gen.add_provider(ChoicesProvider)
+        # self.gen.add_provider(ChoicesProvider)
 
     def new_sibling(self, original_person):
         return self.new(
@@ -63,6 +68,9 @@ class PersonGenerator:
         self.counter += 1
         person = Person(id=f"P{self.counter:05d}")
 
+        # EVERYONE #
+        ############
+
         # NAME AND GENDER
         person.gender = kwargs.get("gender", self.gen.gender())
         person.first_name = kwargs.get(
@@ -76,12 +84,22 @@ class PersonGenerator:
             "nickname", self.gen.nickname(person.first_name, person.middle_name)
         )
 
+        # TODO Change birthday to age
         # INFO
-        person.date_of_birth = self.gen.birthday(kwargs.get("date_of_birth", None))
+        generation = kwargs.get("generation", 0)
+        person.age = kwargs.get("age", self.gen.age_generation(generation))
+        # person.date_of_birth = kwargs.
+        person.date_of_birth = kwargs.get(
+            "date_of_birth", self.gen.birthday_by_age(person.age)
+        )
         person.time_of_birth = kwargs.get("time_of_birth", self.gen.time_of_birth())
         person.date_of_death = kwargs.get(
             "date_of_death", self.gen.date_of_death(person.age)
         )
+        person.ssn = kwargs.get("ssn", self.gen.ssn())
+
+        # FAMILY
+        person.siblings = kwargs.get("siblings", [])
 
         # BODY
         person.height = kwargs.get("height", self.gen.height(person.gender))
@@ -90,41 +108,50 @@ class PersonGenerator:
         person.hair_type = kwargs.get("hair_type", self.gen.hair_type())
         person.eye_color = kwargs.get("eye_color", self.gen.eye_color())
 
-        # PERSONALITY
-        person.mannerisms = kwargs.get("mannerisms", self.gen.mannerisms())
+        # CHILD #
+        #########
+        if person.age < 13:
+            return person
 
-        # LOCATIONS
-        person.home = kwargs.get("home", self.gen.home())
-
-        #
-        person.ssn = kwargs.get("ssn", self.gen.ssn())
+        # TEEN #
+        ########
+        person.phone_number = kwargs.get("phone_number", self.gen.phone_number())
         person.email = kwargs.get(
             "email",
             self.gen.email(person.first_name, person.last_name, person.date_of_birth),
         )
-        person.phone_number = kwargs.get("phone_number", self.gen.phone_number())
+        person.passport = kwargs.get("passport", self.gen.passport())
+        # person.passport_num = kwargs.get("passport_num", self.gen.passport_num())
+        # person.passport_issue_date = kwargs.get(
+        #     "passport_issue_date", self.gen.passport_issue_date()
+        # )
+        # person.passport_exp_date = kwargs.get(
+        #     "passport_exp_date",
+        #     person.passport_issue_date + relativedelta(years=YEARS_TIL_PASSPORT_EXP),
+        # )
+        # PERSONALITY
+        person.mannerisms = kwargs.get("mannerisms", self.gen.mannerisms())
         person.sexual_orientation = kwargs.get(
             "sexual_orientation", self.gen.sexual_orientation()
         )
-        person.marital_status = kwargs.get("martial_status", "Single")
 
-        person.passport_num = kwargs.get("passport_num", self.gen.passport_num())
-        person.passport_issue_date = kwargs.get(
-            "passport_issue_date", self.gen.passport_issue_date()
-        )
-        person.passport_exp_date = kwargs.get(
-            "passport_exp_date",
-            person.passport_issue_date + relativedelta(years=YEARS_TIL_PASSPORT_EXP),
-        )
-
-        # FAMILY
-        person.siblings = kwargs.get("siblings", [])
-        person.spouse = kwargs.get("spouse", None)
+        # EIGHTEEN #
+        ############
+        if person.age < 18:
+            return person
 
         # CAR
         person.vehicle = kwargs.get("vehicle", self.gen.personal_vehicle())
         person.drivers_license = kwargs.get(
             "drivers_license", self.gen.drivers_license()
         )
+        # Marriage
+        person.marital_status = kwargs.get("martial_status", "Single")
+        person.spouse = kwargs.get("spouse", None)
+
+        # ADULTS #
+        ###########
+        # LOCATIONS
+        person.home = kwargs.get("home", self.gen.home())
 
         return person

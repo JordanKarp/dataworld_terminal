@@ -23,13 +23,13 @@ class PopulationGenerator:
 
     def create(self):
         self.initial_pop()
-        self.add_spouses()
+        # self.add_spouses()
         # self.add_siblings()
         return self.population
 
     def initial_pop(self):
         for _ in range(FIRST_PASS_POP_SIZE):
-            self.population.append(self.personGen.new())
+            self.population.append(self.personGen.new(generation=6))
 
     # def add_siblings(self):
     #     sib_nums, sib_weights = load_weighted_csv(SIBLING_DATA_PATH)

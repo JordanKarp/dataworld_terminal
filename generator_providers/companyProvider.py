@@ -4,9 +4,11 @@ from classes.employee import EmployeeRole, EmployeeDemand
 from classes.phone_number import PhoneNumber, PhoneNumberTypes
 
 from generator_providers.choicesProvider import ChoicesProvider
+from generator_providers.dateProvider import DateProvider
 from utilities.load_tools import load_weighted_csv, load_json
 
 COMPANY_NAMES_PATH = Path("./data/company/company_names.json")
+COMPANY_FOUNDED_PATH = Path("./data/company/company_ages_weights.csv")
 INDUSTRY_WEIGHTS_PATH = Path("./data/company/industry_weights.csv")
 SUB_INDSTRY_WEIGHT_PATHS = {
     "AUTOMOTIVE": Path("./data/company/sub_auto_weights.csv"),
@@ -22,8 +24,9 @@ SUB_INDSTRY_WEIGHT_PATHS = {
 }
 
 
-class CompanyProvider(ChoicesProvider):
+class CompanyProvider(ChoicesProvider, DateProvider):
     names_dict = load_json(COMPANY_NAMES_PATH)
+    founded_ranges, founded_weights = load_weighted_csv(COMPANY_FOUNDED_PATH)
 
     def company_name(self, industry, sub_industry):
         ind_name_obj = self.names_dict[industry.upper()]
@@ -54,6 +57,13 @@ class CompanyProvider(ChoicesProvider):
         return PhoneNumber(
             self.generator.numerify(text="(%#%) %##-####"), PhoneNumberTypes.WORK
         )
+
+    def founded(self):
+        year_range = self.generator.weighted_choice(
+            self.founded_ranges, self.founded_weights
+        ).split("-")
+        age = self.generator.random_int(int(year_range[0]), int(year_range[1]))
+        return self.generator.today().year - age
 
     def employee_structure(self, industry, sub_industry):
         # TODO create data for which industires have which structures (including roles and teams)

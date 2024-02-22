@@ -40,10 +40,10 @@ class DataSourceGenerator:
             source.print_source()
 
     def csv_all_data_sources(self):
+        folder = Path("results/")
         for source in self.sources:
             fields = source.fields_list
-            folder = "results/"
-            filename = folder + CSV_PREFIX + source.name + ".csv"
+            filename = folder / CSV_PREFIX + source.name + ".csv"
             # writing to csv file
             with open(filename, "w") as csvfile:
                 writer = csv.writer(csvfile)
