@@ -5,13 +5,13 @@ from generators.populationGenerator import PopulationGenerator
 
 
 def main(seed=None):
-    # pg = PopulationGenerator(seed)
-    # pop = pg.create()
-    # # pg.print_pop()
-    # pg.csv_pop()
+    pg = PopulationGenerator(seed)
+    pop = pg.create()
+    # pg.print_pop()
+    pg.csv_pop()
 
-    cg = CompanyGenerator()
-    print(cg.new())
+    # cg = CompanyGenerator()
+    # print(cg.new())
 
     # eg = EconomyGenerator()
     # eg.create()

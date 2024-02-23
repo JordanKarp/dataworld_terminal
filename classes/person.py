@@ -21,7 +21,8 @@ class Person:
     nickname: str = ""
     ssn: str = "000-00-0000"
     sexual_orientation: str = "Heterosexual"
-    age: date = date(1900, 1, 1)
+    age: int = 0
+    generation: int = 0
     date_of_birth: date = date(1900, 1, 1)
     time_of_birth: str = ""
     date_of_death: Optional[date] = None
@@ -100,4 +101,4 @@ class Person:
         return f"{self.first_name}, {self.date_of_birth} "
 
     def __str__(self):
-        return f"{self.first_name} {self.last_name} - {self.age} - {self.age_group}"
+        return f"{self.first_name} {self.last_name} - {self.age} - {self.date_of_birth}"

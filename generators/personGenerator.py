@@ -86,16 +86,18 @@ class PersonGenerator:
 
         # TODO Change birthday to age
         # INFO
-        generation = kwargs.get("generation", 0)
-        person.age = kwargs.get("age", self.gen.age_generation(generation))
-        # person.date_of_birth = kwargs.
+        person.generation = kwargs.get("generation", 0)
         person.date_of_birth = kwargs.get(
-            "date_of_birth", self.gen.birthday_by_age(person.age)
+            "date_of_birth", self.gen.date_of_birth_generation(person.generation)
+        )
+        person.date_of_death = kwargs.get(
+            "date_of_death",
+            self.gen.date_of_death(person.date_of_birth, person.generation),
+        )
+        person.age = kwargs.get(
+            "age", self.gen.age(person.date_of_birth, person.date_of_death)
         )
         person.time_of_birth = kwargs.get("time_of_birth", self.gen.time_of_birth())
-        person.date_of_death = kwargs.get(
-            "date_of_death", self.gen.date_of_death(person.age)
-        )
         person.ssn = kwargs.get("ssn", self.gen.ssn())
 
         # FAMILY

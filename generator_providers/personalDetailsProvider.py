@@ -22,8 +22,9 @@ from data.person.person_averages import (
 
 BIRTHDAY_YEAR_DELTA = 10
 NICKNAME_PCT_CHANCE = 0.6
-DEATH_AGE_FACTOR = 0.85
-
+DEATH_AGE_FACTOR = 0.80
+DEATH_AGE_MEAN = 74
+DEATH_AGE_STDEV = 9
 
 HAIR_COLORS_PATH = Path("./data/person/hair_color_weights.csv")
 HAIR_TYPES_PATH = Path("./data/person/hair_types.txt")
@@ -40,16 +41,17 @@ NICKNAMES_PATH = Path("./data/person/names.csv")
 
 class PersonalDetailsProvider(ChoicesProvider, DateProvider):
 
+    genders, gender_weights = load_weighted_csv(GENDER_PATH)
+    ages, ages_weights = load_weighted_csv(AGES_PATH)
+    nicknames_dict = load_csv_as_dict(NICKNAMES_PATH)
+
     hair_colors, hair_color_weights = load_weighted_csv(HAIR_COLORS_PATH)
     hair_types = load_txt(HAIR_TYPES_PATH)
     eye_colors, eye_color_weights = load_weighted_csv(EYE_COLORS_PATH)
-    genders, gender_weights = load_weighted_csv(GENDER_PATH)
     mannerisms_options = load_txt(MANNERISMS_PATH)
     sexual_orientations, sexual_orientation_weights = load_weighted_csv(
         SEXUAL_ORIENTATION_PATH
     )
-    ages, ages_weights = load_weighted_csv(AGES_PATH)
-    nicknames_dict = load_csv_as_dict(NICKNAMES_PATH)
 
     def gender(self):
         return self.weighted_choice(self.genders, self.gender_weights)
@@ -72,68 +74,56 @@ class PersonalDetailsProvider(ChoicesProvider, DateProvider):
             name = self.generator.first_name_nonbinary()
         return self.blank_or(name, MIDDLE_NAME_PERC)
 
-    # def _birthday_with_starting_dob(self, starting_dob):
-    #     start_year = starting_dob.year
-    #     return self.generator.date_between_dates(
-    #         date(
-    #             start_year - BIRTHDAY_YEAR_DELTA, starting_dob.month, starting_dob.day
-    #         ),
-    #         min(
-    #             date(
-    #                 start_year + BIRTHDAY_YEAR_DELTA,
-    #                 starting_dob.month,
-    #                 starting_dob.day,
-    #             ),
-    #             date.today(),
-    #         ),
-    #     )
+    def age(self, date_of_birth, date_of_death=None):
+        upper_date = date_of_death or self.generator.today()
+        return (
+            upper_date.year
+            - date_of_birth.year
+            - (
+                (upper_date.month, upper_date.day)
+                < (date_of_birth.month, date_of_birth.day)
+            )
+        )
 
-    # def _birthday_without_starting_dob(self):
-    #     start_year = date.today().year
-    #     min_age, max_age = self.weighted_choice(self.ages, self.ages_weights).split("-")
-    #     year_delta = self.generator.random_int(int(min_age), int(max_age))
-    #     bd = self.generator.date_between_dates(
-    #         date(start_year, 1, 1), date(start_year, 12, 31)
-    #     )
-    #     return bd.replace(year=(start_year - year_delta))
-
-    def age_generation(self, generation=0):
-        return self.generator.random_int(generation * 20 + 1, (generation + 1) * 20)
-
-    def birthday_by_age(self, age):
-        year = self.generator.today().year
-        return self.generator.random_date_range(year - age - 1, year - age)
-
-    # def birthday(self, starting_dob):
-    #     if starting_dob:
-    #         return self._birthday_with_starting_dob(starting_dob)
-    #     else:
-    #         return self._birthday_without_starting_dob()
+    def date_of_birth_generation(self, generation=0):
+        years_ago = self.generator.random_int(
+            generation * 20 + 1, (generation + 1) * 20
+        )
+        year = self.generator.today().year - years_ago
+        return self.generator.date_between(date(year, 1, 1), date(year, 12, 31))
 
     def time_of_birth(self):
         return self.generator.time(pattern="%I:%M %p")
 
-    def date_of_death(self, age):
-        if self.generator.random_int(0, 100) < age * DEATH_AGE_FACTOR:
-            return date.today()
-        return None
+    # def is_alive(self, age):
+    #     return self.generator.random_int(0, 100) > age * DEATH_AGE_FACTOR
+
+    def date_of_death(self, date_of_birth, generation=0):
+        theoretical_age = int(self.generator.today().year - date_of_birth.year)
+        death_pct = self.generator.random_int(0, 100)
+        if death_pct > theoretical_age * DEATH_AGE_FACTOR:
+            return None
+        death_age = int(
+            self.norm_dist_rand(DEATH_AGE_MEAN - generation, DEATH_AGE_STDEV)
+        )
+        return self.generator.random_date_margin(
+            date_of_birth + relativedelta(years=death_age), 0, 1
+        )
 
     def height(self, gender):
-        if gender == "Male":
-            mean = MENS_H_MEAN
-            stdev = MENS_H_STDEV
-        else:
-            mean = WOMENS_H_MEAN
-            stdev = WOMENS_H_STDEV
+        gender_heights = {
+            "Male": (MENS_H_MEAN, MENS_H_STDEV),
+            "Female": (WOMENS_H_MEAN, WOMENS_H_STDEV),
+        }
+        mean, stdev = gender_heights.get(gender, (WOMENS_H_MEAN, WOMENS_H_STDEV))
         return round(self.generator.norm_dist_rand(mean, stdev), 1)
 
     def weight(self, gender):
-        if gender == "Male":
-            mean = MENS_W_MEAN
-            stdev = MENS_W_STDEV
-        else:
-            mean = WOMENS_W_MEAN
-            stdev = WOMENS_W_STDEV
+        gender_weights = {
+            "Male": (MENS_W_MEAN, MENS_W_STDEV),
+            "Female": (WOMENS_W_MEAN, WOMENS_W_STDEV),
+        }
+        mean, stdev = gender_weights.get(gender, (WOMENS_W_MEAN, WOMENS_W_STDEV))
         return round(self.generator.norm_dist_rand(mean, stdev), 1)
 
     def hair_color(self):

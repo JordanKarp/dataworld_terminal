@@ -23,8 +23,10 @@ class DocumentProvider(ChoicesProvider, DateProvider):
     def passport_issue_date(self):
         # FIX
         # Passport issue date any date between gametoday and 10 years prior
-        year = (self.generator.today() - relativedelta(years=10)).year
-        return self.generator.random_date_range(year)
+        today = self.generator.today()
+        year = (today - relativedelta(years=10)).year
+        # return self.generator.random_date_range(date(year, 1, 1))
+        return self.generator.date_between(date(year, 1, 1), today)
 
     def passport_exp_date(self, issue_date, passport_duration=YEARS_TIL_PASSPORT_EXP):
         return issue_date + relativedelta(years=passport_duration)
@@ -41,8 +43,10 @@ class DocumentProvider(ChoicesProvider, DateProvider):
         return self.generator.bothify("?##????#", letters=ascii_uppercase)
 
     def dl_issue_date(self):
-        year = (self.generator.today() - relativedelta(years=10)).year
-        return self.generator.random_date_range(year)
+        today = self.generator.today()
+        year = (today - relativedelta(years=10)).year
+        # return self.generator.random_date_range(date(year, today.month, today.day))
+        return self.generator.date_between(date(year, 1, 1), today)
 
     def dl_exp_date(self, issue_date):
         return issue_date + relativedelta(years=YEARS_TIL_DL_EXP)

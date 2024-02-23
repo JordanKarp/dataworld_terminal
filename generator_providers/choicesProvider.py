@@ -7,7 +7,9 @@ from collections import OrderedDict
 
 class ChoicesProvider(BaseProvider):
     def weighted_choice(self, options, weights):
-        return self.generator.random_element(OrderedDict(zip(options, weights)))
+        return self.generator.random_elements(
+            OrderedDict(zip(options, weights)), length=1, use_weighting=True
+        )[0]
 
     def norm_dist_rand(self, mean, stdev):
         return self.generator.random.normalvariate(mean, stdev)
