@@ -23,8 +23,8 @@ from data.person.person_averages import (
 BIRTHDAY_YEAR_DELTA = 10
 NICKNAME_PCT_CHANCE = 0.6
 DEATH_AGE_FACTOR = 0.80
-DEATH_AGE_MEAN = 74
-DEATH_AGE_STDEV = 9
+DEATH_AGE_MEAN = 80
+DEATH_AGE_STDEV = 10
 
 HAIR_COLORS_PATH = Path("./data/person/hair_color_weights.csv")
 HAIR_TYPES_PATH = Path("./data/person/hair_types.txt")
@@ -103,11 +103,15 @@ class PersonalDetailsProvider(ChoicesProvider, DateProvider):
         death_pct = self.generator.random_int(0, 100)
         if death_pct > theoretical_age * DEATH_AGE_FACTOR:
             return None
-        death_age = int(
-            self.norm_dist_rand(DEATH_AGE_MEAN - generation, DEATH_AGE_STDEV)
+        death_age = min(
+            theoretical_age,
+            int(self.norm_dist_rand(DEATH_AGE_MEAN - generation, DEATH_AGE_STDEV)),
         )
-        return self.generator.random_date_margin(
-            date_of_birth + relativedelta(years=death_age), 0, 1
+        return min(
+            self.generator.today(),
+            self.generator.random_date_margin(
+                date_of_birth + relativedelta(years=death_age), 0, 1
+            ),
         )
 
     def height(self, gender):

@@ -1,18 +1,13 @@
 from faker import Faker
-from dateutil.relativedelta import relativedelta
 
 from classes.person import Person
-from classes.age_groups import AgeGroups
 from generator_providers.personalDetailsProvider import PersonalDetailsProvider
 from generator_providers.locationProvider import LocationProvider
 from generator_providers.vehicleProvider import CustomVehicleProvider
 from generator_providers.internetProvider import InternetProvider
-
-# from generator_providers.choicesProvider import ChoicesProvider
 from generator_providers.documentProvider import DocumentProvider
 
 from data.person.person_averages import (
-    YEARS_TIL_PASSPORT_EXP,
     TAKE_NAME_PERCENT,
 )
 
@@ -66,7 +61,7 @@ class PersonGenerator:
 
     def new(self, **kwargs):
         self.counter += 1
-        person = Person(id=f"P{self.counter:05d}")
+        person = Person(id=f"P{self.counter:04d}")
 
         # EVERYONE #
         ############

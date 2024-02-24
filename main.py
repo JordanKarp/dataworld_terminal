@@ -1,6 +1,6 @@
 from generators.companyGenerator import CompanyGenerator
 from generators.dataSourceGenerator import DataSourceGenerator
-from generators.economyGenerator import EconomyGenerator
+from generators.economyGenerator import CompaniesGenerator
 from generators.populationGenerator import PopulationGenerator
 
 
@@ -8,15 +8,17 @@ def main(seed=None):
     pg = PopulationGenerator(seed)
     pop = pg.create()
     # pg.print_pop()
-    pg.csv_pop()
 
     # cg = CompanyGenerator()
     # print(cg.new())
 
-    # eg = EconomyGenerator()
-    # eg.create()
-    # # eg.print_eco()
-    # eg.csv_eco()
+    eg = CompaniesGenerator()
+    eg.create()
+    eg.add_employees(pop)
+    # eg.print_eco()
+    eg.csv_eco()
+
+    pg.csv_pop()
 
     # dsg = DataSourceGenerator(seed)
     # dsg.add_population(pop)

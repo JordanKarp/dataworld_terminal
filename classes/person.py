@@ -3,12 +3,16 @@ from datetime import date
 from typing import Optional
 
 from classes.email import Email
+
+# from classes.employee import EmployeeRole
 from classes.phone_number import PhoneNumber
 from classes.location import Location
 from classes.vehicle import Vehicle
 from classes.drivers_license import DriversLicense
 from classes.passport import Passport
 from classes.age_groups import AgeGroups
+
+from data.person.person_averages import WORKING_AGE
 
 
 @dataclass
@@ -41,6 +45,8 @@ class Person:
     siblings: list[str] = field(default_factory=list, repr=True)
     marital_status: str = "Single"
     spouse: Optional[str] = None
+    employer: Optional[str] = None
+    role: Optional[str] = None
 
     # _age_cache: Optional[int] = field(default=None, init=False, repr=False)
 
@@ -58,6 +64,18 @@ class Person:
     #             - ((upperDate.month, upperDate.day) < (born.month, born.day))
     #         )
     #     return self._age_cache
+
+    @property
+    def is_alive(self):
+        return not bool(self.date_of_death)
+
+    @property
+    def can_work(self):
+        return self.is_alive and self.age >= WORKING_AGE
+
+    @property
+    def is_working(self):
+        return bool(self.employer)
 
     @property
     def age_group(self):
@@ -101,4 +119,6 @@ class Person:
         return f"{self.first_name}, {self.date_of_birth} "
 
     def __str__(self):
-        return f"{self.first_name} {self.last_name} - {self.age} - {self.date_of_birth}"
+        return (
+            f"{self.first_name} {self.last_name} - {self.is_alive} - {self.is_working}"
+        )

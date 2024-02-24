@@ -1,18 +1,17 @@
 from csv import DictWriter
 from pathlib import Path
-from datetime import date
 
 
 from classes.person import Person
 from generators.personGenerator import PersonGenerator
 from utilities.load_tools import load_weighted_csv
 
-FIRST_PASS_POP_SIZE = 7
+FIRST_PASS_POP_SIZE = 100
 MINIMUM_MARRIAGE_AGE = 18
 SIBLING_DATA_PATH = Path("data/population/num_children_weights.csv")
 MARRIAGE_RATE_PATH = Path("data/population/marrage_rates_weights.csv")
 
-EXPORT_CSV_NAME = f"results/TestPopulation.csv"
+EXPORT_CSV_NAME = "results/TestPopulation.csv"
 
 
 class PopulationGenerator:
@@ -28,9 +27,8 @@ class PopulationGenerator:
         return self.population
 
     def initial_pop(self):
-        for n in range(FIRST_PASS_POP_SIZE):
-            for _ in range(FIRST_PASS_POP_SIZE):
-                self.population.append(self.personGen.new(generation=n))
+        for _ in range(FIRST_PASS_POP_SIZE):
+            self.population.append(self.personGen.new(generation=1))
 
         # self.population.append(self.personGen.new(generation=5))
 

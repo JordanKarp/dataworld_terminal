@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from classes.employee import EmployeeRole, EmployeeDemand
+from classes.employee import EmployeeRole
 from classes.phone_number import PhoneNumber, PhoneNumberTypes
 
 from generator_providers.choicesProvider import ChoicesProvider
@@ -69,9 +69,13 @@ class CompanyProvider(ChoicesProvider, DateProvider):
         # TODO create data for which industires have which structures (including roles and teams)
         # TODO load data
         # TODO Implement dad's aglo to make nesed employees
-
-        owner = EmployeeDemand(EmployeeRole("Owner"), 1)
-        mgrs = EmployeeDemand(EmployeeRole("Manager"), 2)
-        emps = EmployeeDemand(EmployeeRole(), 5)
-
-        return [owner, mgrs, emps]
+        # struct = structures_dict[industry][sub_industry]
+        struct = [
+            (1, "Owner", "General"),
+            (2, "Manager", "General"),
+            (5, "Employee", "General"),
+        ]
+        employee_list = []
+        for num, role, team in struct:
+            employee_list.extend(EmployeeRole(role, team) for _ in range(num))
+        return employee_list

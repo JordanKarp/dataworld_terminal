@@ -12,6 +12,7 @@ from generator_providers.choicesProvider import ChoicesProvider
 
 CAR_COLORS_PATH = Path("data/vehicle/vehicle_color_weights.csv")
 ALL_CHAR_NUM = ascii_uppercase + digits
+OWNS_CAR_PCT = 0.75
 
 
 class CustomVehicleProvider(ChoicesProvider):
@@ -28,6 +29,9 @@ class CustomVehicleProvider(ChoicesProvider):
         return self.gen.lexify(text="?" * 17, letters=ALL_CHAR_NUM)
 
     def personal_vehicle(self):
+        if self.gen.random_int(0, 100) > OWNS_CAR_PCT * 100:
+            return None
+
         vehicle_obj = self.gen.vehicle_object()
         year = vehicle_obj["Year"]
         make = vehicle_obj["Make"]
