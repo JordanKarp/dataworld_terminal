@@ -23,7 +23,7 @@ class CompanyGenerator:
             "sub_industry", self.gen.sub_industry(company.industry)
         )
 
-        company.name = kwargs.get(
+        company.company_name = kwargs.get(
             "name", self.gen.company_name(company.industry, company.sub_industry)
         )
         company.employee_structure = kwargs.get(
@@ -32,7 +32,7 @@ class CompanyGenerator:
         )
 
         company.founded = kwargs.get("founded", self.gen.founded())
-        company.website = kwargs.get("website", self.gen.website(company.name))
+        company.website = kwargs.get("website", self.gen.website(company.company_name))
         company.main_phone = kwargs.get("phone_number", self.gen.company_phone_number())
         # company.locations = ["test"]
         company.social_media = ["test"]

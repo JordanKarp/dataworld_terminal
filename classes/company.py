@@ -12,7 +12,7 @@ from classes.industries import Industries
 @dataclass
 class Company:
     id: str = "C00000"
-    name: str = ""
+    company_name: str = ""
     website: str = ""
     industry: Optional[Industries] = None
     sub_industry: str = ""
@@ -26,7 +26,7 @@ class Company:
 
     @property
     def abbreviation(self):
-        return "".join([n[0] for n in self.name.split(" ")])
+        return "".join([n[0] for n in self.company_name.split(" ")])
 
     @property
     def num_employees_hired(self):
@@ -51,7 +51,7 @@ class Company:
         return role
 
     def __repr__(self):
-        return f"{self.name} ({self.founded}) - {self.industry}: {self.sub_industry}"
+        return f"{self.company_name} ({self.founded}) - {self.industry}: {self.sub_industry}"
 
     def __getitem__(self, item):
         return getattr(self, item, "")

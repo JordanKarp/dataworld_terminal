@@ -23,132 +23,118 @@ class PersonGenerator:
         self.gen.add_provider(CustomVehicleProvider)
         self.gen.add_provider(InternetProvider)
         self.gen.add_provider(DocumentProvider)
-        # self.gen.add_provider(ChoicesProvider)
-        # self.gen.add_provider(ChoicesProvider)
 
-    def new_sibling(self, original_person):
+    # def new_sibling(self, original_person):
+    #     return self.new(
+    #         last_name=original_person.last_name,
+    #         date_of_birth=original_person.date_of_birth,
+    #     )
+
+    def new_child(self, parent_one, parent_two):
         return self.new(
-            last_name=original_person.last_name,
-            date_of_birth=original_person.date_of_birth,
+            last_name=parent_one.last_name,
+            generation=parent_one.generation - 1,
+            home=parent_one.home,
         )
 
     def new_spouse(self, original_person):
-        if original_person.sexual_orientation == "Homosexual":
-            new_gender = original_person.gender
-        elif original_person.sexual_orientation == "Bisexual":
-            new_gender = self.gen.random_element(["Male", "Female"])
-        else:
-            new_gender = "Female" if original_person.gender == "Male" else "Male"
-
-        if self.gen.boolean(TAKE_NAME_PERCENT * 100):
-            # if self.gen.pybool():
-            return self.new(
-                spouse=original_person,
-                last_name=original_person.last_name,
-                gender=new_gender,
-                marital_status=original_person.marital_status,
-                date_of_birth=original_person.date_of_birth,
-                home=original_person.home,
-            )
-        else:
-            return self.new(
-                spouse=original_person,
-                gender=new_gender,
-                marital_status=original_person.marital_status,
-                date_of_birth=original_person.date_of_birth,
-                home=original_person.home,
-            )
+        gender_map = {
+            "Homosexual": original_person.gender,
+            "Bisexual": self.gen.random_element(["Male", "Female"]),
+            "Heterosexual": "Female" if original_person.gender == "Male" else "Male",
+        }
+        new_gender = gender_map.get(original_person.sexual_orientation, "Male")
+        last_name = (
+            original_person.last_name
+            if self.gen.percent_check(TAKE_NAME_PERCENT)
+            else None
+        )
+        return self.new(
+            spouse=original_person,
+            last_name=last_name,
+            gender=new_gender,
+            sexual_orientation=original_person.sexual_orientation,
+            marital_status="Married",
+            generation=original_person.generation,
+            home=original_person.home,
+        )
 
     def new(self, **kwargs):
         self.counter += 1
-        person = Person(id=f"P{self.counter:04d}")
+        p = Person(id=f"P{self.counter:04d}")
 
         # EVERYONE #
         ############
 
         # NAME AND GENDER
-        person.gender = kwargs.get("gender", self.gen.gender())
-        person.first_name = kwargs.get(
-            "first_name", self.gen.first_name_gender(person.gender)
-        )
-        person.middle_name = kwargs.get(
-            "middle_name", self.gen.middle_name_gender(person.gender)
-        )
-        person.last_name = kwargs.get("last_name", self.gen.last_name())
-        person.nickname = kwargs.get(
-            "nickname", self.gen.nickname(person.first_name, person.middle_name)
+        p.gender = kwargs.get("gender", self.gen.gender())
+        p.first_name = kwargs.get("first_name", self.gen.first_name_gender(p.gender))
+        p.middle_name = kwargs.get("middle_name", self.gen.middle_name_gender(p.gender))
+        p.last_name = kwargs.get("last_name", self.gen.last_name())
+        p.nickname = kwargs.get(
+            "nickname", self.gen.nickname(p.first_name, p.middle_name)
         )
 
-        # TODO Change birthday to age
         # INFO
-        person.generation = kwargs.get("generation", 0)
-        person.date_of_birth = kwargs.get(
-            "date_of_birth", self.gen.date_of_birth_generation(person.generation)
+        p.generation = kwargs.get("generation", 0)
+        p.date_of_birth = kwargs.get(
+            "date_of_birth", self.gen.date_of_birth_generation(p.generation)
         )
-        person.date_of_death = kwargs.get(
+        p.date_of_death = kwargs.get(
             "date_of_death",
-            self.gen.date_of_death(person.date_of_birth, person.generation),
+            self.gen.date_of_death(p.date_of_birth, p.generation),
         )
-        person.age = kwargs.get(
-            "age", self.gen.age(person.date_of_birth, person.date_of_death)
-        )
-        person.time_of_birth = kwargs.get("time_of_birth", self.gen.time_of_birth())
-        person.ssn = kwargs.get("ssn", self.gen.ssn())
+        p.age = kwargs.get("age", self.gen.age(p.date_of_birth, p.date_of_death))
+        p.time_of_birth = kwargs.get("time_of_birth", self.gen.time_of_birth())
+        p.ssn = kwargs.get("ssn", self.gen.ssn())
 
         # FAMILY
-        person.siblings = kwargs.get("siblings", [])
+        p.siblings = kwargs.get("siblings", [])
+        p.children = kwargs.get("children", [])
 
         # BODY
-        person.height = kwargs.get("height", self.gen.height(person.gender))
-        person.weight = kwargs.get("weight", self.gen.weight(person.gender))
-        person.hair_color = kwargs.get("hair_color", self.gen.hair_color())
-        person.hair_type = kwargs.get("hair_type", self.gen.hair_type())
-        person.eye_color = kwargs.get("eye_color", self.gen.eye_color())
+        p.height = kwargs.get("height", self.gen.height(p.gender))
+        p.weight = kwargs.get("weight", self.gen.weight(p.gender))
+        p.hair_color = kwargs.get("hair_color", self.gen.hair_color())
+        p.hair_type = kwargs.get("hair_type", self.gen.hair_type())
+        p.eye_color = kwargs.get("eye_color", self.gen.eye_color())
 
         # CHILD #
         #########
-        if person.age < 13:
-            return person
+        if p.age < 13:
+            return p
 
         # TEEN #
         ########
-        person.phone_number = kwargs.get("phone_number", self.gen.phone_number())
-        person.email = kwargs.get(
+        p.phone_number = kwargs.get("phone_number", self.gen.phone_number())
+        p.email = kwargs.get(
             "email",
-            self.gen.email(person.first_name, person.last_name, person.date_of_birth),
+            self.gen.email(p.first_name, p.last_name, p.date_of_birth),
         )
-        person.passport = kwargs.get("passport", self.gen.passport())
-        # person.passport_num = kwargs.get("passport_num", self.gen.passport_num())
-        # person.passport_issue_date = kwargs.get(
-        #     "passport_issue_date", self.gen.passport_issue_date()
-        # )
-        # person.passport_exp_date = kwargs.get(
-        #     "passport_exp_date",
-        #     person.passport_issue_date + relativedelta(years=YEARS_TIL_PASSPORT_EXP),
-        # )
+        p.passport = kwargs.get("passport", self.gen.passport())
+
         # PERSONALITY
-        person.mannerisms = kwargs.get("mannerisms", self.gen.mannerisms())
-        person.sexual_orientation = kwargs.get(
+        p.mannerisms = kwargs.get("mannerisms", self.gen.mannerisms())
+        p.sexual_orientation = kwargs.get(
             "sexual_orientation", self.gen.sexual_orientation()
         )
 
         # EIGHTEEN #
         ############
-        if person.age < 18:
-            return person
+        if p.age < 18:
+            return p
 
         # CAR
-        person.vehicle = kwargs.get("vehicle", self.gen.personal_vehicle())
-        person.drivers_license = kwargs.get(
-            "drivers_license", self.gen.drivers_license()
-        )
+        p.vehicle = kwargs.get("vehicle", self.gen.personal_vehicle())
+        p.drivers_license = kwargs.get("drivers_license", self.gen.drivers_license())
+
         # Marriage
-        person.marital_status = kwargs.get("martial_status", "Single")
-        person.spouse = kwargs.get("spouse", None)
+        p.marital_status = kwargs.get("marital_status", "Single")
+        p.spouse = kwargs.get("spouse", None)
 
         # ADULTS #
         ###########
         # LOCATIONS
-        person.home = kwargs.get("home", self.gen.home())
+        p.home = kwargs.get("home", self.gen.home())
 
-        return person
+        return p

@@ -14,5 +14,8 @@ class ChoicesProvider(BaseProvider):
     def norm_dist_rand(self, mean, stdev):
         return self.generator.random.normalvariate(mean, stdev)
 
+    def percent_check(self, percent):
+        return self.generator.random.random() <= percent
+
     def blank_or(self, element, element_percent=0.5):
-        return element if self.generator.random.random() <= element_percent else ""
+        return element if self.percent_check(element_percent) else ""

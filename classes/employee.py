@@ -18,11 +18,13 @@ class EmployeeRole:
         return getattr(self, item, "")
 
     def __str__(self):
-        if self.person:
-            return f"{self.role_name}: {self.team_name}"
+        return f"{self.role_name}: {self.team_name}"
 
     def __repr__(self):
-        return f"{self.role_name}:{self.person.id if self.person else 0}"
+        if self.person:
+            return f"{self.role_name}:{self.person.id}"
+        else:
+            return f"{self.role_name}"
 
 
 # @dataclass

@@ -1,3 +1,4 @@
+from __future__ import annotations
 from dataclasses import dataclass, field
 from datetime import date
 from typing import Optional
@@ -12,7 +13,7 @@ from classes.drivers_license import DriversLicense
 from classes.passport import Passport
 from classes.age_groups import AgeGroups
 
-from data.person.person_averages import WORKING_AGE
+from data.person.person_averages import WORKING_AGE, MARRIAGE_AGE
 
 
 @dataclass
@@ -24,7 +25,7 @@ class Person:
     last_name: str = ""
     nickname: str = ""
     ssn: str = "000-00-0000"
-    sexual_orientation: str = "Heterosexual"
+    sexual_orientation: str = "Unknown"
     age: int = 0
     generation: int = 0
     date_of_birth: date = date(1900, 1, 1)
@@ -42,9 +43,11 @@ class Person:
     home: Optional[Location] = None
     vehicle: Optional[Vehicle] = None
     drivers_license: Optional[DriversLicense] = None
-    siblings: list[str] = field(default_factory=list, repr=True)
-    marital_status: str = "Single"
-    spouse: Optional[str] = None
+    siblings: Optional[list[str]] = None
+    marital_status: str = "Unknown"
+    spouse: Optional[Person] = None
+    children: Optional[list[Person]] = None
+
     employer: Optional[str] = None
     role: Optional[str] = None
 
@@ -119,6 +122,4 @@ class Person:
         return f"{self.first_name}, {self.date_of_birth} "
 
     def __str__(self):
-        return (
-            f"{self.first_name} {self.last_name} - {self.is_alive} - {self.is_working}"
-        )
+        return f"{self.first_name} {self.last_name} - {self.date_of_birth.year} - {self.date_of_death.year if self.date_of_death else ' '}"

@@ -1,0 +1,50 @@
+{
+  "industries": {
+    "Automotive": {
+      "industry_weight": 0.1,
+      "names_a": ["Auto", "Zoom", "City", "Drive", "Speed", "Cruise", "Go"],
+      "names_b": ["Ways", "Wagon", "Trails", "Path", ""],
+      "subindustries": {
+        "Manufacturer": {
+          "subindustry_weight": 0.05,
+          "proprietors": ["Corporation", "LLC"],
+          "scopes": ["International", "National"],
+          "employee_structures": [
+            [
+              [[5, 13], "Board of Directors", "Board"],
+              [[1, 1], "CEO", "Automotive"],
+              [[1, 1], "CFO", "Automotive"],
+              [[1, 1], "COO", "Automotive"],
+              [[1, 1], "CTO", "Automotive"],
+              [[10, 15], "VP", "Automotive"],
+              [[100, 200], "Employee", "Automotive"]
+            ],
+            [
+              [[1, 1], "President"],
+              [[10, 40], "Managers"],
+              [[100, 200], "Employee", "Automotive"]
+            ]
+          ],
+          "names_c": ["Motors", "Cars", "Autos", "Precision"]
+        },
+        "Dealership": {
+          "subindustry_weight": 0.4,
+          "names_c": []
+        },
+        "Mechanic": {
+          "subindustry_weight": 0.3,
+          "names_c": []
+        },
+        "Rental": {
+          "subindustry_weight": 0.2,
+          "names_c": []
+        },
+        "Suppliers": {
+          "subindustry_weight": 0.05,
+          "names_c": []
+        }
+      }
+    },
+    "Education": {}
+  }
+}

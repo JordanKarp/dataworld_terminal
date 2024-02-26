@@ -1,6 +1,7 @@
 from faker import Faker
 from pathlib import Path
 import csv
+from enum import Enum, auto
 
 from utilities.load_tools import load_csv
 from classes.data_source import DataSource
@@ -12,28 +13,40 @@ DATA_SOURCES = Path("./data/data_sources/sources.csv")
 CSV_PREFIX = "DS-"
 
 
+class DataSourceType(Enum):
+    PeopleSource = auto()
+    CompanySource = auto()
+    GeneralSource = auto()
+
+
 class DataSourceGenerator:
     def __init__(self, seed=None):
         self.gen = Faker()
         if seed:
             Faker.seed(seed)
-        self.sources = []
-        self.add_sources_from_csv(DATA_SOURCES)
+        self.dataSources = []
+        self.add_data_sources_from_csv(DATA_SOURCES)
 
-    def add_sources_from_csv(self, csv_file):
+    def add_data_sources_from_csv(self, csv_file):
         sources = load_csv(csv_file)
         for source in sources:
             self.add_data_source(source)
 
     def add_data_source(self, source_info):
-        source_fields = source_info[1].split(",")
-        ds = DataSource(source_info[0], source_fields)
-        self.sources.append(ds)
+        source_name = source_info[0]
+        source_type = source_info[1]
+        source_fields = source_info[2].split(",")
+        ds = DataSource(source_name, source_fields)
 
     def add_population(self, pop):
-        for source in self.sources:
+        for source in self.so:
             for person in pop:
                 source.add_entry(person)
+
+    def add_companies(self, companies):
+        for source in self.sources:
+            for comp in companies:
+                source.add_entry(comp)
 
     def print_all_data_sources(self):
         for source in self.sources:
@@ -43,9 +56,14 @@ class DataSourceGenerator:
         folder = Path("results/")
         for source in self.sources:
             fields = source.fields_list
-            filename = folder / CSV_PREFIX + source.name + ".csv"
+            filename = folder / f"{CSV_PREFIX}{source.name}.csv"
             # writing to csv file
             with open(filename, "w") as csvfile:
                 writer = csv.writer(csvfile)
                 writer.writerow(fields)
-                writer.writerows(source.data)
+                data = [
+                    row
+                    for row in source.data
+                    if not all(element.isspace() for element in row)
+                ]
+                writer.writerows(data)
