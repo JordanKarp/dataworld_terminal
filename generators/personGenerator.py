@@ -24,12 +24,6 @@ class PersonGenerator:
         self.gen.add_provider(InternetProvider)
         self.gen.add_provider(DocumentProvider)
 
-    # def new_sibling(self, original_person):
-    #     return self.new(
-    #         last_name=original_person.last_name,
-    #         date_of_birth=original_person.date_of_birth,
-    #     )
-
     def new_child(self, parent_one, parent_two):
         return self.new(
             last_name=parent_one.last_name,
@@ -37,27 +31,27 @@ class PersonGenerator:
             home=parent_one.home,
         )
 
-    def new_spouse(self, original_person):
-        gender_map = {
-            "Homosexual": original_person.gender,
-            "Bisexual": self.gen.random_element(["Male", "Female"]),
-            "Heterosexual": "Female" if original_person.gender == "Male" else "Male",
-        }
-        new_gender = gender_map.get(original_person.sexual_orientation, "Male")
-        last_name = (
-            original_person.last_name
-            if self.gen.percent_check(TAKE_NAME_PERCENT)
-            else None
-        )
-        return self.new(
-            spouse=original_person,
-            last_name=last_name,
-            gender=new_gender,
-            sexual_orientation=original_person.sexual_orientation,
-            marital_status="Married",
-            generation=original_person.generation,
-            home=original_person.home,
-        )
+    # def new_spouse(self, original_person):
+    #     gender_map = {
+    #         "Homosexual": original_person.gender,
+    #         "Bisexual": self.gen.random_element(["Male", "Female"]),
+    #         "Heterosexual": "Female" if original_person.gender == "Male" else "Male",
+    #     }
+    #     new_gender = gender_map.get(original_person.sexual_orientation, "Male")
+    #     last_name = (
+    #         original_person.last_name
+    #         if self.gen.percent_check(TAKE_NAME_PERCENT)
+    #         else None
+    #     )
+    #     return self.new(
+    #         spouse=original_person,
+    #         last_name=last_name,
+    #         gender=new_gender,
+    #         sexual_orientation=original_person.sexual_orientation,
+    #         marital_status="Married",
+    #         generation=original_person.generation,
+    #         home=original_person.home,
+    #     )
 
     def new(self, **kwargs):
         self.counter += 1
@@ -70,7 +64,7 @@ class PersonGenerator:
         p.gender = kwargs.get("gender", self.gen.gender())
         p.first_name = kwargs.get("first_name", self.gen.first_name_gender(p.gender))
         p.middle_name = kwargs.get("middle_name", self.gen.middle_name_gender(p.gender))
-        p.last_name = kwargs.get("last_name", self.gen.last_name())
+        p.last_name = self.gen.custom_last_name(kwargs.get("last_name", None))
         p.nickname = kwargs.get(
             "nickname", self.gen.nickname(p.first_name, p.middle_name)
         )
@@ -89,6 +83,7 @@ class PersonGenerator:
         p.ssn = kwargs.get("ssn", self.gen.ssn())
 
         # FAMILY
+        p.spouse = kwargs.get("spouse", None)
         p.siblings = kwargs.get("siblings", [])
         p.children = kwargs.get("children", [])
 
@@ -130,7 +125,6 @@ class PersonGenerator:
 
         # Marriage
         p.marital_status = kwargs.get("marital_status", "Single")
-        p.spouse = kwargs.get("spouse", None)
 
         # ADULTS #
         ###########

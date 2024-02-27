@@ -24,6 +24,7 @@ class Person:
     middle_name: str = ""
     last_name: str = ""
     nickname: str = ""
+
     ssn: str = "000-00-0000"
     sexual_orientation: str = "Unknown"
     age: int = 0
@@ -44,29 +45,16 @@ class Person:
     vehicle: Optional[Vehicle] = None
     drivers_license: Optional[DriversLicense] = None
     siblings: Optional[list[str]] = None
-    marital_status: str = "Unknown"
+    marital_status: Optional[str] = None
     spouse: Optional[Person] = None
+    maiden_name: Optional[str] = None
     children: Optional[list[Person]] = None
 
     employer: Optional[str] = None
     role: Optional[str] = None
 
-    # _age_cache: Optional[int] = field(default=None, init=False, repr=False)
-
     def __getitem__(self, item):
         return getattr(self, item, "")
-
-    # @property
-    # def age(self):
-    #     if self._age_cache is None:
-    #         born = self.date_of_birth
-    #         upperDate = self.date_of_death or date.today()
-    #         self._age_cache = (
-    #             upperDate.year
-    #             - born.year
-    #             - ((upperDate.month, upperDate.day) < (born.month, born.day))
-    #         )
-    #     return self._age_cache
 
     @property
     def is_alive(self):
@@ -74,7 +62,11 @@ class Person:
 
     @property
     def can_work(self):
-        return self.is_alive and self.age >= WORKING_AGE
+        return self.age >= WORKING_AGE
+
+    @property
+    def can_marry(self):
+        return self.age >= MARRIAGE_AGE and self.sexual_orientation != "Asexual"
 
     @property
     def is_working(self):
@@ -103,6 +95,16 @@ class Person:
     @property
     def gender_abbr(self):
         return self.gender[0]
+
+    @property
+    def preferred_gender(self):
+        gender_map = {
+            "Male": {"Homosexual": "Male", "Heterosexual": "Female"},
+            "Female": {"Homosexual": "Female", "Heterosexual": "Male"},
+            "Transgender": {"Homosexual": "Transgender", "Heterosexual": "Transgender"},
+            "Nonbinary": {"Homosexual": "Nonbinary", "Heterosexual": "Nonbinary"},
+        }
+        return gender_map[self.gender].get(self.sexual_orientation, "Female")
 
     @property
     def format_weight(self):

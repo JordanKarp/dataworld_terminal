@@ -6,7 +6,7 @@ from generators.populationGenerator import PopulationGenerator
 
 def main(seed=None):
     pg = PopulationGenerator(seed)
-    pop = pg.create()
+    pop = pg.create(8)
 
     cg = CompaniesGenerator()
     cg.create()
@@ -24,5 +24,5 @@ def main(seed=None):
 
 if __name__ == "__main__":
     seed = "ABC123"
-    # seed = None
+    seed = None
     main(seed)

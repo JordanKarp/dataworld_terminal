@@ -74,6 +74,9 @@ class PersonalDetailsProvider(ChoicesProvider, DateProvider):
             name = self.generator.first_name_nonbinary()
         return self.blank_or(name, MIDDLE_NAME_PERC)
 
+    def custom_last_name(self, name=None):
+        return name if name is not None else self.generator.last_name()
+
     def age(self, date_of_birth, date_of_death=None):
         upper_date = date_of_death or self.generator.today()
         return (
