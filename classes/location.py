@@ -1,5 +1,7 @@
 from dataclasses import dataclass
 from enum import Enum, auto
+from typing import Optional
+
 
 from data.location.location_defaults import STATE_ABBR_DICT
 
@@ -16,6 +18,11 @@ class HomeTypes(Enum):
     OTHER = auto()
 
 
+class BusinessTypes(Enum):
+    HQ = auto()
+    OTHER = auto()
+
+
 @dataclass
 class Location:
     street_address_1: str = "1 Default st."
@@ -25,7 +32,7 @@ class Location:
     zipcode: str = "00000"
     country: str = "United States of America"
     loc_type: LocationTypes = LocationTypes.OTHER
-    subtype: HomeTypes = HomeTypes.OTHER
+    subtype: Optional[Enum] = None
 
     @property
     def state_abbr(self):

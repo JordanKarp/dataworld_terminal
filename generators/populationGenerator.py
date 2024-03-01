@@ -6,7 +6,7 @@ from generators.personGenerator import PersonGenerator
 from utilities.load_tools import load_weighted_csv
 from data.person.person_averages import TAKE_NAME_PERCENT
 
-FIRST_PASS_POP_SIZE = 400
+FIRST_PASS_POP_SIZE = 100
 STARTING_GENERATION = 1
 MINIMUM_MARRIAGE_AGE = 18
 
@@ -115,7 +115,7 @@ class PopulationGenerator:
         return "\n".join(str(person) for person in self.population)
 
     # FIELDS IN ALPHABETICAL ORDER
-    def csv_pop(self, filename=EXPORT_CSV_NAME):
+    def population_to_csv(self, filename=EXPORT_CSV_NAME):
         fields = [
             attr
             for attr in dir(Person)

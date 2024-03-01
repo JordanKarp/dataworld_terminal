@@ -1,5 +1,7 @@
 from datetime import date
 from dateutil.relativedelta import relativedelta
+from itertools import product
+from collections import Counter
 
 from pathlib import Path
 
@@ -20,6 +22,7 @@ from data.person.person_averages import (
     MIDDLE_NAME_PERC,
 )
 
+GENERATION_DELTA = 20
 BIRTHDAY_YEAR_DELTA = 10
 NICKNAME_PCT_CHANCE = 0.6
 DEATH_AGE_FACTOR = 0.80
@@ -57,28 +60,20 @@ class PersonalDetailsProvider(ChoicesProvider, DateProvider):
         return self.weighted_choice(self.genders, self.gender_weights)
 
     def first_name_gender(self, gender):
-        if gender == "Male":
-            return self.generator.first_name_male()
-        elif gender == "Female":
-            return self.generator.first_name_female()
-        else:
-            return self.generator.first_name_nonbinary()
+        return {
+            "Male": self.generator.first_name_male,
+            "Female": self.generator.first_name_female,
+            "Nonbinary": self.generator.first_name_nonbinary,
+        }.get(gender, self.generator.first_name_nonbinary)()
 
     def middle_name_gender(self, gender):
-        name = ""
-        if gender == "Male":
-            name = self.generator.first_name_male()
-        elif gender == "Female":
-            name = self.generator.first_name_female()
-        else:
-            name = self.generator.first_name_nonbinary()
+        name = self.first_name_gender(gender)
         return self.blank_or(name, MIDDLE_NAME_PERC)
 
     def custom_last_name(self, name=None):
         return name if name is not None else self.generator.last_name()
 
-    def age(self, date_of_birth, date_of_death=None):
-        upper_date = date_of_death or self.generator.today()
+    def _calculate_age(self, date_of_birth, upper_date):
         return (
             upper_date.year
             - date_of_birth.year
@@ -88,18 +83,19 @@ class PersonalDetailsProvider(ChoicesProvider, DateProvider):
             )
         )
 
+    def age(self, date_of_birth, date_of_death=None):
+        upper_date = date_of_death or self.generator.today()
+        return self._calculate_age(date_of_birth, upper_date)
+
     def date_of_birth_generation(self, generation=0):
-        years_ago = self.generator.random_int(
-            generation * 20 + 1, (generation + 1) * 20
+        start_year = self.generator.today().year - (generation + 1) * GENERATION_DELTA
+        end_year = start_year + GENERATION_DELTA
+        return self.generator.date_between_dates(
+            date(start_year, 1, 1), date(end_year, 12, 31)
         )
-        year = self.generator.today().year - years_ago
-        return self.generator.date_between(date(year, 1, 1), date(year, 12, 31))
 
     def time_of_birth(self):
         return self.generator.time(pattern="%I:%M %p")
-
-    # def is_alive(self, age):
-    #     return self.generator.random_int(0, 100) > age * DEATH_AGE_FACTOR
 
     def date_of_death(self, date_of_birth, generation=0):
         theoretical_age = int(self.generator.today().year - date_of_birth.year)
@@ -110,11 +106,10 @@ class PersonalDetailsProvider(ChoicesProvider, DateProvider):
             theoretical_age,
             int(self.norm_dist_rand(DEATH_AGE_MEAN - generation, DEATH_AGE_STDEV)),
         )
+        death_date = date_of_birth + relativedelta(years=death_age)
         return min(
             self.generator.today(),
-            self.generator.random_date_margin(
-                date_of_birth + relativedelta(years=death_age), 0, 1
-            ),
+            self.generator.random_date_margin(death_date, 0, 1),
         )
 
     def height(self, gender):
@@ -146,6 +141,29 @@ class PersonalDetailsProvider(ChoicesProvider, DateProvider):
         return self.weighted_choice(
             self.sexual_orientations, self.sexual_orientation_weights
         )
+
+    def blood_type_allele(self, person_a=None, person_b=None):
+        if person_a is None or person_b is None:
+            return "".join(
+                self.random_element(
+                    product(["AA", "AO", "BB", "BO", "AB", "OO"], ["DD", "Dd", "dd"])
+                )
+            )
+
+        abo_options = [
+            a1 + a2
+            for a1 in person_a.blood_type_allele[:2]
+            for a2 in person_b.blood_type_allele[:2]
+        ]
+        rh_options = [
+            a1 + a2
+            for a1 in person_a.blood_type_allele[2:]
+            for a2 in person_b.blood_type_allele[2:]
+        ]
+        options = [a1 + a2 for a1 in abo_options for a2 in rh_options]
+
+        frequency_count = Counter(options)
+        return self.weighted_choice(frequency_count.keys(), frequency_count.values())
 
     def mannerisms(self):
         return self.generator.random_element(self.mannerisms_options)

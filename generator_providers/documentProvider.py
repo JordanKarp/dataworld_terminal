@@ -20,19 +20,18 @@ class DocumentProvider(ChoicesProvider, DateProvider):
     def passport_num(self):
         return self.generator.bothify("?########", letters=ascii_uppercase)
 
-    def passport_issue_date(self):
+    def passport_issue_date(self, date_of_death=None):
         # FIX
         # Passport issue date any date between gametoday and 10 years prior
-        today = self.generator.today()
-        year = (today - relativedelta(years=10)).year
-        # return self.generator.random_date_range(date(year, 1, 1))
-        return self.generator.date_between(date(year, 1, 1), today)
+        upper_date = date_of_death or self.generator.today()
+        year = (upper_date - relativedelta(years=10)).year
+        return self.generator.date_between(date(year, 1, 1), upper_date)
 
     def passport_exp_date(self, issue_date, passport_duration=YEARS_TIL_PASSPORT_EXP):
         return issue_date + relativedelta(years=passport_duration)
 
-    def passport(self):
-        issue = self.passport_issue_date()
+    def passport(self, date_of_death=None):
+        issue = self.passport_issue_date(date_of_death)
         return Passport(
             self.passport_num(),
             issue,
@@ -42,11 +41,10 @@ class DocumentProvider(ChoicesProvider, DateProvider):
     def dl_num(self):
         return self.generator.bothify("?##????#", letters=ascii_uppercase)
 
-    def dl_issue_date(self):
-        today = self.generator.today()
-        year = (today - relativedelta(years=10)).year
-        # return self.generator.random_date_range(date(year, today.month, today.day))
-        return self.generator.date_between(date(year, 1, 1), today)
+    def dl_issue_date(self, date_of_death=None):
+        upper_date = date_of_death or self.generator.today()
+        year = (upper_date - relativedelta(years=10)).year
+        return self.generator.date_between(date(year, 1, 1), upper_date)
 
     def dl_exp_date(self, issue_date):
         return issue_date + relativedelta(years=YEARS_TIL_DL_EXP)
@@ -54,8 +52,8 @@ class DocumentProvider(ChoicesProvider, DateProvider):
     def dl_restrictions(self):
         return self.weighted_choice(self.dl_rstr_list, self.dl_rstr_weights)
 
-    def drivers_license(self):
-        issue = self.dl_issue_date()
+    def drivers_license(self, date_of_death=None):
+        issue = self.dl_issue_date(date_of_death)
         return DriversLicense(
             self.dl_num(),
             issue,

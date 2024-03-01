@@ -28,6 +28,7 @@ class PersonGenerator:
         return self.new(
             last_name=parent_one.last_name,
             generation=parent_one.generation - 1,
+            blood_type=self.gen.blood_type_allele(parent_one, parent_two),
             home=parent_one.home,
         )
 
@@ -81,6 +82,7 @@ class PersonGenerator:
         p.age = kwargs.get("age", self.gen.age(p.date_of_birth, p.date_of_death))
         p.time_of_birth = kwargs.get("time_of_birth", self.gen.time_of_birth())
         p.ssn = kwargs.get("ssn", self.gen.ssn())
+        p.blood_type_allele = kwargs.get("blood_type", self.gen.blood_type_allele())
 
         # FAMILY
         p.spouse = kwargs.get("spouse", None)
@@ -106,13 +108,15 @@ class PersonGenerator:
             "email",
             self.gen.email(p.first_name, p.last_name, p.date_of_birth),
         )
-        p.passport = kwargs.get("passport", self.gen.passport())
+        p.passport = kwargs.get("passport", self.gen.passport(p.date_of_death))
 
         # PERSONALITY
         p.mannerisms = kwargs.get("mannerisms", self.gen.mannerisms())
         p.sexual_orientation = kwargs.get(
             "sexual_orientation", self.gen.sexual_orientation()
         )
+
+        p.patron_of = kwargs.get("patron_of", [])
 
         # EIGHTEEN #
         ############
@@ -121,7 +125,9 @@ class PersonGenerator:
 
         # CAR
         p.vehicle = kwargs.get("vehicle", self.gen.personal_vehicle())
-        p.drivers_license = kwargs.get("drivers_license", self.gen.drivers_license())
+        p.drivers_license = kwargs.get(
+            "drivers_license", self.gen.drivers_license(p.date_of_death)
+        )
 
         # Marriage
         p.marital_status = kwargs.get("marital_status", "Single")

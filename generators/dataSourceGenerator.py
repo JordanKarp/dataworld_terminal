@@ -13,12 +13,6 @@ DATA_SOURCES = Path("./data/data_sources/sources.csv")
 CSV_PREFIX = "DS-"
 
 
-class DataSourceType(Enum):
-    PeopleSource = auto()
-    CompanySource = auto()
-    GeneralSource = auto()
-
-
 class DataSourceGenerator:
     def __init__(self, seed=None):
         self.gen = Faker()
@@ -30,31 +24,28 @@ class DataSourceGenerator:
     def add_data_sources_from_csv(self, csv_file):
         sources = load_csv(csv_file)
         for source in sources:
-            self.add_data_source(source)
-
-    def add_data_source(self, source_info):
-        source_name = source_info[0]
-        source_type = source_info[1]
-        source_fields = source_info[2].split(",")
-        ds = DataSource(source_name, source_fields)
+            source_name = source[0]
+            source_type = source[1]
+            source_fields = source[2].split(",")
+            ds = DataSource(source_name, source_fields)
 
     def add_population(self, pop):
-        for source in self.so:
+        for source in self.dataSources:
             for person in pop:
                 source.add_entry(person)
 
     def add_companies(self, companies):
-        for source in self.sources:
+        for source in self.dataSources:
             for comp in companies:
                 source.add_entry(comp)
 
     def print_all_data_sources(self):
-        for source in self.sources:
+        for source in self.dataSources:
             source.print_source()
 
     def csv_all_data_sources(self):
         folder = Path("results/")
-        for source in self.sources:
+        for source in self.dataSources:
             fields = source.fields_list
             filename = folder / f"{CSV_PREFIX}{source.name}.csv"
             # writing to csv file

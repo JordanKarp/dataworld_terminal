@@ -37,6 +37,7 @@ class Person:
     eye_color: str = ""
     height: float = 60.0
     weight: float = 100.0
+    blood_type_allele: str = ""
     mannerisms: str = ""
     passport: Optional[Passport] = None
     phone_number: Optional[PhoneNumber] = None
@@ -52,6 +53,7 @@ class Person:
 
     employer: Optional[str] = None
     role: Optional[str] = None
+    patron_of: Optional[list[str]] = None
 
     def __getitem__(self, item):
         return getattr(self, item, "")
@@ -74,7 +76,8 @@ class Person:
 
     @property
     def age_group(self):
-        return AgeGroups.contains(round(self.age))
+        group = AgeGroups.contains(round(self.age))
+        return f"{group} (Deceased)" if self.date_of_death else group
 
     @property
     def full_name(self):
@@ -98,13 +101,12 @@ class Person:
 
     @property
     def preferred_gender(self):
-        gender_map = {
-            "Male": {"Homosexual": "Male", "Heterosexual": "Female"},
-            "Female": {"Homosexual": "Female", "Heterosexual": "Male"},
-            "Transgender": {"Homosexual": "Transgender", "Heterosexual": "Transgender"},
-            "Nonbinary": {"Homosexual": "Nonbinary", "Heterosexual": "Nonbinary"},
-        }
-        return gender_map[self.gender].get(self.sexual_orientation, "Female")
+        if self.gender in ["Transgender", "Nonbinary"]:
+            return self.gender
+        if self.gender == "Male":
+            return "Male" if self.sexual_orientation == "Homosexual" else "Female"
+        if self.gender == "Female":
+            return "Female" if self.sexual_orientation == "Homosexual" else "Male"
 
     @property
     def format_weight(self):
@@ -116,12 +118,18 @@ class Person:
         return f"{int(ft)}' " + f'{round(inch)}"'
 
     @property
-    def vehicle_details(self):
-        if self.vehicle:
-            return self.vehicle.vehicle_fields
+    def years_lived(self):
+        return f"{self.date_of_birth.year} - {self.date_of_death.year if self.date_of_death else ' '}"
+
+    @property
+    def blood_type(self):
+        _abo, _rh = self.blood_type_allele[:2], self.blood_type_allele[2:]
+        abo = _abo if _abo == "AB" else _abo[0]
+        rh = "-" if _rh == "dd" else "+"
+        return f"{abo}{rh}"
 
     def __repr__(self):
-        return f"{self.first_name}, {self.date_of_birth} "
+        return self.id
 
     def __str__(self):
-        return f"{self.first_name} {self.last_name} - {self.date_of_birth.year} - {self.date_of_death.year if self.date_of_death else ' '}"
+        return f"{self.full_name} ({self.years_lived})"

@@ -2,8 +2,9 @@ from dataclasses import dataclass, field
 from typing import Optional
 from random import choice
 
-# from classes.location import Location
+from classes.location import Location
 from classes.employee import EmployeeRole
+from classes.person import Person
 from classes.industries import Industries
 
 # from classes.person import Person
@@ -19,10 +20,12 @@ class Company:
     employee_structure: list[EmployeeRole] = field(default_factory=list, repr=True)
     main_phone: list[str] = field(default_factory=list, repr=True)
     founded: int = 1900
-    # locations: list[Location] = field(default_factory=list, repr=True)
     social_media: list[str] = field(default_factory=list, repr=True)
+    client_scope: str = "International"
+    clients: list[Person] = field(default_factory=list, repr=True)
+    locations: list[Location] = field(default_factory=list, repr=True)
+    market_share: Optional[float] = 0.25
     # data: list[str] = field(default_factory=list, repr=True)
-    # counter: int = field(default=1, repr=False)
 
     @property
     def abbreviation(self):
@@ -44,11 +47,22 @@ class Company:
     def employee_nums(self):
         return f"{self.num_employees_hired} / {self.num_employees_needed}"
 
+    @property
+    def num_clients(self):
+        return len(self.clients)
+
     def add_employee(self, person):
         available_roles = [r for r in self.employee_structure if not r.is_filled]
         role = choice(available_roles)
         role.person = person
         return role
+
+    def add_client(self, person):
+        # add more client info like persons id number, etc here.
+        person.patron_of = getattr(person, "patron_of", [])
+        person.patron_of.append(self)
+
+        self.clients.append(person)
 
     def __repr__(self):
         return f"{self.company_name} ({self.founded}) - {self.industry}: {self.sub_industry}"

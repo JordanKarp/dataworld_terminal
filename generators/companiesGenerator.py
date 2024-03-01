@@ -7,7 +7,7 @@ from generators.companyGenerator import CompanyGenerator
 
 EXPORT_CSV_NAME = Path("results/TestCompanies.csv")
 
-FIRST_PASS_COMPANIES = 10
+FIRST_PASS_COMPANIES = 80
 EMPLOYED_PERCENT = 0.85
 
 
@@ -45,21 +45,54 @@ class CompaniesGenerator:
                 person.role = "Unemployed"
         return self.all_companies
 
-    def print_eco(self):
+    def add_clients(self):
+        potential_clients = [p for p in self.population if p.can_work]  # and p.is_alive
+        for company in self.all_companies:
+            scopes = {
+                "National": potential_clients,
+                "Online": potential_clients,
+                # "Regional": [
+                #     p
+                #     for p in potential_clients
+                #     if p.home.zipcode.startswith(str(company.locations.zipcode)[0])
+                # ],
+                # "Local": [
+                #     p
+                #     for p in potential_clients
+                #     if p.home.state == company.locations.state
+                # ],
+                "Female": [p for p in potential_clients if p.gender == "Female"],
+                "Male": [p for p in potential_clients if p.gender == "Male"],
+            }
+            for person in scopes[company.client_scope]:
+                if self.companyGen.gen.percent_check(company.market_share):
+                    company.add_client(person)
+
+    def companies_to_print(self):
         for company in self.all_companies:
             print(company)
 
-    def csv_eco(self, filename=EXPORT_CSV_NAME):
+    def comanies_to_csv(self, filename=EXPORT_CSV_NAME):
         if self.all_companies:
             with open(filename, "w") as csvfile:
-                writer = csv.writer(csvfile)
-                # header
-                writer.writerow(
-                    [
-                        k
-                        for k in self.all_companies[0].__dict__.keys()
-                        if not k.startswith("__")
-                    ]
+                writer = csv.DictWriter(
+                    csvfile, fieldnames=self.all_companies[0].__dict__.keys()
                 )
-                # rows
-                writer.writerows(self.all_companies)
+                writer.writeheader()
+                for company in self.all_companies:
+                    writer.writerow(company.__dict__)
+
+    # def csv_eco(self, filename=EXPORT_CSV_NAME):
+    #     if self.all_companies:
+    #         with open(filename, "w") as csvfile:
+    #             writer = csv.writer(csvfile)
+    #             # header
+    #             writer.writerow(
+    #                 [
+    #                     k
+    #                     for k in self.all_companies[0].__dict__.keys()
+    #                     if not k.startswith("__")
+    #                 ]
+    #             )
+    #             # rows
+    #             writer.writerows(self.all_companies)

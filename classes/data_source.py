@@ -1,4 +1,18 @@
 import uuid
+from enum import Enum, auto
+
+class DataSourceTemplate:
+    def __init__(self, ds_type, ds_file):
+        self.ds_type = ds_type
+        self.ds_file = ds_file
+
+class DataSourceType(Enum):
+    PeopleSource = auto()
+    CompanySource = auto()
+    GeneralSource = auto()
+
+
+
 
 
 class DataSource:

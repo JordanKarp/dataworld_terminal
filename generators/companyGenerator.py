@@ -4,6 +4,7 @@ from faker import Faker
 
 from classes.company import Company
 from generator_providers.companyProvider import CompanyProvider
+from generator_providers.locationProvider import LocationProvider
 
 
 class CompanyGenerator:
@@ -12,6 +13,7 @@ class CompanyGenerator:
         if seed:
             Faker.seed(seed)
         self.gen.add_provider(CompanyProvider)
+        self.gen.add_provider(LocationProvider)
         self.id_counter = 0
 
     def new(self, **kwargs):
@@ -34,9 +36,19 @@ class CompanyGenerator:
         company.founded = kwargs.get("founded", self.gen.founded())
         company.website = kwargs.get("website", self.gen.website(company.company_name))
         company.main_phone = kwargs.get("phone_number", self.gen.company_phone_number())
-        # company.locations = ["test"]
-        company.social_media = ["test"]
-        # company.staff = ["test"]
+        company.client_scope = kwargs.get(
+            "cliet_scope", self.gen.client_scope(company.industry, company.sub_industry)
+        )
+        # company.social_media = ["test"]
+        company.locations = kwargs.get(
+            "locations",
+            self.gen.company_locations(),
+        )
+        company.market_share = kwargs.get(
+            "market_share",
+            self.gen.market_share(company.industry, company.sub_industry),
+        )
+
         # company.data = ["company_directory.txt"]
 
         return company

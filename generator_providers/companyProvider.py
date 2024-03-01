@@ -49,8 +49,8 @@ class CompanyProvider(ChoicesProvider, DateProvider):
         return self.weighted_choice(sub_ind, sub_ind_weights)
 
     def website(self, company_name, domain_suff="com"):
-        secure = "s" if self.generator.pybool() is True else ""
-        name_str = "".join(company_name.split(" "))
+        secure = "s" if self.generator.pybool() else ""
+        name_str = company_name.replace(" ", "")
         return f"kttp{secure}://www.{name_str.lower()}.{domain_suff}"
 
     def company_phone_number(self):
@@ -62,7 +62,9 @@ class CompanyProvider(ChoicesProvider, DateProvider):
         year_range = self.generator.weighted_choice(
             self.founded_ranges, self.founded_weights
         ).split("-")
-        age = self.generator.random_int(int(year_range[0]), int(year_range[1]))
+        start_year, end_year = map(int, year_range)
+
+        age = self.generator.random_int(start_year, end_year)
         return self.generator.today().year - age
 
     def employee_structure(self, industry, sub_industry):
@@ -79,3 +81,12 @@ class CompanyProvider(ChoicesProvider, DateProvider):
         for num, role, team in struct:
             employee_list.extend(EmployeeRole(role, team) for _ in range(num))
         return employee_list
+
+    def client_scope(self, industry, sub_industry):
+        return "National"
+
+    def market_share(self, industry, sub_industry):
+        return 0.5
+
+    def company_locations(self, industry, sub_industry):
+        return "National"
