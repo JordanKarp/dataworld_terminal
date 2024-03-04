@@ -45,7 +45,7 @@ class LocationProvider(BaseProvider):
             street_address_1, street_address_2, city, state_abbr, loc_type, subtype
         )
 
-    def company_locations(self):
+    def company_hq(self):
         state_abbr = self.generator.state_abbr()
         addr = self.generator.street_address()
         street_address_1, _ = self._parse_address(addr)
@@ -55,3 +55,14 @@ class LocationProvider(BaseProvider):
         return self._create_location(
             street_address_1, "", city, state_abbr, loc_type, subtype
         )
+
+    # def company_locations(self):
+    #     state_abbr = self.generator.state_abbr()
+    #     addr = self.generator.street_address()
+    #     street_address_1, _ = self._parse_address(addr)
+    #     city = self.generator.city()
+    #     loc_type = LocationTypes.BUSINESS
+    #     subtype = BusinessTypes.HQ
+    #     return self._create_location(
+    #         street_address_1, "", city, state_abbr, loc_type, subtype
+    #     )

@@ -13,13 +13,13 @@ def main(seed=None):
     cg.load_population(pop)
     cg.add_employees()
     cg.add_clients()
+    comps = cg.return_companies()
 
-    # dsg = DataSourceGenerator(seed)
-    # dsg.add_population(pop)
-    # dsg.add_companies(comps)
+    dsg = DataSourceGenerator(pop, comps, seed)
 
     cg.comanies_to_csv()
     pg.population_to_csv()
+    dsg.generate_data_source_lists()
     # dsg.csv_all_data_sources()
 
 

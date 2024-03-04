@@ -34,9 +34,9 @@ HAIR_TYPES_PATH = Path("./data/person/hair_types.txt")
 EYE_COLORS_PATH = Path("./data/person/eye_color_weights.csv")
 GENDER_PATH = Path("./data/person/gender_weights.csv")
 SEXUAL_ORIENTATION_PATH = Path("./data/person/sexual_orientation_weights.csv")
-# POSITIVE_TRAITS_PATH = Path("./data/person/positive_traits.txt")
-# NEUTRAL_TRAITS_PATH = Path("./data/person/neutral_traits.txt")
-# NEGATIVE_TRAITS_PATH = Path("./data/person/negative_traits.txt")
+POSITIVE_TRAITS_PATH = Path("./data/person/positive_traits.txt")
+NEUTRAL_TRAITS_PATH = Path("./data/person/neutral_traits.txt")
+NEGATIVE_TRAITS_PATH = Path("./data/person/negative_traits.txt")
 MANNERISMS_PATH = Path("./data/person/mannerisms.txt")
 AGES_PATH = Path("./data/person/age_weights.csv")
 NICKNAMES_PATH = Path("./data/person/names.csv")
@@ -102,10 +102,14 @@ class PersonalDetailsProvider(ChoicesProvider, DateProvider):
         death_pct = self.generator.random_int(0, 100)
         if death_pct > theoretical_age * DEATH_AGE_FACTOR:
             return None
-        death_age = min(
-            theoretical_age,
-            int(self.norm_dist_rand(DEATH_AGE_MEAN - generation, DEATH_AGE_STDEV)),
+        death_age = max(
+            0,
+            min(
+                theoretical_age,
+                int(self.norm_dist_rand(DEATH_AGE_MEAN - generation, DEATH_AGE_STDEV)),
+            ),
         )
+
         death_date = date_of_birth + relativedelta(years=death_age)
         return min(
             self.generator.today(),
@@ -150,19 +154,19 @@ class PersonalDetailsProvider(ChoicesProvider, DateProvider):
                 )
             )
 
-        abo_options = [
-            a1 + a2
-            for a1 in person_a.blood_type_allele[:2]
-            for a2 in person_b.blood_type_allele[:2]
-        ]
-        rh_options = [
-            a1 + a2
-            for a1 in person_a.blood_type_allele[2:]
-            for a2 in person_b.blood_type_allele[2:]
-        ]
+        abo_options = (
+            person_a.blood_type_allele[0] + person_b.blood_type_allele[0],
+            person_a.blood_type_allele[1] + person_b.blood_type_allele[1],
+        )
+        rh_options = (
+            person_a.blood_type_allele[2] + person_b.blood_type_allele[2],
+            person_a.blood_type_allele[3] + person_b.blood_type_allele[3],
+        )
         options = [a1 + a2 for a1 in abo_options for a2 in rh_options]
 
-        frequency_count = Counter(options)
+        frequency_count = {}
+        for option in options:
+            frequency_count[option] = frequency_count.get(option, 0) + 1
         return self.weighted_choice(frequency_count.keys(), frequency_count.values())
 
     def mannerisms(self):

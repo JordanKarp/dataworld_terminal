@@ -45,28 +45,32 @@ class CompaniesGenerator:
                 person.role = "Unemployed"
         return self.all_companies
 
+    def _get_scopes(self, potential_clients, company):
+        local_cond = lambda p: p.home and p.home.state == company.hq.state
+        regional_cond = lambda p: p.home and p.home.zipcode[0] == company.hq.zipcode[0]
+        gender_cond = lambda gender: [
+            p for p in potential_clients if p.gender == gender
+        ]
+
+        return {
+            "National": potential_clients,
+            "Online": potential_clients,
+            "Regional": [p for p in potential_clients if regional_cond(p)],
+            "Local": [p for p in potential_clients if local_cond(p)],
+            "Female": gender_cond("Female"),
+            "Male": gender_cond("Male"),
+        }
+
     def add_clients(self):
-        potential_clients = [p for p in self.population if p.can_work]  # and p.is_alive
+        potential_clients = [p for p in self.population if p.can_work]
         for company in self.all_companies:
-            scopes = {
-                "National": potential_clients,
-                "Online": potential_clients,
-                # "Regional": [
-                #     p
-                #     for p in potential_clients
-                #     if p.home.zipcode.startswith(str(company.locations.zipcode)[0])
-                # ],
-                # "Local": [
-                #     p
-                #     for p in potential_clients
-                #     if p.home.state == company.locations.state
-                # ],
-                "Female": [p for p in potential_clients if p.gender == "Female"],
-                "Male": [p for p in potential_clients if p.gender == "Male"],
-            }
+            scopes = self._get_scopes(potential_clients, company)
             for person in scopes[company.client_scope]:
                 if self.companyGen.gen.percent_check(company.market_share):
                     company.add_client(person)
+
+    def return_companies(self):
+        return self.all_companies
 
     def companies_to_print(self):
         for company in self.all_companies:

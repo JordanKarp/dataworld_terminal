@@ -1,4 +1,6 @@
 from faker import Faker
+import uuid
+
 
 from classes.person import Person
 from generator_providers.personalDetailsProvider import PersonalDetailsProvider
@@ -7,17 +9,12 @@ from generator_providers.vehicleProvider import CustomVehicleProvider
 from generator_providers.internetProvider import InternetProvider
 from generator_providers.documentProvider import DocumentProvider
 
-from data.person.person_averages import (
-    TAKE_NAME_PERCENT,
-)
-
 
 class PersonGenerator:
     def __init__(self, seed=None):
         self.gen = Faker()
         if seed:
             Faker.seed(seed)
-        self.counter = 0
         self.gen.add_provider(PersonalDetailsProvider)
         self.gen.add_provider(LocationProvider)
         self.gen.add_provider(CustomVehicleProvider)
@@ -29,34 +26,11 @@ class PersonGenerator:
             last_name=parent_one.last_name,
             generation=parent_one.generation - 1,
             blood_type=self.gen.blood_type_allele(parent_one, parent_two),
-            home=parent_one.home,
+            # home=parent_one.home,
         )
 
-    # def new_spouse(self, original_person):
-    #     gender_map = {
-    #         "Homosexual": original_person.gender,
-    #         "Bisexual": self.gen.random_element(["Male", "Female"]),
-    #         "Heterosexual": "Female" if original_person.gender == "Male" else "Male",
-    #     }
-    #     new_gender = gender_map.get(original_person.sexual_orientation, "Male")
-    #     last_name = (
-    #         original_person.last_name
-    #         if self.gen.percent_check(TAKE_NAME_PERCENT)
-    #         else None
-    #     )
-    #     return self.new(
-    #         spouse=original_person,
-    #         last_name=last_name,
-    #         gender=new_gender,
-    #         sexual_orientation=original_person.sexual_orientation,
-    #         marital_status="Married",
-    #         generation=original_person.generation,
-    #         home=original_person.home,
-    #     )
-
     def new(self, **kwargs):
-        self.counter += 1
-        p = Person(id=f"P{self.counter:04d}")
+        p = Person(id=f"P{str(uuid.uuid4())[:4]}")
 
         # EVERYONE #
         ############

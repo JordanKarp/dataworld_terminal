@@ -109,6 +109,10 @@ class Person:
             return "Female" if self.sexual_orientation == "Homosexual" else "Male"
 
     @property
+    def body_mass_index(self):
+        return round((self.weight / (self.height * self.height)) * 703, 1)
+
+    @property
     def format_weight(self):
         return f"{round(self.weight)} lbs"
 

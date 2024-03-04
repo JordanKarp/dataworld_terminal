@@ -23,6 +23,7 @@ class Company:
     social_media: list[str] = field(default_factory=list, repr=True)
     client_scope: str = "International"
     clients: list[Person] = field(default_factory=list, repr=True)
+    hq: Optional[Location] = None
     locations: list[Location] = field(default_factory=list, repr=True)
     market_share: Optional[float] = 0.25
     # data: list[str] = field(default_factory=list, repr=True)
@@ -53,6 +54,8 @@ class Company:
 
     def add_employee(self, person):
         available_roles = [r for r in self.employee_structure if not r.is_filled]
+        if not available_roles:
+            return None  # Handle the case where there are no available roles
         role = choice(available_roles)
         role.person = person
         return role
@@ -71,4 +74,4 @@ class Company:
         return getattr(self, item, "")
 
     def __iter__(self):
-        return iter([v for k, v in self.__dict__.items() if not k.startswith("__")])
+        return iter(self.__dict__.values())

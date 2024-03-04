@@ -29,22 +29,129 @@
         },
         "Dealership": {
           "subindustry_weight": 0.4,
-          "names_c": []
+          "proprietors": ["Corporation", "LLC"],
+          "scopes": ["International", "National", "Regional"],
+          "employee_structures": [
+            [
+              [[3, 4], "Board of Directors", "Board"],
+              [[1, 1], "President", "Automotive"],
+              [[1, 1], "VP", "Sales"],
+              [[1, 1], "VP", "Parts"],
+              [[1, 1], "VP", "Service"],
+              [[1, 1], "VP", "Operations"],
+              [[1, 3], "Managers", "Sales"],
+              [[1, 3], "Managers", "Parts"],
+              [[1, 3], "Managers", "Service"],
+              [[1, 3], "Managers", "Operations"],
+              [[5, 25], "Employee", "Sales"],
+              [[5, 25], "Employee", "Parts"],
+              [[5, 25], "Employee", "Service"],
+              [[5, 25], "Employee", "Operations"]
+            ]
+          ],
+          "names_c": ["R Us", "Dealer", "Dealership", "Autos"]
         },
         "Mechanic": {
           "subindustry_weight": 0.3,
-          "names_c": []
+          "proprietors": ["Corporation", "LLC"],
+          "scopes": ["Regional", "Local"],
+          "employee_structures": [
+            [
+              [[1, 1], "Owner", "Automotive"],
+              [[1, 3], "Managers", "Automotive"],
+              [[5, 15], "Mechanic", "Automotive"]
+            ],
+            [
+              [[1, 1], "Owner", "Automotive"],
+              [[1, 1], "Department Head", "Sales"],
+              [[1, 1], "Department Head", "Automotive"],
+              [[1, 1], "Department Head", "Operations"],
+              [[5, 15], "Employee", "Sales"],
+              [[5, 15], "Employee", "Automotive"],
+              [[5, 15], "Employee", "Operations"]
+            ]
+          ],
+          "names_c": ["Repair", "Shop"]
         },
         "Rental": {
           "subindustry_weight": 0.2,
-          "names_c": []
+          "proprietors": ["Corporation", "LLC"],
+          "scopes": ["International", "National"],
+          "employee_structures": [],
+          "names_c": ["Rentals", "Travel Cars", "To Go"]
         },
         "Suppliers": {
           "subindustry_weight": 0.05,
-          "names_c": []
+          "proprietors": ["Corporation", "LLC"],
+          "scopes": ["International", "National"],
+          "employee_structures": [],
+          "names_c": ["Parts", "Suppliers", "Automotive"]
         }
       }
     },
-    "Education": {}
+    "Education": {
+      "industry_weight": 0.1,
+      "names_a": [
+        "Learn",
+        "Educate",
+        "Knowledge",
+        "Study",
+        "School",
+        "Academy"
+      ],
+      "names_b": ["Hub", "Center", "Place", "Campus", "Institution", ""],
+      "subindustries": {
+        "Manufacturer": {
+          "subindustry_weight": 0.05,
+          "proprietors": ["Corporation", "LLC"],
+          "scopes": ["International", "National"],
+          "employee_structures": [
+            [
+              [[5, 13], "Board of Directors", "Board"],
+              [[1, 1], "CEO", "Automotive"],
+              [[1, 1], "CFO", "Automotive"],
+              [[1, 1], "COO", "Automotive"],
+              [[1, 1], "CTO", "Automotive"],
+              [[10, 15], "VP", "Automotive"],
+              [[100, 200], "Employee", "Automotive"]
+            ],
+            [
+              [[1, 1], "President"],
+              [[10, 40], "Managers"],
+              [[100, 200], "Employee", "Automotive"]
+            ]
+          ],
+          "names_c": ["Motors", "Cars", "Autos", "Precision"]
+        },
+        "Dealership": {
+          "subindustry_weight": 0.4,
+          "proprietors": ["Corporation", "LLC"],
+          "scopes": ["International", "National"],
+          "employee_structures": [],
+          "names_c": ["R Us", "Dealer", "Dealership", "Autos"]
+        },
+        "Mechanic": {
+          "subindustry_weight": 0.3,
+          "proprietors": ["Corporation", "LLC"],
+          "scopes": ["International", "National"],
+          "employee_structures": [],
+          "names_c": ["Repair", "Shop"]
+        },
+        "Rental": {
+          "subindustry_weight": 0.2,
+          "proprietors": ["Corporation", "LLC"],
+          "scopes": ["International", "National"],
+          "employee_structures": [],
+          "names_c": ["Rentals", "Travel Cars", "To Go"]
+        },
+        "Suppliers": {
+          "subindustry_weight": 0.05,
+          "proprietors": ["Corporation", "LLC"],
+          "scopes": ["International", "National"],
+          "employee_structures": [],
+          "names_c": ["Parts", "Suppliers", "Automotive"]
+        }
+      }
+    }
   }
 }

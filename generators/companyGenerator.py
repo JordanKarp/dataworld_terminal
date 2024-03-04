@@ -40,10 +40,11 @@ class CompanyGenerator:
             "cliet_scope", self.gen.client_scope(company.industry, company.sub_industry)
         )
         # company.social_media = ["test"]
-        company.locations = kwargs.get(
-            "locations",
-            self.gen.company_locations(),
-        )
+        # company.locations = kwargs.get(
+        #     "locations",
+        #     self.gen.company_locations(),
+        # )
+        company.hq = kwargs.get("hq", self.gen.company_hq())
         company.market_share = kwargs.get(
             "market_share",
             self.gen.market_share(company.industry, company.sub_industry),

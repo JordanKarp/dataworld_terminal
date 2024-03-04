@@ -40,10 +40,8 @@ class Location:
 
     @property
     def address(self):
-        if self.street_address_2:
-            return f"{self.street_address_1} - {self.street_address_2}, {self.city}, {self.state_abbr} - {self.zipcode}"
-        else:
-            return f"{self.street_address_1}, {self.city}, {self.state_abbr} - {self.zipcode}"
+        address_2 = f" - {self.street_address_2}" if self.street_address_2 else ""
+        return f"{self.street_address_1}{address_2}, {self.city}, {self.state_abbr} - {self.zipcode}"
 
     def __getitem__(self, item):
         return getattr(self, item, "")

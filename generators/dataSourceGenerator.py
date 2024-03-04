@@ -14,37 +14,56 @@ CSV_PREFIX = "DS-"
 
 
 class DataSourceGenerator:
-    def __init__(self, seed=None):
+    def __init__(self, pop, comp, seed=None):
         self.gen = Faker()
         if seed:
             Faker.seed(seed)
         self.dataSources = []
-        self.add_data_sources_from_csv(DATA_SOURCES)
+        self.population = pop
+        self.companies = comp
+        self.load_data_sources_from_csv(DATA_SOURCES)
+        self.add_company_directories()
 
-    def add_data_sources_from_csv(self, csv_file):
+    def load_data_sources_from_csv(self, csv_file):
         sources = load_csv(csv_file)
         for source in sources:
             source_name = source[0]
-            source_type = source[1]
+            requirements = source[1]
             source_fields = source[2].split(",")
-            ds = DataSource(source_name, source_fields)
+            ds = DataSource(source_name, requirements, source_fields)
+            self.dataSources.append(ds)
 
-    def add_population(self, pop):
-        for source in self.dataSources:
-            for person in pop:
-                source.add_entry(person)
+    def add_company_directories(self):
+        for c in self.companies:
+            if c.num_employees_hired:
+                
+            
 
-    def add_companies(self, companies):
-        for source in self.dataSources:
-            for comp in companies:
-                source.add_entry(comp)
+    def generate_data_source_lists(self, output="CSV"):
+        if output == "CSV":
+            for source in self.dataSources:
+                for p in self.population:
+                    source.add_entry(p)
+                for c in self.companies:
+                    source.add_entry(c)
+            self.csv_all_data_sources()
+
+    # def load_population(self, pop):
+    #     for source in self.dataSources:
+    #         for person in pop:
+    #             source.add_entry(person)
+
+    # def load_companies(self, companies):
+    #     for source in self.dataSources:
+    #         for comp in companies:
+    #             source.add_entry(comp)
 
     def print_all_data_sources(self):
         for source in self.dataSources:
             source.print_source()
 
     def csv_all_data_sources(self):
-        folder = Path("results/")
+        folder = Path("results/sources/")
         for source in self.dataSources:
             fields = source.fields_list
             filename = folder / f"{CSV_PREFIX}{source.name}.csv"
