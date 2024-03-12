@@ -26,11 +26,15 @@ class AgeGroups(Enum):
 
     @staticmethod
     def contains(age):
-        return next(
-            (
-                age_group
-                for age_group in AgeGroups
-                if age_group.value[0] <= age < age_group.value[1]
-            ),
-            None,
-        )
+        try:
+            return next(
+                (
+                    age_group
+                    for age_group in AgeGroups
+                    if age_group.value[0] <= age < age_group.value[1]
+                ),
+                None,
+            )
+
+        except (TypeError, ValueError, OverflowError):  # int conversion failed
+            return None

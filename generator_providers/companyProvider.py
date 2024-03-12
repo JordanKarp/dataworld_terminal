@@ -84,7 +84,7 @@ class CompanyProvider(ChoicesProvider, DateProvider):
 
     def client_scope(self, industry, sub_industry):
         # return "National"
-        return "Regional"
+        return self.random_element(["National", "Regional", "Local", "Male", "Female"])
 
     def market_share(self, industry, sub_industry):
         return round(self.generator.random.random(), 2)

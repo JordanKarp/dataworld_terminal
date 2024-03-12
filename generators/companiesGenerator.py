@@ -48,17 +48,16 @@ class CompaniesGenerator:
     def _get_scopes(self, potential_clients, company):
         local_cond = lambda p: p.home and p.home.state == company.hq.state
         regional_cond = lambda p: p.home and p.home.zipcode[0] == company.hq.zipcode[0]
-        gender_cond = lambda gender: [
-            p for p in potential_clients if p.gender == gender
-        ]
+        gender_cond = lambda p, gender: p.gender == gender
 
         return {
             "National": potential_clients,
             "Online": potential_clients,
             "Regional": [p for p in potential_clients if regional_cond(p)],
             "Local": [p for p in potential_clients if local_cond(p)],
-            "Female": gender_cond("Female"),
-            "Male": gender_cond("Male"),
+            "Female": [p for p in potential_clients if gender_cond(p, "Female")],
+            "Male": [p for p in potential_clients if gender_cond(p, "Male")],
+            # "Male": gender_cond("Male"),
         }
 
     def add_clients(self):

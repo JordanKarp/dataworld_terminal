@@ -77,14 +77,26 @@
           "subindustry_weight": 0.2,
           "proprietors": ["Corporation", "LLC"],
           "scopes": ["International", "National"],
-          "employee_structures": [],
+          "employee_structures": [
+            [
+              [[1, 1], "President"],
+              [[10, 40], "Managers"],
+              [[100, 200], "Employee", "Automotive"]
+            ]
+          ],
           "names_c": ["Rentals", "Travel Cars", "To Go"]
         },
         "Suppliers": {
           "subindustry_weight": 0.05,
           "proprietors": ["Corporation", "LLC"],
           "scopes": ["International", "National"],
-          "employee_structures": [],
+          "employee_structures": [
+            [
+              [[1, 1], "President"],
+              [[10, 40], "Managers"],
+              [[100, 200], "Employee", "Automotive"]
+            ]
+          ],
           "names_c": ["Parts", "Suppliers", "Automotive"]
         }
       }
@@ -101,57 +113,255 @@
       ],
       "names_b": ["Hub", "Center", "Place", "Campus", "Institution", ""],
       "subindustries": {
-        "Manufacturer": {
+        "Public K-6": {
           "subindustry_weight": 0.05,
-          "proprietors": ["Corporation", "LLC"],
-          "scopes": ["International", "National"],
+          "proprietors": ["Government"],
+          "scopes": ["Local"],
           "employee_structures": [
             [
-              [[5, 13], "Board of Directors", "Board"],
-              [[1, 1], "CEO", "Automotive"],
-              [[1, 1], "CFO", "Automotive"],
-              [[1, 1], "COO", "Automotive"],
-              [[1, 1], "CTO", "Automotive"],
-              [[10, 15], "VP", "Automotive"],
-              [[100, 200], "Employee", "Automotive"]
-            ],
-            [
-              [[1, 1], "President"],
-              [[10, 40], "Managers"],
-              [[100, 200], "Employee", "Automotive"]
+              [[1, 1], "Principal", "General"],
+              [[1, 2], "Vice Principal", "General"],
+              [[1, 4], "Secretary", "General"],
+              [[1, 2], "Custodian", "General"],
+              [[8, 30], "Teacher", "General"]
             ]
           ],
-          "names_c": ["Motors", "Cars", "Autos", "Precision"]
+          "names_c": ["Elementary", "Primary", "Elementary School", "School"]
         },
-        "Dealership": {
-          "subindustry_weight": 0.4,
-          "proprietors": ["Corporation", "LLC"],
-          "scopes": ["International", "National"],
-          "employee_structures": [],
-          "names_c": ["R Us", "Dealer", "Dealership", "Autos"]
-        },
-        "Mechanic": {
-          "subindustry_weight": 0.3,
-          "proprietors": ["Corporation", "LLC"],
-          "scopes": ["International", "National"],
-          "employee_structures": [],
-          "names_c": ["Repair", "Shop"]
-        },
-        "Rental": {
-          "subindustry_weight": 0.2,
-          "proprietors": ["Corporation", "LLC"],
-          "scopes": ["International", "National"],
-          "employee_structures": [],
-          "names_c": ["Rentals", "Travel Cars", "To Go"]
-        },
-        "Suppliers": {
+        "Public 7-9": {
           "subindustry_weight": 0.05,
-          "proprietors": ["Corporation", "LLC"],
-          "scopes": ["International", "National"],
-          "employee_structures": [],
-          "names_c": ["Parts", "Suppliers", "Automotive"]
+          "proprietors": ["Government"],
+          "scopes": ["Local"],
+          "employee_structures": [
+            [
+              [[1, 1], "Principal", "General"],
+              [[1, 3], "Vice Principal", "General"],
+              [[1, 4], "Secretary", "General"],
+              [[1, 2], "Custodian", "General"],
+              [[8, 30], "Teacher", "General"]
+            ]
+          ],
+          "names_c": ["Middle", "Middle School", "Junior", "Junior High"]
+        },
+        "Public 10-12": {
+          "subindustry_weight": 0.05,
+          "proprietors": ["Government"],
+          "scopes": ["Local"],
+          "employee_structures": [
+            [
+              [[1, 1], "Principal", "General"],
+              [[1, 4], "Vice Principal", "General"],
+              [[2, 6], "Secretary", "General"],
+              [[1, 2], "Custodian", "General"],
+              [[6, 50], "Teacher", "General"]
+            ]
+          ],
+          "names_c": ["High", "High School", "", "Public"]
+        },
+        "Private / Religious School": {
+          "subindustry_weight": 0.05,
+          "proprietors": ["Corporation"],
+          "scopes": ["Local", "Regional"],
+          "employee_structures": [
+            [
+              [[1, 1], "Principal", "General"],
+              [[1, 1], "Vice Principal", "General"],
+              [[2, 6], "Secretary", "General"],
+              [[1, 2], "Custodian", "General"],
+              [[6, 50], "Teacher", "General"]
+            ]
+          ],
+          "names_c": ["High", "High School", "", "Public"]
+        },
+        "Community College": {
+          "subindustry_weight": 0.05,
+          "proprietors": ["Corporation"],
+          "scopes": ["Local", "Regional"],
+          "employee_structures": [
+            [
+              [[1, 1], "Principal", "General"],
+              [[1, 1], "Dean", "General"],
+              [[1, 1], "VP Operations", "General"],
+              [[2, 6], "Department Head", "General"],
+              [[7, 20], "Professor", "General"],
+              [[15, 40], "Associate Professor", "General"]
+            ]
+          ],
+          "names_c": ["Community", "College", "Learning", "Center"]
+        },
+        "College": {
+          "subindustry_weight": 0.05,
+          "proprietors": ["Corporation"],
+          "scopes": ["Local", "Regional"],
+          "employee_structures": [
+            [
+              [[1, 1], "Principal", "General"],
+              [[1, 1], "Dean", "General"],
+              [[1, 1], "VP Operations", "General"],
+              [[2, 6], "Department Head", "General"],
+              [[7, 20], "Professor", "General"],
+              [[15, 40], "Associate Professor", "General"]
+            ]
+          ],
+          "names_c": ["College", "Academic", "Learn", "Institute"]
+        },
+        "University": {
+          "subindustry_weight": 0.05,
+          "proprietors": ["Corporation"],
+          "scopes": ["Local", "Regional"],
+          "employee_structures": [
+            [
+              [[1, 1], "Principal", "General"],
+              [[1, 1], "Dean", "General"],
+              [[1, 1], "VP Operations", "General"],
+              [[2, 6], "Department Head", "General"],
+              [[7, 20], "Professor", "General"],
+              [[15, 40], "Associate Professor", "General"]
+            ]
+          ],
+          "names_c": ["University", "Campus", "Learn", "Institute"]
+        },
+        "Technical / Trade School": {
+          "subindustry_weight": 0.05,
+          "proprietors": ["Corporation"],
+          "scopes": ["Local", "Regional"],
+          "employee_structures": [
+            [
+              [[1, 1], "Principal", "General"],
+              [[1, 1], "Dean", "General"],
+              [[1, 1], "VP Operations", "General"],
+              [[2, 6], "Department Head", "General"],
+              [[7, 20], "Professor", "General"],
+              [[15, 40], "Associate Professor", "General"]
+            ]
+          ],
+          "names_c": ["Tech", "Trade", "Learn", "School"]
         }
       }
+    },
+    "Entertainment": {
+      "industry_weight": 0.1,
+      "names_a": ["Star", "Cine", "Sound", "Play", "Style", "Story", "Art"],
+      "names_b": ["Flicks", "World", "Beat", "Quest", "Chic", ""],
+      "subindustries": {
+        "Film / TV": {
+          "subindustry_weight": 0.05,
+          "proprietors": ["Corporation"],
+          "scopes": ["National"],
+          "employee_structures": [
+            [
+              [[1, 1], "President", "General"],
+              [[1, 2], "Vice President", "General"],
+              [[20, 50], "Manager", "General"],
+              [[200, 400], "Employee", "General"]
+            ]
+          ],
+          "names_c": ["Productions", "Studios", "Entertainment", "Cinema"]
+        },
+        "Sports": {
+          "subindustry_weight": 0.05,
+          "proprietors": ["Corporation"],
+          "scopes": ["National"],
+          "employee_structures": [
+            [
+              [[1, 1], "President", "General"],
+              [[1, 2], "Vice President", "General"],
+              [[20, 50], "Manager", "General"],
+              [[200, 400], "Employee", "General"]
+            ]
+          ],
+          "names_c": ["Arena", "Champs", "Play", "Sports"]
+        },
+        "Music": {
+          "subindustry_weight": 0.05,
+          "proprietors": ["Corporation"],
+          "scopes": ["National"],
+          "employee_structures": [
+            [
+              [[1, 1], "President", "General"],
+              [[1, 2], "Vice President", "General"],
+              [[20, 50], "Manager", "General"],
+              [[200, 400], "Employee", "General"]
+            ]
+          ],
+          "names_c": ["Sound", "Harmony", "Beats", "Music"]
+        },
+        "Gaming": {
+          "subindustry_weight": 0.05,
+          "proprietors": ["Corporation"],
+          "scopes": ["National"],
+          "employee_structures": [
+            [
+              [[1, 1], "President", "General"],
+              [[1, 2], "Vice President", "General"],
+              [[20, 50], "Manager", "General"],
+              [[200, 400], "Employee", "General"]
+            ]
+          ],
+          "names_c": ["Games", "Play", "Gaming", "E-Sports"]
+        },
+        "Fashion / Celebrity": {
+          "subindustry_weight": 0.05,
+          "proprietors": ["Corporation"],
+          "scopes": ["National"],
+          "employee_structures": [
+            [
+              [[1, 1], "President", "General"],
+              [[1, 2], "Vice President", "General"],
+              [[20, 50], "Manager", "General"],
+              [[200, 400], "Employee", "General"]
+            ]
+          ],
+          "names_c": ["Style", "Glam", "Celeb", "Fashion", "Insider"]
+        },
+        "Journalism": {
+          "subindustry_weight": 0.05,
+          "proprietors": ["Corporation"],
+          "scopes": ["National", "Regional"],
+          "employee_structures": [
+            [
+              [[1, 1], "President", "General"],
+              [[1, 2], "Vice President", "General"],
+              [[20, 50], "Manager", "General"],
+              [[200, 400], "Employee", "General"]
+            ]
+          ],
+          "names_c": ["News", "Press", "Media", "Journal"]
+        },
+        "Hobbies": {
+          "subindustry_weight": 0.05,
+          "proprietors": ["Corporation"],
+          "scopes": ["Regional", "Local"],
+          "employee_structures": [
+            [
+              [[1, 1], "Owner", "General"],
+              [[10, 50], "Employee", "General"]
+            ]
+          ],
+          "names_c": ["Leisure", "Pastime", "Hobbies", "Joy"]
+        },
+        "Books": {
+          "subindustry_weight": 0.05,
+          "proprietors": ["Corporation"],
+          "scopes": ["National", "Regional"],
+          "employee_structures": [
+            [
+              [[1, 1], "President", "General"],
+              [[6, 20], "Clerks", "General"]
+            ]
+          ],
+          "names_c": ["Reads", "Books", "Pages", "Novels"]
+        }
+      }
+    },
+    "Finance": {
+      "industry_weight": 0.1,
+      "names_a": ["Capital","Invest","Wealth","Finance","Money","Fund","Dinero"],
+      "names_b": ["Hub","Edge","Wise","Vault","Tech",""],
+      "subindustries": {
+        "Bank": {
+          
+        }
     }
   }
 }

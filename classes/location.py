@@ -36,7 +36,7 @@ class Location:
 
     @property
     def state_abbr(self):
-        return STATE_ABBR_DICT[self.state]
+        return STATE_ABBR_DICT.get(self.state, None)
 
     @property
     def address(self):

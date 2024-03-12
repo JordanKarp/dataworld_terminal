@@ -25,8 +25,6 @@ class PopulationGenerator:
 
     def create(self, start_gen=STARTING_GENERATION):
         self.initial_pop(start_gen)
-        # self.match_spouses(start_gen)
-        # self.add_children(start_gen)
         for i in range(start_gen, -1, -1):
             self.match_spouses(i)
             self.add_children(i)
@@ -48,12 +46,10 @@ class PopulationGenerator:
             if num_children := int(
                 self.personGen.gen.weighted_choice(child_nums, child_nums_weights)
             ):
-                new_children_in_family = []
-                for _ in range(num_children):
-                    new_children_in_family.append(
-                        self.personGen.new_child(person, person.spouse)
-                    )
-
+                new_children_in_family = [
+                    self.personGen.new_child(person, person.spouse)
+                    for _ in range(num_children)
+                ]
                 for child in new_children_in_family:
                     child.siblings = [
                         sib for sib in new_children_in_family if sib != child
@@ -86,7 +82,7 @@ class PopulationGenerator:
 
     def _is_eligible_match(self, person, match):
         return (
-            match.gender == person.preferred_gender
+            match.gender == person.desired_gender
             and match is not person
             and match not in person.siblings
             and match.sexual_orientation == person.sexual_orientation

@@ -8,6 +8,7 @@ from generator_providers.locationProvider import LocationProvider
 from generator_providers.vehicleProvider import CustomVehicleProvider
 from generator_providers.internetProvider import InternetProvider
 from generator_providers.documentProvider import DocumentProvider
+from generator_providers.animalProvider import AnimalProvider
 
 
 class PersonGenerator:
@@ -20,12 +21,14 @@ class PersonGenerator:
         self.gen.add_provider(CustomVehicleProvider)
         self.gen.add_provider(InternetProvider)
         self.gen.add_provider(DocumentProvider)
+        self.gen.add_provider(AnimalProvider)
 
     def new_child(self, parent_one, parent_two):
         return self.new(
             last_name=parent_one.last_name,
             generation=parent_one.generation - 1,
             blood_type=self.gen.blood_type_allele(parent_one, parent_two),
+            parents=[parent_one, parent_two],
             # home=parent_one.home,
         )
 
@@ -61,6 +64,7 @@ class PersonGenerator:
         # FAMILY
         p.spouse = kwargs.get("spouse", None)
         p.siblings = kwargs.get("siblings", [])
+        p.parents = kwargs.get("parents", [])
         p.children = kwargs.get("children", [])
 
         # BODY
@@ -86,6 +90,14 @@ class PersonGenerator:
 
         # PERSONALITY
         p.mannerisms = kwargs.get("mannerisms", self.gen.mannerisms())
+        p.positive_traits = kwargs.get(
+            "positive_traits", self.gen.traits("positive", 3)
+        )
+        p.neutral_traits = kwargs.get("neutral_traits", self.gen.traits("neutral", 1))
+        p.negative_traits = kwargs.get(
+            "negative_traits", self.gen.traits("negative", 3)
+        )
+
         p.sexual_orientation = kwargs.get(
             "sexual_orientation", self.gen.sexual_orientation()
         )
@@ -96,6 +108,9 @@ class PersonGenerator:
         ############
         if p.age < 18:
             return p
+
+        # PET
+        p.pet = kwargs.get("pet", self.gen.new_pet())
 
         # CAR
         p.vehicle = kwargs.get("vehicle", self.gen.personal_vehicle())

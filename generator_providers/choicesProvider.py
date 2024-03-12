@@ -1,8 +1,5 @@
-from faker import Faker
 from faker.providers import BaseProvider
 from collections import OrderedDict
-
-# from math import pi
 
 
 class ChoicesProvider(BaseProvider):

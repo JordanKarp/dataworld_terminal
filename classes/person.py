@@ -1,5 +1,5 @@
 from __future__ import annotations
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from datetime import date
 from typing import Optional
 
@@ -12,6 +12,7 @@ from classes.vehicle import Vehicle
 from classes.drivers_license import DriversLicense
 from classes.passport import Passport
 from classes.age_groups import AgeGroups
+from classes.animal import Animal
 
 from data.person.person_averages import WORKING_AGE, MARRIAGE_AGE
 
@@ -39,17 +40,25 @@ class Person:
     weight: float = 100.0
     blood_type_allele: str = ""
     mannerisms: str = ""
+    positive_traits: str = ""
+    neutral_traits: str = ""
+    negative_traits: str = ""
+
     passport: Optional[Passport] = None
     phone_number: Optional[PhoneNumber] = None
     email: Optional[Email] = None
     home: Optional[Location] = None
     vehicle: Optional[Vehicle] = None
     drivers_license: Optional[DriversLicense] = None
-    siblings: Optional[list[str]] = None
+
+    pet: Optional[Animal] = None
+
     marital_status: Optional[str] = None
     spouse: Optional[Person] = None
     maiden_name: Optional[str] = None
     children: Optional[list[Person]] = None
+    siblings: Optional[list[str]] = None
+    parents: Optional[list[str]] = None
 
     employer: Optional[str] = None
     role: Optional[str] = None
@@ -100,7 +109,7 @@ class Person:
         return self.gender[0]
 
     @property
-    def preferred_gender(self):
+    def desired_gender(self):
         if self.gender in ["Transgender", "Nonbinary"]:
             return self.gender
         if self.gender == "Male":

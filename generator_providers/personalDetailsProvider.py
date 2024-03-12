@@ -1,7 +1,6 @@
 from datetime import date
 from dateutil.relativedelta import relativedelta
 from itertools import product
-from collections import Counter
 
 from pathlib import Path
 
@@ -52,6 +51,9 @@ class PersonalDetailsProvider(ChoicesProvider, DateProvider):
     hair_types = load_txt(HAIR_TYPES_PATH)
     eye_colors, eye_color_weights = load_weighted_csv(EYE_COLORS_PATH)
     mannerisms_options = load_txt(MANNERISMS_PATH)
+    positive_traits = load_txt(POSITIVE_TRAITS_PATH)
+    neutral_traits = load_txt(NEUTRAL_TRAITS_PATH)
+    negative_traits = load_txt(NEGATIVE_TRAITS_PATH)
     sexual_orientations, sexual_orientation_weights = load_weighted_csv(
         SEXUAL_ORIENTATION_PATH
     )
@@ -171,6 +173,15 @@ class PersonalDetailsProvider(ChoicesProvider, DateProvider):
 
     def mannerisms(self):
         return self.generator.random_element(self.mannerisms_options)
+
+    def traits(self, trait_type, k=1):
+        if trait_type == "positive":
+            traits = self.positive_traits
+        elif trait_type == "neutral":
+            traits = self.neutral_traits
+        elif trait_type == "negative":
+            traits = self.negative_traits
+        return ", ".join(self.generator.random_elements(traits, length=k, unique=True))
 
     def phone_number(self):
         return PhoneNumber(self.generator.numerify(text="(%#%) %##-####"))

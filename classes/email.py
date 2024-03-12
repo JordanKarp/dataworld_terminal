@@ -15,8 +15,11 @@ class Email:
 
     @property
     def domain(self):
-        full_domain = self.address.split("@")[1] or "unknown.com"
-        return full_domain.split(".")[0]
+        if self.address and "@" in self.address:
+            _, full_domain = self.address.split("@")
+            if "." in full_domain:
+                return full_domain.split(".")[0]
+        return None
 
     def __getitem__(self, item):
         return getattr(self, item, "")

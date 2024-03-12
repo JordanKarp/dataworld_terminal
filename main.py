@@ -1,4 +1,3 @@
-from generators.companyGenerator import CompanyGenerator
 from generators.dataSourceGenerator import DataSourceGenerator
 from generators.companiesGenerator import CompaniesGenerator
 from generators.populationGenerator import PopulationGenerator
@@ -6,7 +5,7 @@ from generators.populationGenerator import PopulationGenerator
 
 def main(seed=None):
     pg = PopulationGenerator(seed)
-    pop = pg.create(2)
+    pop = pg.create(3)
 
     cg = CompaniesGenerator()
     cg.create()
@@ -19,11 +18,10 @@ def main(seed=None):
 
     cg.comanies_to_csv()
     pg.population_to_csv()
-    dsg.generate_data_source_lists()
-    # dsg.csv_all_data_sources()
+    dsg.generate_data_source_lists(output="CSV")
 
 
 if __name__ == "__main__":
     seed = "ABC123"
-    seed = None
+    # seed = None
     main(seed)

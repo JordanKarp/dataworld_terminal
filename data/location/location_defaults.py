@@ -56,6 +56,7 @@ STATE_ABBR_DICT = {
     "Puerto Rico": "PR",
     "United States Minor Outlying Islands": "UM",
     "U.S. Virgin Islands": "VI",
+    "DefaultState": "DS",
 }
 
 STATE_DICT = dict(map(reversed, STATE_ABBR_DICT.items()))
