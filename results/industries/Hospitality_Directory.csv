@@ -1,13 +1,28 @@
 id,company_name,website,industry,sub_industry,founded,client_scope,hq,market_share,abbreviation
-C00003,Stay Charm Services,kttps://www.staycharmservices.com,Hospitality,Cleaning Services,2095,Local,"Business: 460 Brooke Loop, Collinshaven, FL - 34639",0.04,SCS
-C00012,Explore Charm Repair,kttp://www.explorecharmrepair.com,Hospitality,Repair,2098,Male,"Business: 329 Gerald Roads, South Philipmouth, AZ - 86017",0.26,ECR
-C00018,Relax Charm Journey,kttp://www.relaxcharmjourney.com,Hospitality,Other,1995,Female,"Business: 174 Preston Manors, Danielfort, ME - 04432",0.27,RCJ
-C00032,Cruise Haven Escape,kttps://www.cruisehavenescape.com,Hospitality,Vacations,2091,National,"Business: 543 Bowers Light, Lake Jennifer, UT - 84619",0.22,CHE
-C00034,Stay Charm Rental,kttps://www.staycharmrental.com,Hospitality,Private House Rental,2098,National,"Business: 33 Terri Keys, New Bryan, MD - 21906",0.71,SCR
-C00037,Relax Escape Voyage,kttps://www.relaxescapevoyage.com,Hospitality,Cruises,2099,Regional,"Business: 7277 Linda Loaf, Port Christian, OK - 73142",0.67,REV
-C00038,Explore Haven Rental,kttp://www.explorehavenrental.com,Hospitality,Private House Rental,2092,Local,"Business: 79429 Juan Vista, Gloverland, TN - 37491",0.24,EHR
-C00051,Relax Haven Tidy,kttps://www.relaxhaventidy.com,Hospitality,Cleaning Services,2097,National,"Business: 1455 Stokes Knolls, West Maria, KS - 66323",0.73,RHT
-C00058,CruiseJourney Clean,kttps://www.cruisejourneyclean.com,Hospitality,Cleaning Services,2093,National,"Business: 889 Samantha Summit, Lauraburgh, PA - 17211",0.53,CJC
-C00067,LeisureGetaway Haven,kttps://www.leisuregetawayhaven.com,Hospitality,Vacations,2094,Male,"Business: 736 James Centers , East Ericberg, NC - 28686",0.42,LGH
-C00089,Leisure Charm Services,kttp://www.leisurecharmservices.com,Hospitality,Cleaning Services,2097,Local,"Business: 9976 Patrick View, West Robert, OK - 73102",0.26,LCS
-C00092,LeisureGetaway Amuse,kttp://www.leisuregetawayamuse.com,Hospitality,Theme Park,2090,Regional,"Business: 5260 Williams Creek , North Joseph, DC - 20028",0.91,LGA
+C00004,Stay Getaway Vacay,kttps://www.staygetawayvacay.com,Hospitality,Vacations,2098,Female,"Business: 66217 Cook Islands, Lake Garrett, VA - 23820",0.26,SGV
+C00009,Explore Charm Repair,kttp://www.explorecharmrepair.com,Hospitality,Repair,2098,Male,"Business: 329 Gerald Roads, South Philipmouth, AZ - 86017",0.26,ECR
+C00015,Relax Charm Journey,kttp://www.relaxcharmjourney.com,Hospitality,Other,1995,Female,"Business: 174 Preston Manors, Danielfort, ME - 04432",0.27,RCJ
+C00029,Cruise Haven Escape,kttps://www.cruisehavenescape.com,Hospitality,Vacations,2091,National,"Business: 543 Bowers Light, Lake Jennifer, UT - 84619",0.22,CHE
+C00031,Stay Charm Rental,kttps://www.staycharmrental.com,Hospitality,Private House Rental,2098,National,"Business: 33 Terri Keys, New Bryan, MD - 21906",0.71,SCR
+C00034,Relax Escape Voyage,kttps://www.relaxescapevoyage.com,Hospitality,Cruises,2099,Regional,"Business: 7277 Linda Loaf, Port Christian, OK - 73142",0.67,REV
+C00035,Explore Haven Rental,kttp://www.explorehavenrental.com,Hospitality,Private House Rental,2092,Local,"Business: 79429 Juan Vista, Gloverland, TN - 37491",0.24,EHR
+C00048,Relax Haven Tidy,kttps://www.relaxhaventidy.com,Hospitality,Cleaning Services,2097,National,"Business: 1455 Stokes Knolls, West Maria, KS - 66323",0.73,RHT
+C00055,CruiseJourney Clean,kttps://www.cruisejourneyclean.com,Hospitality,Cleaning Services,2093,National,"Business: 889 Samantha Summit, Lauraburgh, PA - 17211",0.53,CJC
+C00064,LeisureGetaway Haven,kttps://www.leisuregetawayhaven.com,Hospitality,Vacations,2094,Male,"Business: 736 James Centers , East Ericberg, NC - 28686",0.42,LGH
+C00086,Leisure Charm Services,kttp://www.leisurecharmservices.com,Hospitality,Cleaning Services,2097,Local,"Business: 9976 Patrick View, West Robert, OK - 73102",0.26,LCS
+C00089,LeisureGetaway Amuse,kttp://www.leisuregetawayamuse.com,Hospitality,Theme Park,2090,Regional,"Business: 5260 Williams Creek , North Joseph, DC - 20028",0.91,LGA
+C00099,TourEscape Mend,kttp://www.tourescapemend.com,Hospitality,Repair,2091,Female,"Business: 8243 Torres Road, West Amyfurt, NM - 88380",0.5,TEM
+C00111,CruiseGetaway Inn,kttp://www.cruisegetawayinn.com,Hospitality,Hotels,2096,Female,"Business: 625 Cook Underpass, Lake Courtneyland, SC - 29419",0.65,CGI
+C00116,Stay Charm Fix,kttp://www.staycharmfix.com,Hospitality,Repair,2021,Female,"Business: 8065 Ian Meadows, East Anthony, MN - 55139",0.71,SCF
+C00121,Vacay Charm Haven,kttps://www.vacaycharmhaven.com,Hospitality,Vacations,2097,Female,"Business: 695 Amy Radial, East Megan, ID - 83404",0.05,VCH
+C00141,LeisureCharm Inn,kttps://www.leisurecharminn.com,Hospitality,Hotels,2083,Female,"Business: 32401 William Extensions , Susanport, CT - 06026",0.69,LCI
+C00149,Tour Charm Vacay,kttps://www.tourcharmvacay.com,Hospitality,Vacations,2090,Male,"Business: 267 Samantha Rue , New Michaelmouth, MO - 64779",0.93,TCV
+C00157,StayJourney Park,kttp://www.stayjourneypark.com,Hospitality,Theme Park,2087,Male,"Business: 89803 Hall Roads, Port Elizabethchester, ME - 04236",0.89,SJP
+C00159,RelaxCharm Retreat,kttp://www.relaxcharmretreat.com,Hospitality,Private House Rental,2098,Regional,"Business: 4645 Gibson Mountain , Moonton, DC - 20008",0.53,RCR
+C00171,RelaxHaven Adventures,kttp://www.relaxhavenadventures.com,Hospitality,Other,2077,Local,"Business: 6772 Gutierrez Land , Martinview, MA - 01152",0.2,RHA
+C00182,Leisure Getaway Explore,kttp://www.leisuregetawayexplore.com,Hospitality,Other,2050,Local,"Business: 26118 Mary Falls, Lake Matthew, DC - 20024",0.22,LGE
+C00183,Stay Journey Rental,kttps://www.stayjourneyrental.com,Hospitality,Private House Rental,1926,Regional,"Business: 27501 Jennifer Shoals, West Laurenborough, KS - 66168",0.57,SJR
+C00184,RelaxGetaway Fun,kttps://www.relaxgetawayfun.com,Hospitality,Theme Park,2096,National,"Business: 977 Bullock Manor, Fisherburgh, MS - 39601",0.14,RGF
+C00187,Relax Getaway Cruise,kttp://www.relaxgetawaycruise.com,Hospitality,Cruises,2007,Male,"Business: 2098 Erickson Tunnel , Crystalside, VA - 22308",0.97,RGC
+C00194,RelaxCharm Adventures,kttp://www.relaxcharmadventures.com,Hospitality,Other,2098,Local,"Business: 80926 Phillip Turnpike, West Mary, MS - 39202",0.06,RCA
+C00198,StayGetaway World,kttp://www.staygetawayworld.com,Hospitality,Theme Park,2088,Local,"Business: 689 Emily Plaza , South James, IA - 50964",0.78,SGW

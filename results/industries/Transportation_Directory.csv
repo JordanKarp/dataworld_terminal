@@ -1,14 +1,23 @@
 id,company_name,website,industry,sub_industry,founded,client_scope,hq,market_share,abbreviation
-C00002,TransitLines Rails,kttps://www.transitlinesrails.com,Transportation,Train,2099,Local,"Business: 27697 Webb Rapids , Coxburgh, MO - 64737",0.53,TLR
-C00014,MoveLines Move,kttps://www.movelinesmove.com,Transportation,Relocation,2090,Female,"Business: 75 Adam Mills, East Sheila, KS - 66198",0.21,MLM
-C00017,MoveLines Fly,kttps://www.movelinesfly.com,Transportation,Airline,2092,National,"Business: 649 Sheri Highway , South Danielhaven, IN - 47559",0.74,MLF
-C00042,Cargo Taxi,kttps://www.cargotaxi.com,Transportation,Ride Sharing / Taxi,2083,Regional,"Business: 7300 Catherine Mill , Lake Johnathanfurt, DE - 19813",0.72,CT
-C00047,MoveLines Transit,kttp://www.movelinestransit.com,Transportation,Train,2092,National,"Business: 3840 Russell Fall, Lake Jennafurt, IN - 46252",0.19,MLT
-C00053,Speed Ways Wings,kttps://www.speedwayswings.com,Transportation,Airline,2094,National,"Business: 9041 Paula Burgs , North Markborough, NV - 89841",0.07,SWW
-C00062,Cargo Path Sail,kttps://www.cargopathsail.com,Transportation,Boat,2098,Local,"Business: 8912 Russell Lights, Port Jeremy, ID - 83795",0.6,CPS
-C00070,Commute Path Cargo,kttp://www.commutepathcargo.com,Transportation,Shipping / Freight,2098,Female,"Business: 68295 Spencer Ville , Elizabethtown, WV - 24731",0.35,CPC
-C00081,Route Lines Freight,kttp://www.routelinesfreight.com,Transportation,Shipping / Freight,2098,Male,"Business: 7841 Roberts Trace , Lake Samantha, LA - 70547",0.3,RLF
-C00082,Cargo Routes Express,kttps://www.cargoroutesexpress.com,Transportation,Train,2098,Regional,"Business: 982 Ballard Village , Port Melissamouth, NH - 03866",0.53,CRE
-C00083,Cargo Routes Ships,kttp://www.cargoroutesships.com,Transportation,Boat,2068,Local,"Business: 987 Alvarez Bypass, East Annaton, IN - 46639",0.33,CRS
-C00098,Speed Trains,kttp://www.speedtrains.com,Transportation,Train,2083,National,"Business: 3325 Townsend Square, Port Michelebury, MS - 39217",0.51,ST
-C00100,Transit Ways Rides,kttps://www.transitwaysrides.com,Transportation,Ride Sharing / Taxi,2096,Female,"Business: 32932 Nichols Ways , Karenberg, UT - 84679",0.61,TWR
+C00011,MoveLines Move,kttps://www.movelinesmove.com,Transportation,Relocation,2090,Female,"Business: 75 Adam Mills, East Sheila, KS - 66198",0.21,MLM
+C00014,MoveLines Fly,kttps://www.movelinesfly.com,Transportation,Airline,2092,National,"Business: 649 Sheri Highway , South Danielhaven, IN - 47559",0.74,MLF
+C00039,Cargo Taxi,kttps://www.cargotaxi.com,Transportation,Ride Sharing / Taxi,2083,Regional,"Business: 7300 Catherine Mill , Lake Johnathanfurt, DE - 19813",0.72,CT
+C00044,MoveLines Transit,kttp://www.movelinestransit.com,Transportation,Train,2092,National,"Business: 3840 Russell Fall, Lake Jennafurt, IN - 46252",0.19,MLT
+C00050,Speed Ways Wings,kttps://www.speedwayswings.com,Transportation,Airline,2094,National,"Business: 9041 Paula Burgs , North Markborough, NV - 89841",0.07,SWW
+C00059,Cargo Path Sail,kttps://www.cargopathsail.com,Transportation,Boat,2098,Local,"Business: 8912 Russell Lights, Port Jeremy, ID - 83795",0.6,CPS
+C00067,Commute Path Cargo,kttp://www.commutepathcargo.com,Transportation,Shipping / Freight,2098,Female,"Business: 68295 Spencer Ville , Elizabethtown, WV - 24731",0.35,CPC
+C00078,Route Lines Freight,kttp://www.routelinesfreight.com,Transportation,Shipping / Freight,2098,Male,"Business: 7841 Roberts Trace , Lake Samantha, LA - 70547",0.3,RLF
+C00079,Cargo Routes Express,kttps://www.cargoroutesexpress.com,Transportation,Train,2098,Regional,"Business: 982 Ballard Village , Port Melissamouth, NH - 03866",0.53,CRE
+C00080,Cargo Routes Ships,kttp://www.cargoroutesships.com,Transportation,Boat,2068,Local,"Business: 987 Alvarez Bypass, East Annaton, IN - 46639",0.33,CRS
+C00095,Speed Trains,kttp://www.speedtrains.com,Transportation,Train,2083,National,"Business: 3325 Townsend Square, Port Michelebury, MS - 39217",0.51,ST
+C00097,Transit Ways Rides,kttps://www.transitwaysrides.com,Transportation,Ride Sharing / Taxi,2096,Female,"Business: 32932 Nichols Ways , Karenberg, UT - 84679",0.61,TWR
+C00100,Commute Express Logistics,kttps://www.commuteexpresslogistics.com,Transportation,Shipping / Freight,2080,Local,"Business: 1331 Watson Common, Reginaldshire, SD - 57325",0.17,CEL
+C00112,Route Express,kttp://www.routeexpress.com,Transportation,Train,2098,Local,"Business: 76404 Laura Points, North Yolanda, WV - 25958",0.5,RE
+C00120,MoveExpress Express,kttps://www.moveexpressexpress.com,Transportation,Courier / Delivery,2000,National,"Business: 66266 Joseph Shores, Welchhaven, WI - 53869",0.78,MEE
+C00124,CargoRoutes Bus,kttp://www.cargoroutesbus.com,Transportation,Bus,2099,Regional,"Business: 551 Rush Ford , Lake Devin, IL - 62460",0.77,CRB
+C00133,Journey Routes Move,kttps://www.journeyroutesmove.com,Transportation,Relocation,2069,Female,"Business: 4965 Norris Plain , Erinfort, MI - 49460",0.06,JRM
+C00138,CargoLines Taxi,kttps://www.cargolinestaxi.com,Transportation,Ride Sharing / Taxi,2090,Regional,"Business: 976 Cox Plain, Weaverland, NH - 03067",0.97,CLT
+C00156,Commute Ways Courier,kttps://www.commutewayscourier.com,Transportation,Courier / Delivery,2097,National,"Business: 757 Michaela Mill , Bradyborough, SC - 29430",0.64,CWC
+C00174,Move Express Shipping,kttps://www.moveexpressshipping.com,Transportation,Courier / Delivery,2046,Regional,"Business: 636 Evans Neck, Hansonland, MI - 48763",0.91,MES
+C00176,Move Express Taxi,kttp://www.moveexpresstaxi.com,Transportation,Ride Sharing / Taxi,2099,National,"Business: 606 Nelson Crossroad , Ginabury, IA - 50895",0.7,MET
+C00200,Route Routes Nautical,kttp://www.routeroutesnautical.com,Transportation,Boat,2095,Regional,"Business: 169 Victoria Fort , Port Stephanieborough, AK - 99797",0.05,RRN

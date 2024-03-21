@@ -4,7 +4,7 @@ from generators.populationGenerator import PopulationGenerator
 
 INIT_POP = 500
 INIT_GEN = 3
-INIT_COMP = 100
+INIT_COMP = 200
 
 
 def main(seed=None):

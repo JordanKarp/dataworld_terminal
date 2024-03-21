@@ -1,8 +1,15 @@
 id,company_name,website,industry,sub_industry,founded,client_scope,hq,market_share,abbreviation
-C00008,Med Life Care,kttps://www.medlifecare.com,Healthcare,Elderly Care,2095,National,"Business: 580 Matthew Road, Bellhaven, ND - 58692",0.57,MLC
-C00019,CareMed Health,kttps://www.caremedhealth.com,Healthcare,Specialized Clinics,2088,Male,"Business: 0 Christina Island, Adamshire, ID - 83672",0.99,CMH
-C00025,Well Wellness Care,kttps://www.wellwellnesscare.com,Healthcare,Elderly Care,2089,Regional,"Business: 375 Stone Ports , Mariaport, LA - 70265",0.4,WWC
-C00033,Rehab Hub Elder,kttps://www.rehabhubelder.com,Healthcare,Elderly Care,2069,Local,"Business: 87 Andrew Inlet, Campbellland, IA - 50231",0.26,RHE
-C00035,DocMed Special,kttp://www.docmedspecial.com,Healthcare,Specialized Clinics,2095,Regional,"Business: 8699 Stewart Highway, West Erin, IN - 46903",0.52,DMS
-C00076,DocWellness Pharma,kttps://www.docwellnesspharma.com,Healthcare,Pharmaceutical,2081,National,"Business: 41183 Kimberly Shoal, Webbstad, AZ - 85776",0.38,DWP
-C00088,DocHub Clinic,kttp://www.dochubclinic.com,Healthcare,Specialized Clinics,2087,Local,"Business: 2089 Moore Ranch , Port Julie, MD - 21027",0.98,DHC
+C00001,Health Med Medical,kttp://www.healthmedmedical.com,Healthcare,Pharmaceutical,2098,Local,"Business: 5515 Amanda Junction, East James, SD - 57266",0.54,HMM
+C00016,CareMed Health,kttps://www.caremedhealth.com,Healthcare,Specialized Clinics,2088,Male,"Business: 0 Christina Island, Adamshire, ID - 83672",0.99,CMH
+C00022,Well Wellness Care,kttps://www.wellwellnesscare.com,Healthcare,Elderly Care,2089,Regional,"Business: 375 Stone Ports , Mariaport, LA - 70265",0.4,WWC
+C00030,Rehab Hub Elder,kttps://www.rehabhubelder.com,Healthcare,Elderly Care,2069,Local,"Business: 87 Andrew Inlet, Campbellland, IA - 50231",0.26,RHE
+C00032,DocMed Special,kttp://www.docmedspecial.com,Healthcare,Specialized Clinics,2095,Regional,"Business: 8699 Stewart Highway, West Erin, IN - 46903",0.52,DMS
+C00073,DocWellness Pharma,kttps://www.docwellnesspharma.com,Healthcare,Pharmaceutical,2081,National,"Business: 41183 Kimberly Shoal, Webbstad, AZ - 85776",0.38,DWP
+C00085,DocHub Clinic,kttp://www.dochubclinic.com,Healthcare,Specialized Clinics,2087,Local,"Business: 2089 Moore Ranch , Port Julie, MD - 21027",0.98,DHC
+C00101,Well Med Health,kttp://www.wellmedhealth.com,Healthcare,Pharmaceutical,2098,Regional,"Business: 4384 Miller Crescent, Sabrinamouth, CA - 90370",0.77,WMH
+C00106,HealthLife Wellness,kttp://www.healthlifewellness.com,Healthcare,Wellness,2096,Female,"Business: 4753 Richards Spring , New Jimmyhaven, LA - 70220",0.11,HLW
+C00125,HealthHub Clinic,kttp://www.healthhubclinic.com,Healthcare,Specialized Clinics,2054,Male,"Business: 17654 Brown Drive, Sherriborough, SC - 29314",0.88,HHC
+C00127,FitMed Medicine,kttp://www.fitmedmedicine.com,Healthcare,Specialized Clinics,2096,National,"Business: 57083 Christopher Centers , Port Carolyn, MO - 63801",0.9,FMM
+C00147,Health Med Heal,kttp://www.healthmedheal.com,Healthcare,Doctor,2098,Local,"Business: 120 Spencer Motorway, Johnberg, VT - 05222",0.13,HMH
+C00152,Med Care Fitness,kttps://www.medcarefitness.com,Healthcare,Fitness Center,2098,Female,"Business: 21875 Allen Passage , North Elizabeth, CA - 91359",0.12,MCF
+C00168,WellCare Medical,kttps://www.wellcaremedical.com,Healthcare,Hospital,2081,Female,"Business: 2788 Cochran Ridges, Rebeccaview, DC - 20017",0.51,WCM

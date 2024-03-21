@@ -30,6 +30,7 @@ class DataSourceGenerator:
         self.gen_birth_certificates()
         self.gen_death_certificates()
         self.gen_company_directories()
+        self.gen_company_client_list()
         self.gen_industry_directories()
 
     def _check_requirements(self, obj, requirements=None):
@@ -204,11 +205,33 @@ class DataSourceGenerator:
                 for p in company.employee_structure
                 if p.person is not None
             }
+            Path(f"results/companies/{company.company_name}").mkdir(
+                parents=True, exist_ok=True
+            )
+            comp_path = Path(
+                f"companies/{company.company_name}/{company.abbreviation}_Directory"
+            )
             self._generate_data_source(
-                f"company_directories/{company.abbreviation}_Directory",
+                comp_path,
                 None,
                 fields,
                 employees,
+                self._get_additional_attr,
+            )
+
+    def gen_company_client_list(self):
+        fields = ["full_name"]
+        for company in self.companies.values():
+            clients = {p.id: p for p in company.clients}
+
+            comp_path = Path(
+                f"companies/{company.company_name}/{company.abbreviation}_Clients"
+            )
+            self._generate_data_source(
+                comp_path,
+                None,
+                fields,
+                clients,
                 self._get_additional_attr,
             )
 

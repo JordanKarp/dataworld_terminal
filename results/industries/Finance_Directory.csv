@@ -1,12 +1,22 @@
 id,company_name,website,industry,sub_industry,founded,client_scope,hq,market_share,abbreviation
-C00004,WealthTech Hedge,kttp://www.wealthtechhedge.com,Finance,Hedge Fund,2098,Male,"Business: 879 Cain Dam , West Adam, OH - 44064",0.55,WTH
-C00029,FinanceHub Capital,kttps://www.financehubcapital.com,Finance,Bank,2059,Female,"Business: 21879 Ryan Junctions , Scotthaven, RI - 02815",0.22,FHC
-C00059,MoneyWise Fund,kttp://www.moneywisefund.com,Finance,Investment Firm,2093,National,"Business: 55361 Humphrey Trace , Jasonbury, WY - 82858",0.77,MWF
-C00061,Money Vault Mortgage,kttp://www.moneyvaultmortgage.com,Finance,Loans / Mortgage Lender,2097,Male,"Business: 925 Gwendolyn Vista , Lambport, CT - 06357",0.35,MVM
-C00065,Invest Capital,kttps://www.investcapital.com,Finance,Hedge Fund,2098,Regional,"Business: 624 Amy Flat, Port Kendramouth, MD - 21413",1.0,IC
-C00072,Money Wise Fund,kttp://www.moneywisefund.com,Finance,Hedge Fund,2099,Male,"Business: 79027 Donovan Knolls, Kyleberg, NH - 03206",0.8,MWF
-C00074,MoneyWise Bank,kttps://www.moneywisebank.com,Finance,Bank,2098,Male,"Business: 4839 Jennifer Isle, Hoodview, TN - 38446",0.55,MWB
-C00077,Finance Vault Finance,kttp://www.financevaultfinance.com,Finance,Bank,1953,Regional,"Business: 417 Michael Port , Port Rachel, UT - 84173",0.54,FVF
-C00091,CapitalTech Lend,kttps://www.capitaltechlend.com,Finance,Loans / Mortgage Lender,2082,Local,"Business: 5354 Madison Motorway , Schultzhaven, AR - 72339",0.56,CTL
-C00097,Invest Tech Loans,kttps://www.investtechloans.com,Finance,Loans / Mortgage Lender,2084,Local,"Business: 60 Taylor Meadow, Obrienburgh, MT - 59804",0.14,ITL
-C00099,Invest Vault Trust,kttps://www.investvaulttrust.com,Finance,Bank,2098,Local,"Business: 150 Benjamin Plains , South Timothy, SD - 57696",0.75,IVT
+C00006,WealthTech Loans,kttp://www.wealthtechloans.com,Finance,Loans / Mortgage Lender,2099,Male,"Business: 67264 Owens Roads, Humphreymouth, MS - 39670",0.88,WTL
+C00026,FinanceHub Capital,kttps://www.financehubcapital.com,Finance,Bank,2059,Female,"Business: 21879 Ryan Junctions , Scotthaven, RI - 02815",0.22,FHC
+C00056,MoneyWise Fund,kttp://www.moneywisefund.com,Finance,Investment Firm,2093,National,"Business: 55361 Humphrey Trace , Jasonbury, WY - 82858",0.77,MWF
+C00058,Money Vault Mortgage,kttp://www.moneyvaultmortgage.com,Finance,Loans / Mortgage Lender,2097,Male,"Business: 925 Gwendolyn Vista , Lambport, CT - 06357",0.35,MVM
+C00062,Invest Capital,kttps://www.investcapital.com,Finance,Hedge Fund,2098,Regional,"Business: 624 Amy Flat, Port Kendramouth, MD - 21413",1.0,IC
+C00069,Money Wise Fund,kttp://www.moneywisefund.com,Finance,Hedge Fund,2099,Male,"Business: 79027 Donovan Knolls, Kyleberg, NH - 03206",0.8,MWF
+C00071,MoneyWise Bank,kttps://www.moneywisebank.com,Finance,Bank,2098,Male,"Business: 4839 Jennifer Isle, Hoodview, TN - 38446",0.55,MWB
+C00074,Finance Vault Finance,kttp://www.financevaultfinance.com,Finance,Bank,1953,Regional,"Business: 417 Michael Port , Port Rachel, UT - 84173",0.54,FVF
+C00088,CapitalTech Lend,kttps://www.capitaltechlend.com,Finance,Loans / Mortgage Lender,2082,Local,"Business: 5354 Madison Motorway , Schultzhaven, AR - 72339",0.56,CTL
+C00094,Invest Tech Loans,kttps://www.investtechloans.com,Finance,Loans / Mortgage Lender,2084,Local,"Business: 60 Taylor Meadow, Obrienburgh, MT - 59804",0.14,ITL
+C00096,Invest Vault Trust,kttps://www.investvaulttrust.com,Finance,Bank,2098,Local,"Business: 150 Benjamin Plains , South Timothy, SD - 57696",0.75,IVT
+C00098,Dinero Bank,kttp://www.dinerobank.com,Finance,Bank,2094,Regional,"Business: 119 Patricia Unions , South Jeremy, NH - 03180",0.5,DB
+C00104,Invest Wise Fund,kttp://www.investwisefund.com,Finance,Hedge Fund,2090,Regional,"Business: 9783 Gordon Knolls, South Catherine, FL - 32238",0.99,IWF
+C00119,Fund Tech Fund,kttp://www.fundtechfund.com,Finance,Investment Firm,2090,National,"Business: 68022 Kathy Passage, Lake Donnafort, SC - 29034",0.46,FTF
+C00128,Wealth Wise Finance,kttps://www.wealthwisefinance.com,Finance,Bank,2099,Regional,"Business: 708 Martin Pines , Housefurt, PA - 17821",0.09,WWF
+C00132,Finance Wise Capital,kttps://www.financewisecapital.com,Finance,Bank,2071,Male,"Business: 3767 Zachary Green, North Danaside, ME - 03960",0.72,FWC
+C00136,InvestTech Finance,kttp://www.investtechfinance.com,Finance,Bank,2099,National,"Business: 350 David Courts , New Ross, GA - 31920",0.79,ITF
+C00143,Money Hub Digital,kttps://www.moneyhubdigital.com,Finance,Crypto,2096,Female,"Business: 21643 Tracy Trail , Hamiltonton, NM - 87797",0.6,MHD
+C00162,Money Edge Capital,kttp://www.moneyedgecapital.com,Finance,Investment Firm,2098,Female,"Business: 33109 Michael Passage, Petersenborough, SD - 57370",0.5,MEC
+C00169,DineroTech Mortgage,kttps://www.dinerotechmortgage.com,Finance,Loans / Mortgage Lender,2099,Male,"Business: 44214 Jones Run, South Elizabethhaven, KY - 40061",0.71,DTM
+C00175,Capital Capital,kttp://www.capitalcapital.com,Finance,Bank,2092,Female,"Business: 6945 Long Prairie, Rodriguezport, TN - 38468",0.97,CC
