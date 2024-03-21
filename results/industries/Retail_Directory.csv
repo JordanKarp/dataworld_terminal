@@ -1,0 +1,11 @@
+id,company_name,website,industry,sub_industry,founded,client_scope,hq,market_share,abbreviation
+C00007,Shop Mall Fresh,kttps://www.shopmallfresh.com,Retail,Grocery,2098,Local,"Business: 813 Salinas Route, North Steven, WV - 25221",0.56,SMF
+C00010,StyleHub Electro,kttps://www.stylehubelectro.com,Retail,Electronics,2099,Regional,"Business: 27170 Hall Pike, Friedmanburgh, IA - 50669",0.04,SHE
+C00015,Style Hub Spark,kttps://www.stylehubspark.com,Retail,Jeweler,2081,Regional,"Business: 8556 Kelli Villages, New Loretta, MI - 48787",0.38,SHS
+C00024,BuyMall Market,kttps://www.buymallmarket.com,Retail,Wholesale,2090,Male,"Business: 7826 Joseph Centers, Michaelchester, KY - 42464",0.49,BMM
+C00028,ShopMall Glam,kttps://www.shopmallglam.com,Retail,Jeweler,2097,Regional,"Business: 6791 Webb Bypass , Port Michaelville, WI - 53711",0.65,SMG
+C00040,Style Place Market,kttps://www.styleplacemarket.com,Retail,Wholesale,2090,Male,"Business: 772 Charles Circles , Samanthaside, NJ - 07151",0.2,SPM
+C00041,SelectHub Tools,kttps://www.selecthubtools.com,Retail,Hardware,2082,Local,"Business: 203 Wiley Avenue, Port Lauren, NC - 27116",0.55,SHT
+C00063,Buy Hub Grocer,kttp://www.buyhubgrocer.com,Retail,Grocery,2096,Regional,"Business: 8724 Colleen Village, Bowersmouth, GA - 31028",0.12,BHG
+C00068,SelectMall Gadget,kttp://www.selectmallgadget.com,Retail,Electronics,2097,National,"Business: 9731 Palmer Spurs, North Patriciaville, LA - 70743",0.7,SMG
+C00079,Trend Hub Mart,kttps://www.trendhubmart.com,Retail,Convenience,2084,Female,"Business: 113 Brown Vista , Port Megan, IL - 62254",0.7,THM

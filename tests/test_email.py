@@ -28,7 +28,7 @@ edge_case_params = [
     (
         "",
         EmailTypes.PERSONAL,
-        "unknown",
+        None,
         "Personal: defEmail@test.com",
     ),  # Empty email address
     (

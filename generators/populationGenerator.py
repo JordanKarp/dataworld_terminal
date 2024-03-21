@@ -7,8 +7,8 @@ from utilities.load_tools import load_weighted_csv
 from data.person.person_averages import TAKE_NAME_PERCENT
 
 FIRST_PASS_POP_SIZE = 100
-STARTING_GENERATION = 1
-MINIMUM_MARRIAGE_AGE = 18
+STARTING_GENERATION = 3
+
 
 NUM_CHILDREN_PATH = Path("data/population/num_children_weights.csv")
 MARRIAGE_RATE_PATH = Path("data/population/marrage_rates_weights.csv")
@@ -21,48 +21,53 @@ class PopulationGenerator:
         self.seed = seed
         self.personGen = PersonGenerator(self.seed)
         self.marriages, self.marriage_weights = load_weighted_csv(MARRIAGE_RATE_PATH)
-        self.population = []
+        # self.population = []
+        self.population = {}
 
-    def create(self, start_gen=STARTING_GENERATION):
-        self.initial_pop(start_gen)
+    def create(self, init_pop=FIRST_PASS_POP_SIZE, start_gen=STARTING_GENERATION):
+        self.initial_pop(init_pop, start_gen)
         for i in range(start_gen, -1, -1):
             self.match_spouses(i)
             self.add_children(i)
         return self.population
 
-    def initial_pop(self, gen, number_people=FIRST_PASS_POP_SIZE):
+    def initial_pop(self, number_people, gen):
         for _ in range(number_people):
-            self.population.append(self.personGen.new(generation=gen))
+            p = self.personGen.new(generation=gen)
+            self.population[p.id] = p
 
     def add_children(self, generation):
         child_nums, child_nums_weights = load_weighted_csv(NUM_CHILDREN_PATH)
-        new_pop = []
+        new_pop = {}
         eligible_parents = [
             p
-            for p in self.population
+            for p in self.population.values()
             if p.marital_status == "Married" and p.generation == generation
         ]
         for person in eligible_parents:
             if num_children := int(
                 self.personGen.gen.weighted_choice(child_nums, child_nums_weights)
             ):
+
                 new_children_in_family = [
                     self.personGen.new_child(person, person.spouse)
                     for _ in range(num_children)
                 ]
+                for parent in [person, person.spouse]:
+                    parent.children = new_children_in_family
+
                 for child in new_children_in_family:
                     child.siblings = [
                         sib for sib in new_children_in_family if sib != child
                     ]
+                    new_pop[child.id] = child
 
-                for parent in [person, person.spouse]:
-                    parent.children = new_children_in_family
+                # new_pop.extend(new_children_in_family)
 
-                new_pop.extend(new_children_in_family)
-
-            if person.spouse in eligible_parents:
-                eligible_parents.remove(person.spouse)
-        self.population.extend(new_pop)
+                # Shifted this up one level to give more chances for children
+                if person.spouse in eligible_parents:
+                    eligible_parents.remove(person.spouse)
+        self.population.update(new_pop)
 
     def _marry_people(self, a, b):
         a.spouse = b
@@ -90,9 +95,10 @@ class PopulationGenerator:
 
     def match_spouses(self, generation):
         eligible_people = [
-            p for p in self.population if p.generation == generation and p.can_marry
+            p
+            for p in self.population.values()
+            if p.generation == generation and p.can_marry
         ]
-
         for p in eligible_people:
             marital_status = self.personGen.gen.weighted_choice(
                 self.marriages, self.marriage_weights
@@ -109,34 +115,3 @@ class PopulationGenerator:
 
     def __repr__(self):
         return "\n".join(str(person) for person in self.population)
-
-    # FIELDS IN ALPHABETICAL ORDER
-    def population_to_csv(self, filename=EXPORT_CSV_NAME):
-        fields = [
-            attr
-            for attr in dir(Person)
-            if not callable(getattr(Person, attr)) and not attr.startswith("__")
-        ]
-
-        with open(filename, "w") as csvfile:
-            writer = DictWriter(csvfile, fieldnames=fields)
-            writer.writeheader()
-            for person in self.population:
-                writer.writerow({k: getattr(person, k) for k in fields})
-
-    # def csv_pop(self, filename=EXPORT_CSV_NAME):
-    #     fields = [k for k in Person.__dict__.keys() if not k.startswith("__")]
-
-    #     # writing to csv file
-    #     with open(filename, "w") as csvfile:
-    #         # creating a csv dict writer object
-    #         writer = DictWriter(csvfile, fieldnames=fields)
-
-    #         # writing headers (field names)
-    #         writer.writeheader()
-
-    #         # writing data rows
-    #         for person in self.population:
-    #             writer.writerow(
-    #                 {k: v for k, v in person.__dict__.items() if k in fields}
-    #             )

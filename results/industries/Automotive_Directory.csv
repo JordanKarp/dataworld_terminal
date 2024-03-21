@@ -1,0 +1,8 @@
+id,company_name,website,industry,sub_industry,founded,client_scope,hq,market_share,abbreviation
+C00022,Drive Path Rentals,kttps://www.drivepathrentals.com,Automotive,Rental,2030,Male,"Business: 439 Charles Trail, South Sara, HI - 96879",0.96,DPR
+C00039,ZoomWagon Cars,kttps://www.zoomwagoncars.com,Automotive,Manufacturer,2083,National,"Business: 43354 Brooks Trace , Erikton, WA - 98107",0.82,ZWC
+C00045,CityTrails Autos,kttp://www.citytrailsautos.com,Automotive,Dealership,2098,Local,"Business: 3972 Billy Garden, West Emily, CO - 80159",0.13,CTA
+C00055,Drive Ways R Us,kttp://www.drivewaysrus.com,Automotive,Dealership,2061,Regional,"Business: 6044 David Union, Kennethmouth, PA - 18517",0.48,DWRU
+C00056,CityWagon Shop,kttps://www.citywagonshop.com,Automotive,Mechanic,2090,Female,"Business: 1044 Justin Lake , Hernandezport, NH - 03819",0.45,CWS
+C00066,Go Autos,kttp://www.goautos.com,Automotive,Dealership,2013,National,"Business: 222 Andrea Turnpike , North Danielle, MS - 38797",0.29,GA
+C00095,ZoomPath To Go,kttps://www.zoompathtogo.com,Automotive,Rental,2090,National,"Business: 814 Donald Causeway , Normanton, MA - 02447",0.79,ZPTG

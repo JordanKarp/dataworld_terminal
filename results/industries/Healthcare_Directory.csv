@@ -1,0 +1,8 @@
+id,company_name,website,industry,sub_industry,founded,client_scope,hq,market_share,abbreviation
+C00008,Med Life Care,kttps://www.medlifecare.com,Healthcare,Elderly Care,2095,National,"Business: 580 Matthew Road, Bellhaven, ND - 58692",0.57,MLC
+C00019,CareMed Health,kttps://www.caremedhealth.com,Healthcare,Specialized Clinics,2088,Male,"Business: 0 Christina Island, Adamshire, ID - 83672",0.99,CMH
+C00025,Well Wellness Care,kttps://www.wellwellnesscare.com,Healthcare,Elderly Care,2089,Regional,"Business: 375 Stone Ports , Mariaport, LA - 70265",0.4,WWC
+C00033,Rehab Hub Elder,kttps://www.rehabhubelder.com,Healthcare,Elderly Care,2069,Local,"Business: 87 Andrew Inlet, Campbellland, IA - 50231",0.26,RHE
+C00035,DocMed Special,kttp://www.docmedspecial.com,Healthcare,Specialized Clinics,2095,Regional,"Business: 8699 Stewart Highway, West Erin, IN - 46903",0.52,DMS
+C00076,DocWellness Pharma,kttps://www.docwellnesspharma.com,Healthcare,Pharmaceutical,2081,National,"Business: 41183 Kimberly Shoal, Webbstad, AZ - 85776",0.38,DWP
+C00088,DocHub Clinic,kttp://www.dochubclinic.com,Healthcare,Specialized Clinics,2087,Local,"Business: 2089 Moore Ranch , Port Julie, MD - 21027",0.98,DHC

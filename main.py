@@ -2,13 +2,17 @@ from generators.dataSourceGenerator import DataSourceGenerator
 from generators.companiesGenerator import CompaniesGenerator
 from generators.populationGenerator import PopulationGenerator
 
+INIT_POP = 500
+INIT_GEN = 3
+INIT_COMP = 100
+
 
 def main(seed=None):
     pg = PopulationGenerator(seed)
-    pop = pg.create(3)
+    pop = pg.create(INIT_POP, INIT_GEN)
 
     cg = CompaniesGenerator()
-    cg.create()
+    cg.create(INIT_COMP)
     cg.load_population(pop)
     cg.add_employees()
     cg.add_clients()
@@ -16,9 +20,8 @@ def main(seed=None):
 
     dsg = DataSourceGenerator(pop, comps, seed)
 
-    cg.comanies_to_csv()
-    pg.population_to_csv()
-    dsg.generate_data_source_lists(output="CSV")
+    dsg.populate_sources()
+    dsg.export()
 
 
 if __name__ == "__main__":

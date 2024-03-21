@@ -8,3 +8,6 @@ class Animal:
     breed: str
     age: int
     gender: str
+
+    def __getitem__(self, item):
+        return getattr(self, item, "")

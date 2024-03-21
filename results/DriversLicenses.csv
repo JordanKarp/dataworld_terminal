@@ -1,0 +1,894 @@
+full_name,drivers_license~number,drivers_license~issue_date,drivers_license~exp_date,drivers_license~restrictions,home~state,height,format_height,format_weight
+Donald Adam Brown,V42MMVF3,2092-10-25,2100-10-25,None,Georgia,72.7,"6' 1""",201 lbs
+Antonio Adrian Rivera,Q60IHAU8,2097-01-20,2105-01-20,B - Corrective Lenses,Wisconsin,64.9,"5' 5""",142 lbs
+Diana Sarah Sanchez,X49TEOF7,2099-04-07,2107-04-07,None,Ohio,65.6,"5' 6""",146 lbs
+Jeffrey John Buck,Y07ZFMM1,2099-12-29,2107-12-29,B - Corrective Lenses,Idaho,67.7,"5' 8""",186 lbs
+Mary Donna Berry,C57UUQM2,2097-01-27,2105-01-27,None,Florida,66.0,"5' 6""",142 lbs
+Trevor Timothy Walker,A35DMWT6,2089-06-22,2097-06-22,None,Ohio,67.5,"5' 8""",186 lbs
+Crystal Ashlee Boyer,W44IMJG8,2091-05-02,2099-05-02,B - Corrective Lenses,Illinois,66.2,"5' 6""",136 lbs
+Morgan Robin Spencer,V17BOEV5,2094-12-01,2102-12-01,None,Illinois,65.3,"5' 5""",144 lbs
+Andrea Garcia,R38BARZ4,2097-01-04,2105-01-04,None,Texas,65.2,"5' 5""",136 lbs
+Taylor Karen Ross,L08HHGA2,2094-06-04,2102-06-04,B - Corrective Lenses,Mississippi,61.2,"5' 1""",146 lbs
+Ricky David Hart,D06MTCJ2,2092-05-05,2100-05-05,None,Georgia,70.4,"5' 10""",120 lbs
+Tara Rebecca Cooper,J37ZZPL8,2093-04-20,2101-04-20,None,Hawaii,70.5,"5' 10""",159 lbs
+Stephen Kevin Cruz,E90NAGM9,2094-02-15,2102-02-15,B - Corrective Lenses,Virginia,68.4,"5' 8""",192 lbs
+Cristina Maria Sanford,R04KMSC6,2094-05-24,2102-05-24,None,Missouri,73.3,"6' 1""",119 lbs
+Jack Smith,A54HCXH3,2090-04-01,2098-04-01,B - Corrective Lenses,Arkansas,66.0,"5' 6""",180 lbs
+Ryan Wilson,M24CGRM3,2095-12-26,2103-12-26,None,Georgia,62.3,"5' 2""",205 lbs
+Dawn Samantha Hall,J97FNPO9,2099-04-13,2107-04-13,None,Ohio,71.6,"6' 0""",133 lbs
+Kimberly Michelle Rice,K98LVGZ6,2093-04-28,2101-04-28,D - Daytime Only,Wisconsin,60.6,"5' 1""",129 lbs
+Tanner Michael Wood,Z29CGGL5,2091-04-27,2099-04-27,None,Utah,76.2,"6' 4""",217 lbs
+Pam Traci Hicks,E95RPZF1,2091-08-03,2099-08-03,B - Corrective Lenses,North Carolina,67.0,"5' 7""",147 lbs
+Mary Sandra Gardner,U91YFVN6,2099-09-13,2107-09-13,None,South Carolina,60.8,"5' 1""",158 lbs
+Timothy Williams,L72VPAY9,2097-08-17,2105-08-17,None,Tennessee,66.7,"5' 7""",224 lbs
+Patricia Anita Rose,N67AAQQ9,2093-09-07,2101-09-07,None,Rhode Island,61.7,"5' 2""",143 lbs
+Daniel Joseph Rose,O91IQXF4,2092-08-28,2100-08-28,None,Rhode Island,73.2,"6' 1""",182 lbs
+Jennifer Brittany Mora,N81CJTV0,2097-01-13,2105-01-13,None,Illinois,59.1,"4' 11""",124 lbs
+Jamie Tammy Vaughn,M98FXBZ0,2095-10-29,2103-10-29,B - Corrective Lenses,Maine,68.3,"5' 8""",128 lbs
+David Michael Norman,S53JXSR5,2091-01-04,2099-01-04,None,Nebraska,69.6,"5' 10""",195 lbs
+Peter James Beltran,Z60WKWE8,2098-04-08,2106-04-08,B - Corrective Lenses,New Mexico,75.0,"6' 3""",160 lbs
+James James Reed,H00RFUP7,2097-07-31,2105-07-31,None,Illinois,71.7,"6' 0""",190 lbs
+Laura Hannah Miller,T94JVBM8,2090-04-16,2098-04-16,B - Corrective Lenses,New Hampshire,66.5,"5' 6""",150 lbs
+Tammy Sylvia Noble,I54AXJY8,2090-02-17,2098-02-17,None,New Jersey,65.3,"5' 5""",147 lbs
+Carol Kara Butler,M98SPWG4,2094-02-24,2102-02-24,None,North Carolina,76.0,"6' 4""",140 lbs
+Adam Andrew Miller,P85VACE6,2090-07-06,2098-07-06,None,Maryland,67.3,"5' 7""",206 lbs
+Robyn Ramirez,N69LPGA7,2090-01-08,2098-01-08,None,New York,64.7,"5' 5""",128 lbs
+Melissa Laura Lucas,T72PGRZ4,2099-05-02,2107-05-02,None,Alaska,66.8,"5' 7""",143 lbs
+Sheri Ashley Morrison,L95WJTO8,2092-07-05,2100-07-05,None,Hawaii,63.4,"5' 3""",130 lbs
+Tanya Emma Edwards,K41DEGK2,2091-05-25,2099-05-25,None,Virginia,69.3,"5' 9""",141 lbs
+Daniel Dylan Higgins,R49YATO0,2092-05-09,2100-05-09,None,Maryland,69.8,"5' 10""",193 lbs
+Stephen Anthony Smith,L62CMJM1,2095-12-07,2103-12-07,None,Arkansas,75.4,"6' 3""",204 lbs
+Michael Michael Ramirez,R82TDLN0,2098-03-15,2106-03-15,B - Corrective Lenses,Illinois,73.5,"6' 2""",195 lbs
+Juan Andrew Sherman,M91XCHX1,2095-01-24,2103-01-24,None,Washington,68.7,"5' 9""",190 lbs
+Noah Kenneth Walsh,R65EFKB2,2094-01-20,2102-01-20,None,Virginia,69.2,"5' 9""",192 lbs
+Sandra Lisa Myers,K99WXOJ8,2076-11-21,2084-11-21,None,Louisiana,70.9,"5' 11""",161 lbs
+Isaiah Mcgee,K83EQDE6,2092-01-23,2100-01-23,None,New York,68.7,"5' 9""",177 lbs
+Angela Dana Hall,P88SLGB7,2094-08-14,2102-08-14,None,Tennessee,63.4,"5' 3""",142 lbs
+Michelle Jill Smith,G43QSJP4,2092-01-28,2100-01-28,D - Daytime Only,New Mexico,68.5,"5' 8""",135 lbs
+Michelle Lindsey Mcdaniel,W88HYPV5,2099-05-16,2107-05-16,None,Ohio,68.9,"5' 9""",142 lbs
+Linda Brenda Carrillo,Z17KKTJ2,2094-11-09,2102-11-09,None,Mississippi,63.9,"5' 4""",136 lbs
+Stephanie Jean Robinson,A79ADTS5,2098-07-03,2106-07-03,D - Daytime Only,Rhode Island,67.9,"5' 8""",136 lbs
+Donna Andrea Rodriguez,E94ZTZV6,2096-04-21,2104-04-21,None,Kansas,64.7,"5' 5""",130 lbs
+William Michael Alvarez,H02VTKU7,2096-01-15,2104-01-15,None,New York,64.2,"5' 4""",192 lbs
+Tiffany Teresa Webb,T79FWIT1,2094-04-12,2102-04-12,B - Corrective Lenses,Montana,64.1,"5' 4""",133 lbs
+Timothy Le,F54MQTH6,2095-01-30,2103-01-30,None,Texas,78.4,"6' 6""",194 lbs
+Randy Joseph Griffin,E64OJTL6,2097-01-24,2105-01-24,None,Iowa,68.5,"5' 8""",136 lbs
+Corey Walter Brooks,P70GCWN3,2098-06-20,2106-06-20,None,Georgia,64.6,"5' 5""",173 lbs
+Denise Carrie Davis,H14OVEX4,2099-02-16,2107-02-16,None,Maryland,65.1,"5' 5""",126 lbs
+Keith Brian Arias,Q77OYZP9,2097-09-07,2105-09-07,None,Texas,76.4,"6' 4""",219 lbs
+Diana Valerie Carson,Y92TXNW8,2093-08-28,2101-08-28,None,New Mexico,69.3,"5' 9""",124 lbs
+Heather Crystal Reed,W33JYSS0,2092-01-14,2100-01-14,B - Corrective Lenses,Ohio,67.8,"5' 8""",130 lbs
+Christina Jasmine Decker,S12LUPD0,2094-02-08,2102-02-08,None,Kansas,65.9,"5' 6""",143 lbs
+Bradley Robert Ryan,G64PHJJ5,2096-01-24,2104-01-24,None,Tennessee,76.0,"6' 4""",145 lbs
+Matthew Jonathan Johnson,B79SIOD0,2098-11-16,2106-11-16,None,New Mexico,79.6,"6' 8""",193 lbs
+Sheila Stephens,Y70XLNU1,2090-01-28,2098-01-28,None,California,65.6,"5' 6""",146 lbs
+Helen Terry Larson,Q47OWMX1,2096-01-29,2104-01-29,None,Massachusetts,64.2,"5' 4""",160 lbs
+Michael Davis,G79THGG2,2090-02-16,2098-02-16,None,Vermont,76.0,"6' 4""",146 lbs
+Mary Kimberly Hamilton,H16UFXS4,2097-10-06,2105-10-06,None,Maine,62.5,"5' 2""",134 lbs
+Laura Gonzalez,U85WJKS7,2098-09-09,2106-09-09,None,South Carolina,65.3,"5' 5""",126 lbs
+Mercedes Kathleen Fields,O01UKRP8,2091-03-03,2099-03-03,D - Daytime Only,Oregon,68.9,"5' 9""",142 lbs
+Ryan Colton Sparks,V48NTMX3,2096-12-14,2104-12-14,None,Kentucky,67.3,"5' 7""",157 lbs
+Erik Daniel Spencer,W31TQLG2,2099-06-17,2107-06-17,None,Minnesota,67.3,"5' 7""",190 lbs
+Donna Kirsten Blake,W14MHYO5,2090-10-25,2098-10-25,None,Idaho,59.2,"4' 11""",146 lbs
+Amy Krista Mitchell,S71ZOQL0,2099-05-15,2107-05-15,B - Corrective Lenses,Hawaii,69.0,"5' 9""",156 lbs
+Nicholas Louis Taylor,Q30AQGA2,2097-03-25,2105-03-25,None,New Mexico,67.3,"5' 7""",222 lbs
+Joseph Frank,N53JRAW8,2098-07-19,2106-07-19,None,Ohio,73.7,"6' 2""",166 lbs
+Wayne Jon Bartlett,C59RNRG0,2097-01-09,2105-01-09,None,Tennessee,70.1,"5' 10""",175 lbs
+Timothy Sean Chavez,H44RPFT3,2098-03-08,2106-03-08,None,New Hampshire,71.5,"6' 0""",211 lbs
+Cindy Roberts,S61NHFM8,2096-09-19,2104-09-19,None,Idaho,60.4,"5' 0""",153 lbs
+Gabrielle Emily Evans,B32MILR7,2099-05-09,2107-05-09,B - Corrective Lenses,District of Columbia,63.1,"5' 3""",139 lbs
+Tracy Connie Wood,T55HLAP5,2091-08-25,2099-08-25,None,District of Columbia,59.9,"5' 0""",109 lbs
+James Tristan Callahan,Y61GHAH6,2097-09-14,2105-09-14,None,Iowa,72.4,"6' 0""",236 lbs
+Jason Roger Stephens,O73MMJB4,2094-08-15,2102-08-15,None,California,76.1,"6' 4""",218 lbs
+Mark Hayes,D17CVDA3,2091-09-23,2099-09-23,None,Indiana,67.1,"5' 7""",200 lbs
+Brittany Casey Berry,O49MGHW8,2097-11-03,2105-11-03,None,Texas,55.6,"4' 8""",132 lbs
+Tracie Amy Washington,Q87WLTA5,2092-01-13,2100-01-13,None,Rhode Island,70.0,"5' 10""",155 lbs
+Tiffany Amanda Moore,Y91BYWA9,2093-01-08,2101-01-08,None,Texas,68.3,"5' 8""",135 lbs
+Brian Mark Collins,A41JXKA3,2086-01-28,2094-01-28,None,Nebraska,69.1,"5' 9""",187 lbs
+Cynthia Michelle Moore,Z58UCLQ0,2093-04-13,2101-04-13,None,New Hampshire,63.5,"5' 4""",141 lbs
+Jeffrey Orr,K33ULPQ9,2097-08-25,2105-08-25,B - Corrective Lenses,Florida,74.7,"6' 3""",198 lbs
+Jason Eric Peterson,G71EPMN8,2095-01-25,2103-01-25,D - Daytime Only,New Mexico,71.4,"5' 11""",168 lbs
+Jason Johnny Blake,V31NTVW7,2098-08-09,2106-08-09,None,Idaho,68.6,"5' 9""",140 lbs
+Samantha Monica Page,P35ZXDU3,2096-04-10,2104-04-10,None,Georgia,62.5,"5' 2""",130 lbs
+Richard James Moore,J75VSMD8,2098-11-17,2106-11-17,None,Oklahoma,64.3,"5' 4""",208 lbs
+Jesse Sandoval,B09XODL3,2091-11-10,2099-11-10,None,Alabama,68.7,"5' 9""",180 lbs
+Todd Hartman,C93WDJV6,2092-05-01,2100-05-01,None,Delaware,65.8,"5' 6""",175 lbs
+Whitney Sharon Murray,K12DRKF4,2092-11-19,2100-11-19,None,Georgia,63.3,"5' 3""",123 lbs
+Laura Jones,U08MBUU6,2094-10-24,2102-10-24,None,California,69.6,"5' 10""",123 lbs
+Brittany Carol Brown,J35SGKX3,2094-07-16,2102-07-16,None,Kansas,61.3,"5' 1""",144 lbs
+Matthew Brendan Ramirez,A32TXTS3,2096-12-08,2104-12-08,None,South Carolina,73.0,"6' 1""",170 lbs
+Stephen Robert Hooper,P30JRVA8,2082-12-09,2090-12-09,None,Tennessee,77.6,"6' 6""",189 lbs
+Jessica Vincent,C52OMJC0,2095-08-14,2103-08-14,None,Iowa,63.3,"5' 3""",159 lbs
+Jenny Sara Wood,S82HVKU0,2087-08-27,2095-08-27,None,Utah,59.6,"5' 0""",138 lbs
+Angelica Lisa Murphy,D76UGFP1,2088-02-28,2096-02-28,None,Nevada,65.1,"5' 5""",130 lbs
+Aaron Jacob Johnson,X87TLZU3,2097-02-24,2105-02-24,None,Missouri,71.7,"6' 0""",176 lbs
+Regina Erica Barry,Z89FTHS2,2097-10-03,2105-10-03,None,District of Columbia,54.2,"4' 6""",135 lbs
+Sean Jeffrey Gordon,K69OFRE9,2099-06-03,2107-06-03,None,Maine,54.9,"4' 7""",208 lbs
+Rachel Gabrielle Martin,S30ELJM0,2091-07-31,2099-07-31,D - Daytime Only,New Jersey,62.4,"5' 2""",124 lbs
+Amanda Melissa Graham,B88NTUC6,2078-02-14,2086-02-14,B - Corrective Lenses,Minnesota,63.9,"5' 4""",148 lbs
+Kelly Amanda Collins,M99QDZX2,2095-12-21,2103-12-21,None,Nebraska,55.9,"4' 8""",132 lbs
+David Mark Lee,Y35LIKC5,2089-12-26,2097-12-26,None,Rhode Island,71.7,"6' 0""",184 lbs
+Jessica Melissa Hobbs,F01RUDK2,2095-07-28,2103-07-28,B - Corrective Lenses,Delaware,65.8,"5' 6""",151 lbs
+Michael Smith,B85XTDM1,2090-01-12,2098-01-12,B - Corrective Lenses,Florida,71.9,"6' 0""",171 lbs
+Kelly Richard Scott,X79LHXA6,2095-11-30,2103-11-30,None,New York,71.1,"5' 11""",200 lbs
+Dale Hunter Hobbs,O72QRWP9,2099-09-09,2107-09-09,None,Delaware,77.4,"6' 5""",175 lbs
+Ryan Dakota Kelly,S73FGDP5,2090-04-15,2098-04-15,B - Corrective Lenses,Tennessee,78.8,"6' 7""",169 lbs
+Shannon Allison Barnes,W98AEFC3,2090-11-09,2098-11-09,B - Corrective Lenses,Kentucky,65.2,"5' 5""",147 lbs
+Courtney Wallace,Z14PCUD8,2098-09-18,2106-09-18,None,South Dakota,69.1,"5' 9""",153 lbs
+Bryan David Hall,N82MTFD4,2093-03-31,2101-03-31,None,Indiana,73.1,"6' 1""",171 lbs
+Savannah Kimberly Rodriguez,L86MXDT4,2093-04-18,2101-04-18,None,Kansas,62.1,"5' 2""",160 lbs
+Dominic Peter Christensen,N54KCDP4,2098-04-28,2106-04-28,B - Corrective Lenses,Illinois,80.1,"6' 8""",170 lbs
+Mary Christy Juarez,N56AEKZ4,2091-11-27,2099-11-27,None,Massachusetts,67.6,"5' 8""",123 lbs
+Danielle Simmons,A93RSXW3,2092-07-17,2100-07-17,None,Delaware,67.1,"5' 7""",144 lbs
+Shirley Katelyn Wall,Y84RAFT5,2092-04-03,2100-04-03,None,Arizona,71.1,"5' 11""",133 lbs
+Jessica Shelia Sutton,N30UNNU9,2096-05-07,2104-05-07,None,Missouri,71.4,"5' 11""",122 lbs
+Herbert Matthew Miller,N61FJQW4,2093-01-01,2101-01-01,B - Corrective Lenses,Alaska,66.4,"5' 6""",171 lbs
+Alexis Amy Long,P26XOZC0,2090-04-15,2098-04-15,None,Montana,60.0,"5' 0""",139 lbs
+Tiffany Gross,E76GPVQ8,2095-11-08,2103-11-08,None,Alaska,59.7,"5' 0""",132 lbs
+Robert Thomas Reed,Y98DVFW9,2087-06-20,2095-06-20,None,Hawaii,71.8,"6' 0""",205 lbs
+Tammy Young,Q26PMVQ9,2093-09-17,2101-09-17,None,Colorado,66.6,"5' 7""",136 lbs
+Brandon Matthew Rice,I04NAQL6,2097-03-19,2105-03-19,None,Wisconsin,78.5,"6' 6""",141 lbs
+Robert Jesse Marks,L58GPJQ4,2091-02-18,2099-02-18,None,Ohio,70.6,"5' 11""",173 lbs
+Kyle Baxter,J77PXRB1,2081-08-11,2089-08-11,None,Colorado,64.5,"5' 4""",186 lbs
+Richard Villarreal,Z25WKGP0,2096-06-25,2104-06-25,None,California,76.4,"6' 4""",199 lbs
+Scott Samuel Harris,E87ZWZW9,2096-06-27,2104-06-27,None,Georgia,60.5,"5' 0""",185 lbs
+Ashley Tina West,P69JCQE3,2096-06-08,2104-06-08,None,Tennessee,68.4,"5' 8""",143 lbs
+Jennifer Tina Farrell,F16XUYA9,2094-04-21,2102-04-21,None,Ohio,66.2,"5' 6""",138 lbs
+Eric Donald Ramos,B09QDEW1,2088-12-19,2096-12-19,None,Washington,70.3,"5' 10""",201 lbs
+Joann Taylor Hopkins,Q89DPSH9,2096-05-12,2104-05-12,None,Florida,62.8,"5' 3""",141 lbs
+Zachary Edgar Martinez,N90FDVU1,2097-10-17,2105-10-17,B - Corrective Lenses,New Mexico,63.5,"5' 4""",202 lbs
+Jessica Autumn Thomas,H96XFGY9,2099-10-16,2107-10-16,None,Mississippi,66.0,"5' 6""",144 lbs
+Zachary Christopher Smith,S86IEMJ9,2096-04-02,2104-04-02,B - Corrective Lenses,Oklahoma,70.0,"5' 10""",210 lbs
+Kendra Sharon Anderson,O41LYRH9,2090-08-23,2098-08-23,None,Utah,64.2,"5' 4""",136 lbs
+Katherine Tammy Brennan,F09RQNZ7,2092-08-28,2100-08-28,B - Corrective Lenses,District of Columbia,61.3,"5' 1""",136 lbs
+Jason Daniel Barry,G35OYPU5,2099-04-06,2107-04-06,None,District of Columbia,68.0,"5' 8""",167 lbs
+Rachel Crystal Barton,L50PRML9,2097-01-06,2105-01-06,None,Kansas,63.3,"5' 3""",154 lbs
+Dana Ford,W44IZXW1,2090-04-14,2098-04-14,None,Utah,59.1,"4' 11""",130 lbs
+Mercedes Ashley Moore,G14ZAEM4,2098-12-23,2106-12-23,D - Daytime Only,Louisiana,63.4,"5' 3""",141 lbs
+Austin Ramirez,L00UTDN5,2091-10-05,2099-10-05,None,New York,63.5,"5' 4""",186 lbs
+Veronica Jillian Harris,J86CNNU4,2093-01-11,2101-01-11,None,Mississippi,70.9,"5' 11""",145 lbs
+Manuel William Lawson,M37BQGK2,2093-05-03,2101-05-03,None,Maryland,69.0,"5' 9""",176 lbs
+Jane Elizabeth Lambert,H26VUTE0,2097-09-05,2105-09-05,None,Montana,75.4,"6' 3""",142 lbs
+Elizabeth Gordon,Y85NBVH3,2090-03-10,2098-03-10,None,Louisiana,63.5,"5' 4""",162 lbs
+Nathan Jason Martinez,M84QUCX7,2092-11-21,2100-11-21,None,Washington,65.6,"5' 6""",174 lbs
+Jordan Dalton Lester,I85FWBK0,2092-07-18,2100-07-18,B - Corrective Lenses,Utah,74.9,"6' 3""",189 lbs
+Lauren Victoria Richardson,N33ISNT2,2094-03-10,2102-03-10,B - Corrective Lenses,Washington,67.9,"5' 8""",153 lbs
+Laurie Heather Buchanan,U00SPVK9,2090-01-24,2098-01-24,None,Mississippi,72.6,"6' 1""",137 lbs
+Kimberly Gates,A67ATJI9,2091-04-24,2099-04-24,None,New Jersey,61.5,"5' 2""",130 lbs
+Connie Jasmine Benson,D57LIZZ6,2096-02-02,2104-02-02,None,North Dakota,65.0,"5' 5""",145 lbs
+Valerie Kayla Marsh,W36JRMS0,2090-04-17,2098-04-17,None,Colorado,69.6,"5' 10""",131 lbs
+Lucas Le,G82WZTR0,2098-03-02,2106-03-02,None,Texas,75.2,"6' 3""",190 lbs
+Christina Ryan,S80NZBM7,2091-09-02,2099-09-02,B - Corrective Lenses,Wyoming,56.1,"4' 8""",145 lbs
+Elizabeth Brenda Baird,T03HQAI2,2077-07-21,2085-07-21,None,Nevada,60.7,"5' 1""",149 lbs
+Courtney Tammy Mclean,T02EWYG4,2092-07-28,2100-07-28,None,South Dakota,65.7,"5' 6""",148 lbs
+Connor Christopher Roy,V41PXQN7,2099-12-03,2107-12-03,None,Tennessee,63.1,"5' 3""",164 lbs
+James Joshua Davis,Q21YTRF3,2091-11-22,2099-11-22,None,Kentucky,72.9,"6' 1""",184 lbs
+Megan Morgan Espinoza,T69XTWT1,2098-12-22,2106-12-22,None,South Dakota,66.1,"5' 6""",144 lbs
+Gregory Anderson,N22RVKG3,2079-04-21,2087-04-21,D - Daytime Only,Alaska,72.6,"6' 1""",210 lbs
+Kent Richard Shaw,Z43CAIX0,2085-12-02,2093-12-02,None,Maine,66.0,"5' 6""",200 lbs
+Andrea Jennifer Williams,B61OMPF1,2096-03-01,2104-03-01,None,Tennessee,65.7,"5' 6""",133 lbs
+Chad Jason Winters,Z61AFJQ1,2097-05-17,2105-05-17,None,Hawaii,61.2,"5' 1""",173 lbs
+John Owens,T30HPOJ2,2091-07-03,2099-07-03,None,Arkansas,66.3,"5' 6""",180 lbs
+John Cantrell,J58TDIG3,2093-08-15,2101-08-15,B - Corrective Lenses,Utah,68.1,"5' 8""",206 lbs
+Randy Joseph Martinez,T33HMVQ3,2097-07-18,2105-07-18,None,Pennsylvania,72.8,"6' 1""",168 lbs
+Sarah Jennifer Bailey,B56MQXM7,2093-03-26,2101-03-26,None,Tennessee,61.0,"5' 1""",133 lbs
+Steven William Wood,X97ENLE2,2098-01-27,2106-01-27,None,District of Columbia,74.0,"6' 2""",201 lbs
+Trevor James Levy,E88LSLR0,2093-08-07,2101-08-07,B - Corrective Lenses,Vermont,64.8,"5' 5""",190 lbs
+Hannah Stephanie Andrews,F78DRPA4,2099-07-05,2107-07-05,D - Daytime Only,New Jersey,62.1,"5' 2""",145 lbs
+Jacob Manuel Hogan,U72LMTG1,2095-09-09,2103-09-09,B - Corrective Lenses,Nevada,75.1,"6' 3""",193 lbs
+Kyle Raymond Ruiz,A56GLEJ3,2092-10-01,2100-10-01,None,Wyoming,71.6,"6' 0""",191 lbs
+Zachary Bradley Pacheco,U96NOBQ4,2088-03-20,2096-03-20,None,Virginia,69.1,"5' 9""",182 lbs
+Roberta Karen Valencia,Q34WRBW6,2097-04-17,2105-04-17,None,Kentucky,71.8,"6' 0""",161 lbs
+Kathryn Dalton,A67ZJUP1,2097-07-18,2105-07-18,B - Corrective Lenses,Kansas,68.4,"5' 8""",144 lbs
+Jamie Kelly Cervantes,P04RDZU9,2097-01-31,2105-01-31,None,California,64.0,"5' 4""",139 lbs
+Frank Travis Fuentes,Z50OUKO3,2096-11-28,2104-11-28,B - Corrective Lenses,Georgia,68.7,"5' 9""",201 lbs
+Thomas Rodney Juarez,K82KQEN2,2092-02-13,2100-02-13,None,Arkansas,63.5,"5' 4""",189 lbs
+Michael Eric Hensley,D93VSLW8,2091-01-11,2099-01-11,None,Georgia,69.7,"5' 10""",242 lbs
+Victoria Jean Hawkins,H42KOKH3,2095-09-16,2103-09-16,None,Arizona,64.9,"5' 5""",139 lbs
+Mark Gregory Tate,C02AMTG5,2092-12-02,2100-12-02,None,Virginia,72.8,"6' 1""",162 lbs
+Melissa Aguilar,L59JFIV6,2092-07-09,2100-07-09,None,Tennessee,64.4,"5' 4""",135 lbs
+Joel Brandon Baker,H47AJBY6,2091-08-19,2099-08-19,None,Alaska,69.6,"5' 10""",194 lbs
+Emily Sharon Austin,N02ZVUT0,2096-05-24,2104-05-24,None,Kansas,63.9,"5' 4""",164 lbs
+Frank Timothy White,S42AAFE8,2091-11-21,2099-11-21,None,Iowa,63.9,"5' 4""",203 lbs
+Ryan Thomas Avila,P23YDUX3,2098-07-18,2106-07-18,None,Iowa,85.0,"7' 1""",181 lbs
+Jeffrey Jeffrey Sanders,T91OHJL4,2093-08-19,2101-08-19,None,Washington,63.8,"5' 4""",183 lbs
+Kristin Alyssa Cole,H39XDJY9,2094-06-29,2102-06-29,B - Corrective Lenses,New Hampshire,59.0,"4' 11""",138 lbs
+Victoria Mary Jennings,K71VIBE1,2098-03-24,2106-03-24,D - Daytime Only,Utah,62.3,"5' 2""",164 lbs
+Mary Ashley Vasquez,Y48QPXK7,2091-09-30,2099-09-30,B - Corrective Lenses,Virginia,61.1,"5' 1""",131 lbs
+Robert Frank Cervantes,O75EPSH7,2098-05-01,2106-05-01,D - Daytime Only,California,68.5,"5' 8""",195 lbs
+Karen Alicia Scott,T33FFUU2,2095-03-06,2103-03-06,B - Corrective Lenses,New York,69.8,"5' 10""",133 lbs
+Chad Brandon Gutierrez,U00NXHD6,2095-09-03,2103-09-03,None,Maryland,63.6,"5' 4""",170 lbs
+Anna Karen Ramirez,V56WNWO1,2097-09-22,2105-09-22,None,Alaska,58.2,"4' 10""",129 lbs
+Kristin Rachel Carter,K32TSWQ5,2096-02-29,2104-02-29,None,Florida,65.8,"5' 6""",173 lbs
+Michael Jacob Cruz,C39QCLP5,2079-07-17,2087-07-17,None,Virginia,72.7,"6' 1""",206 lbs
+Ryan Jeffery Monroe,D37KZSL5,2092-06-16,2100-06-16,None,Louisiana,78.3,"6' 6""",187 lbs
+Amber Sarah Ellis,B47YESA9,2094-09-25,2102-09-25,B - Corrective Lenses,Texas,66.7,"5' 7""",142 lbs
+Carlos Roy Woodard,L22EFLL8,2091-03-20,2099-03-20,B - Corrective Lenses,Michigan,73.2,"6' 1""",206 lbs
+Joshua Jeremy Foley,Z07YCEZ0,2097-11-18,2105-11-18,B - Corrective Lenses,California,73.5,"6' 2""",177 lbs
+Dawn Alexis Mcgee,B96MFKV4,2099-03-31,2107-03-31,None,West Virginia,61.0,"5' 1""",118 lbs
+Daniel Joseph Wells,N46HCCZ7,2096-10-03,2104-10-03,None,Oregon,71.4,"5' 11""",207 lbs
+Bailey Cheryl Walter,D31NRIZ8,2078-10-20,2086-10-20,None,Missouri,65.8,"5' 6""",156 lbs
+Robert Christopher Thomas,G01MPQA3,2089-01-09,2097-01-09,None,South Dakota,63.4,"5' 3""",206 lbs
+Lisa Karen Lee,S19WCEA8,2093-08-05,2101-08-05,None,Arizona,59.7,"5' 0""",149 lbs
+Terri Cindy Mcdaniel,E24BJVD3,2092-10-05,2100-10-05,None,Ohio,64.3,"5' 4""",159 lbs
+Zachary Justin Dalton,Q02CGPK0,2099-03-16,2107-03-16,None,Kansas,67.1,"5' 7""",164 lbs
+Mason Cody Murray,I44MBHO6,2092-03-22,2100-03-22,None,Georgia,72.5,"6' 0""",182 lbs
+Nicholas Christian Bullock,X44ETGT0,2087-12-29,2095-12-29,None,Oklahoma,76.5,"6' 4""",173 lbs
+Allen John Jones,Q90IITF5,2099-04-26,2107-04-26,None,Minnesota,71.0,"5' 11""",152 lbs
+Patricia Wendy Smith,B82AYDG3,2097-11-15,2105-11-15,None,Alaska,64.7,"5' 5""",127 lbs
+Aaron Richard Miller,T95RFQL8,2097-10-24,2105-10-24,None,North Dakota,64.7,"5' 5""",198 lbs
+Wesley Jeremy Robinson,D18AZZB1,2085-02-03,2093-02-03,None,Wisconsin,69.4,"5' 9""",179 lbs
+Dawn Sherman,A14UZZB8,2094-12-24,2102-12-24,None,Washington,60.3,"5' 0""",157 lbs
+Hayden Adam Brooks,C07RDRX7,2098-07-28,2106-07-28,None,North Dakota,63.2,"5' 3""",185 lbs
+Brianna Walter,D98LPVY2,2096-10-21,2104-10-21,None,Missouri,66.1,"5' 6""",135 lbs
+Joshua Garcia,N05HBIN3,2093-12-07,2101-12-07,B - Corrective Lenses,Texas,58.4,"4' 10""",176 lbs
+Rita Laura Holmes,N68VGOS8,2097-09-18,2105-09-18,D - Daytime Only,Montana,59.7,"5' 0""",151 lbs
+Rachel Carl Davis,S08SYDZ9,2092-10-02,2100-10-02,B - Corrective Lenses,Tennessee,62.7,"5' 3""",144 lbs
+Danny Grant Perkins,M33SEBU9,2097-10-01,2105-10-01,B - Corrective Lenses,California,68.2,"5' 8""",188 lbs
+Samantha Kimberly Potter,S90LDDM7,2086-03-05,2094-03-05,None,Georgia,66.5,"5' 6""",144 lbs
+Rita Smith,I29OOFZ5,2091-03-17,2099-03-17,None,Tennessee,65.5,"5' 6""",139 lbs
+Michael Richard Farrell,W58WEJP7,2096-09-02,2104-09-02,B - Corrective Lenses,Ohio,77.1,"6' 5""",155 lbs
+Ashley Roberts,K21EFXS4,2099-06-06,2107-06-06,None,California,69.0,"5' 9""",118 lbs
+Timothy Marcus Hines,Z02ZKGC6,2095-01-13,2103-01-13,None,Texas,63.3,"5' 3""",158 lbs
+Mason Kevin Carroll,Z60FVXP7,2099-11-06,2107-11-06,None,New Jersey,69.4,"5' 9""",201 lbs
+Timothy Thomas Lee,G57XHOR8,2094-03-25,2102-03-25,None,South Dakota,66.1,"5' 6""",190 lbs
+Scott Robert Conway,W53AFDY8,2093-08-22,2101-08-22,B - Corrective Lenses,Indiana,69.6,"5' 10""",183 lbs
+Emily Johnson,B84OHZE2,2099-03-10,2107-03-10,B - Corrective Lenses,Missouri,67.6,"5' 8""",149 lbs
+Steven Daniel Hoffman,D73FKEN0,2092-10-13,2100-10-13,None,Rhode Island,72.6,"6' 1""",165 lbs
+Tami Nichole Johnson,V00UTBE2,2095-05-04,2103-05-04,None,Pennsylvania,66.2,"5' 6""",158 lbs
+Patricia Kathleen Lee,C53YHUM6,2093-10-07,2101-10-07,None,South Dakota,67.4,"5' 7""",143 lbs
+Jeremy Mitchell Espinoza,H26ZHMA6,2099-10-04,2107-10-04,None,South Dakota,59.6,"5' 0""",143 lbs
+James Richard Harvey,Y85QMJE9,2090-06-08,2098-06-08,None,Louisiana,66.5,"5' 6""",222 lbs
+Christopher Aaron Bass,F50SNKH9,2098-11-03,2106-11-03,B - Corrective Lenses,Colorado,67.4,"5' 7""",154 lbs
+Terri Andrea Ramirez,B93AMGS1,2089-07-03,2097-07-03,None,Illinois,55.8,"4' 8""",143 lbs
+Ann Carr,K12GKWW0,2090-12-03,2098-12-03,None,New Hampshire,62.3,"5' 2""",153 lbs
+Chad Edwin Johnson,A13JICF7,2090-10-08,2098-10-08,None,Idaho,74.4,"6' 2""",182 lbs
+Samantha Erika Miller,B30OQEH6,2095-10-14,2103-10-14,B - Corrective Lenses,North Dakota,62.5,"5' 2""",136 lbs
+William Dale White,C96PWUV7,2098-10-23,2106-10-23,D - Daytime Only,Kentucky,77.3,"6' 5""",204 lbs
+Christopher Casey Moore,I80UBXG9,2090-04-08,2098-04-08,None,New Hampshire,64.5,"5' 4""",206 lbs
+Melissa Collins,O59VYLU5,2099-03-14,2107-03-14,B - Corrective Lenses,Arizona,58.7,"4' 11""",157 lbs
+Vanessa Anita Mata,V65NYRK6,2098-12-28,2106-12-28,None,South Dakota,66.9,"5' 7""",130 lbs
+Eric Jesse Stark,I76BGQW0,2093-09-21,2101-09-21,None,Mississippi,71.1,"5' 11""",159 lbs
+Tara Hernandez,A93QQLA9,2097-05-17,2105-05-17,None,Idaho,62.9,"5' 3""",141 lbs
+Daniel Randy Mckee,Q25CPIL5,2094-02-23,2102-02-23,None,California,80.3,"6' 8""",170 lbs
+Jasmine Cathy Hall,V82KKUL4,2093-02-16,2101-02-16,None,West Virginia,71.5,"6' 0""",144 lbs
+Mary Anne Duran,X32DVRB0,2091-07-08,2099-07-08,B - Corrective Lenses,Connecticut,61.1,"5' 1""",138 lbs
+Kimberly Janice Watts,G00CRPC3,2093-08-19,2101-08-19,B - Corrective Lenses,Kentucky,59.6,"5' 0""",140 lbs
+Rachael Deborah Garcia,I90SQUG6,2094-12-25,2102-12-25,B - Corrective Lenses,Idaho,66.0,"5' 6""",152 lbs
+Anthony Barry Thomas,I72PHHS0,2096-01-09,2104-01-09,B - Corrective Lenses,Wyoming,66.4,"5' 6""",124 lbs
+Kimberly Amy Moore,W00VRWC2,2094-10-27,2102-10-27,B - Corrective Lenses,South Dakota,62.9,"5' 3""",142 lbs
+Dennis Jeffrey Lambert,R41UDLT4,2096-11-10,2104-11-10,None,Montana,71.3,"5' 11""",188 lbs
+Robert Justin Mendez,B58FKZQ8,2092-10-19,2100-10-19,D - Daytime Only,Mississippi,68.0,"5' 8""",205 lbs
+Nathan Brian Benson,P15CTEV9,2095-11-15,2103-11-15,None,North Dakota,73.6,"6' 2""",175 lbs
+Joseph Aaron Smith,I09YLRX7,2094-04-13,2102-04-13,None,New Mexico,69.7,"5' 10""",173 lbs
+Deborah Dana Montoya,D57EZHA8,2095-07-19,2103-07-19,None,Illinois,63.5,"5' 4""",145 lbs
+Caroline Casey Hubbard,A53IJPH3,2099-07-04,2107-07-04,None,Alabama,68.0,"5' 8""",148 lbs
+Brittany Janice Russell,B82VXZR5,2091-06-19,2099-06-19,None,Nevada,53.8,"4' 6""",144 lbs
+Eric Arthur Wang,S50CXII9,2091-03-19,2099-03-19,B - Corrective Lenses,Maine,77.0,"6' 5""",182 lbs
+Christina Heather Andrews,U58UICI8,2097-12-05,2105-12-05,None,Colorado,61.7,"5' 2""",144 lbs
+Lisa Christina Hobbs,P79TYXI8,2096-11-01,2104-11-01,None,Missouri,70.5,"5' 10""",142 lbs
+Melanie Crawford,H52BEZG7,2096-05-19,2104-05-19,B - Corrective Lenses,Connecticut,67.6,"5' 8""",124 lbs
+Anthony Kevin Garrison,V81XEIZ8,2084-11-09,2092-11-09,None,Texas,81.3,"6' 9""",194 lbs
+Cindy Lori Lee,X94QVZU2,2090-04-22,2098-04-22,None,Utah,63.8,"5' 4""",138 lbs
+Roberto Ernest Smith,E72XVUZ8,2093-06-21,2101-06-21,B - Corrective Lenses,Tennessee,63.7,"5' 4""",188 lbs
+Kenneth Keith King,X42CNZD8,2090-03-10,2098-03-10,None,Minnesota,72.2,"6' 0""",178 lbs
+William Christopher Ramirez,H17BTQD6,2097-02-21,2105-02-21,None,Alaska,74.2,"6' 2""",182 lbs
+Cheryl Gates,A49KFWM3,2095-11-20,2103-11-20,None,Kansas,63.3,"5' 3""",148 lbs
+Danielle Pamela Dunn,V60MVUV3,2090-05-08,2098-05-08,None,Texas,59.0,"4' 11""",145 lbs
+Jennifer Theresa Edwards,E28ZKXE9,2084-07-22,2092-07-22,None,Nevada,71.0,"5' 11""",144 lbs
+Cynthia Page,Y90XGYV3,2094-10-24,2102-10-24,D - Daytime Only,Utah,67.9,"5' 8""",140 lbs
+Jared Davis,X14IKVH7,2097-12-09,2105-12-09,None,Ohio,71.3,"5' 11""",184 lbs
+Samuel John Baker,J05OQCT1,2090-03-20,2098-03-20,None,District of Columbia,75.5,"6' 4""",174 lbs
+Daniel Jackson,M93WPUW2,2094-07-21,2102-07-21,None,Hawaii,73.5,"6' 2""",157 lbs
+Megan Lauren Adams,J35NTUE8,2096-02-20,2104-02-20,None,Minnesota,70.5,"5' 10""",155 lbs
+Craig Perez,I32BVCB2,2093-12-04,2101-12-04,None,Wisconsin,69.3,"5' 9""",175 lbs
+Nicholas Richard Salazar,X12JTJU5,2097-01-13,2105-01-13,None,Minnesota,67.6,"5' 8""",134 lbs
+Ryan Dominguez,A03TZNS8,2091-03-14,2099-03-14,None,Florida,82.0,"6' 10""",134 lbs
+Linda Krystal Gonzalez,S43RXJQ0,2093-03-01,2101-03-01,None,West Virginia,66.6,"5' 7""",137 lbs
+Olivia Weber,Q88VKKW7,2094-08-23,2102-08-23,None,Idaho,68.3,"5' 8""",123 lbs
+Morgan Lindsay Buck,I80ODJV0,2099-06-13,2107-06-13,None,Iowa,67.2,"5' 7""",143 lbs
+Jeremiah Franklin Dalton,S31IUMH0,2098-08-30,2106-08-30,None,Utah,71.7,"6' 0""",168 lbs
+Tiffany Kelly Hall,Y47ARXS7,2095-06-12,2103-06-12,B - Corrective Lenses,Ohio,63.3,"5' 3""",171 lbs
+Joseph Marvin Hill,K35PCZQ0,2094-02-07,2102-02-07,None,Florida,77.9,"6' 6""",193 lbs
+Erica Tiffany Smith,C20NOES7,2090-08-30,2098-08-30,None,Michigan,64.6,"5' 5""",146 lbs
+Desiree Beth Davis,M81ZGHF0,2098-12-24,2106-12-24,None,Colorado,68.7,"5' 9""",138 lbs
+Angela Lozano,U35UYIC7,2096-07-15,2104-07-15,None,Georgia,67.0,"5' 7""",162 lbs
+Linda Sarah Brown,I88NOXZ2,2099-10-09,2107-10-09,None,Maine,58.9,"4' 11""",130 lbs
+Judith Jennifer Tate,T07UHHZ3,2086-08-25,2094-08-25,B - Corrective Lenses,Virginia,65.9,"5' 6""",149 lbs
+Christopher Todd Saunders,X02TEZQ7,2096-10-15,2104-10-15,None,Missouri,72.9,"6' 1""",195 lbs
+Michael Stanley Gonzalez,P20WGHX9,2099-06-24,2107-06-24,None,West Virginia,64.1,"5' 4""",179 lbs
+Edward Joseph Henry,K46GZXL9,2096-05-28,2104-05-28,None,New Jersey,64.7,"5' 5""",159 lbs
+James Smith,Y33FPHV0,2085-07-31,2093-07-31,None,Georgia,64.9,"5' 5""",185 lbs
+Jeremy Brandon Adams,Z20TCQH4,2098-08-16,2106-08-16,None,Minnesota,71.9,"6' 0""",190 lbs
+Christina Kim Deleon,D28OFEB7,2084-05-09,2092-05-09,None,Kentucky,71.6,"6' 0""",136 lbs
+Olivia Maria Brown,M90NLLK7,2098-07-13,2106-07-13,None,Georgia,65.8,"5' 6""",140 lbs
+John Christopher Shaw,N52KJCY7,2093-03-18,2101-03-18,None,Maine,72.8,"6' 1""",263 lbs
+Kimberly Susan Potter,U99JZPA1,2094-12-26,2102-12-26,None,Rhode Island,67.1,"5' 7""",133 lbs
+Robert Johnson,B96SFVY0,2093-01-29,2101-01-29,None,Oklahoma,66.0,"5' 6""",213 lbs
+Charles Nicholas Brennan,C98GZWR5,2090-06-29,2098-06-29,None,District of Columbia,68.7,"5' 9""",165 lbs
+Paul Buck,C73OFWO3,2092-10-08,2100-10-08,B - Corrective Lenses,Iowa,69.0,"5' 9""",198 lbs
+Joseph Jason Burke,B13YNMN6,2092-06-27,2100-06-27,None,Connecticut,71.9,"6' 0""",181 lbs
+Gabriel Nicholas Harrington,Q24WYJA3,2091-05-09,2099-05-09,None,Alaska,64.1,"5' 4""",170 lbs
+Allison Hailey Griffith,T06NLUR3,2095-07-05,2103-07-05,None,Alaska,61.1,"5' 1""",129 lbs
+Lisa Crystal White,D91UZCP9,2096-09-06,2104-09-06,None,Delaware,69.5,"5' 10""",132 lbs
+Sandy Sabrina Gilmore,K35EKIJ1,2094-02-13,2102-02-13,None,Ohio,61.5,"5' 2""",126 lbs
+Kathleen Rebecca Adams,F65LGOO1,2094-12-14,2102-12-14,B - Corrective Lenses,Alabama,64.9,"5' 5""",158 lbs
+Kristi Denise Foley,T05FQXH7,2096-01-24,2104-01-24,None,California,70.0,"5' 10""",141 lbs
+Katelyn Kelly Davies,W30ESYI3,2093-01-13,2101-01-13,None,Montana,68.1,"5' 8""",128 lbs
+David Justin Butler,R64RZNZ0,2093-10-31,2101-10-31,None,North Carolina,70.3,"5' 10""",186 lbs
+Ann Nicole Sanford,O92YVPT8,2091-08-03,2099-08-03,None,South Dakota,58.5,"4' 10""",128 lbs
+Patrick Jonathan Nguyen,P42WKZP2,2090-02-21,2098-02-21,None,Arizona,77.5,"6' 6""",193 lbs
+Craig Jonathan Shannon,H06ANLQ0,2095-08-06,2103-08-06,None,Iowa,64.9,"5' 5""",194 lbs
+Gina Kayla Dougherty,T00OHPZ2,2098-06-21,2106-06-21,None,Alaska,60.2,"5' 0""",122 lbs
+Thomas David Adams,S55FZVC4,2090-06-02,2098-06-02,None,West Virginia,67.5,"5' 8""",150 lbs
+Joseph Daniel Hubbard,X04PSXU1,2073-04-09,2081-04-09,None,Alabama,74.4,"6' 2""",168 lbs
+Matthew Timothy Smith,Q28BEUY5,2098-06-18,2106-06-18,B - Corrective Lenses,New York,65.5,"5' 6""",178 lbs
+Ian Craig Snyder,L09ZVIY1,2096-09-01,2104-09-01,None,Kentucky,64.1,"5' 4""",156 lbs
+Benjamin David Chambers,N58JQFZ4,2090-11-03,2098-11-03,None,Illinois,65.2,"5' 5""",204 lbs
+Donald Gilmore,E61UZDD9,2093-03-15,2101-03-15,None,Ohio,72.3,"6' 0""",194 lbs
+Ricky Bauer,R58OKSM0,2095-02-09,2103-02-09,B - Corrective Lenses,Michigan,72.0,"6' 0""",166 lbs
+Sherry Kiara Berry,W99WCYS0,2097-01-25,2105-01-25,None,Texas,66.3,"5' 6""",121 lbs
+John Shawn Brown,O21MOQU3,2094-11-06,2102-11-06,B - Corrective Lenses,New Mexico,64.8,"5' 5""",172 lbs
+Seth Daniel Robinson,H41JYLI6,2094-08-30,2102-08-30,None,Rhode Island,70.7,"5' 11""",179 lbs
+Steve Ryan Campbell,K67BPLY3,2069-06-20,2077-06-20,None,Colorado,73.8,"6' 2""",137 lbs
+Danielle Haley Williams,W78IOBX0,2097-11-19,2105-11-19,None,Illinois,60.3,"5' 0""",114 lbs
+Catherine Karen Smith,J00NIBG2,2090-09-12,2098-09-12,B - Corrective Lenses,Colorado,63.8,"5' 4""",138 lbs
+Alexandra Andrea Smith,A30CKYW2,2091-09-23,2099-09-23,None,Oklahoma,63.9,"5' 4""",135 lbs
+Robert Jason Anderson,P05LOMD2,2082-01-13,2090-01-13,None,District of Columbia,65.9,"5' 6""",190 lbs
+Marisa Monica Saunders,G41VRTA9,2093-02-08,2101-02-08,None,Florida,65.4,"5' 5""",161 lbs
+Johnny Chad Sanford,V42HWUZ5,2094-10-26,2102-10-26,None,Missouri,68.1,"5' 8""",153 lbs
+Martin Richard Hill,B69ZTXG1,2090-03-18,2098-03-18,None,Nevada,76.4,"6' 4""",177 lbs
+Karen Carrie Clark,S09SNNG2,2097-09-15,2105-09-15,None,Idaho,68.5,"5' 8""",145 lbs
+Amy Sanders,F48JZCV3,2099-12-10,2107-12-10,None,Washington,65.7,"5' 6""",151 lbs
+Carrie Ashley Hughes,C21EJYV4,2095-05-13,2103-05-13,None,Iowa,69.5,"5' 10""",151 lbs
+Mary Ebony Duran,I82QTQU5,2087-05-19,2095-05-19,B - Corrective Lenses,Connecticut,64.2,"5' 4""",156 lbs
+Candice Susan James,L43WHAY3,2085-05-16,2093-05-16,None,Florida,64.8,"5' 5""",149 lbs
+Rhonda Jessica Dalton,Q85TPVE5,2098-03-12,2106-03-12,None,Utah,60.7,"5' 1""",146 lbs
+Kathy Lucas,R02QRLX5,2092-08-14,2100-08-14,None,Missouri,63.0,"5' 3""",147 lbs
+Christopher Dustin Anderson,H02AMGB3,2092-12-21,2100-12-21,None,Ohio,69.8,"5' 10""",207 lbs
+Michelle Baker,E40DODD3,2092-05-26,2100-05-26,None,Alaska,64.9,"5' 5""",158 lbs
+Erin Valerie Davis,V27YMCE3,2096-09-08,2104-09-08,B - Corrective Lenses,Texas,68.5,"5' 8""",155 lbs
+Ellen Drake,L85FXJU9,2096-09-08,2104-09-08,B - Corrective Lenses,Iowa,63.9,"5' 4""",139 lbs
+Bryan Travis Lucas,N09YMNW2,2099-09-06,2107-09-06,None,Alaska,75.1,"6' 3""",179 lbs
+Doris Ashley Davis,M43NDWE2,2094-07-07,2102-07-07,B - Corrective Lenses,Kentucky,60.4,"5' 0""",131 lbs
+Sarah Melissa Garza,Q64YINQ4,2090-06-13,2098-06-13,None,North Dakota,64.3,"5' 4""",143 lbs
+Michelle Toni Dalton,R99LFGS7,2097-09-18,2105-09-18,None,District of Columbia,63.7,"5' 4""",132 lbs
+Hannah Anna Collins,U83DDFP5,2098-01-07,2106-01-07,None,Nebraska,65.1,"5' 5""",162 lbs
+Dylan Robert Rich,V74OKQE8,2097-11-24,2105-11-24,None,Massachusetts,62.4,"5' 2""",177 lbs
+Lori Rachel Hart,V34BNIR0,2093-05-24,2101-05-24,None,Georgia,64.6,"5' 5""",126 lbs
+Andrew William Avila,Z34VGNR6,2085-10-18,2093-10-18,None,California,73.9,"6' 2""",184 lbs
+Michael James Aguilar,U88JQWK0,2096-11-04,2104-11-04,None,Tennessee,60.8,"5' 1""",168 lbs
+Sarah Rebecca Butler,K58OGHB6,2097-05-20,2105-05-20,None,Texas,66.8,"5' 7""",137 lbs
+Brandon Adam Lowe,T84SJRN2,2095-09-19,2103-09-19,None,Kansas,70.4,"5' 10""",160 lbs
+Desiree Kristin Matthews,U04EMSW7,2087-07-17,2095-07-17,None,Nevada,67.3,"5' 7""",137 lbs
+Jennifer Cheyenne Juarez,K57HMBY5,2093-09-21,2101-09-21,None,Arkansas,65.3,"5' 5""",151 lbs
+Scott Randall Jones,E71CWOE5,2093-12-06,2101-12-06,None,South Dakota,64.3,"5' 4""",170 lbs
+Evan Bryan Nelson,T26UEMZ0,2091-12-18,2099-12-18,None,Mississippi,73.5,"6' 2""",190 lbs
+Gina Angela Crane,B92CKGY7,2094-03-01,2102-03-01,None,Maryland,55.5,"4' 8""",139 lbs
+Michael Lamb,M47COES5,2098-01-22,2106-01-22,None,Wisconsin,69.2,"5' 9""",180 lbs
+Michael Joseph Gonzalez,T39KXCW7,2090-09-22,2098-09-22,None,South Carolina,65.5,"5' 6""",168 lbs
+Ashley Pierce,D87VHPR5,2097-10-22,2105-10-22,None,Georgia,55.8,"4' 8""",147 lbs
+Juan Douglas Griffin,Z54WXXU1,2097-12-19,2105-12-19,None,New York,82.4,"6' 10""",180 lbs
+Austin Sutton,N23AWXL8,2093-08-11,2101-08-11,None,South Dakota,62.6,"5' 3""",177 lbs
+Rachel Katelyn Mathis,X29CQIZ2,2093-04-24,2101-04-24,B - Corrective Lenses,California,67.1,"5' 7""",143 lbs
+Vanessa Debra Bauer,M53GOYJ5,2098-05-31,2106-05-31,None,New Mexico,68.6,"5' 9""",132 lbs
+Nicole Sabrina Hamilton,M65QYBR2,2098-03-01,2106-03-01,D - Daytime Only,Maine,62.5,"5' 2""",136 lbs
+Justin Zachary Norton,A09MUGK2,2090-05-03,2098-05-03,None,California,67.5,"5' 8""",186 lbs
+Molly Sparks,K26KCFX3,2090-02-02,2098-02-02,None,Kentucky,66.7,"5' 7""",143 lbs
+Christopher Jose Luna,P07PGDT4,2098-01-25,2106-01-25,None,California,72.1,"6' 0""",170 lbs
+Samuel Timothy Torres,F71UKLM2,2090-05-05,2098-05-05,B - Corrective Lenses,District of Columbia,67.5,"5' 8""",183 lbs
+Brittany Cynthia Ware,P32HJHD0,2090-02-21,2098-02-21,None,Oregon,64.5,"5' 4""",139 lbs
+Hannah Anna Castaneda,P77ZTHN8,2094-02-15,2102-02-15,None,Ohio,66.1,"5' 6""",133 lbs
+Nathan Hill,Y97VOJD2,2093-08-12,2101-08-12,B - Corrective Lenses,Florida,71.5,"6' 0""",172 lbs
+Laura Carrie King,H23ECRP0,2096-05-26,2104-05-26,None,North Carolina,63.7,"5' 4""",136 lbs
+Robert Martin,Q42GUMQ1,2099-04-13,2107-04-13,None,New Jersey,68.2,"5' 8""",179 lbs
+Christopher Derrick Preston,D67IAZP5,2090-05-25,2098-05-25,None,Virginia,60.6,"5' 1""",189 lbs
+Clayton Jack Duran,R33GQMH2,2094-01-03,2102-01-03,None,Connecticut,70.7,"5' 11""",198 lbs
+Garrett David Smith,X38SMAT4,2091-12-05,2099-12-05,None,Michigan,81.4,"6' 9""",170 lbs
+Candice Tucker,W81ZRBK6,2080-04-21,2088-04-21,None,Louisiana,62.7,"5' 3""",144 lbs
+Amber Tiffany Barnett,L76WPGO1,2093-05-14,2101-05-14,None,District of Columbia,63.0,"5' 3""",138 lbs
+Wendy Carolyn Baldwin,Q98MYRP1,2084-07-23,2092-07-23,B - Corrective Lenses,Oregon,61.0,"5' 1""",147 lbs
+Kenneth Ronald Allen,F96HESE2,2099-06-05,2107-06-05,None,Massachusetts,69.0,"5' 9""",200 lbs
+Brent Andrew Lawrence,K47FBTJ9,2097-02-16,2105-02-16,D - Daytime Only,Arkansas,70.2,"5' 10""",200 lbs
+Seth James Terry,D42ZLLV3,2095-12-11,2103-12-11,None,Maine,73.0,"6' 1""",176 lbs
+Ashley Nicole Terry,A88KAVQ1,2098-02-02,2106-02-02,None,Maine,68.3,"5' 8""",138 lbs
+Kimberly Jennifer Hernandez,Z20RUQM7,2063-02-22,2071-02-22,None,South Dakota,65.0,"5' 5""",114 lbs
+Briana Michelle Moore,H50ECLR1,2099-05-23,2107-05-23,None,North Dakota,67.1,"5' 7""",142 lbs
+Tiffany Sarah Castaneda,E88YYQH3,2099-11-21,2107-11-21,None,Utah,62.1,"5' 2""",142 lbs
+Cynthia Cindy Martinez,W98EOMZ0,2098-02-16,2106-02-16,None,Oregon,64.4,"5' 4""",139 lbs
+Bryan Spencer Brown,R78YIOB7,2096-11-17,2104-11-17,B - Corrective Lenses,Louisiana,74.4,"6' 2""",169 lbs
+John Marcus Rich,R28YFXH7,2077-07-03,2085-07-03,None,Massachusetts,70.8,"5' 11""",228 lbs
+Stephanie Connie Wood,O19WAYV0,2079-05-21,2087-05-21,B - Corrective Lenses,Colorado,63.3,"5' 3""",160 lbs
+Richard Jeremiah Long,V99DBUW0,2095-06-22,2103-06-22,None,Montana,69.4,"5' 9""",183 lbs
+Michael Dean Fry,B62JAQU6,2078-02-27,2086-02-27,None,Nebraska,68.3,"5' 8""",168 lbs
+Lynn Miller,B31HHUB2,2097-11-03,2105-11-03,None,New Hampshire,65.4,"5' 5""",146 lbs
+Nathan Michael Jones,D51JFFZ2,2099-03-06,2107-03-06,None,California,56.9,"4' 9""",210 lbs
+Angela Lauren Delgado,S29DYCB5,2092-07-08,2100-07-08,B - Corrective Lenses,Alaska,61.4,"5' 1""",136 lbs
+Nichole Amanda Valdez,V69SNAZ6,2093-03-24,2101-03-24,None,North Dakota,66.7,"5' 7""",145 lbs
+Mark Bryan Bryan,K65HOMN1,2077-02-06,2085-02-06,B - Corrective Lenses,Wisconsin,70.9,"5' 11""",191 lbs
+Sean Juan Davis,Q35MAQJ3,2093-12-12,2101-12-12,D - Daytime Only,Texas,71.3,"5' 11""",161 lbs
+Cody Jaime Roth,W81BVEW2,2093-08-25,2101-08-25,D - Daytime Only,New York,66.1,"5' 6""",166 lbs
+Bruce Marc Williams,V93YYKS0,2097-10-15,2105-10-15,None,Illinois,60.1,"5' 0""",184 lbs
+Daniel Barton,Y48EECQ4,2092-09-27,2100-09-27,None,Kansas,70.4,"5' 10""",206 lbs
+Angela Clarke,I00VYPU8,2082-02-09,2090-02-09,None,Vermont,63.3,"5' 3""",136 lbs
+Sara Stephanie Lucas,B96MKLI4,2093-05-23,2101-05-23,None,Virginia,67.0,"5' 7""",138 lbs
+Robert James Clarke,T75LHYI6,2090-10-08,2098-10-08,None,Vermont,74.2,"6' 2""",161 lbs
+Jesus John Walters,X95VQEB6,2092-11-23,2100-11-23,None,Alaska,70.9,"5' 11""",176 lbs
+Bradley Leonard Frost,K64HZNV0,2082-08-31,2090-08-31,None,New Hampshire,68.0,"5' 8""",175 lbs
+Erik Kyle Diaz,K81DANI7,2099-07-21,2107-07-21,None,Idaho,67.6,"5' 8""",215 lbs
+Sherry Kimberly Taylor,H42GDGR8,2091-07-31,2099-07-31,B - Corrective Lenses,New Mexico,64.7,"5' 5""",139 lbs
+Debra Olivia Shepherd,W42GWMC1,2090-01-01,2098-01-01,None,Georgia,68.9,"5' 9""",158 lbs
+Larry Richard Hopkins,H20WHOS7,2094-01-02,2102-01-02,None,Florida,65.5,"5' 6""",160 lbs
+Eddie Frederick,A79DPIG5,2097-04-21,2105-04-21,None,Nebraska,70.2,"5' 10""",186 lbs
+Matthew Johnson,P71ADRS1,2099-05-11,2107-05-11,None,Oklahoma,65.9,"5' 6""",204 lbs
+Joseph Harry Collins,N18IXKP4,2092-01-19,2100-01-19,None,Nebraska,62.6,"5' 3""",195 lbs
+Carol Sophia Carter,K80ZDDK4,2092-09-01,2100-09-01,None,Rhode Island,59.7,"5' 0""",139 lbs
+Maurice Nathan Lopez,K09UELU6,2077-12-04,2085-12-04,None,New Hampshire,68.5,"5' 8""",178 lbs
+Jeffrey David Roberts,N91CZVD9,2090-05-07,2098-05-07,None,California,70.6,"5' 11""",164 lbs
+Mary Ryan Williams,H86RPEE1,2099-01-30,2107-01-30,None,Idaho,68.6,"5' 9""",136 lbs
+John Aaron Dixon,U85NJYE1,2099-08-22,2107-08-22,None,Nevada,72.8,"6' 1""",148 lbs
+Victor Kevin Carpenter,K48YWJE3,2098-12-11,2106-12-11,None,Delaware,75.1,"6' 3""",186 lbs
+Scott Ian Hoover,Q29EFOT2,2094-05-16,2102-05-16,None,Georgia,68.4,"5' 8""",162 lbs
+Erin Harmon,R23TBEK3,2094-07-18,2102-07-18,D - Daytime Only,Arkansas,60.5,"5' 0""",134 lbs
+Alexis Cindy Hayes,L55NWLN6,2099-04-01,2107-04-01,None,Indiana,64.4,"5' 4""",140 lbs
+Andrew Seth Allen,E21WULG8,2094-07-31,2102-07-31,None,Wyoming,72.6,"6' 1""",255 lbs
+Margaret Baker,V81EALQ7,2099-11-04,2107-11-04,None,District of Columbia,59.0,"4' 11""",139 lbs
+Dillon Jacob Williams,M75TPOJ0,2093-07-14,2101-07-14,None,Tennessee,67.9,"5' 8""",194 lbs
+Margaret Theresa Lester,V67NRVN5,2092-01-26,2100-01-26,None,Utah,73.6,"6' 2""",137 lbs
+Jose Jordan Dixon,W27CYCV7,2091-10-28,2099-10-28,None,Oregon,72.5,"6' 0""",155 lbs
+Danielle Garcia,V16BYZQ8,2097-09-16,2105-09-16,None,Massachusetts,64.2,"5' 4""",137 lbs
+Dennis Nicholas Young,P34SAQI6,2095-02-23,2103-02-23,None,North Dakota,68.1,"5' 8""",208 lbs
+Alexander Keith Duran,J61LCUP7,2090-11-28,2098-11-28,None,Connecticut,70.0,"5' 10""",155 lbs
+Caroline April Sanford,G88CNXC8,2094-12-08,2102-12-08,None,South Dakota,70.5,"5' 10""",123 lbs
+Devin James Hall,X41FSEJ7,2091-05-14,2099-05-14,B - Corrective Lenses,Tennessee,65.9,"5' 6""",208 lbs
+Christopher Clay,Q12JAEP1,2098-11-27,2106-11-27,None,Maryland,69.0,"5' 9""",179 lbs
+Danielle Sandra Guerrero,X74QFIK2,2096-09-30,2104-09-30,None,Louisiana,68.0,"5' 8""",156 lbs
+Andrew George Edwards,W99GWPT1,2089-06-12,2097-06-12,None,Nevada,65.1,"5' 5""",200 lbs
+Jonathan Dennis Johnson,R17FLOZ8,2092-05-10,2100-05-10,None,Vermont,70.6,"5' 11""",256 lbs
+Ashley Wendy Bullock,Y50WNST4,2096-12-27,2104-12-27,None,Oklahoma,70.0,"5' 10""",120 lbs
+Seth Michael Roberts,P22MIGN5,2080-11-02,2088-11-02,None,Ohio,68.4,"5' 8""",163 lbs
+James David Williams,S92GQWU5,2096-06-06,2104-06-06,None,Delaware,64.1,"5' 4""",164 lbs
+Jessica Jacqueline Castaneda,N53DBRG4,2099-01-09,2107-01-09,None,Utah,65.4,"5' 5""",154 lbs
+Bryan Brian Campbell,A14BDYF3,2096-01-28,2104-01-28,None,Kentucky,79.8,"6' 8""",186 lbs
+Tracy Lisa Hogan,D96QBBT5,2096-01-03,2104-01-03,None,Nevada,61.5,"5' 2""",165 lbs
+Charlene Denise Lewis,Y45CMSW3,2095-11-09,2103-11-09,None,Colorado,66.6,"5' 7""",150 lbs
+Kimberly Karen Griffin,T19EIKB3,2092-03-16,2100-03-16,None,New York,54.9,"4' 7""",157 lbs
+Johnny Steven Snyder,O34QHIV5,2096-06-16,2104-06-16,None,Utah,68.2,"5' 8""",201 lbs
+Stephen Terrence Mosley,R32STDS3,2086-07-29,2094-07-29,None,Maine,65.2,"5' 5""",160 lbs
+Michael Jerry Frost,A92XOWY2,2096-02-09,2104-02-09,None,Michigan,72.6,"6' 1""",163 lbs
+Jose Moore,E14EEON6,2092-10-28,2100-10-28,B - Corrective Lenses,Texas,68.1,"5' 8""",198 lbs
+Joseph Ricardo Myers,J69EIOA8,2091-02-02,2099-02-02,None,Mississippi,63.8,"5' 4""",173 lbs
+Rachel Lisa Murphy,E17SJUN5,2080-03-22,2088-03-22,None,Nevada,66.8,"5' 7""",148 lbs
+Kimberly Davis,L70YLKE0,2090-08-31,2098-08-31,B - Corrective Lenses,Alabama,68.8,"5' 9""",143 lbs
+Carrie Mason,H93HJYH9,2091-11-27,2099-11-27,None,Kentucky,66.3,"5' 6""",131 lbs
+Matthew Taylor Herring,A29WRWI0,2092-06-18,2100-06-18,None,Kentucky,74.5,"6' 2""",199 lbs
+Pedro Arthur Cantrell,B66JPZW3,2090-01-04,2098-01-04,None,South Dakota,79.0,"6' 7""",193 lbs
+Devin James Miller,D02VPCN9,2090-05-27,2098-05-27,None,Kansas,77.1,"6' 5""",179 lbs
+Stephanie Sara Gardner,K99IIFF6,2092-10-22,2100-10-22,D - Daytime Only,South Carolina,71.9,"6' 0""",138 lbs
+Alicia Brittany Alvarado,K23LSOW6,2090-10-27,2098-10-27,None,West Virginia,63.1,"5' 3""",132 lbs
+Alexander Jake Turner,X77IPJV5,2098-08-12,2106-08-12,None,Ohio,62.4,"5' 2""",163 lbs
+Nicole Alyssa Archer,Q05WMUP8,2095-11-08,2103-11-08,None,Nebraska,66.6,"5' 7""",131 lbs
+Philip Joseph Lozano,F67KDYT4,2093-02-08,2101-02-08,None,Washington,73.7,"6' 2""",210 lbs
+Jeanne Kaitlyn Bryan,L49CWRR7,2097-01-11,2105-01-11,None,Wisconsin,54.0,"4' 6""",149 lbs
+Joel Nicholas Jackson,L31ZNHP5,2099-04-14,2107-04-14,None,Oregon,70.9,"5' 11""",175 lbs
+Craig Brett Wagner,J33RCDE1,2097-01-24,2105-01-24,None,New Jersey,77.4,"6' 5""",171 lbs
+Christopher Joseph Young,E40JIFF4,2097-10-12,2105-10-12,B - Corrective Lenses,Oregon,68.1,"5' 8""",124 lbs
+Tracy Thompson,S83YJHE8,2095-07-20,2103-07-20,None,North Dakota,67.1,"5' 7""",130 lbs
+Daniel Alan Brown,B39AUBF9,2090-11-04,2098-11-04,None,Kansas,67.3,"5' 7""",169 lbs
+Patricia Amy Smith,T44LKUP3,2098-07-18,2106-07-18,D - Daytime Only,Arizona,66.6,"5' 7""",128 lbs
+Katelyn Brittany Smith,R65WHEE7,2095-07-12,2103-07-12,None,Florida,69.5,"5' 10""",137 lbs
+Diane Rebecca Pacheco,N34WISX4,2099-01-14,2107-01-14,None,Virginia,66.6,"5' 7""",134 lbs
+Brian Michael Dixon,F92IVCQ1,2096-07-20,2104-07-20,None,New Hampshire,65.9,"5' 6""",195 lbs
+Rachel Allen,L99XEGI9,2095-09-05,2103-09-05,None,Wyoming,67.9,"5' 8""",136 lbs
+Judy Amber Moore,I99FBGC7,2091-03-04,2099-03-04,None,New Mexico,66.4,"5' 6""",136 lbs
+Ryan Richard Collins,X37LIIG2,2098-09-30,2106-09-30,None,West Virginia,73.3,"6' 1""",206 lbs
+Robin Leslie Mora,A22PUVM2,2094-06-03,2102-06-03,B - Corrective Lenses,Vermont,66.7,"5' 7""",142 lbs
+Anthony James Mason,I26LODA8,2091-07-09,2099-07-09,None,Kentucky,64.2,"5' 4""",168 lbs
+Christopher Anthony Cuevas,D41ZYHN6,2091-09-29,2099-09-29,None,Indiana,77.1,"6' 5""",157 lbs
+Donna Petersen,K53RXMN9,2091-06-13,2099-06-13,D - Daytime Only,Nevada,62.1,"5' 2""",124 lbs
+Lori Martinez,Y48EKCJ4,2093-06-12,2101-06-12,None,Pennsylvania,66.2,"5' 6""",140 lbs
+Richard Mark Spencer,R56BXKP6,2079-12-24,2087-12-24,None,Illinois,66.3,"5' 6""",191 lbs
+April Mitchell,F66NKPG7,2097-12-26,2105-12-26,None,Florida,59.8,"5' 0""",140 lbs
+Steven Robert Petty,Q74CWZK9,2096-03-20,2104-03-20,None,Wisconsin,71.0,"5' 11""",168 lbs
+Brian Justin Boyer,W08WJKO0,2092-02-19,2100-02-19,None,Illinois,67.1,"5' 7""",186 lbs
+Lisa Hensley,U39YSGJ9,2092-07-25,2100-07-25,None,Georgia,64.4,"5' 4""",131 lbs
+Hannah Leah Johnson,E87NUGF6,2093-04-02,2101-04-02,None,Tennessee,63.1,"5' 3""",141 lbs
+Joshua Julian Decker,H67FADO4,2081-11-18,2089-11-18,B - Corrective Lenses,Kansas,71.6,"6' 0""",160 lbs
+Matthew Robert Shepherd,O09NAVZ1,2095-09-19,2103-09-19,None,Georgia,69.0,"5' 9""",168 lbs
+Michael Jason Robinson,F35QADD4,2095-11-28,2103-11-28,None,Hawaii,67.7,"5' 8""",196 lbs
+Micheal David Brown,W91ZZPF9,2097-07-30,2105-07-30,None,Maryland,72.3,"6' 0""",154 lbs
+Teresa Jessica Sanchez,V62PNVQ2,2099-04-03,2107-04-03,None,West Virginia,61.2,"5' 1""",151 lbs
+Morgan Buck,A26CYHT8,2092-10-18,2100-10-18,None,Virginia,63.8,"5' 4""",145 lbs
+Jason Anthony Boyer,X32JZTQ4,2092-12-24,2100-12-24,D - Daytime Only,Missouri,74.1,"6' 2""",166 lbs
+Samantha Deborah Boyer,D35AZXK7,2099-04-07,2107-04-07,D - Daytime Only,Nevada,68.6,"5' 9""",142 lbs
+Natasha Linda Spencer,A98VWFT8,2098-07-11,2106-07-11,None,New Mexico,62.7,"5' 3""",154 lbs
+Alyssa Tammy Mcdaniel,Q56KCME9,2095-01-28,2103-01-28,None,Connecticut,67.0,"5' 7""",130 lbs
+Tammy Christine Garcia,D73CYQK2,2093-01-30,2101-01-30,None,Nevada,69.7,"5' 10""",122 lbs
+Phyllis Melody Hart,C33TQXV9,2098-10-12,2106-10-12,B - Corrective Lenses,Wisconsin,65.5,"5' 6""",143 lbs
+Rachel Ashley Brown,P30HMLE4,2093-05-12,2101-05-12,None,Maryland,70.8,"5' 11""",128 lbs
+Daniel Sanford,K02GETF1,2089-06-02,2097-06-02,None,Louisiana,71.6,"6' 0""",202 lbs
+Mark Charles Hall,O89TRCP8,2096-09-18,2104-09-18,None,Louisiana,69.1,"5' 9""",195 lbs
+Monica Linda Hall,V39ZGJJ1,2089-12-17,2097-12-17,None,Montana,65.4,"5' 5""",144 lbs
+Victoria Kristin Rice,V08DCAS6,2094-10-20,2102-10-20,None,Oregon,60.5,"5' 0""",140 lbs
+Wyatt Luis Gardner,D85SAME6,2095-04-19,2103-04-19,None,Kansas,76.3,"6' 4""",197 lbs
+Patrick Craig Rose,B17SBMS9,2092-08-24,2100-08-24,None,Florida,67.8,"5' 8""",201 lbs
+Randy Jason Rose,D03SIMZ7,2098-02-02,2106-02-02,D - Daytime Only,Rhode Island,71.6,"6' 0""",223 lbs
+Stephen Thomas Vaughn,U02ARVA3,2095-05-11,2103-05-11,None,New Mexico,66.0,"5' 6""",153 lbs
+Mitchell Beltran,L19TGOG0,2094-04-23,2102-04-23,None,Louisiana,60.4,"5' 0""",160 lbs
+Dawn Kelly Butler,J34SQAW8,2096-09-04,2104-09-04,B - Corrective Lenses,New Hampshire,64.2,"5' 4""",143 lbs
+Angel Haley Ramirez,W05VOYN5,2091-07-14,2099-07-14,None,New York,69.6,"5' 10""",157 lbs
+Anna Miranda Ramirez,G89EMIN9,2091-09-22,2099-09-22,B - Corrective Lenses,Georgia,60.4,"5' 0""",135 lbs
+Keith Charles Ramirez,J72AZVE1,2090-07-10,2098-07-10,None,New Mexico,58.5,"4' 10""",144 lbs
+Elizabeth Christy Lucas,H52WTEQ2,2092-11-15,2100-11-15,B - Corrective Lenses,New Jersey,64.2,"5' 4""",138 lbs
+Stephanie Julia Lambert,D32CIYG0,2090-10-04,2098-10-04,None,Tennessee,62.0,"5' 2""",139 lbs
+Lisa Kathleen Moore,K03UZEV9,2095-02-03,2103-02-03,None,Colorado,65.0,"5' 5""",148 lbs
+Daniel Timothy Morrison,Q30RBQR8,2091-07-27,2099-07-27,D - Daytime Only,Nevada,59.0,"4' 11""",164 lbs
+Jesse Casey Smith,B73MHGC5,2097-09-01,2105-09-01,None,Wisconsin,71.2,"5' 11""",193 lbs
+Todd Christopher Smith,F21LFBI9,2090-06-11,2098-06-11,D - Daytime Only,Indiana,73.8,"6' 2""",196 lbs
+Steven Jason Garcia,N91EVZD7,2090-05-16,2098-05-16,B - Corrective Lenses,Wisconsin,61.7,"5' 2""",187 lbs
+Sherry Griffin,B42TUDI3,2097-06-04,2105-06-04,D - Daytime Only,Kentucky,63.8,"5' 4""",139 lbs
+Jeremy Sherman,O06WFMW5,2091-10-19,2099-10-19,D - Daytime Only,South Dakota,60.9,"5' 1""",193 lbs
+Justin Steven Myers,P99PAKW3,2097-06-30,2105-06-30,None,Idaho,69.8,"5' 10""",137 lbs
+Glenn Myers,Z95ZGPF4,2090-05-15,2098-05-15,None,Kansas,69.9,"5' 10""",199 lbs
+Hunter Joshua Myers,T96PUIA9,2096-12-20,2104-12-20,None,Louisiana,68.1,"5' 8""",159 lbs
+Matthew David Myers,D67BIZO7,2093-02-03,2101-02-03,None,Ohio,68.3,"5' 8""",185 lbs
+Scott Hall,N57CUXF2,2098-11-26,2106-11-26,None,New Jersey,70.6,"5' 11""",133 lbs
+William David Orr,V78FVEL6,2091-03-17,2099-03-17,None,New Mexico,72.5,"6' 0""",172 lbs
+Brianna Sandra Mcdaniel,K81BZNZ7,2090-06-06,2098-06-06,None,Connecticut,61.3,"5' 1""",143 lbs
+Tiffany Roberts,L01HEVD3,2099-02-24,2107-02-24,None,Idaho,64.0,"5' 4""",155 lbs
+Brian William Carson,A22NQRC6,2096-06-14,2104-06-14,None,Nebraska,64.6,"5' 5""",205 lbs
+Michael Robert Carson,N93XPGK0,2090-04-30,2098-04-30,B - Corrective Lenses,West Virginia,60.0,"5' 0""",189 lbs
+Rhonda Decker,F74CYDF6,2097-08-21,2105-08-21,None,Maine,65.0,"5' 5""",145 lbs
+Christian Jeffrey Stephens,P42WHVT2,2090-11-13,2098-11-13,B - Corrective Lenses,New Hampshire,66.7,"5' 7""",160 lbs
+Crystal Kristin Stephens,L94RUOW3,2095-01-16,2103-01-16,None,Indiana,61.7,"5' 2""",153 lbs
+Cynthia Rose,Y14SQYQ2,2093-03-16,2101-03-16,None,Florida,62.0,"5' 2""",136 lbs
+Lisa Laura Fields,C58QNRE1,2099-10-14,2107-10-14,None,Virginia,66.7,"5' 7""",115 lbs
+Matthew Parker Fields,A01MXON9,2096-12-31,2104-12-31,None,District of Columbia,72.0,"6' 0""",207 lbs
+Catherine Kathy Fields,H85VGVV6,2093-02-16,2101-02-16,None,New York,63.1,"5' 3""",145 lbs
+Jennifer Stephanie Sparks,N98ZUCB8,2097-12-22,2105-12-22,None,North Carolina,69.6,"5' 10""",130 lbs
+Austin George Blake,K50CYVS9,2098-05-16,2106-05-16,None,Kansas,67.9,"5' 8""",152 lbs
+Anthony Raymond Blake,C52XCDA3,2090-03-30,2098-03-30,None,New York,69.2,"5' 9""",198 lbs
+Laura Murphy,E60TBZM8,2094-11-19,2102-11-19,B - Corrective Lenses,Virginia,59.0,"4' 11""",134 lbs
+Jerry Taylor,R24QKIP3,2096-08-20,2104-08-20,None,North Dakota,72.9,"6' 1""",176 lbs
+Thomas Andre Taylor,G73MQMO9,2097-01-31,2105-01-31,None,California,73.5,"6' 2""",181 lbs
+Christine Tonya Berry,S03LFIA1,2093-11-26,2101-11-26,None,Vermont,58.5,"4' 10""",134 lbs
+Lisa Michelle Wood,B58XHJT9,2095-09-02,2103-09-02,None,Arizona,68.9,"5' 9""",152 lbs
+Michael Devon Wood,J76TAIC2,2091-11-14,2099-11-14,None,Delaware,69.2,"5' 9""",176 lbs
+Christopher Berry,H95QSMM6,2091-08-23,2099-08-23,None,Vermont,74.8,"6' 3""",170 lbs
+Michael Julian Berry,W06ZNGZ2,2099-01-26,2107-01-26,None,North Carolina,67.8,"5' 8""",134 lbs
+Mariah Catherine Moore,T71PGET6,2099-01-14,2107-01-14,D - Daytime Only,Arizona,66.7,"5' 7""",149 lbs
+Tara Bonnie Collins,N67XIQJ7,2095-09-29,2103-09-29,None,District of Columbia,65.3,"5' 5""",130 lbs
+Ashley Kelsey Collins,I20ZQNB4,2096-09-04,2104-09-04,None,Delaware,68.2,"5' 8""",125 lbs
+Sheri Yolanda Sherman,S73AWBC5,2093-03-01,2101-03-01,None,South Dakota,56.9,"4' 9""",159 lbs
+William James Moore,M97LZWM6,2099-01-05,2107-01-05,None,Colorado,71.7,"6' 0""",142 lbs
+Nicole Toni Moore,H78NRCO9,2091-02-08,2099-02-08,D - Daytime Only,Utah,68.0,"5' 8""",136 lbs
+Christine Orr,P65UHIT9,2097-05-15,2105-05-15,None,Minnesota,64.1,"5' 4""",133 lbs
+Zachary Christopher Orr,I56ASHX5,2092-12-03,2100-12-03,None,Hawaii,72.1,"6' 0""",167 lbs
+Daniel Melvin Orr,H25PIFM7,2099-01-20,2107-01-20,None,Colorado,69.8,"5' 10""",166 lbs
+Cody Jimmy Orr,G08UTXM7,2092-11-14,2100-11-14,None,New Mexico,66.4,"5' 6""",160 lbs
+Kimberly Briana Page,M49WDVY4,2092-09-13,2100-09-13,None,Iowa,62.6,"5' 3""",139 lbs
+Julia Murray,N57IEAC1,2092-04-09,2100-04-09,None,Pennsylvania,67.2,"5' 7""",143 lbs
+Crystal Bryan,O87HRGG8,2099-05-27,2107-05-27,B - Corrective Lenses,Minnesota,63.1,"5' 3""",153 lbs
+Michael Brett Jones,X51PZMS2,2095-08-16,2103-08-16,None,Iowa,71.6,"6' 0""",192 lbs
+Bryan Brian Jones,P64LXTZ3,2095-07-01,2103-07-01,None,Georgia,62.4,"5' 2""",180 lbs
+Brittany Brown,O41JHXC4,2090-04-28,2098-04-28,None,Oklahoma,61.4,"5' 1""",145 lbs
+Jeffrey Scott Brown,D92SOOK2,2094-01-30,2102-01-30,None,Washington,56.3,"4' 8""",161 lbs
+John Brian Hooper,H77LQSI1,2097-05-29,2105-05-29,None,Oregon,76.8,"6' 5""",208 lbs
+Elizabeth Kristy Hooper,U87BTZU3,2092-08-11,2100-08-11,None,New Jersey,63.6,"5' 4""",155 lbs
+Tammy Alicia Wood,L27SPMB8,2099-08-14,2107-08-14,None,Colorado,66.0,"5' 6""",143 lbs
+Lisa Julia Berry,C76PHRT2,2094-07-14,2102-07-14,None,North Carolina,65.3,"5' 5""",147 lbs
+Connie Jordan Barry,M31SUUJ4,2091-12-31,2099-12-31,None,Arkansas,66.8,"5' 7""",144 lbs
+Denise Barry,Q75HQOU2,2092-06-26,2100-06-26,None,Mississippi,61.7,"5' 2""",111 lbs
+Erica Tiffany Martin,B03MGPO2,2097-01-06,2105-01-06,None,Utah,65.2,"5' 5""",128 lbs
+Kara Martin,W39WTSI3,2097-02-15,2105-02-15,B - Corrective Lenses,Oklahoma,63.9,"5' 4""",128 lbs
+Katherine Vicki Johnson,D15YPBN1,2094-12-13,2102-12-13,None,Indiana,65.9,"5' 6""",124 lbs
+Bobby Johnny Hobbs,N49UUWL9,2093-11-30,2101-11-30,None,Virginia,66.3,"5' 6""",176 lbs
+Matthew Jason Hobbs,W40VJNJ4,2096-07-23,2104-07-23,None,South Dakota,70.3,"5' 10""",178 lbs
+Gregory Brian Smith,O10FZVW2,2093-08-17,2101-08-17,None,Vermont,68.9,"5' 9""",173 lbs
+Kevin Michael Smith,G86IEZL5,2095-03-04,2103-03-04,None,Mississippi,76.7,"6' 5""",209 lbs
+Patricia Nicole Wallace,P65BOUJ3,2097-05-11,2105-05-11,None,Indiana,66.5,"5' 6""",128 lbs
+Kristie Linda Wallace,A70AWKG7,2098-12-25,2106-12-25,None,Hawaii,68.5,"5' 8""",154 lbs
+Amanda Anna Simmons,D29AXCK6,2096-04-18,2104-04-18,None,District of Columbia,63.6,"5' 4""",133 lbs
+Victor James Simmons,V85TAYP3,2092-11-23,2100-11-23,None,Alabama,66.3,"5' 6""",184 lbs
+Catherine Brenda Sutton,A51HOXW1,2098-04-22,2106-04-22,None,Arizona,66.2,"5' 6""",127 lbs
+Ashley April Garcia,V78EHFL8,2093-09-19,2101-09-19,None,Nevada,64.2,"5' 4""",149 lbs
+Katrina Victoria Sutton,B27IITG4,2096-10-21,2104-10-21,None,Missouri,60.8,"5' 1""",126 lbs
+Nicholas Ronald Long,L56XOEO2,2098-03-23,2106-03-23,None,South Dakota,69.6,"5' 10""",162 lbs
+Robin Clarke,T13RJTX2,2099-03-03,2107-03-03,None,Connecticut,68.3,"5' 8""",141 lbs
+Bradley George Baxter,R32IQCF2,2094-08-13,2102-08-13,None,New Mexico,74.3,"6' 2""",224 lbs
+Penny Karen Farrell,U71TNAI7,2091-01-09,2099-01-09,None,Wisconsin,70.1,"5' 10""",135 lbs
+Crystal Orr,J40TKGM3,2093-01-08,2101-01-08,None,Hawaii,68.8,"5' 9""",121 lbs
+Charles Kyle Smith,Z28VHHA9,2091-12-06,2099-12-06,None,Florida,60.2,"5' 0""",149 lbs
+Nathaniel Smith,W13LLHQ6,2099-10-09,2107-10-09,None,Kentucky,75.1,"6' 3""",155 lbs
+Jason Michael Brennan,K43XGWU9,2096-02-13,2104-02-13,None,North Carolina,77.8,"6' 6""",184 lbs
+Lisa Hamilton,Q41XUFP3,2098-05-04,2106-05-04,None,North Carolina,61.0,"5' 1""",134 lbs
+Carolyn Nancy Brennan,P13UBGL7,2097-11-06,2105-11-06,None,Missouri,70.2,"5' 10""",140 lbs
+Melissa Amanda Taylor,P81KDTW8,2098-09-21,2106-09-21,None,North Dakota,66.2,"5' 6""",163 lbs
+Christian Steve Brennan,V55TTTQ4,2099-05-14,2107-05-14,B - Corrective Lenses,Tennessee,68.9,"5' 9""",183 lbs
+Denise Claire Lambert,Q35CYNW3,2099-01-10,2107-01-10,None,New Hampshire,70.2,"5' 10""",128 lbs
+David Lambert,N73THBM7,2092-11-07,2100-11-07,None,Tennessee,78.5,"6' 6""",180 lbs
+Tyler Anthony Lambert,D90FZBM5,2090-04-20,2098-04-20,D - Daytime Only,Alabama,68.9,"5' 9""",196 lbs
+Michael Ernest Lester,J39FZEW6,2094-05-23,2102-05-23,None,Nebraska,69.6,"5' 10""",180 lbs
+Sarah Monica Richardson,K14LSXD1,2092-08-17,2100-08-17,None,Oregon,59.6,"5' 0""",142 lbs
+Caroline Brittany Richardson,K97KGRD9,2094-02-23,2102-02-23,None,Wisconsin,61.2,"5' 1""",150 lbs
+Dennis Samuel Richardson,A60SPKS1,2091-11-14,2099-11-14,None,Arizona,75.1,"6' 3""",191 lbs
+Charles James Benson,Z74USSN8,2092-03-08,2100-03-08,None,South Dakota,71.2,"5' 11""",200 lbs
+Glenda Andrea Le,O56RNXM9,2097-12-12,2105-12-12,None,Ohio,65.9,"5' 6""",137 lbs
+Joseph Justin Le,O37MCAZ8,2098-11-08,2106-11-08,None,Oregon,79.4,"6' 7""",205 lbs
+Jessica Jessica Terry,Z17BKIQ2,2096-01-10,2104-01-10,None,Mississippi,65.5,"5' 6""",153 lbs
+Frank Brandon Mclean,P56GYJW9,2095-04-14,2103-04-14,None,South Carolina,82.8,"6' 11""",188 lbs
+Laura Kendra Myers,I75JKVW6,2092-06-27,2100-06-27,B - Corrective Lenses,Ohio,72.8,"6' 1""",137 lbs
+Kathryn Erica Davis,Q03IUWC5,2095-10-19,2103-10-19,B - Corrective Lenses,Louisiana,61.3,"5' 1""",149 lbs
+Wayne Jeffrey Anderson,R11DWVB7,2099-06-21,2107-06-21,None,Florida,71.7,"6' 0""",159 lbs
+Kevin Robert Williams,Z28YZGB0,2093-12-07,2101-12-07,None,Mississippi,71.1,"5' 11""",204 lbs
+Douglas Matthew Williams,F96DGPD8,2097-01-03,2105-01-03,None,Nevada,64.9,"5' 5""",183 lbs
+Samantha Kathryn Brennan,Y08AASS5,2098-06-02,2106-06-02,None,Tennessee,68.9,"5' 9""",145 lbs
+Rachel Margaret Hogan,C64YAUU8,2095-05-13,2103-05-13,None,Pennsylvania,59.7,"5' 0""",108 lbs
+Adam Shane Pacheco,J92NMZW2,2098-08-25,2106-08-25,None,Arizona,75.4,"6' 3""",171 lbs
+David Kyle Cervantes,W29QUEG0,2094-09-23,2102-09-23,None,Utah,65.6,"5' 6""",176 lbs
+Colleen Kayla Smith,W25IJSY0,2099-11-26,2107-11-26,None,Mississippi,65.8,"5' 6""",151 lbs
+Taylor Hamilton,G01BPJB1,2099-10-29,2107-10-29,None,Oklahoma,67.8,"5' 8""",150 lbs
+Joseph Robert Juarez,W21WKZM1,2093-01-26,2101-01-26,None,Utah,64.7,"5' 5""",178 lbs
+Tabitha Carrie Monroe,E56UBFV7,2096-01-25,2104-01-25,None,Oregon,70.3,"5' 10""",129 lbs
+Dawn Elizabeth Hensley,V00YYHR4,2098-05-19,2106-05-19,None,Virginia,63.5,"5' 4""",136 lbs
+Joshua Juan Aguilar,Y33IZJA4,2089-09-16,2097-09-16,None,Arkansas,71.0,"5' 11""",195 lbs
+Benjamin Brandon Aguilar,R30DVJP3,2095-11-01,2103-11-01,B - Corrective Lenses,Minnesota,78.9,"6' 7""",213 lbs
+John White,A04CLVC4,2096-11-11,2104-11-11,None,Iowa,62.3,"5' 2""",166 lbs
+Sean Jason Sanders,Y86RFLX3,2095-06-08,2103-06-08,None,Maine,70.4,"5' 10""",174 lbs
+Nicholas Tony Sanders,E20WIXQ1,2092-06-11,2100-06-11,None,West Virginia,72.4,"6' 0""",208 lbs
+Steven Steve Ramirez,L12LMLS0,2090-01-16,2098-01-16,None,District of Columbia,65.6,"5' 6""",188 lbs
+Jessica Patricia Collins,E76WNEM7,2098-01-03,2106-01-03,None,District of Columbia,71.2,"5' 11""",144 lbs
+Stephen Ramirez,W35IKXF2,2090-02-20,2098-02-20,B - Corrective Lenses,Michigan,73.1,"6' 1""",171 lbs
+Michele Kimberly Sanford,E17BRDD6,2089-09-01,2097-09-01,None,Louisiana,68.3,"5' 8""",143 lbs
+Andrew Tyler Monroe,I38DMYD2,2093-01-31,2101-01-31,None,Oregon,75.7,"6' 4""",186 lbs
+Brendan Edward Monroe,H93XTAN1,2089-11-06,2097-11-06,None,Georgia,72.1,"6' 0""",158 lbs
+Benjamin Monroe,H10TVDY4,2095-05-13,2103-05-13,B - Corrective Lenses,Nebraska,72.4,"6' 0""",147 lbs
+Erica Teresa Morrison,S92PLHP5,2092-02-08,2100-02-08,None,Nevada,63.3,"5' 3""",121 lbs
+Andrea Linda Moore,G57DYIT6,2098-07-19,2106-07-19,None,Utah,66.7,"5' 7""",135 lbs
+Michelle Walter,P29WRJF9,2091-01-27,2099-01-27,None,Oklahoma,65.5,"5' 6""",136 lbs
+Olivia Kelly Walter,N32EIBB1,2090-03-23,2098-03-23,None,Indiana,65.1,"5' 5""",138 lbs
+Heather Jodi Ramirez,C50NMMO7,2093-02-18,2101-02-18,None,Michigan,67.2,"5' 7""",128 lbs
+Kimberly Kelly Benson,T84ASRL0,2093-06-09,2101-06-09,None,South Dakota,60.4,"5' 0""",156 lbs
+Vincent Dalton,N35HSJP3,2090-04-07,2098-04-07,None,Indiana,76.3,"6' 4""",162 lbs
+Michael Brett Baker,Q06JOFL2,2097-05-21,2105-05-21,D - Daytime Only,Alabama,62.2,"5' 2""",207 lbs
+Rhonda Pamela Hines,Z88SOQM1,2095-12-18,2103-12-18,None,Louisiana,62.4,"5' 2""",146 lbs
+Katherine Carrie Gilmore,H41ZINR4,2090-03-29,2098-03-29,None,Vermont,66.1,"5' 6""",142 lbs
+Patrick Kevin Tate,C73SZIY6,2097-09-06,2105-09-06,None,South Dakota,73.0,"6' 1""",171 lbs
+Devin Joseph Lee,K36BMXH4,2095-01-11,2103-01-11,B - Corrective Lenses,South Dakota,70.7,"5' 11""",204 lbs
+Scott Jonathan Johnson,P18BLCX7,2095-03-22,2103-03-22,D - Daytime Only,West Virginia,71.8,"6' 0""",192 lbs
+Lisa Johnson,C13TZLV8,2091-01-16,2099-01-16,None,South Dakota,64.0,"5' 4""",114 lbs
+Stacy Sara Monroe,D27GTGY7,2097-07-03,2105-07-03,None,Georgia,73.1,"6' 1""",147 lbs
+Javier Alexander Johnson,V98TVBW6,2092-10-04,2100-10-04,D - Daytime Only,Colorado,74.1,"6' 2""",174 lbs
+Brittany Mary Aguilar,T88QRAS9,2097-09-15,2105-09-15,None,Arkansas,61.7,"5' 2""",138 lbs
+Susan Ramirez,Q30JKNR0,2090-11-29,2098-11-29,None,Virginia,65.9,"5' 6""",124 lbs
+Travis Vincent Ramirez,I84ABMT3,2095-08-23,2103-08-23,None,New York,74.5,"6' 2""",133 lbs
+Timothy Daniel Mckee,P90SVEQ8,2091-06-09,2099-06-09,None,Vermont,63.5,"5' 4""",210 lbs
+April Jennifer Smith,T98OJTF1,2092-07-15,2100-07-15,None,Vermont,67.2,"5' 7""",128 lbs
+Melanie Amanda Smith,N13DBZL3,2099-06-30,2107-06-30,None,Wisconsin,56.9,"4' 9""",137 lbs
+Amy Julia Gates,V08JNBA8,2096-04-08,2104-04-08,None,Rhode Island,64.4,"5' 4""",140 lbs
+Caroline Wanda Gates,B25THSS3,2092-04-03,2100-04-03,None,Maryland,63.2,"5' 3""",120 lbs
+Sara Danielle Johnson,S25JAGW4,2099-06-17,2107-06-17,B - Corrective Lenses,West Virginia,66.9,"5' 7""",144 lbs
+Dawn Tammy Page,K35TDGM7,2093-01-07,2101-01-07,B - Corrective Lenses,Michigan,64.9,"5' 5""",136 lbs
+Jason John Adams,Z44BICI7,2097-07-11,2105-07-11,None,Delaware,63.7,"5' 4""",189 lbs
+Alicia Debra Dalton,C59YBJS7,2093-12-03,2101-12-03,None,Indiana,62.2,"5' 2""",131 lbs
+Frank David Buck,O62DDBI4,2098-02-26,2106-02-26,None,West Virginia,65.3,"5' 5""",150 lbs
+Harry Wesley Buck,W67DXQZ8,2099-01-27,2107-01-27,None,Virginia,71.9,"6' 0""",177 lbs
+Aaron David Buck,C18EOEW5,2092-02-08,2100-02-08,None,Maine,70.4,"5' 10""",174 lbs
+Jordan Edward Buck,V48UAPN8,2090-01-10,2098-01-10,None,New Mexico,72.3,"6' 0""",175 lbs
+Jose Edwin Buck,J31HBLD3,2093-05-28,2101-05-28,None,Virginia,63.0,"5' 3""",168 lbs
+Margaret Megan Dalton,E10NZGA2,2091-08-25,2099-08-25,None,Minnesota,63.6,"5' 4""",123 lbs
+Emily Melissa Smith,H35CKFZ2,2096-08-29,2104-08-29,None,Colorado,64.3,"5' 4""",132 lbs
+Drew Tate,W04JZJX4,2090-07-02,2098-07-02,None,South Dakota,72.9,"6' 1""",205 lbs
+Douglas Johnson,T62FAFT1,2093-06-30,2101-06-30,None,Oregon,67.6,"5' 8""",120 lbs
+Michael Antonio Johnson,X25EJEA1,2094-12-06,2102-12-06,None,Indiana,73.1,"6' 1""",171 lbs
+Michael Brian Gilmore,O12JPNN3,2097-10-23,2105-10-23,D - Daytime Only,Vermont,69.5,"5' 10""",202 lbs
+Brian Alan Gilmore,E91LOST5,2099-03-03,2107-03-03,None,New York,73.9,"6' 2""",214 lbs
+Donna Lester,O15ICWR5,2095-07-09,2103-07-09,None,Nebraska,62.3,"5' 2""",133 lbs
+Ashley Wanda Sanford,K18MQSY1,2093-09-06,2101-09-06,B - Corrective Lenses,Connecticut,62.2,"5' 2""",125 lbs
+Aaron Frank Shannon,E17WPPI4,2095-08-02,2103-08-02,B - Corrective Lenses,Wyoming,66.1,"5' 6""",185 lbs
+Samantha Eileen Shannon,Z72WTSE3,2096-05-23,2104-05-23,None,Delaware,67.9,"5' 8""",149 lbs
+Katherine Morgan Robinson,I00LQWT4,2090-02-26,2098-02-26,None,Wyoming,70.4,"5' 10""",140 lbs
+Stephen Michael Robinson,M73JFUU2,2096-02-25,2104-02-25,None,Massachusetts,63.5,"5' 4""",201 lbs
+Christopher Tyler Duran,O18XFDA9,2095-08-31,2103-08-31,None,Colorado,58.9,"4' 11""",201 lbs
+Gail Taylor Duran,G89RCBO8,2090-01-17,2098-01-17,None,Oklahoma,66.9,"5' 7""",151 lbs
+Alexis Sandra Simmons,Y33RNAY1,2097-11-10,2105-11-10,None,Alabama,61.9,"5' 2""",142 lbs
+Eric Dennis Baker,T36DUJT2,2092-07-24,2100-07-24,None,Alabama,68.8,"5' 9""",150 lbs
+Peggy Baker,D01DLYI7,2097-12-27,2105-12-27,None,Arkansas,69.6,"5' 10""",141 lbs
+Lucas Collins,S15GHOM2,2099-05-11,2107-05-11,None,District of Columbia,68.7,"5' 9""",191 lbs
+Alison Martha Anderson,Q81LCCG5,2093-02-14,2101-02-14,None,Florida,63.4,"5' 3""",138 lbs
+Michael Daniel Rich,X76VDDJ4,2099-02-09,2107-02-09,B - Corrective Lenses,New Mexico,76.4,"6' 4""",158 lbs
+Laurie Michelle Castaneda,H84QPDA8,2095-04-21,2103-04-21,None,Michigan,62.2,"5' 2""",146 lbs
+Frank Andrew Rich,P98YJMP3,2098-04-05,2106-04-05,None,Kentucky,70.4,"5' 10""",182 lbs
+Stacy Veronica Juarez,G74XQQK0,2096-02-22,2104-02-22,None,Utah,64.8,"5' 5""",139 lbs
+Linda Dana Pierce,E11VFQS2,2095-03-28,2103-03-28,None,South Carolina,55.7,"4' 8""",118 lbs
+Mark Brady Griffin,Y54CPZA5,2092-09-13,2100-09-13,None,New Hampshire,75.4,"6' 3""",190 lbs
+Tommy Wesley Griffin,Z37OJRK5,2091-04-21,2099-04-21,D - Daytime Only,South Carolina,65.5,"5' 6""",203 lbs
+Kelly Griffin,W75YRAJ8,2092-04-27,2100-04-27,None,Florida,72.7,"6' 1""",137 lbs
+Dylan Matthew Griffin,K13BCQV1,2094-08-25,2102-08-25,D - Daytime Only,Kentucky,75.2,"6' 3""",189 lbs
+Anita Rhonda Griffin,A64FROE5,2094-03-27,2102-03-27,None,Maine,61.4,"5' 1""",148 lbs
+Ross Troy Hamilton,I70HWZA6,2090-11-16,2098-11-16,B - Corrective Lenses,Oklahoma,63.7,"5' 4""",155 lbs
+Abigail Hamilton,A38WFEQ0,2097-03-09,2105-03-09,None,California,58.7,"4' 11""",116 lbs
+Virginia Nancy Walters,M97IGLO6,2091-06-03,2099-06-03,None,Virginia,61.7,"5' 2""",142 lbs
+Jason Kyle Hamilton,V34KYQR6,2098-05-05,2106-05-05,None,North Carolina,63.0,"5' 3""",181 lbs
+Amanda Cynthia Terry,J02QDSJ6,2092-12-14,2100-12-14,None,Tennessee,66.8,"5' 7""",142 lbs
+Samuel Jose Terry,S15HTCW8,2097-05-24,2105-05-24,None,Mississippi,68.2,"5' 8""",174 lbs
+Robin Cathy Hernandez,L61NJYN2,2098-12-01,2106-12-01,None,New Hampshire,61.6,"5' 2""",138 lbs
+Taylor Hernandez,Z52PKDB6,2091-02-24,2099-02-24,None,Montana,77.9,"6' 6""",175 lbs
+Sandra Jasmine Brown,D96SXXT6,2092-03-28,2100-03-28,None,Washington,68.4,"5' 8""",119 lbs
+Anthony Lambert,B89KNCB4,2090-03-19,2098-03-19,None,Alabama,71.0,"5' 11""",171 lbs
+Matthew Michael Castaneda,K80RXAO1,2096-03-17,2104-03-17,None,Michigan,60.3,"5' 0""",184 lbs
+Audrey Miller,V73NGBQ5,2097-01-13,2105-01-13,None,South Dakota,64.8,"5' 5""",131 lbs
+Sean Bryan,C45PEGZ8,2090-08-03,2098-08-03,None,Minnesota,66.3,"5' 6""",162 lbs
+Ashley Kimberly Bryan,C40VRUQ5,2092-05-12,2100-05-12,None,Iowa,72.6,"6' 1""",130 lbs
+Trevor Bryan,S86FSDS6,2090-11-08,2098-11-08,None,Hawaii,75.0,"6' 3""",173 lbs
+Melissa Norma Williams,R11NSEL0,2091-07-27,2099-07-27,None,Hawaii,65.0,"5' 5""",139 lbs
+Robert David Clarke,I61NJZR8,2097-11-17,2105-11-17,None,Connecticut,73.5,"6' 2""",178 lbs
+Charles Reginald Clarke,D19WAIH6,2092-04-15,2100-04-15,None,Alaska,61.9,"5' 2""",150 lbs
+Regina Lorraine Clarke,O96QGTS7,2095-06-01,2103-06-01,None,Virginia,65.4,"5' 5""",141 lbs
+Travis Jason Clarke,H28JMLC1,2094-06-22,2102-06-22,None,Oklahoma,74.0,"6' 2""",186 lbs
+Daniel Tanner Walters,Q09RGJB5,2091-02-06,2099-02-06,None,Virginia,81.6,"6' 10""",176 lbs
+Jesus Walters,B74MQFV9,2090-02-17,2098-02-17,None,Minnesota,76.6,"6' 5""",211 lbs
+Jeffrey Matthew Walters,C43DKLH4,2094-05-08,2102-05-08,None,Arkansas,73.9,"6' 2""",165 lbs
+April Gardner,M26QKKM2,2097-09-26,2105-09-26,None,Kansas,61.6,"5' 2""",150 lbs
+Sheri Cheryl Taylor,M96KFIO8,2093-03-15,2101-03-15,None,California,66.3,"5' 6""",141 lbs
+Crystal Kristen Roberts,H79QXQJ5,2099-06-06,2107-06-06,None,Kentucky,66.2,"5' 6""",165 lbs
+Tina Karen Roberts,N98VAMS9,2092-07-09,2100-07-09,None,Idaho,69.2,"5' 9""",144 lbs
+Dylan Danny Smith,H62HWGV0,2097-04-06,2105-04-06,B - Corrective Lenses,Kentucky,64.6,"5' 5""",218 lbs
+Matthew Jesse Hayes,V23FVGE2,2095-06-24,2103-06-24,None,Indiana,74.1,"6' 2""",178 lbs
+Virginia Baker,V38YELZ8,2094-06-28,2102-06-28,D - Daytime Only,Alabama,62.2,"5' 2""",142 lbs
+Laura Catherine Clay,K69WXET1,2097-11-05,2105-11-05,B - Corrective Lenses,Iowa,60.6,"5' 1""",143 lbs
+Michelle Beltran,Y29THFX8,2092-10-22,2100-10-22,B - Corrective Lenses,Louisiana,62.8,"5' 3""",146 lbs
+Christopher Micheal Bullock,L28CLXA7,2091-08-18,2099-08-18,None,Michigan,69.7,"5' 10""",167 lbs
+Richard Steven Murphy,M36CLGJ9,2097-09-30,2105-09-30,B - Corrective Lenses,Kansas,73.2,"6' 1""",185 lbs
+Brandon Brandon Murphy,C90ELGO7,2095-04-29,2103-04-29,None,Virginia,73.7,"6' 2""",209 lbs
+Donna Leslie Allen,R14DPVD3,2094-09-14,2102-09-14,B - Corrective Lenses,Minnesota,67.8,"5' 8""",167 lbs
+Melissa Ramirez,A41EHZG9,2096-11-07,2104-11-07,None,New York,66.9,"5' 7""",120 lbs
+Tyler Peter Mason,N25OBWD5,2092-08-30,2100-08-30,None,Alabama,72.8,"6' 1""",151 lbs
+Kayla Danielle Myers,I40KFFB8,2095-10-21,2103-10-21,None,Kansas,71.8,"6' 0""",139 lbs
+Benjamin Brent Brown,P05MFKD9,2095-11-25,2103-11-25,None,Oregon,77.3,"6' 5""",167 lbs
+Keith Eugene Brown,J89TNBI4,2096-05-11,2104-05-11,None,District of Columbia,69.2,"5' 9""",187 lbs
+Melinda Stephanie Juarez,V30IZUJ3,2093-06-19,2101-06-19,B - Corrective Lenses,Wisconsin,66.4,"5' 6""",154 lbs
+Robert Buck,S53DAAR0,2092-03-01,2100-03-01,None,Texas,63.7,"5' 4""",164 lbs
+Crystal Wood,P67DAGT2,2097-12-12,2105-12-12,None,Kentucky,66.9,"5' 7""",128 lbs
+Gina Robyn Buck,Q07PYDV8,2092-05-20,2100-05-20,None,Texas,64.2,"5' 4""",160 lbs
+Corey David Spencer,H72QWJH8,2090-05-14,2098-05-14,None,Vermont,65.1,"5' 5""",169 lbs
+Jermaine Krystal Spencer,V30MTCV2,2090-01-16,2098-01-16,None,Maryland,58.5,"4' 10""",146 lbs
+George Spencer,A10LGKL0,2091-06-11,2099-06-11,None,Florida,65.3,"5' 5""",155 lbs
+Tracy Joan Hart,X13FGET7,2099-02-21,2107-02-21,B - Corrective Lenses,Maine,68.1,"5' 8""",123 lbs
+Michael Hart,K11TVPS3,2097-08-24,2105-08-24,B - Corrective Lenses,Mississippi,70.8,"5' 11""",199 lbs
+Tammy Dana Baker,F39WHLZ3,2092-12-23,2100-12-23,D - Daytime Only,Maryland,60.5,"5' 0""",133 lbs
+Steven Sharon Sanford,J00DYKV3,2091-06-07,2099-06-07,None,Oregon,65.3,"5' 5""",150 lbs
+Thomas Timothy Hall,D26WYOQ1,2094-07-31,2102-07-31,None,Colorado,66.6,"5' 7""",167 lbs
+Andrea Karen Hall,H28RSVE7,2098-07-31,2106-07-31,B - Corrective Lenses,California,55.9,"4' 8""",148 lbs
+Ana Sabrina Hall,G94BJJR5,2099-03-01,2107-03-01,None,New Hampshire,66.1,"5' 6""",134 lbs
+Sara Erika Hensley,D58AZSY4,2092-10-30,2100-10-30,None,Vermont,64.6,"5' 5""",145 lbs
+Amanda Rebecca Sherman,T82AXCI7,2097-11-14,2105-11-14,B - Corrective Lenses,Wyoming,60.7,"5' 1""",127 lbs
+Vanessa Megan Gardner,M00XIDF7,2095-04-27,2103-04-27,None,Missouri,54.2,"4' 6""",138 lbs
+Kimberly Hayley Hall,V17LVIN3,2091-11-04,2099-11-04,B - Corrective Lenses,Colorado,73.6,"6' 2""",122 lbs
+Mary Hannah Spencer,O95GWEP3,2099-01-19,2107-01-19,None,Florida,67.3,"5' 7""",136 lbs
+Jeffery Rose,B22CHCV4,2093-09-25,2101-09-25,None,New Jersey,64.5,"5' 4""",173 lbs
+William Christopher Rose,X81FZAC6,2098-07-26,2106-07-26,B - Corrective Lenses,Vermont,61.8,"5' 2""",178 lbs
+Michael Gabriel Beltran,N49FALH7,2093-12-20,2101-12-20,None,Mississippi,67.6,"5' 8""",188 lbs
+Tracy Melissa Beltran,O52YBBO0,2098-07-26,2106-07-26,None,Florida,66.7,"5' 7""",131 lbs
+Terri Alisha Beltran,D19BSZQ1,2089-09-29,2097-09-29,B - Corrective Lenses,Utah,65.0,"5' 5""",161 lbs
+Antonio Patrick Beltran,X40ZEVD3,2093-10-15,2101-10-15,None,Oregon,71.8,"6' 0""",191 lbs
+Kimberly Courtney Butler,X18SKVU6,2093-12-10,2101-12-10,None,Arkansas,61.7,"5' 2""",143 lbs
+Gregory Erik Butler,U45EVMS5,2093-10-05,2101-10-05,None,Kentucky,78.8,"6' 7""",157 lbs
+Dawn Hannah Ramirez,L31ZNOP8,2094-04-07,2102-04-07,None,Connecticut,63.7,"5' 4""",131 lbs
+Sylvia Donald Lambert,P77WJGE8,2093-01-29,2101-01-29,None,Maryland,63.8,"5' 4""",144 lbs
+Justin Scott Lee,L32NALI8,2093-08-07,2101-08-07,None,Georgia,65.4,"5' 5""",128 lbs
+Christopher Christopher Moore,Q10RSXS6,2092-12-10,2100-12-10,None,Illinois,70.0,"5' 10""",127 lbs
+Douglas Jonathan Moore,D41CKTB0,2093-12-12,2101-12-12,None,Missouri,59.3,"4' 11""",165 lbs
+Christopher Matthew Morrison,Q55KXYS1,2096-07-29,2104-07-29,None,Alabama,78.6,"6' 7""",163 lbs
+Kevin Anthony Morrison,Z47MUMJ8,2096-11-10,2104-11-10,None,Arkansas,69.9,"5' 10""",163 lbs
+Chris Smith,E42ABCI4,2090-06-01,2098-06-01,B - Corrective Lenses,Arizona,71.7,"6' 0""",204 lbs
+Maria Smith,H33QJVS5,2095-06-26,2103-06-26,None,Oregon,67.7,"5' 8""",121 lbs
+Amy Michelle Smith,L89OBZR3,2099-05-08,2107-05-08,None,Tennessee,61.6,"5' 2""",128 lbs
+Lisa Veronica Sherman,D22CRJH5,2092-03-22,2100-03-22,None,North Carolina,61.7,"5' 2""",146 lbs
+Damon Nathaniel Sherman,Q12YCDR5,2090-08-14,2098-08-14,None,Vermont,61.8,"5' 2""",183 lbs
+Madison Sherman,I49CIQP3,2096-08-06,2104-08-06,D - Daytime Only,Wyoming,71.9,"6' 0""",136 lbs
+Diamond Jennifer Smith,V22AHIU2,2090-08-12,2098-08-12,None,Arizona,69.0,"5' 9""",140 lbs
+Ricky Douglas Myers,I94AQZD2,2096-05-14,2104-05-14,None,Missouri,67.5,"5' 8""",161 lbs
+Natasha Sarah Terry,A86JHYU9,2097-03-12,2105-03-12,None,Mississippi,72.4,"6' 0""",138 lbs
+Misty Butler,N83OKXZ9,2095-07-21,2103-07-21,None,Kentucky,66.9,"5' 7""",126 lbs
+Danielle Mariah Myers,L12TNAL3,2091-08-31,2099-08-31,None,New York,63.2,"5' 3""",122 lbs
+Maria Myers,E78LIIL2,2095-04-07,2103-04-07,None,New Hampshire,68.9,"5' 9""",146 lbs
+Michelle Loretta Myers,L70IHMG4,2097-03-18,2105-03-18,None,Maryland,60.3,"5' 0""",128 lbs
+Chelsea Aguilar,Z61HOYM5,2095-01-28,2103-01-28,None,Wisconsin,66.5,"5' 6""",141 lbs
+Brian Eric Orr,F97NRAF3,2097-01-19,2105-01-19,None,Delaware,60.4,"5' 0""",168 lbs
+Kaitlyn Ashley Orr,T66GNGS2,2095-08-29,2103-08-29,None,Tennessee,60.5,"5' 0""",136 lbs
+Caleb Roberts,V89XWTO5,2095-10-23,2103-10-23,None,Louisiana,74.9,"6' 3""",179 lbs
+Danielle Lauren Brown,B84LUVE1,2092-06-25,2100-06-25,None,Texas,56.3,"4' 8""",141 lbs
+Jordan Carson,W76MERK2,2095-07-30,2103-07-30,None,Oklahoma,63.3,"5' 3""",156 lbs
+Glenn Kevin Carson,Q16DGXS8,2091-01-15,2099-01-15,None,Kentucky,71.7,"6' 0""",145 lbs
+Cynthia Mary Murphy,V62SQUP1,2090-03-10,2098-03-10,None,Indiana,63.2,"5' 3""",121 lbs
+Sarah Heidi Smith,U90NRNF4,2097-02-17,2105-02-17,None,Wisconsin,64.9,"5' 5""",144 lbs
+Melissa Kimberly Taylor,C86ROSN9,2091-07-14,2099-07-14,B - Corrective Lenses,Alaska,65.2,"5' 5""",132 lbs
+John Kevin Taylor,M43THHQ2,2094-12-03,2102-12-03,None,California,68.1,"5' 8""",175 lbs
+Lisa Taylor,N07IRCG1,2093-07-11,2101-07-11,None,Alabama,62.9,"5' 3""",124 lbs
+Lisa Felicia Wood,J35HIOR7,2091-11-14,2099-11-14,None,New Hampshire,59.7,"5' 0""",138 lbs
+Michael Douglas Wood,B17BTNF4,2094-12-08,2102-12-08,None,Iowa,79.6,"6' 8""",178 lbs
+Jeffrey Wood,I96SHDU8,2098-05-07,2106-05-07,None,Kentucky,71.8,"6' 0""",208 lbs
+Ashley Mary Orr,N62UELG0,2093-06-23,2101-06-23,None,Illinois,68.7,"5' 9""",138 lbs
+Colin Berry,L82QVLM4,2091-03-08,2099-03-08,None,Kansas,70.0,"5' 10""",214 lbs
+Phillip Anthony Collins,B58PWIG6,2094-02-18,2102-02-18,None,Maryland,69.8,"5' 10""",206 lbs
+Gina Kimberly Collins,K80WQHF0,2099-10-01,2107-10-01,D - Daytime Only,Oklahoma,67.1,"5' 7""",169 lbs
+Stacy Lee,B64VMRS7,2092-02-18,2100-02-18,B - Corrective Lenses,Mississippi,65.0,"5' 5""",145 lbs
+Kevin Steven Collins,J11MORB6,2091-09-28,2099-09-28,None,Wisconsin,68.5,"5' 8""",191 lbs
+Jason Antonio Orr,R92YLUX0,2091-11-18,2099-11-18,None,Illinois,71.6,"6' 0""",202 lbs
+Julie Bryan,Q48GXRD0,2096-11-04,2104-11-04,None,Arkansas,66.9,"5' 7""",142 lbs
+Michael Kyle Jones,Y15UNEF6,2095-07-09,2103-07-09,None,Oklahoma,70.5,"5' 10""",161 lbs
+Roy Timothy Brown,P68XVPV9,2090-05-08,2098-05-08,None,Texas,71.5,"6' 0""",184 lbs
+Rhonda Jennifer Hooper,U01HUUZ1,2095-07-26,2103-07-26,None,Nebraska,70.5,"5' 10""",113 lbs
+Amy Tamara Hooper,M77FLPC8,2099-10-07,2107-10-07,None,Michigan,69.9,"5' 10""",136 lbs
+Erika Rebekah Martin,F10AOHG4,2099-12-23,2107-12-23,None,Mississippi,56.3,"4' 8""",163 lbs
+Timothy Curtis Martin,Y67FZID4,2091-10-02,2099-10-02,D - Daytime Only,New Hampshire,72.1,"6' 0""",191 lbs
+Rhonda Sarah Martin,L24BBCI8,2099-06-04,2107-06-04,None,California,65.2,"5' 5""",147 lbs
+Travis Martin,O34FWYN1,2093-10-02,2101-10-02,None,Oklahoma,73.3,"6' 1""",215 lbs
+Lori Heather Carson,H93IGXX5,2096-08-12,2104-08-12,None,Kentucky,62.6,"5' 3""",119 lbs
+Daniel Keith Hobbs,V67XMEO9,2097-07-17,2105-07-17,None,Nebraska,70.1,"5' 10""",172 lbs
+Debbie Stephanie Hobbs,H63XXSW4,2093-11-02,2101-11-02,None,Louisiana,64.1,"5' 4""",145 lbs
+Jacob Hobbs,I19KYMW1,2098-05-18,2106-05-18,None,New Hampshire,73.8,"6' 2""",220 lbs
+Samantha Smith,E35WFII0,2093-04-04,2101-04-04,None,Maryland,61.6,"5' 2""",131 lbs
+Rachel Allison Simmons,V11YGOR4,2092-05-10,2100-05-10,None,Mississippi,68.5,"5' 8""",148 lbs
+Harry Simmons,Q58UZOS9,2098-01-04,2106-01-04,None,Washington,65.4,"5' 5""",187 lbs
+Bethany Julie Morrison,S47UKDI6,2092-09-07,2100-09-07,None,Arkansas,67.0,"5' 7""",131 lbs
+Thomas Douglas Garcia,Q30SBYW5,2096-08-31,2104-08-31,None,Ohio,66.4,"5' 6""",171 lbs
+Robert Todd Smith,B21JHGP4,2099-12-06,2107-12-06,None,Indiana,71.7,"6' 0""",180 lbs
+Tina Cindy Smith,G21LNIG1,2094-10-02,2102-10-02,B - Corrective Lenses,Wisconsin,63.1,"5' 3""",128 lbs
+Cynthia Jasmine Roberts,I69DJBT8,2090-04-04,2098-04-04,None,Louisiana,58.5,"4' 10""",123 lbs
+Nancy Lori Lambert,W67YELR8,2092-08-20,2100-08-20,None,California,59.8,"5' 0""",133 lbs
+Christina Elizabeth Lester,E79FRNX9,2095-01-15,2103-01-15,B - Corrective Lenses,Massachusetts,70.4,"5' 10""",152 lbs
+Larry Benson,R83NPID4,2093-01-10,2101-01-10,None,Tennessee,63.6,"5' 4""",158 lbs
+Christina Amy Collins,D50DULC9,2095-04-26,2103-04-26,D - Daytime Only,Wisconsin,57.0,"4' 9""",130 lbs
+Jamie Shirley Benson,B17CTGS6,2096-12-29,2104-12-29,None,Massachusetts,58.3,"4' 10""",131 lbs
+Ryan Jason Benson,E13XVVU2,2092-07-29,2100-07-29,None,Tennessee,65.3,"5' 5""",202 lbs
+Mike Benson,I43GKTM9,2095-10-15,2103-10-15,None,Mississippi,64.0,"5' 4""",160 lbs
+Linda Nichole Terry,W61FLDB2,2092-09-28,2100-09-28,B - Corrective Lenses,Wisconsin,66.9,"5' 7""",132 lbs
+John Brennan,U00IRFB3,2091-07-12,2099-07-12,None,Washington,64.5,"5' 4""",188 lbs
+Daniel Christopher Brennan,Y50DKCH9,2090-10-09,2098-10-09,None,New Hampshire,67.4,"5' 7""",215 lbs
+John James Brennan,M83ROUG0,2089-11-27,2097-11-27,None,Hawaii,68.3,"5' 8""",147 lbs
+Donald Andrew Juarez,U30RCSW8,2090-10-16,2098-10-16,None,Wisconsin,71.8,"6' 0""",178 lbs
+Keith Monroe,X24CSEM5,2099-03-09,2107-03-09,B - Corrective Lenses,Ohio,65.1,"5' 5""",212 lbs
+Brandy Monroe,B39JCZQ7,2093-04-13,2101-04-13,None,Idaho,69.3,"5' 9""",133 lbs
+David Monroe,D94HNND2,2097-10-26,2105-10-26,None,Minnesota,68.6,"5' 9""",199 lbs
+Justin Hensley,Z04DOQK8,2097-06-29,2105-06-29,None,Rhode Island,65.4,"5' 5""",145 lbs
+Cameron Anthony Hensley,V68JQWT2,2094-08-14,2102-08-14,None,Vermont,71.6,"6' 0""",181 lbs
+Johnathan John Collins,S34NGAA3,2096-07-07,2104-07-07,None,Wisconsin,74.6,"6' 3""",147 lbs
+Jonathan Jeremiah Ramirez,F01UYSC4,2091-10-03,2099-10-03,D - Daytime Only,Connecticut,76.4,"6' 4""",147 lbs
+Hector Jonathan Monroe,Z18DMBL6,2090-11-28,2098-11-28,None,Washington,67.0,"5' 7""",203 lbs
+Debra Brown,H84VOIH6,2090-05-16,2098-05-16,None,Oregon,54.6,"4' 7""",151 lbs
+Lori Nicole Monroe,E88GPPL4,2090-02-09,2098-02-09,None,Nebraska,65.9,"5' 6""",138 lbs
+Denise April Moore,F39XGGR0,2089-04-23,2097-04-23,None,Texas,61.0,"5' 1""",149 lbs
+Alexander Andrew Moore,Z41YXNI0,2090-12-20,2098-12-20,None,Illinois,69.1,"5' 9""",172 lbs
+Kara Sabrina Moore,E85PDIR4,2097-10-10,2105-10-10,None,Connecticut,75.6,"6' 4""",143 lbs
+Jennifer Sarah Monroe,P29KVPT0,2095-09-20,2103-09-20,None,Minnesota,67.7,"5' 8""",129 lbs
+Earl James Baker,P57DXPA0,2097-01-28,2105-01-28,B - Corrective Lenses,Missouri,58.7,"4' 11""",176 lbs
+Olivia Debra Baker,T28LKPV5,2096-09-11,2104-09-11,None,Maryland,62.4,"5' 2""",117 lbs
+Robert Jason Tate,G13BEQE4,2092-03-07,2100-03-07,None,New Jersey,70.7,"5' 11""",152 lbs
+Ryan Lee,G46QIPD8,2098-05-02,2106-05-02,None,Georgia,66.0,"5' 6""",134 lbs
+Allison Sarah Lee,D31PCXI2,2092-05-19,2100-05-19,D - Daytime Only,Mississippi,67.2,"5' 7""",124 lbs
+Robert Troy Aguilar,T50FQIB4,2098-11-03,2106-11-03,None,District of Columbia,61.2,"5' 1""",181 lbs
+Hayden Michael Aguilar,A03LCEQ7,2090-10-08,2098-10-08,None,Wisconsin,74.9,"6' 3""",204 lbs
+John Brown,U13RSBO8,2093-03-14,2101-03-14,B - Corrective Lenses,District of Columbia,68.9,"5' 9""",180 lbs
+Deborah Sara Smith,Y09WZIF1,2092-10-30,2100-10-30,None,Arkansas,60.9,"5' 1""",138 lbs
+Anita Stacy Johnson,Y74PAIG2,2097-06-08,2105-06-08,None,New Mexico,69.8,"5' 10""",160 lbs
+Hannah Kristy Johnson,L27UHDV4,2098-03-30,2106-03-30,None,Colorado,61.8,"5' 2""",137 lbs
+Todd Patrick Gilmore,F59YCFE8,2090-04-08,2098-04-08,None,Oregon,79.5,"6' 8""",234 lbs
+Amber Paula Gilmore,M05UNWG3,2091-02-20,2099-02-20,None,Missouri,66.6,"5' 7""",132 lbs
+Casey Alexandra Griffin,S23CPKO3,2096-09-04,2104-09-04,None,Indiana,54.4,"4' 6""",126 lbs
+Jasmine Kimberly Griffin,P99CXGC8,2099-11-18,2107-11-18,None,Arkansas,61.0,"5' 1""",123 lbs
+Karen Shannon Tate,Q56JZIP0,2093-02-03,2101-02-03,B - Corrective Lenses,New Jersey,58.4,"4' 10""",167 lbs
+Jeffery Scott Hamilton,G87HDCH4,2091-12-17,2099-12-17,None,Alabama,80.9,"6' 9""",193 lbs
+William James Hamilton,X78OXYX2,2097-07-11,2105-07-11,None,Kentucky,78.4,"6' 6""",190 lbs
+Christopher Jimmy Bryan,F57IUOP5,2098-08-09,2106-08-09,B - Corrective Lenses,Mississippi,73.2,"6' 1""",176 lbs
+Brooke Terri Bryan,Q55TKTC8,2098-08-13,2106-08-13,None,Indiana,54.0,"4' 6""",131 lbs
+Wendy Chelsea Clarke,B16YMJX7,2092-09-18,2100-09-18,None,Oklahoma,71.7,"6' 0""",129 lbs
+Leslie Megan Clarke,J16QGSS2,2090-11-29,2098-11-29,None,Mississippi,64.4,"5' 4""",142 lbs
+David Ramirez,Y20SAVH9,2091-11-18,2099-11-18,None,Pennsylvania,68.5,"5' 8""",204 lbs
+Jacqueline Kristin Ramirez,Q76CDJC4,2097-03-26,2105-03-26,None,Massachusetts,59.3,"4' 11""",139 lbs
+Jessica Tammy Brown,D75DRUR9,2098-12-08,2106-12-08,None,Georgia,67.4,"5' 7""",129 lbs
+Holly Ashley Brown,E36WZBI7,2094-12-03,2102-12-03,B - Corrective Lenses,Michigan,66.9,"5' 7""",146 lbs
+Tami Jennifer Bryan,W60DRLE7,2090-02-06,2098-02-06,B - Corrective Lenses,Michigan,63.5,"5' 4""",140 lbs
+Jill Kim Wood,G22NLPK7,2091-04-08,2099-04-08,None, ,67.9,"5' 8""",162 lbs
+Jacqueline Jessica Martin,V82PVES9,2097-02-13,2105-02-13,None,District of Columbia,67.7,"5' 8""",143 lbs

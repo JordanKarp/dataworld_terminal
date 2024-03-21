@@ -1,0 +1,435 @@
+pet~name,last_name,pet~animal_type,pet~breed,pet~age,pet~gender,full_name
+Tiger,Rivera,Cat,Selkirk Rex,13,Female,Antonio Adrian Rivera
+Willow,Sanchez,Bird,Fischer's Lovebird,9,Female,Diana Sarah Sanchez
+Comet,Walker,Dog,Bergamasco Shepherd,14,Female,Trevor Timothy Walker
+Tigger,Spencer,Cat,Ocicat,13,Female,Morgan Robin Spencer
+Caramel,Ross,Rabbit,Belgian Hare,20,Male,Taylor Karen Ross
+Bounce,Cooper,Rodent,Peruvian Guinea Pig,2,Female,Tara Rebecca Cooper
+Bella,Cruz,Cat,Turkish Van,0,Male,Stephen Kevin Cruz
+Mo,Hicks,Dog,Volpino Italiano,12,Male,Pam Traci Hicks
+Marshmallow,Gardner,Rodent,Chinchilla,1,Male,Mary Sandra Gardner
+Splash,Reed,Amphibian,Budgett's Frog,7,Male,James James Reed
+Joe,Ramirez,Dog,Great Dane,10,Female,Robyn Ramirez
+Ginger,Lucas,Cat,Nebelung,6,Female,Melissa Laura Lucas
+Dash,Higgins,Fish,Angelfish,4,Female,Daniel Dylan Higgins
+Luna,Smith,Cat,Egyptian Mau,3,Female,Stephen Anthony Smith
+Kaida,Walsh,Reptile,Anole Lizard,0,Male,Noah Kenneth Walsh
+Shadow,Hall,Cat,Snowshoe,2,Female,Angela Dana Hall
+Ziggy,Smith,Reptile,Russian Tortoise,7,Female,Michelle Jill Smith
+Sushi,Mcdaniel,Dog,Tosa,12,Male,Michelle Lindsey Mcdaniel
+Tiger,Carrillo,Cat,Oriental Longhair,5,Female,Linda Brenda Carrillo
+Draco,Webb,Reptile,Tegu Lizard,3,Female,Tiffany Teresa Webb
+Indiana,Le,Dog,Rastreador Brasileiro,1,Male,Timothy Le
+Kodi,Brooks,Dog,Pražský Krysařík,15,Male,Corey Walter Brooks
+Chloe,Arias,Cat,Exotic Shorthair,11,Female,Keith Brian Arias
+Quinn,Reed,Dog,Pomeranian,12,Female,Heather Crystal Reed
+Shadow,Decker,Cat,Russian White Black and Tabby,13,Male,Christina Jasmine Decker
+Frankie,Ryan,Cat,Devon Rex,6,Male,Bradley Robert Ryan
+Poppy,Stephens,Cat,Cornish Rex,6,Female,Sheila Stephens
+Boy,Larson,Dog,Norfolk Terrier,2,Female,Helen Terry Larson
+Lili,Hamilton,Dog,American Foxhound,14,Male,Mary Kimberly Hamilton
+Lulu,Gonzalez,Cat,Birman,6,Female,Laura Gonzalez
+Tasha,Sparks,Cat,Ragamuffin,6,Male,Ryan Colton Sparks
+Cesar,Spencer,Dog,St. Bernard,15,Female,Erik Daniel Spencer
+Warty,Taylor,Amphibian,Smooth Newt,6,Male,Nicholas Louis Taylor
+Chloe,Roberts,Cat,Ukrainian Levkoy,9,Female,Cindy Roberts
+Riley,Evans,Dog,Beauceron,11,Female,Gabrielle Emily Evans
+Tetra,Callahan,Fish,Angelfish,6,Male,James Tristan Callahan
+Sunny,Stephens,Bird,Amazon Parrot,0,Female,Jason Roger Stephens
+Gazer,Hayes,Amphibian,Golden Mantella,10,Female,Mark Hayes
+Sunny,Moore,Bird,Eclectus Parrot,1,Female,Tiffany Amanda Moore
+Tiger,Moore,Cat,Snowshoe,15,Male,Cynthia Michelle Moore
+Oscar,Orr,Cat,Burmilla,10,Male,Jeffrey Orr
+Blaze,Peterson,Fish,Siamese Fighting Fish (Gourami),8,Female,Jason Eric Peterson
+Red,Page,Dog,Black and Tan Virginia Foxhound,1,Female,Samantha Monica Page
+Whiskers,Sandoval,Cat,German Rex,14,Male,Jesse Sandoval
+Guppy,Hartman,Fish,Goldfish,4,Male,Todd Hartman
+Charlie,Jones,Bird,Parakeet,6,Female,Laura Jones
+Snickers,Ramirez,Rabbit,Giant Chinchilla,3,Male,Matthew Brendan Ramirez
+Glisten,Vincent,Amphibian,Axolotl,0,Male,Jessica Vincent
+Marmalade,Wood,Cat,Savannah,12,Male,Jenny Sara Wood
+Misty,Barry,Cat,Havana Brown,11,Female,Regina Erica Barry
+Draco,Graham,Reptile,Crested Gecko,4,Male,Amanda Melissa Graham
+Willow,Collins,Bird,Pionus Parrot,10,Female,Kelly Amanda Collins
+Milo,Lee,Cat,Burmilla,15,Male,David Mark Lee
+Tuxedo,Hobbs,Cat,Turkish Van,5,Female,Jessica Melissa Hobbs
+Pecan,Smith,Rodent,Gerbil,4,Male,Michael Smith
+Tasha,Scott,Cat,American Bobtail,13,Male,Kelly Richard Scott
+Emma,Hobbs,Dog,German Spaniel,6,Male,Dale Hunter Hobbs
+Kiki,Juarez,Cat,German Rex,13,Female,Mary Christy Juarez
+Peanut,Wall,Cat,Siamese,13,Female,Shirley Katelyn Wall
+Hailey,Sutton,Dog,Cesky Terrier,11,Male,Jessica Shelia Sutton
+Zena,Young,Dog,Tibetan Terrier,15,Female,Tammy Young
+Scarlett,Rice,Dog,Sealyham Terrier,6,Female,Brandon Matthew Rice
+Tess,Marks,Dog,Braque d'Auvergne,0,Female,Robert Jesse Marks
+Melo,Baxter,Dog,Basenji,8,Female,Kyle Baxter
+Nimbus,Villarreal,Fish,Goldfish,7,Male,Richard Villarreal
+Flopsy,Ramos,Rabbit,Silver Marten,9,Male,Eric Donald Ramos
+Rocky,Martinez,Bird,Cockatoo,9,Male,Zachary Edgar Martinez
+George,Thomas,Dog,Dunker,5,Female,Jessica Autumn Thomas
+Harlem,Barton,Dog,French Bulldog,14,Female,Rachel Crystal Barton
+Almond,Gordon,Rodent,Chinchilla,0,Male,Elizabeth Gordon
+Tasha,Richardson,Reptile,Veiled Chameleon,1,Female,Lauren Victoria Richardson
+Frankie,Gates,Cat,Chantilly-Tiffany,9,Male,Kimberly Gates
+Guppy,Marsh,Fish,Corydoras Catfish,3,Male,Valerie Kayla Marsh
+Gizmo,Ryan,Bird,Macaw,1,Female,Christina Ryan
+Gill,Mclean,Fish,Cherry Barb,0,Male,Courtney Tammy Mclean
+Misty,Espinoza,Cat,Ragamuffin,5,Male,Megan Morgan Espinoza
+Apple,Anderson,Dog,Bernese Mountain Dog,10,Female,Gregory Anderson
+Skyler,Shaw,Dog,Braque du Puy,5,Female,Kent Richard Shaw
+Abigail,Williams,Dog,Mucuchies,10,Female,Andrea Jennifer Williams
+Darby,Winters,Dog,Indian pariah dog,4,Female,Chad Jason Winters
+Casper,Cantrell,Dog,Tyrolean Hound,5,Male,John Cantrell
+Suzie,Bailey,Dog,Cimarrón Uruguayo,10,Male,Sarah Jennifer Bailey
+Boo,Wood,Dog,Polish Lowland Sheepdog,3,Female,Steven William Wood
+Bucky,Levy,Dog,Treeing Cur,0,Female,Trevor James Levy
+Luna,Andrews,Rabbit,Holland Lop,16,Female,Hannah Stephanie Andrews
+Zorro,Pacheco,Reptile,Bearded Dragon,5,Female,Zachary Bradley Pacheco
+Felix,Juarez,Cat,Turkish Van,0,Female,Thomas Rodney Juarez
+Tasha,Aguilar,Reptile,Russian Tortoise,0,Female,Melissa Aguilar
+Simba,Baker,Cat,Oriental Bicolor,1,Female,Joel Brandon Baker
+Ginger,Avila,Dog,Podenco Canario,13,Female,Ryan Thomas Avila
+Shimmer,Jennings,Fish,Discus Fish,6,Male,Victoria Mary Jennings
+Jelly,Cervantes,Dog,Kooikerhondje,7,Female,Robert Frank Cervantes
+Smokey,Carter,Cat,Chausie,5,Male,Kristin Rachel Carter
+Tango,Cruz,Bird,Finch,13,Male,Michael Jacob Cruz
+Freya,Wells,Dog,Komondor,12,Male,Daniel Joseph Wells
+Skittles,Walter,Bird,Society Finch,12,Male,Bailey Cheryl Walter
+Chelsea,Thomas,Dog,Saint-Usuge Spaniel,6,Female,Robert Christopher Thomas
+Chloe,Bullock,Cat,Korat,5,Female,Nicholas Christian Bullock
+Miles,Smith,Dog,Canaan Dog,14,Male,Patricia Wendy Smith
+Oliver,Miller,Cat,British Semi-longhair,6,Female,Aaron Richard Miller
+Kali,Brooks,Dog,Bruno Jura Hound,7,Male,Hayden Adam Brooks
+Seraphina,Walter,Reptile,Leopard Gecko,5,Female,Brianna Walter
+Mia,Davis,Cat,Norwegian Forest cat,15,Female,Rachel Carl Davis
+Tigger,Perkins,Cat,Burmilla,15,Female,Danny Grant Perkins
+Hopper,Potter,Amphibian,Cane Toad,8,Female,Samantha Kimberly Potter
+Griffin,Hines,Dog,Azawakh,12,Male,Timothy Marcus Hines
+Ruby,Johnson,Bird,Canary,4,Male,Emily Johnson
+Thumper,Johnson,Rodent,Gerbil,1,Female,Tami Nichole Johnson
+Toby,Lee,Cat,Burmilla,10,Female,Patricia Kathleen Lee
+Sassy,Espinoza,Cat,Colorpoint Shorthair,1,Male,Jeremy Mitchell Espinoza
+Rocket,Harvey,Dog,Telomian,8,Male,James Richard Harvey
+Suki,Ramirez,Dog,Southern Hound,11,Female,Terri Andrea Ramirez
+Titan,Johnson,Reptile,Kingsnake,9,Male,Chad Edwin Johnson
+Rocky,Miller,Cat,American Shorthair,15,Female,Samantha Erika Miller
+Felix,White,Cat,Javanese,6,Female,William Dale White
+Frankie,Moore,Cat,Minskin,6,Female,Christopher Casey Moore
+Oreo,Collins,Cat,Abyssinian,11,Female,Melissa Collins
+Tony,Mata,Dog,Chien Français Blanc et Noir,7,Female,Vanessa Anita Mata
+Chico,Stark,Bird,Pionus Parrot,8,Male,Eric Jesse Stark
+Nimbus,Mckee,Fish,Discus Fish,4,Male,Daniel Randy Mckee
+Nala,Hall,Reptile,Corn Snake,8,Female,Jasmine Cathy Hall
+Diamond,Duran,Dog,Schweizer Laufhund,8,Female,Mary Anne Duran
+Nigel,Benson,Dog,Norwegian Elkhound,13,Male,Nathan Brian Benson
+Gizmo,Montoya,Cat,Arabian Mau,6,Male,Deborah Dana Montoya
+Slimy,Hubbard,Amphibian,Pac-Man Frog,1,Female,Caroline Casey Hubbard
+Oliver,Russell,Bird,Parakeet,8,Male,Brittany Janice Russell
+Aqua,Garrison,Fish,Swordtail,6,Male,Anthony Kevin Garrison
+Boris,King,Dog,Fila Brasileiro,1,Female,Kenneth Keith King
+Oliver,Gates,Cat,Donskoy,1,Male,Cheryl Gates
+Sebastian,Baker,Dog,Bedlington Terrier,0,Male,Samuel John Baker
+Splash,Salazar,Fish,Siamese Fighting Fish (Gourami),5,Female,Nicholas Richard Salazar
+Fifi,Dominguez,Dog,Poodle,2,Female,Ryan Dominguez
+Oliver,Gonzalez,Cat,Balinese,15,Male,Linda Krystal Gonzalez
+Sammy,Buck,Cat,Oregon Rex,0,Female,Morgan Lindsay Buck
+Bluebell,Dalton,Bird,Bourke's Parakeet,10,Male,Jeremiah Franklin Dalton
+Puddle,Hill,Fish,Clownfish,8,Male,Joseph Marvin Hill
+Biscuit,Lozano,Fish,Tiger Barb,3,Female,Angela Lozano
+Chase,Tate,Dog,Italian Greyhound,14,Male,Judith Jennifer Tate
+Oscar,Gonzalez,Cat,Asian Semi-longhair,9,Female,Michael Stanley Gonzalez
+Dexter,Henry,Cat,Russian White Black and Tabby,15,Male,Edward Joseph Henry
+Dory,Smith,Dog,Boerboel,1,Male,James Smith
+Mocha,Adams,Cat,Burmese,7,Male,Jeremy Brandon Adams
+Roscoe,Brown,Dog,Indian pariah dog,5,Female,Olivia Maria Brown
+Flopsy,Shaw,Rabbit,Cinnamon,19,Male,John Christopher Shaw
+Angel,Potter,Dog,Bruno Jura Hound,9,Female,Kimberly Susan Potter
+Mya,Brennan,Dog,Saint-Usuge Spaniel,0,Female,Charles Nicholas Brennan
+Mocha,Buck,Dog,Black and Tan Coonhound,8,Female,Paul Buck
+Clyde,Griffith,Dog,Chien Français Blanc et Orange,6,Male,Allison Hailey Griffith
+Nala,White,Cat,Oriental Shorthair,10,Female,Lisa Crystal White
+Bella,Adams,Cat,Russian Blue,1,Male,Kathleen Rebecca Adams
+Skittles,Foley,Rabbit,Beveren,11,Female,Kristi Denise Foley
+Tiger,Davies,Cat,Raas,3,Male,Katelyn Kelly Davies
+Gotti,Butler,Dog,Catahoula Cur,7,Female,David Justin Butler
+Oliver,Sanford,Cat,Cymric,4,Male,Ann Nicole Sanford
+Gill,Nguyen,Fish,Molly,0,Female,Patrick Jonathan Nguyen
+Mocha,Dougherty,Cat,Turkish Angora,1,Female,Gina Kayla Dougherty
+Rocky,Hubbard,Cat,Raas,8,Male,Joseph Daniel Hubbard
+Perla,Smith,Dog,Shar Pei,5,Female,Matthew Timothy Smith
+Murphy,Snyder,Cat,Oriental Longhair,12,Male,Ian Craig Snyder
+Dexter,Berry,Cat,Pixie-bob,3,Male,Sherry Kiara Berry
+Flash,Brown,Fish,Betta Fish,5,Female,John Shawn Brown
+Tango,Robinson,Fish,African Cichlid,2,Male,Seth Daniel Robinson
+Harley,Campbell,Dog,Billy,10,Male,Steve Ryan Campbell
+Splash,Williams,Fish,Zebrafish (Zebra Danio),2,Male,Danielle Haley Williams
+Mia,Smith,Cat,California Spangled,0,Male,Alexandra Andrea Smith
+Cleo,Clark,Cat,Korn Ja,12,Female,Karen Carrie Clark
+Snapper,James,Fish,Platies,8,Male,Candice Susan James
+Leo,Dalton,Reptile,Red-footed Tortoise,6,Female,Rhonda Jessica Dalton
+Sable,Davis,Rabbit,Rex,5,Female,Erin Valerie Davis
+Luna,Drake,Cat,Birman,2,Female,Ellen Drake
+Bebe,Davis,Dog,French Bulldog,13,Female,Doris Ashley Davis
+Puddle,Garza,Fish,Neon Tetra,7,Female,Sarah Melissa Garza
+Luna,Dalton,Rabbit,Checkered Giant,14,Male,Michelle Toni Dalton
+Tobey,Hart,Dog,English White Terrier,8,Male,Lori Rachel Hart
+Jasper,Avila,Cat,Sam Sawet,0,Female,Andrew William Avila
+Nellie,Aguilar,Dog,Small Greek Domestic Dog,9,Female,Michael James Aguilar
+Angel,Butler,Cat,Birman,5,Female,Sarah Rebecca Butler
+Noel,Lowe,Dog,Serbian Hound,13,Female,Brandon Adam Lowe
+Mocha,Pierce,Rabbit,Rex,11,Female,Ashley Pierce
+Shadow,Griffin,Cat,Korn Ja,9,Male,Juan Douglas Griffin
+Gizmo,Sutton,Cat,Snowshoe,12,Female,Austin Sutton
+Aqua,Bauer,Fish,Betta Fish,0,Male,Vanessa Debra Bauer
+Cookie,Hamilton,Bird,Cockatoo,14,Female,Nicole Sabrina Hamilton
+Kylie,Sparks,Dog,Jagdterrier,11,Male,Molly Sparks
+Whiskers,Torres,Cat,American Wirehair,10,Male,Samuel Timothy Torres
+Arthur,Ware,Dog,Wire Fox Terrier,5,Female,Brittany Cynthia Ware
+Sparkle,Castaneda,Bird,Macaw,12,Male,Hannah Anna Castaneda
+Bella,Hill,Cat,Maine Coon,2,Male,Nathan Hill
+Puddle,King,Rodent,Sugar Glider,11,Male,Laura Carrie King
+Tango,Martin,Bird,Quaker Parrot,14,Male,Robert Martin
+Max,Preston,Bird,Quaker Parrot,0,Female,Christopher Derrick Preston
+Kayla,Duran,Dog,Ratonero Bodeguero Andaluz,5,Female,Clayton Jack Duran
+Winter,Smith,Dog,Briquet Griffon Vendéen,12,Male,Garrett David Smith
+Seashell,Tucker,Fish,Plecostomus (Pleco),0,Female,Candice Tucker
+Pookie,Terry,Dog,Transylvanian Hound,9,Female,Seth James Terry
+Kaida,Moore,Reptile,Gargoyle Gecko,7,Female,Briana Michelle Moore
+Bella,Brown,Cat,Ocicat,7,Male,Bryan Spencer Brown
+Yoshi,Rich,Dog,Lithuanian Hound,15,Male,John Marcus Rich
+Dory,Long,Fish,African Cichlid,7,Male,Richard Jeremiah Long
+Diesel,Miller,Dog,Istrian Coarse-haired Hound,0,Male,Lynn Miller
+Phoenix,Jones,Bird,Jenday Conure,2,Male,Nathan Michael Jones
+Chiquita,Delgado,Dog,Chihuahua,1,Male,Angela Lauren Delgado
+Max,Valdez,Cat,British Shorthair,13,Male,Nichole Amanda Valdez
+Mugsy,Bryan,Dog,German Longhaired Pointer,3,Male,Mark Bryan Bryan
+Nala,Davis,Cat,Scottish Fold,13,Female,Sean Juan Davis
+Max,Williams,Cat,European Shorthair,7,Male,Bruce Marc Williams
+Pippin,Barton,Bird,Jenday Conure,4,Female,Daniel Barton
+Venom,Lucas,Reptile,Red-footed Tortoise,0,Female,Sara Stephanie Lucas
+Glimmer,Walters,Fish,Plecostomus (Pleco),7,Male,Jesus John Walters
+Eli,Frost,Dog,Chinese Imperial Dog,3,Female,Bradley Leonard Frost
+Shadow,Johnson,Cat,Sam Sawet,12,Male,Matthew Johnson
+Marley,Carter,Bird,Parakeet,13,Female,Carol Sophia Carter
+Jasper,Roberts,Cat,Serengeti,7,Male,Jeffrey David Roberts
+Tasha,Dixon,Cat,Thai Lilac,11,Male,John Aaron Dixon
+Tiger,Hoover,Cat,California Spangled,8,Male,Scott Ian Hoover
+Sassy,Baker,Cat,American Curl,2,Male,Margaret Baker
+Bubble,Dixon,Fish,Neon Tetra,1,Male,Jose Jordan Dixon
+Franklin,Young,Dog,Estrela Mountain Dog,5,Male,Dennis Nicholas Young
+Evie,Sanford,Dog,Caucasian Shepherd Dog,13,Male,Caroline April Sanford
+Reef,Hall,Fish,Cherry Barb,4,Male,Devin James Hall
+Smokey,Guerrero,Cat,Peterbald,10,Female,Danielle Sandra Guerrero
+Major,Castaneda,Dog,Portuguese Water Dog,5,Female,Jessica Jacqueline Castaneda
+Sunny,Hogan,Bird,Eclectus Parrot,4,Female,Tracy Lisa Hogan
+Sunny,Snyder,Bird,Cockatoo,7,Female,Johnny Steven Snyder
+Charles,Frost,Dog,Maremma Sheepdog,7,Female,Michael Jerry Frost
+Herbie,Moore,Dog,Perro de Presa Canario,13,Female,Jose Moore
+Blu,Davis,Fish,Siamese Fighting Fish (Gourami),6,Female,Kimberly Davis
+Benny,Mason,Rabbit,Champagne D'argent,8,Female,Carrie Mason
+Desi,Herring,Dog,Taigan,0,Male,Matthew Taylor Herring
+Lilly,Cantrell,Dog,Tibetan Terrier,5,Female,Pedro Arthur Cantrell
+Fudge,Miller,Rodent,Rex Mouse,1,Female,Devin James Miller
+Rugby,Gardner,Dog,Sealyham Terrier,5,Male,Stephanie Sara Gardner
+Jasper,Alvarado,Bird,Eclectus Parrot,3,Female,Alicia Brittany Alvarado
+Nino,Turner,Dog,Wetterhoun,11,Male,Alexander Jake Turner
+Slimy,Lozano,Amphibian,Marbled Salamander,7,Male,Philip Joseph Lozano
+Sparkle,Bryan,Dog,Pug,9,Female,Jeanne Kaitlyn Bryan
+Petey,Jackson,Dog,Hawaiian Poi Dog,4,Female,Joel Nicholas Jackson
+Sunny,Wagner,Bird,Lovebird,7,Female,Craig Brett Wagner
+Indy,Thompson,Dog,Kyi-Leo,3,Female,Tracy Thompson
+Aqua,Brown,Fish,Tiger Barb,3,Female,Daniel Alan Brown
+Rolo,Pacheco,Rodent,Rex Mouse,8,Male,Diane Rebecca Pacheco
+Bounce,Allen,Rodent,Hairless Rat,9,Female,Rachel Allen
+Bubbles,Collins,Rabbit,English Lop,11,Male,Ryan Richard Collins
+Jellybean,Martinez,Rodent,African Pygmy Hedgehog,5,Female,Lori Martinez
+Baci,Mitchell,Dog,Sporting Lucas Terrier,9,Male,April Mitchell
+Pumpkin,Petty,Rodent,Hairless Rat,2,Male,Steven Robert Petty
+Smokey,Boyer,Cat,Chartreux,3,Male,Brian Justin Boyer
+Tweety,Decker,Bird,Amazon Parrot,2,Female,Joshua Julian Decker
+Tasha,Shepherd,Cat,Somali,15,Female,Matthew Robert Shepherd
+Diva,Sanchez,Dog,Southern Hound,2,Female,Teresa Jessica Sanchez
+Goldie,Buck,Fish,African Cichlid,1,Female,Morgan Buck
+Zorro,Boyer,Fish,African Cichlid,5,Male,Samantha Deborah Boyer
+Zeke,Mcdaniel,Dog,Himalayan Sheepdog,15,Male,Alyssa Tammy Mcdaniel
+Daisy,Garcia,Cat,Cymric,13,Male,Tammy Christine Garcia
+Nala,Sanford,Cat,Tonkinese,12,Female,Daniel Sanford
+Cleo,Hall,Reptile,Western Hognose Snake,6,Female,Mark Charles Hall
+Tiger,Rice,Cat,British Semi-longhair,10,Male,Victoria Kristin Rice
+Biggie,Gardner,Dog,Russo-European Laika,6,Male,Wyatt Luis Gardner
+Jasper,Rose,Bird,Finch,10,Female,Patrick Craig Rose
+Tasha,Butler,Cat,PerFold,4,Male,Dawn Kelly Butler
+Rocky,Ramirez,Cat,Minskin,13,Male,Angel Haley Ramirez
+Nibbles,Ramirez,Rabbit,Satin Angora,0,Male,Keith Charles Ramirez
+Lacy,Lucas,Dog,Pandikona,15,Female,Elizabeth Christy Lucas
+Cookie,Morrison,Cat,Sam Sawet,7,Male,Daniel Timothy Morrison
+Boo,Garcia,Dog,Rough Collie,12,Male,Steven Jason Garcia
+Bella,Myers,Cat,Khao Manee,4,Female,Glenn Myers
+Chloe,Hall,Cat,Siamese,14,Male,Scott Hall
+Manny,Mcdaniel,Dog,Boxer,0,Male,Brianna Sandra Mcdaniel
+Kiwi,Carson,Bird,Indian Ringneck Parakeet,3,Male,Michael Robert Carson
+Sparky,Stephens,Bird,Jenday Conure,0,Male,Crystal Kristin Stephens
+Luna,Fields,Reptile,Ball Python,8,Male,Lisa Laura Fields
+Felix,Fields,Cat,Oriental Longhair,10,Male,Matthew Parker Fields
+Mochi,Blake,Bird,Finch,2,Female,Anthony Raymond Blake
+Mischief,Murphy,Rodent,Peruvian Guinea Pig,8,Male,Laura Murphy
+Shadow,Taylor,Cat,Minskin,1,Male,Jerry Taylor
+Fins,Taylor,Fish,Siamese Fighting Fish (Gourami),4,Male,Thomas Andre Taylor
+Dunkin,Berry,Dog,Portuguese Water Dog,8,Female,Michael Julian Berry
+Cheesecake,Moore,Rodent,Sugar Glider,4,Female,Mariah Catherine Moore
+Sasha,Collins,Cat,Scottish Fold,9,Male,Tara Bonnie Collins
+Snowball,Collins,Rabbit,Giant Chinchilla,7,Male,Ashley Kelsey Collins
+Oliver,Sherman,Cat,Dwarf cat,0,Female,Sheri Yolanda Sherman
+Cutie,Moore,Dog,Spanish Mastiff,7,Male,William James Moore
+Snowy,Orr,Bird,Canary,5,Female,Christine Orr
+Paco,Orr,Bird,Fischer's Lovebird,9,Male,Zachary Christopher Orr
+Pippin,Orr,Bird,Senegal Parrot,3,Male,Cody Jimmy Orr
+Benji,Page,Dog,Pumi,14,Male,Kimberly Briana Page
+Bella,Murray,Bird,Senegal Parrot,2,Female,Julia Murray
+Magic,Brown,Dog,Irish Water Spaniel,8,Female,Jeffrey Scott Brown
+Susie,Wood,Dog,Standard Schnauzer,0,Male,Tammy Alicia Wood
+Bubbles,Berry,Fish,Siamese Fighting Fish (Gourami),5,Female,Lisa Julia Berry
+Tucker,Martin,Dog,Pomeranian,3,Male,Erica Tiffany Martin
+Caramel,Martin,Rodent,Abyssinian Guinea Pig,7,Male,Kara Martin
+Lily,Hobbs,Dog,Kurī,14,Male,Matthew Jason Hobbs
+Sir,Smith,Dog,North Country Beagle,2,Male,Gregory Brian Smith
+Jax,Wallace,Bird,Macaw,6,Male,Patricia Nicole Wallace
+Chloe,Wallace,Cat,Bambino,1,Female,Kristie Linda Wallace
+Whiskers,Sutton,Cat,Russian Blue,11,Female,Catherine Brenda Sutton
+Aj,Long,Dog,Drentse Patrijshond,1,Female,Nicholas Ronald Long
+Shadow,Baxter,Cat,Korean Bobtail,10,Female,Bradley George Baxter
+Bella,Orr,Dog,Glen of Imaal Terrier,12,Female,Crystal Orr
+Ziggy,Brennan,Cat,British Shorthair,12,Male,Jason Michael Brennan
+Butters,Hamilton,Dog,Paisley Terrier,8,Male,Lisa Hamilton
+Skittles,Lambert,Bird,Finch,1,Male,Denise Claire Lambert
+Nala,Lambert,Cat,Egyptian Mau,10,Female,David Lambert
+Chewbacca,Lambert,Dog,Beagle-Harrier,2,Female,Tyler Anthony Lambert
+Lenny,Richardson,Dog,Serbian Hound,9,Female,Sarah Monica Richardson
+Lily,Richardson,Cat,European Shorthair,9,Male,Caroline Brittany Richardson
+Tango,Richardson,Dog,Keeshond,11,Female,Dennis Samuel Richardson
+Yogi,Benson,Dog,Aidi,3,Female,Charles James Benson
+Tino,Le,Dog,Boykin Spaniel,7,Male,Glenda Andrea Le
+Benjamin,Terry,Dog,German Spaniel,10,Male,Jessica Jessica Terry
+Crystal,Mclean,Dog,Spanish Water Dog,3,Female,Frank Brandon Mclean
+Thumper,Davis,Rodent,Mongolian Gerbil,12,Female,Kathryn Erica Davis
+Lacey,Williams,Dog,Border Terrier,2,Male,Douglas Matthew Williams
+Daisy,Hogan,Cat,Siamese,6,Female,Rachel Margaret Hogan
+Oscar,Pacheco,Cat,Sokoke,0,Female,Adam Shane Pacheco
+Yoyo,Cervantes,Dog,Tweed Water Spaniel,2,Female,David Kyle Cervantes
+Misty,Hamilton,Cat,American Bobtail,5,Male,Taylor Hamilton
+Binky,Aguilar,Rodent,Dumbo Rat,12,Male,Joshua Juan Aguilar
+Nola,Aguilar,Dog,Alaskan Klee Kai,2,Male,Benjamin Brandon Aguilar
+Morgan,White,Dog,Armenian Gampr dog,6,Female,John White
+Oreo,Ramirez,Cat,Chantilly-Tiffany,13,Male,Steven Steve Ramirez
+Lucas,Monroe,Dog,Kooikerhondje,8,Female,Benjamin Monroe
+Pumpkin,Morrison,Rodent,Sugar Glider,3,Male,Erica Teresa Morrison
+Kitty,Moore,Cat,Siberian,10,Male,Andrea Linda Moore
+Bubbles,Walter,Fish,Goldfish,5,Female,Olivia Kelly Walter
+Coraline,Baker,Fish,Corydoras Catfish,4,Female,Michael Brett Baker
+Xena,Gilmore,Reptile,Green Iguana,9,Female,Katherine Carrie Gilmore
+Sweetie,Johnson,Dog,German Pinscher,5,Male,Lisa Johnson
+Cleo,Monroe,Cat,Devon Rex,4,Female,Stacy Sara Monroe
+Dolce,Johnson,Dog,Finnish Lapphund,7,Male,Javier Alexander Johnson
+Poppy,Aguilar,Cat,Minskin,3,Male,Brittany Mary Aguilar
+Norman,Gates,Dog,Karst Shepherd,2,Male,Amy Julia Gates
+Captain,Johnson,Fish,Koi,2,Male,Sara Danielle Johnson
+Casey,Dalton,Dog,Dutch Smoushond,7,Male,Alicia Debra Dalton
+Kodi,Buck,Dog,Patterdale Terrier,3,Male,Frank David Buck
+Jelly,Buck,Dog,Dogo Cubano,9,Female,Aaron David Buck
+Nikko,Buck,Dog,Russo-European Laika,0,Female,Jordan Edward Buck
+Dash,Dalton,Fish,Angelfish,3,Male,Margaret Megan Dalton
+Luka,Tate,Dog,Kurī,11,Female,Drew Tate
+Ripple,Gilmore,Amphibian,Golden Mantella,4,Male,Brian Alan Gilmore
+Pinky,Lester,Dog,Irish Wolfhound,1,Male,Donna Lester
+Willow,Shannon,Rabbit,New Zealand,4,Female,Aaron Frank Shannon
+Tofu,Duran,Rodent,Chinchilla,3,Female,Gail Taylor Duran
+Peanut,Simmons,Dog,Central Asian Shepherd Dog,10,Male,Alexis Sandra Simmons
+Comet,Baker,Fish,Swordtail,2,Male,Peggy Baker
+Smokey,Anderson,Dog,Harrier,15,Male,Alison Martha Anderson
+Rocky,Rich,Bird,Indian Ringneck Parakeet,6,Female,Michael Daniel Rich
+Snapper,Juarez,Fish,Cherry Barb,3,Female,Stacy Veronica Juarez
+Lana,Pierce,Dog,Boston Terrier,8,Female,Linda Dana Pierce
+Luna,Griffin,Cat,Persian (Modern),5,Male,Mark Brady Griffin
+Oreo,Walters,Cat,Chantilly-Tiffany,12,Male,Virginia Nancy Walters
+Zorro,Terry,Fish,Siamese Fighting Fish (Gourami),8,Female,Samuel Jose Terry
+Rex,Hernandez,Reptile,Green Iguana,6,Male,Robin Cathy Hernandez
+Tiger,Hernandez,Cat,Oregon Rex,14,Male,Taylor Hernandez
+Waffles,Lambert,Rodent,Mongolian Gerbil,2,Female,Anthony Lambert
+Bella,Bryan,Cat,Norwegian Forest cat,3,Female,Sean Bryan
+Coco,Bryan,Bird,Eclectus Parrot,7,Female,Ashley Kimberly Bryan
+Simba,Williams,Cat,Manx,2,Female,Melissa Norma Williams
+Blinky,Clarke,Fish,Platies,8,Male,Charles Reginald Clarke
+Chelsea,Clarke,Dog,Bull and Terrier,3,Male,Regina Lorraine Clarke
+Whiskers,Clarke,Rodent,Blue Russian Dwarf Hamster,12,Male,Travis Jason Clarke
+Mochi,Gardner,Cat,Himalayan,13,Female,April Gardner
+Hershey,Roberts,Dog,Braque Francais,4,Male,Crystal Kristen Roberts
+Cookie,Hayes,Bird,Quaker Parrot,12,Female,Matthew Jesse Hayes
+Nala,Baker,Cat,Japanese Bobtail,5,Female,Virginia Baker
+Odie,Clay,Dog,Field Spaniel,6,Male,Laura Catherine Clay
+Daisy,Bullock,Cat,Chausie,11,Female,Christopher Micheal Bullock
+Poppy,Allen,Cat,Egyptian Mau,3,Male,Donna Leslie Allen
+Bubblegum,Ramirez,Fish,Goldfish,2,Female,Melissa Ramirez
+Spike,Mason,Reptile,Uromastyx Lizard,10,Female,Tyler Peter Mason
+Gio,Myers,Dog,Bucovina Shepherd Dog,4,Female,Kayla Danielle Myers
+Shimmer,Brown,Fish,Angelfish,5,Male,Benjamin Brent Brown
+Marley,Brown,Dog,Aidi,1,Female,Keith Eugene Brown
+Sassy,Juarez,Cat,Australian Mist,4,Female,Melinda Stephanie Juarez
+Luna,Wood,Cat,Birman,7,Female,Crystal Wood
+Tetra,Buck,Fish,Clownfish,0,Male,Gina Robyn Buck
+Lucille,Spencer,Dog,Basset Artésien Normand,5,Male,George Spencer
+Tiki,Baker,Bird,Conure,4,Male,Tammy Dana Baker
+Dudley,Hall,Dog,Sakhalin Husky,4,Female,Thomas Timothy Hall
+Sunny,Sherman,Bird,Canary,4,Male,Amanda Rebecca Sherman
+Mookie,Spencer,Dog,Polish Tatra Sheepdog,10,Female,Mary Hannah Spencer
+Mister,Rose,Dog,Trigg Hound,2,Male,Jeffery Rose
+Willow,Rose,Dog,Poodle,10,Male,William Christopher Rose
+Seraphina,Beltran,Reptile,Corn Snake,4,Male,Michael Gabriel Beltran
+Gigi,Beltran,Dog,Segugio Italiano,7,Female,Tracy Melissa Beltran
+Lola,Beltran,Bird,Parakeet,5,Male,Terri Alisha Beltran
+Puddle,Beltran,Rodent,Texel Guinea Pig,5,Female,Antonio Patrick Beltran
+Danny,Butler,Dog,Peruvian Hairless Dog,2,Female,Gregory Erik Butler
+Blue,Ramirez,Cat,Peterbald,2,Male,Dawn Hannah Ramirez
+Poppy,Lee,Cat,Sam Sawet,4,Male,Justin Scott Lee
+Luigi,Moore,Dog,Miniature Fox Terrier,3,Female,Christopher Christopher Moore
+Sasha,Sherman,Cat,LaPerm,12,Female,Lisa Veronica Sherman
+Venom,Myers,Reptile,Crested Gecko,9,Male,Ricky Douglas Myers
+Tasha,Terry,Cat,Donskoy,11,Male,Natasha Sarah Terry
+Tango,Myers,Bird,Canary,13,Female,Danielle Mariah Myers
+Sherlock,Myers,Dog,Olde English Bulldogge,2,Female,Michelle Loretta Myers
+Blaze,Aguilar,Reptile,Corn Snake,9,Female,Chelsea Aguilar
+Milo,Orr,Cat,Havana Brown,4,Female,Brian Eric Orr
+Caramel,Orr,Rodent,Texel Guinea Pig,10,Female,Kaitlyn Ashley Orr
+Ebony,Roberts,Dog,Pumi,8,Male,Caleb Roberts
+Luka,Carson,Dog,American Hairless Terrier,7,Male,Glenn Kevin Carson
+Tuxedo,Smith,Cat,Ukrainian Levkoy,7,Female,Sarah Heidi Smith
+Bella,Taylor,Cat,British Shorthair,5,Female,Melissa Kimberly Taylor
+Ziggy,Taylor,Cat,Colorpoint Shorthair,11,Female,Lisa Taylor
+Maddie,Wood,Dog,Ariege Pointer,9,Female,Lisa Felicia Wood
+Little,Wood,Dog,Afghan Hound,15,Male,Michael Douglas Wood
+Alvin,Wood,Dog,Miniature Schnauzer,6,Male,Jeffrey Wood
+Sebastian,Collins,Dog,Keeshond,2,Male,Phillip Anthony Collins
+Mocha,Collins,Dog,Bruno Jura Hound,11,Female,Gina Kimberly Collins
+Cashew,Orr,Rodent,Texel Guinea Pig,8,Female,Jason Antonio Orr
+Kiwi,Hooper,Bird,Macaw,5,Female,Amy Tamara Hooper
+Guppy,Hobbs,Fish,Corydoras Catfish,0,Male,Jacob Hobbs
+Fudge,Simmons,Rodent,Gerbil,12,Female,Rachel Allison Simmons
+Albert,Morrison,Dog,Bloodhound,15,Male,Bethany Julie Morrison
+Chloe,Smith,Cat,Lykoi,12,Male,Tina Cindy Smith
+Hunter,Collins,Dog,Beagle-Harrier,0,Male,Christina Amy Collins
+Bruno,Benson,Dog,Deutsche Bracke,14,Female,Jamie Shirley Benson
+Tiger,Terry,Cat,Sam Sawet,7,Female,Linda Nichole Terry
+Lucy,Brennan,Cat,Siberian,15,Female,John Brennan
+Tiger,Monroe,Cat,German Rex,0,Female,David Monroe
+Rocky,Hensley,Bird,Lovebird,15,Male,Justin Hensley
+Bella,Brown,Cat,Ukrainian Levkoy,2,Male,Debra Brown
+Daisy,Moore,Bird,Canary,5,Female,Denise April Moore
+Oreo,Baker,Rodent,Angora Hamster,11,Male,Olivia Debra Baker
+Smokey,Tate,Cat,Lykoi,7,Male,Robert Jason Tate
+Medusa,Lee,Reptile,Uromastyx Lizard,5,Female,Allison Sarah Lee
+Milo,Smith,Cat,German Rex,10,Male,Deborah Sara Smith
+Oliver,Johnson,Cat,Cymric,3,Female,Anita Stacy Johnson
+Remy,Griffin,Dog,Cavalier King Charles Spaniel,12,Male,Casey Alexandra Griffin
+Simba,Hamilton,Cat,Norwegian Forest cat,12,Male,William James Hamilton
+Tango,Bryan,Bird,Quaker Parrot,7,Male,Brooke Terri Bryan
+Hazel,Brown,Rabbit,Giant Angora,5,Female,Jessica Tammy Brown
+Whiskers,Wood,Rodent,Dumbo Rat,9,Male,Jill Kim Wood

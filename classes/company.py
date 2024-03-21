@@ -17,7 +17,10 @@ class Company:
     website: str = ""
     industry: Optional[Industries] = None
     sub_industry: str = ""
-    employee_structure: list[EmployeeRole] = field(default_factory=list, repr=True)
+    employee_structure: Optional[list[EmployeeRole]] = None
+    # employee_structure: list[EmployeeRole] = field(
+    #     default_factory=list, repr=True, init=True
+    # )
     main_phone: list[str] = field(default_factory=list, repr=True)
     founded: int = 1900
     social_media: list[str] = field(default_factory=list, repr=True)
@@ -30,7 +33,8 @@ class Company:
 
     @property
     def abbreviation(self):
-        return "".join([n[0] for n in self.company_name.split(" ")])
+        return "".join([l for l in self.company_name if l.isupper()])
+        # return "".join([n[0] for n in self.company_name.split(" ")])
 
     @property
     def num_employees_hired(self):

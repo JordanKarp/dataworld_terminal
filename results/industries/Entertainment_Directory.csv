@@ -1,0 +1,10 @@
+id,company_name,website,industry,sub_industry,founded,client_scope,hq,market_share,abbreviation
+C00001,CineChic Play,kttps://www.cinechicplay.com,Entertainment,Gaming,2098,Female,"Business: 774 Tammy Forest, New Arthur, DC - 20014",0.76,CCP
+C00009,CineFlicks Press,kttp://www.cineflickspress.com,Entertainment,Journalism,2096,Regional,"Business: 4896 Barr Turnpike, Humphreymouth, NV - 89435",0.88,CFP
+C00011,Art Hobbies,kttps://www.arthobbies.com,Entertainment,Hobbies,2052,National,"Business: 739 Eddie Stream, Nguyenton, OK - 73119",0.37,AH
+C00031,Story Reads,kttp://www.storyreads.com,Entertainment,Books,2072,Female,"Business: 633 Patrick Parks, South Donnashire, IL - 60789",0.64,SR
+C00036,Art Reads,kttp://www.artreads.com,Entertainment,Books,2097,National,"Business: 2285 Miller Port, Christianstad, MS - 39165",0.85,AR
+C00043,Style World Pastime,kttps://www.styleworldpastime.com,Entertainment,Hobbies,2096,Female,"Business: 35625 Courtney Mountains , Nixonchester, OH - 45824",0.58,SWP
+C00046,ArtFlicks Play,kttps://www.artflicksplay.com,Entertainment,Sports,2096,Regional,"Business: 45683 Adams Glens , Hortonshire, CT - 06299",0.71,AFP
+C00050,Star Beat Sound,kttps://www.starbeatsound.com,Entertainment,Music,2067,Regional,"Business: 245 Jeffrey Summit , Debramouth, SD - 57006",0.24,SBS
+C00052,CineWorld Books,kttps://www.cineworldbooks.com,Entertainment,Books,2090,Local,"Business: 627 Rice Rue, South Michael, SD - 57432",0.09,CWB

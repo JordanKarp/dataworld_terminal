@@ -1,0 +1,13 @@
+id,company_name,website,industry,sub_industry,founded,client_scope,hq,market_share,abbreviation
+C00003,Stay Charm Services,kttps://www.staycharmservices.com,Hospitality,Cleaning Services,2095,Local,"Business: 460 Brooke Loop, Collinshaven, FL - 34639",0.04,SCS
+C00012,Explore Charm Repair,kttp://www.explorecharmrepair.com,Hospitality,Repair,2098,Male,"Business: 329 Gerald Roads, South Philipmouth, AZ - 86017",0.26,ECR
+C00018,Relax Charm Journey,kttp://www.relaxcharmjourney.com,Hospitality,Other,1995,Female,"Business: 174 Preston Manors, Danielfort, ME - 04432",0.27,RCJ
+C00032,Cruise Haven Escape,kttps://www.cruisehavenescape.com,Hospitality,Vacations,2091,National,"Business: 543 Bowers Light, Lake Jennifer, UT - 84619",0.22,CHE
+C00034,Stay Charm Rental,kttps://www.staycharmrental.com,Hospitality,Private House Rental,2098,National,"Business: 33 Terri Keys, New Bryan, MD - 21906",0.71,SCR
+C00037,Relax Escape Voyage,kttps://www.relaxescapevoyage.com,Hospitality,Cruises,2099,Regional,"Business: 7277 Linda Loaf, Port Christian, OK - 73142",0.67,REV
+C00038,Explore Haven Rental,kttp://www.explorehavenrental.com,Hospitality,Private House Rental,2092,Local,"Business: 79429 Juan Vista, Gloverland, TN - 37491",0.24,EHR
+C00051,Relax Haven Tidy,kttps://www.relaxhaventidy.com,Hospitality,Cleaning Services,2097,National,"Business: 1455 Stokes Knolls, West Maria, KS - 66323",0.73,RHT
+C00058,CruiseJourney Clean,kttps://www.cruisejourneyclean.com,Hospitality,Cleaning Services,2093,National,"Business: 889 Samantha Summit, Lauraburgh, PA - 17211",0.53,CJC
+C00067,LeisureGetaway Haven,kttps://www.leisuregetawayhaven.com,Hospitality,Vacations,2094,Male,"Business: 736 James Centers , East Ericberg, NC - 28686",0.42,LGH
+C00089,Leisure Charm Services,kttp://www.leisurecharmservices.com,Hospitality,Cleaning Services,2097,Local,"Business: 9976 Patrick View, West Robert, OK - 73102",0.26,LCS
+C00092,LeisureGetaway Amuse,kttp://www.leisuregetawayamuse.com,Hospitality,Theme Park,2090,Regional,"Business: 5260 Williams Creek , North Joseph, DC - 20028",0.91,LGA

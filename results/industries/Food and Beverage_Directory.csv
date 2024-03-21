@@ -1,0 +1,11 @@
+id,company_name,website,industry,sub_industry,founded,client_scope,hq,market_share,abbreviation
+C00006,A Taste of Cuisine Cuisine,kttps://www.atasteofcuisinecuisine.com,Food and Beverage,Catering,2094,National,"Business: 4566 Antonio Curve, South Rhonda, MD - 20830",0.84,ATCC
+C00013,CraveBite Feast,kttps://www.cravebitefeast.com,Food and Beverage,Catering,2099,Local,"Business: 8533 Tyler Wall , Codyport, KS - 66052",0.77,CBF
+C00016,TasteDelight Sweet,kttps://www.tastedelightsweet.com,Food and Beverage,Bakery,2001,Local,"Business: 78380 Warner Springs , Lake Brandon, MT - 59925",0.69,TDS
+C00021,Yum Eats To-Go,kttps://www.yumeatsto-go.com,Food and Beverage,Fast Food,2097,National,"Business: 29532 James Neck, Deniseview, MN - 56056",0.66,YETG
+C00026,Flavor Delight Quench,kttp://www.flavordelightquench.com,Food and Beverage,Drinks,2096,Local,"Business: 52141 Dale Greens , New Mary, NC - 28374",0.99,FDQ
+C00054,Bite Cuisine Quench,kttps://www.bitecuisinequench.com,Food and Beverage,Drinks,2099,Local,"Business: 17451 Scott Locks, South Annafort, AR - 72233",0.58,BCQ
+C00064,DeliciousEats Drinks,kttp://www.deliciouseatsdrinks.com,Food and Beverage,Drinks,2074,Local,"Business: 726 Daniel Throughway , Port Brian, VT - 05142",0.5,DED
+C00071,Bite Eats Beverage,kttp://www.biteeatsbeverage.com,Food and Beverage,Drinks,2095,Regional,"Business: 7657 Holt Crest , Lake Tamarafort, OK - 73141",0.48,BEB
+C00093,A Taste ofCuisine Treats,kttp://www.atasteofcuisinetreats.com,Food and Beverage,Bakery,2090,Local,"Business: 390 Jones Ports , North Raymond, KY - 40086",0.24,ATCT
+C00094,DeliciousEats Bistro,kttp://www.deliciouseatsbistro.com,Food and Beverage,Restaurant,2085,Regional,"Business: 295 Walker Square, Port Kimberly, VA - 24541",0.23,DEB
