@@ -1,25 +1,27 @@
 id,company_name,website,industry,sub_industry,founded,client_scope,hq,market_share,abbreviation
-C00002,Crave Dine Bite,kttps://www.cravedinebite.com,Food and Beverage,Fast Food,2092,Local,"Business: 433 Linda Mills, Jenniferport, KS - 66567",0.54,CDB
-C00010,CraveBite Feast,kttps://www.cravebitefeast.com,Food and Beverage,Catering,2099,Local,"Business: 8533 Tyler Wall , Codyport, KS - 66052",0.77,CBF
-C00013,TasteDelight Sweet,kttps://www.tastedelightsweet.com,Food and Beverage,Bakery,2001,Local,"Business: 78380 Warner Springs , Lake Brandon, MT - 59925",0.69,TDS
-C00018,Yum Eats To-Go,kttps://www.yumeatsto-go.com,Food and Beverage,Fast Food,2097,National,"Business: 29532 James Neck, Deniseview, MN - 56056",0.66,YETG
-C00023,Flavor Delight Quench,kttp://www.flavordelightquench.com,Food and Beverage,Drinks,2096,Local,"Business: 52141 Dale Greens , New Mary, NC - 28374",0.99,FDQ
-C00051,Bite Cuisine Quench,kttps://www.bitecuisinequench.com,Food and Beverage,Drinks,2099,Local,"Business: 17451 Scott Locks, South Annafort, AR - 72233",0.58,BCQ
-C00061,DeliciousEats Drinks,kttp://www.deliciouseatsdrinks.com,Food and Beverage,Drinks,2074,Local,"Business: 726 Daniel Throughway , Port Brian, VT - 05142",0.5,DED
-C00068,Bite Eats Beverage,kttp://www.biteeatsbeverage.com,Food and Beverage,Drinks,2095,Regional,"Business: 7657 Holt Crest , Lake Tamarafort, OK - 73141",0.48,BEB
-C00090,A Taste ofCuisine Treats,kttp://www.atasteofcuisinetreats.com,Food and Beverage,Bakery,2090,Local,"Business: 390 Jones Ports , North Raymond, KY - 40086",0.24,ATCT
-C00091,DeliciousEats Bistro,kttp://www.deliciouseatsbistro.com,Food and Beverage,Restaurant,2085,Regional,"Business: 295 Walker Square, Port Kimberly, VA - 24541",0.23,DEB
-C00102,Yum Sip Brew,kttp://www.yumsipbrew.com,Food and Beverage,Beverage Manufacture,2085,National,"Business: 459 Adams Well, Amymouth, VT - 05467",0.44,YSB
-C00107,Crave Cuisine Sweet,kttp://www.cravecuisinesweet.com,Food and Beverage,Desserts,2090,National,"Business: 394 Smith Lock , Murraymouth, WI - 54931",0.96,CCS
-C00110,CraveCuisine Sweet,kttps://www.cravecuisinesweet.com,Food and Beverage,Desserts,2082,Local,"Business: 507 Karen Inlet, Dominicmouth, NV - 89147",0.91,CCS
-C00115,FeastSip Feast,kttp://www.feastsipfeast.com,Food and Beverage,Catering,2058,Local,"Business: 9946 Robles Camp, Castilloside, MI - 49783",0.71,FSF
-C00122,CraveDelight Sweet,kttps://www.cravedelightsweet.com,Food and Beverage,Desserts,2091,Female,"Business: 67869 Shawn Rapid, West Kimberly, CA - 94998",0.63,CDS
-C00126,TasteDelight Food,kttp://www.tastedelightfood.com,Food and Beverage,Food Truck,2092,Regional,"Business: 4759 Dean Fort , North Matthewton, NJ - 08775",0.75,TDF
-C00129,FlavorDelight Bake,kttp://www.flavordelightbake.com,Food and Beverage,Bakery,2096,Female,"Business: 587 Fernandez Corners, East Robertland, AR - 72371",0.74,FDB
-C00130,Delicious Dine Feast,kttps://www.deliciousdinefeast.com,Food and Beverage,Catering,2072,Male,"Business: 7666 Huang Square , West Abigailland, WA - 98182",0.15,DDF
-C00146,DeliciousEats Catering,kttp://www.deliciouseatscatering.com,Food and Beverage,Catering,2096,Local,"Business: 9797 Hill Creek, Jimmytown, NV - 89234",0.2,DEC
-C00161,Bite Eats Treats,kttp://www.biteeatstreats.com,Food and Beverage,Desserts,1968,Regional,"Business: 93864 Vasquez Turnpike, West Mary, AK - 99548",0.52,BET
-C00163,Bite Dine Craft,kttps://www.bitedinecraft.com,Food and Beverage,Beverage Manufacture,2093,Local,"Business: 87 Harris Skyway, Lake Michael, VA - 24512",0.4,BDC
-C00180,Feast Delight Treats,kttp://www.feastdelighttreats.com,Food and Beverage,Desserts,2084,Female,"Business: 70998 Tara Locks, New Courtney, AR - 72649",0.36,FDT
-C00195,Feast Dine Mobile,kttps://www.feastdinemobile.com,Food and Beverage,Food Truck,2097,Female,"Business: 3480 Ellison Summit, Lake Kaitlin, MD - 21921",0.83,FDM
-C00197,BiteDine Bistro,kttps://www.bitedinebistro.com,Food and Beverage,Restaurant,2099,National,"Business: 801 Walter Squares, New Bobbyland, VT - 05347",0.26,BDB
+C00001,YumBite Mobile,kttps://www.yumbitemobile.com,Food and Beverage,Food Truck,2005,National,"Business: 7108 Wendy Ford, Smithport, CO - 80315",0.69,YBM
+C00003,TasteDine Bake,kttp://www.tastedinebake.com,Food and Beverage,Bakery,2090,Female,"Business: 439 Hudson Mission, New Abigailhaven, HI - 96819",0.17,TDB
+C00005,Feast Sip Cuisine,kttp://www.feastsipcuisine.com,Food and Beverage,Restaurant,2097,Male,"Business: 6627 Morales Trail , Donnaside, HI - 96856",0.4,FSC
+C00026,YumSip Sweet,kttps://www.yumsipsweet.com,Food and Beverage,Bakery,2090,Male,"Business: 74823 Carlson Coves, South Danborough, CO - 81429",0.53,YSS
+C00028,FlavorBite Go,kttps://www.flavorbitego.com,Food and Beverage,Fast Food,2099,Male,"Business: 78849 Carson Springs, Lake Terrifort, VA - 22997",0.22,FBG
+C00032,Bite Delight Drinks,kttp://www.bitedelightdrinks.com,Food and Beverage,Drinks,2062,National,"Business: 350 Rowe Club, Collierberg, NY - 14010",0.59,BDD
+C00044,CraveBite Feast,kttps://www.cravebitefeast.com,Food and Beverage,Catering,2099,Local,"Business: 8533 Tyler Wall , Codyport, KS - 66052",0.77,CBF
+C00047,TasteDelight Sweet,kttps://www.tastedelightsweet.com,Food and Beverage,Bakery,2001,Local,"Business: 78380 Warner Springs , Lake Brandon, MT - 59925",0.69,TDS
+C00052,Yum Eats To-Go,kttps://www.yumeatsto-go.com,Food and Beverage,Fast Food,2097,National,"Business: 29532 James Neck, Deniseview, MN - 56056",0.66,YETG
+C00057,Flavor Delight Quench,kttp://www.flavordelightquench.com,Food and Beverage,Drinks,2096,Local,"Business: 52141 Dale Greens , New Mary, NC - 28374",0.99,FDQ
+C00085,Bite Cuisine Quench,kttps://www.bitecuisinequench.com,Food and Beverage,Drinks,2099,Local,"Business: 17451 Scott Locks, South Annafort, AR - 72233",0.58,BCQ
+C00095,DeliciousEats Drinks,kttp://www.deliciouseatsdrinks.com,Food and Beverage,Drinks,2074,Local,"Business: 726 Daniel Throughway , Port Brian, VT - 05142",0.5,DED
+C00102,Bite Eats Beverage,kttp://www.biteeatsbeverage.com,Food and Beverage,Drinks,2095,Regional,"Business: 7657 Holt Crest , Lake Tamarafort, OK - 73141",0.48,BEB
+C00124,A Taste ofCuisine Treats,kttp://www.atasteofcuisinetreats.com,Food and Beverage,Bakery,2090,Local,"Business: 390 Jones Ports , North Raymond, KY - 40086",0.24,ATCT
+C00125,DeliciousEats Bistro,kttp://www.deliciouseatsbistro.com,Food and Beverage,Restaurant,2085,Regional,"Business: 295 Walker Square, Port Kimberly, VA - 24541",0.23,DEB
+C00136,Yum Sip Brew,kttp://www.yumsipbrew.com,Food and Beverage,Beverage Manufacture,2085,National,"Business: 459 Adams Well, Amymouth, VT - 05467",0.44,YSB
+C00141,Crave Cuisine Sweet,kttp://www.cravecuisinesweet.com,Food and Beverage,Desserts,2090,National,"Business: 394 Smith Lock , Murraymouth, WI - 54931",0.96,CCS
+C00144,CraveCuisine Sweet,kttps://www.cravecuisinesweet.com,Food and Beverage,Desserts,2082,Local,"Business: 507 Karen Inlet, Dominicmouth, NV - 89147",0.91,CCS
+C00149,FeastSip Feast,kttp://www.feastsipfeast.com,Food and Beverage,Catering,2058,Local,"Business: 9946 Robles Camp, Castilloside, MI - 49783",0.71,FSF
+C00156,CraveDelight Sweet,kttps://www.cravedelightsweet.com,Food and Beverage,Desserts,2091,Female,"Business: 67869 Shawn Rapid, West Kimberly, CA - 94998",0.63,CDS
+C00160,TasteDelight Food,kttp://www.tastedelightfood.com,Food and Beverage,Food Truck,2092,Regional,"Business: 4759 Dean Fort , North Matthewton, NJ - 08775",0.75,TDF
+C00163,FlavorDelight Bake,kttp://www.flavordelightbake.com,Food and Beverage,Bakery,2096,Female,"Business: 587 Fernandez Corners, East Robertland, AR - 72371",0.74,FDB
+C00164,Delicious Dine Feast,kttps://www.deliciousdinefeast.com,Food and Beverage,Catering,2072,Male,"Business: 7666 Huang Square , West Abigailland, WA - 98182",0.15,DDF
+C00180,DeliciousEats Catering,kttp://www.deliciouseatscatering.com,Food and Beverage,Catering,2096,Local,"Business: 9797 Hill Creek, Jimmytown, NV - 89234",0.2,DEC
+C00195,Bite Eats Treats,kttp://www.biteeatstreats.com,Food and Beverage,Desserts,1968,Regional,"Business: 93864 Vasquez Turnpike, West Mary, AK - 99548",0.52,BET
+C00197,Bite Dine Craft,kttps://www.bitedinecraft.com,Food and Beverage,Beverage Manufacture,2093,Local,"Business: 87 Harris Skyway, Lake Michael, VA - 24512",0.4,BDC

@@ -1,17 +1,19 @@
 id,company_name,website,industry,sub_industry,founded,client_scope,hq,market_share,abbreviation
-C00008,Art Hobbies,kttps://www.arthobbies.com,Entertainment,Hobbies,2052,National,"Business: 739 Eddie Stream, Nguyenton, OK - 73119",0.37,AH
-C00028,Story Reads,kttp://www.storyreads.com,Entertainment,Books,2072,Female,"Business: 633 Patrick Parks, South Donnashire, IL - 60789",0.64,SR
-C00033,Art Reads,kttp://www.artreads.com,Entertainment,Books,2097,National,"Business: 2285 Miller Port, Christianstad, MS - 39165",0.85,AR
-C00040,Style World Pastime,kttps://www.styleworldpastime.com,Entertainment,Hobbies,2096,Female,"Business: 35625 Courtney Mountains , Nixonchester, OH - 45824",0.58,SWP
-C00043,ArtFlicks Play,kttps://www.artflicksplay.com,Entertainment,Sports,2096,Regional,"Business: 45683 Adams Glens , Hortonshire, CT - 06299",0.71,AFP
-C00047,Star Beat Sound,kttps://www.starbeatsound.com,Entertainment,Music,2067,Regional,"Business: 245 Jeffrey Summit , Debramouth, SD - 57006",0.24,SBS
-C00049,CineWorld Books,kttps://www.cineworldbooks.com,Entertainment,Books,2090,Local,"Business: 627 Rice Rue, South Michael, SD - 57432",0.09,CWB
-C00117,Star Chic Sound,kttps://www.starchicsound.com,Entertainment,Music,2098,National,"Business: 685 Randolph Mountains, Port Keithside, OH - 45092",0.74,SCS
-C00134,Play Beat Sports,kttp://www.playbeatsports.com,Entertainment,Sports,2087,Regional,"Business: 96141 Carpenter Stravenue, South Courtneyside, VA - 22802",0.23,PBS
-C00144,Sound Arena,kttp://www.soundarena.com,Entertainment,Sports,2090,Male,"Business: 1321 Diana Estates , New Anthony, WI - 53396",0.44,SA
-C00153,Art Chic Novels,kttps://www.artchicnovels.com,Entertainment,Books,2088,Male,"Business: 236 Shawn Gateway , Ballardton, SD - 57004",0.25,ACN
-C00178,Story Quest Insider,kttp://www.storyquestinsider.com,Entertainment,Fashion / Celebrity,2099,National,"Business: 6995 Vincent Bypass, Campbellside, WA - 99107",0.52,SQI
-C00181,Star Beat Music,kttp://www.starbeatmusic.com,Entertainment,Music,2085,Local,"Business: 8490 Jordan Cove , Christinestad, TX - 78660",0.65,SBM
-C00188,StarBeat Hobbies,kttp://www.starbeathobbies.com,Entertainment,Hobbies,2099,National,"Business: 833 Perry Haven, Wrightport, UT - 84512",0.84,SBH
-C00189,Art Quest Play,kttps://www.artquestplay.com,Entertainment,Gaming,2091,Local,"Business: 208 Dawn Springs , Moodyfort, OR - 97875",0.31,AQP
-C00196,Story Flicks Games,kttps://www.storyflicksgames.com,Entertainment,Gaming,2096,Local,"Business: 72907 James Isle, Donaldmouth, GA - 30359",0.14,SFG
+C00006,Sound Play,kttp://www.soundplay.com,Entertainment,Gaming,2085,Female,"Business: 78653 Kevin Expressway, West Troy, NE - 68062",0.18,SP
+C00007,StarChic Style,kttps://www.starchicstyle.com,Entertainment,Fashion / Celebrity,2095,Local,"Business: 75432 Laura Knoll , Moonmouth, TX - 79589",0.55,SCS
+C00010,Sound Quest Hobbies,kttps://www.soundquesthobbies.com,Entertainment,Hobbies,2041,Male,"Business: 8817 Lynn Meadows , Pennyville, MD - 21876",0.35,SQH
+C00015,Story Quest Hobbies,kttp://www.storyquesthobbies.com,Entertainment,Hobbies,2096,Male,"Business: 1174 Sandra Plains, North Davidfurt, GA - 31314",0.66,SQH
+C00016,ArtQuest Leisure,kttps://www.artquestleisure.com,Entertainment,Hobbies,2092,National,"Business: 2225 Victoria Spurs, Lake Amyland, DE - 19795",0.85,AQL
+C00024,ArtQuest Pages,kttps://www.artquestpages.com,Entertainment,Books,2027,Local,"Business: 78904 Steven Turnpike, Port Marystad, WY - 82629",0.29,AQP
+C00025,Cine Chic Sound,kttps://www.cinechicsound.com,Entertainment,Music,2082,National,"Business: 45036 Chase Port, Michaelport, MT - 59371",0.91,CCS
+C00042,Art Hobbies,kttps://www.arthobbies.com,Entertainment,Hobbies,2052,National,"Business: 739 Eddie Stream, Nguyenton, OK - 73119",0.37,AH
+C00062,Story Reads,kttp://www.storyreads.com,Entertainment,Books,2072,Female,"Business: 633 Patrick Parks, South Donnashire, IL - 60789",0.64,SR
+C00067,Art Reads,kttp://www.artreads.com,Entertainment,Books,2097,National,"Business: 2285 Miller Port, Christianstad, MS - 39165",0.85,AR
+C00074,Style World Pastime,kttps://www.styleworldpastime.com,Entertainment,Hobbies,2096,Female,"Business: 35625 Courtney Mountains , Nixonchester, OH - 45824",0.58,SWP
+C00077,ArtFlicks Play,kttps://www.artflicksplay.com,Entertainment,Sports,2096,Regional,"Business: 45683 Adams Glens , Hortonshire, CT - 06299",0.71,AFP
+C00081,Star Beat Sound,kttps://www.starbeatsound.com,Entertainment,Music,2067,Regional,"Business: 245 Jeffrey Summit , Debramouth, SD - 57006",0.24,SBS
+C00083,CineWorld Books,kttps://www.cineworldbooks.com,Entertainment,Books,2090,Local,"Business: 627 Rice Rue, South Michael, SD - 57432",0.09,CWB
+C00151,Star Chic Sound,kttps://www.starchicsound.com,Entertainment,Music,2098,National,"Business: 685 Randolph Mountains, Port Keithside, OH - 45092",0.74,SCS
+C00168,Play Beat Sports,kttp://www.playbeatsports.com,Entertainment,Sports,2087,Regional,"Business: 96141 Carpenter Stravenue, South Courtneyside, VA - 22802",0.23,PBS
+C00178,Sound Arena,kttp://www.soundarena.com,Entertainment,Sports,2090,Male,"Business: 1321 Diana Estates , New Anthony, WI - 53396",0.44,SA
+C00187,Art Chic Novels,kttps://www.artchicnovels.com,Entertainment,Books,2088,Male,"Business: 236 Shawn Gateway , Ballardton, SD - 57004",0.25,ACN

@@ -28,7 +28,8 @@ class PersonGenerator:
             last_name=parent_one.last_name,
             generation=parent_one.generation - 1,
             blood_type=self.gen.blood_type_allele(parent_one, parent_two),
-            parents=[parent_one, parent_two],
+            parent_a=parent_one,
+            parent_b=parent_two,
             # home=parent_one.home,
         )
 
@@ -64,7 +65,8 @@ class PersonGenerator:
         # FAMILY
         p.spouse = kwargs.get("spouse", None)
         p.siblings = kwargs.get("siblings", [])
-        p.parents = kwargs.get("parents", [])
+        p.parent_a = kwargs.get("parent_a", None)
+        p.parent_b = kwargs.get("parent_b", None)
         p.children = kwargs.get("children", [])
 
         # BODY

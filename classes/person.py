@@ -57,8 +57,9 @@ class Person:
     spouse: Optional[Person] = None
     maiden_name: Optional[str] = None
     children: Optional[list[Person]] = None
-    siblings: Optional[list[str]] = None
-    parents: Optional[list[str]] = None
+    siblings: Optional[list[Person]] = None
+    parent_a: Optional[Person] = None
+    parent_b: Optional[Person] = None
 
     employer: Optional[str] = None
     role: Optional[str] = None
@@ -70,6 +71,12 @@ class Person:
     @property
     def is_alive(self):
         return not bool(self.date_of_death)
+
+    @property
+    def parents(self):
+        if self.parent_a and self.parent_b:
+            return f"{self.parent_a.name} and {self.parent_b.name}"
+        return None
 
     @property
     def can_work(self):
@@ -93,7 +100,11 @@ class Person:
         if self.middle_name:
             return f"{self.first_name} {self.middle_name} {self.last_name}"
         else:
-            return f"{self.first_name} {self.last_name}"
+            return self.name
+
+    @property
+    def name(self):
+        return f"{self.first_name} {self.last_name}"
 
     @property
     def title(self):

@@ -1,22 +1,20 @@
 id,company_name,website,industry,sub_industry,founded,client_scope,hq,market_share,abbreviation
-C00003,CityWagon Rentals,kttp://www.citywagonrentals.com,Automotive,Rental,2098,Male,"Business: 7484 Parks Hills, Nataliestad, SD - 57192",0.39,CWR
-C00019,Drive Path Rentals,kttps://www.drivepathrentals.com,Automotive,Rental,2030,Male,"Business: 439 Charles Trail, South Sara, HI - 96879",0.96,DPR
-C00036,ZoomWagon Cars,kttps://www.zoomwagoncars.com,Automotive,Manufacturer,2083,National,"Business: 43354 Brooks Trace , Erikton, WA - 98107",0.82,ZWC
-C00042,CityTrails Autos,kttp://www.citytrailsautos.com,Automotive,Dealership,2098,Local,"Business: 3972 Billy Garden, West Emily, CO - 80159",0.13,CTA
-C00052,Drive Ways R Us,kttp://www.drivewaysrus.com,Automotive,Dealership,2061,Regional,"Business: 6044 David Union, Kennethmouth, PA - 18517",0.48,DWRU
-C00053,CityWagon Shop,kttps://www.citywagonshop.com,Automotive,Mechanic,2090,Female,"Business: 1044 Justin Lake , Hernandezport, NH - 03819",0.45,CWS
-C00063,Go Autos,kttp://www.goautos.com,Automotive,Dealership,2013,National,"Business: 222 Andrea Turnpike , North Danielle, MS - 38797",0.29,GA
-C00092,ZoomPath To Go,kttps://www.zoompathtogo.com,Automotive,Rental,2090,National,"Business: 814 Donald Causeway , Normanton, MA - 02447",0.79,ZPTG
-C00105,AutoWagon Repair,kttp://www.autowagonrepair.com,Automotive,Mechanic,2092,National,"Business: 92017 Juarez Fall , East Kathrynbury, ME - 04923",0.47,AWR
-C00108,Speed Wagon Shop,kttp://www.speedwagonshop.com,Automotive,Mechanic,2092,Local,"Business: 124 Travis Mountains, Bryanton, ME - 04748",0.85,SWS
-C00140,AutoPath Automotive,kttp://www.autopathautomotive.com,Automotive,Suppliers,2096,Regional,"Business: 445 Roth Unions, Allisonburgh, WV - 25614",0.98,APA
-C00148,Auto Shop,kttps://www.autoshop.com,Automotive,Mechanic,2099,Male,"Business: 4002 Brown Camp, East Patrick, VT - 05134",0.22,AS
-C00151,CityWagon Suppliers,kttp://www.citywagonsuppliers.com,Automotive,Suppliers,2088,Regional,"Business: 5561 Nancy Run, North Peterbury, WA - 98387",0.99,CWS
-C00154,CityPath Travel Cars,kttp://www.citypathtravelcars.com,Automotive,Rental,2097,National,"Business: 81 Green Knoll , Kennethhaven, UT - 84512",0.28,CPTC
-C00158,GoPath Motors,kttps://www.gopathmotors.com,Automotive,Dealership,2098,Regional,"Business: 46466 Mccoy River, Gabriellashire, DC - 20026",0.59,GPM
-C00164,Speed R Us,kttps://www.speedrus.com,Automotive,Dealership,2058,Female,"Business: 1443 Kristin Mission, Aliciaside, ME - 04479",0.58,SRU
-C00167,Speed Path Travel Cars,kttps://www.speedpathtravelcars.com,Automotive,Rental,1922,National,"Business: 12670 Jordan Inlet, Russellberg, IA - 51544",0.82,SPTC
-C00179,Drive Path Autos,kttps://www.drivepathautos.com,Automotive,Dealership,2090,Male,"Business: 184 James Manors, South Jackview, AR - 72918",0.66,DPA
-C00185,Auto Trails Autos,kttps://www.autotrailsautos.com,Automotive,Dealership,2024,Local,"Business: 3333 Lindsey Corner , North Shawnachester, DE - 19767",0.52,ATA
-C00186,CityWays Motors,kttps://www.citywaysmotors.com,Automotive,Dealership,2080,Regional,"Business: 765 Gates Square, South Andrew, MO - 65829",0.41,CWM
-C00199,Cruise Automotive,kttp://www.cruiseautomotive.com,Automotive,Suppliers,2098,Male,"Business: 6063 Margaret Walk , West Jonathan, LA - 70760",0.26,CA
+C00008,DriveWays Rentals,kttps://www.drivewaysrentals.com,Automotive,Rental,2098,National,"Business: 2505 West Creek , West Elaine, MS - 39414",0.05,DWR
+C00023,Go Ways Autos,kttp://www.gowaysautos.com,Automotive,Dealership,2084,Male,"Business: 156 Miller Fords , Gamblemouth, SC - 29355",0.79,GWA
+C00035,City Ways Repair,kttp://www.citywaysrepair.com,Automotive,Mechanic,2058,Female,"Business: 5159 Amanda Junction , Taylorborough, AZ - 86165",0.97,CWR
+C00037,CityWagon Rentals,kttp://www.citywagonrentals.com,Automotive,Rental,2098,Male,"Business: 7484 Parks Hills, Nataliestad, SD - 57192",0.39,CWR
+C00053,Drive Path Rentals,kttps://www.drivepathrentals.com,Automotive,Rental,2030,Male,"Business: 439 Charles Trail, South Sara, HI - 96879",0.96,DPR
+C00070,ZoomWagon Cars,kttps://www.zoomwagoncars.com,Automotive,Manufacturer,2083,National,"Business: 43354 Brooks Trace , Erikton, WA - 98107",0.82,ZWC
+C00076,CityTrails Autos,kttp://www.citytrailsautos.com,Automotive,Dealership,2098,Local,"Business: 3972 Billy Garden, West Emily, CO - 80159",0.13,CTA
+C00086,Drive Ways R Us,kttp://www.drivewaysrus.com,Automotive,Dealership,2061,Regional,"Business: 6044 David Union, Kennethmouth, PA - 18517",0.48,DWRU
+C00087,CityWagon Shop,kttps://www.citywagonshop.com,Automotive,Mechanic,2090,Female,"Business: 1044 Justin Lake , Hernandezport, NH - 03819",0.45,CWS
+C00097,Go Autos,kttp://www.goautos.com,Automotive,Dealership,2013,National,"Business: 222 Andrea Turnpike , North Danielle, MS - 38797",0.29,GA
+C00126,ZoomPath To Go,kttps://www.zoompathtogo.com,Automotive,Rental,2090,National,"Business: 814 Donald Causeway , Normanton, MA - 02447",0.79,ZPTG
+C00139,AutoWagon Repair,kttp://www.autowagonrepair.com,Automotive,Mechanic,2092,National,"Business: 92017 Juarez Fall , East Kathrynbury, ME - 04923",0.47,AWR
+C00142,Speed Wagon Shop,kttp://www.speedwagonshop.com,Automotive,Mechanic,2092,Local,"Business: 124 Travis Mountains, Bryanton, ME - 04748",0.85,SWS
+C00174,AutoPath Automotive,kttp://www.autopathautomotive.com,Automotive,Suppliers,2096,Regional,"Business: 445 Roth Unions, Allisonburgh, WV - 25614",0.98,APA
+C00182,Auto Shop,kttps://www.autoshop.com,Automotive,Mechanic,2099,Male,"Business: 4002 Brown Camp, East Patrick, VT - 05134",0.22,AS
+C00185,CityWagon Suppliers,kttp://www.citywagonsuppliers.com,Automotive,Suppliers,2088,Regional,"Business: 5561 Nancy Run, North Peterbury, WA - 98387",0.99,CWS
+C00188,CityPath Travel Cars,kttp://www.citypathtravelcars.com,Automotive,Rental,2097,National,"Business: 81 Green Knoll , Kennethhaven, UT - 84512",0.28,CPTC
+C00192,GoPath Motors,kttps://www.gopathmotors.com,Automotive,Dealership,2098,Regional,"Business: 46466 Mccoy River, Gabriellashire, DC - 20026",0.59,GPM
+C00198,Speed R Us,kttps://www.speedrus.com,Automotive,Dealership,2058,Female,"Business: 1443 Kristin Mission, Aliciaside, ME - 04479",0.58,SRU
