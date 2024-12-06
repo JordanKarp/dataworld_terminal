@@ -4,7 +4,7 @@ from itertools import product
 
 from pathlib import Path
 
-from classes.phone_number import PhoneNumber
+from classes.phone_number import Phone
 from generator_providers.choicesProvider import ChoicesProvider
 from generator_providers.dateProvider import DateProvider
 from utilities.load_tools import load_txt, load_weighted_csv, load_csv_as_dict
@@ -39,6 +39,9 @@ NEGATIVE_TRAITS_PATH = Path("./data/person/negative_traits.txt")
 MANNERISMS_PATH = Path("./data/person/mannerisms.txt")
 AGES_PATH = Path("./data/person/age_weights.csv")
 NICKNAMES_PATH = Path("./data/person/names.csv")
+
+PHONE_CALL_MEAN = 20
+PHONE_CALL_SIGMA = 5
 
 
 class PersonalDetailsProvider(ChoicesProvider, DateProvider):
@@ -184,7 +187,10 @@ class PersonalDetailsProvider(ChoicesProvider, DateProvider):
         return ", ".join(self.generator.random_elements(traits, length=k, unique=True))
 
     def phone_number(self):
-        return PhoneNumber(self.generator.numerify(text="(%#%) %##-####"))
+        return Phone(self.generator.numerify(text="(%#%) %##-####"))
+
+    def phone_call_duration(self):
+        return self.generator.lognorm_dist_rand(PHONE_CALL_MEAN, PHONE_CALL_SIGMA)
 
     def nickname(self, first_name, middle_name=None):
         options = [

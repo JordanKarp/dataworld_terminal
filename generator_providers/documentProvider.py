@@ -6,7 +6,9 @@ from pathlib import Path
 from generator_providers.choicesProvider import ChoicesProvider
 from generator_providers.dateProvider import DateProvider
 from classes.passport import Passport
+from classes.bank_account import BankAccount
 from classes.drivers_license import DriversLicense
+from classes.social_connect import SocialConnect
 from data.person.person_averages import YEARS_TIL_PASSPORT_EXP, YEARS_TIL_DL_EXP
 from utilities.load_tools import load_weighted_csv
 
@@ -60,3 +62,18 @@ class DocumentProvider(ChoicesProvider, DateProvider):
             self.dl_exp_date(issue),
             self.dl_restrictions(),
         )
+
+    def social_connect(self, name):
+        return SocialConnect(name)
+
+    def bank_account(self, amount=None):
+        if not amount:
+            amount = self.bank_account_amount()
+        return BankAccount(self.bank_account_number(), amount)
+
+    def bank_account_number(self):
+        return self.generator.numerify(text="#########")
+
+    def bank_account_amount(self, min_dol=20, max_dol=50_000):
+        # To make the random int a float, we multiply and divide by 100.0
+        return self.generator.random_int(min_dol * 100.0, max_dol * 100.0) / 100.0

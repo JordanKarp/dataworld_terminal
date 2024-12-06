@@ -7,11 +7,12 @@ class LocationProvider(BaseProvider):
 
     def _parse_address(self, addr):
         num, addr_name = addr.split(" ", 1)
+        street_num = int(num)
         for keyword in ["Suite", "Apt"]:
             before, separator, after = addr_name.partition(keyword)
             if separator:
-                return f"{int(num)} {before}", f"{separator}{after}"
-        return f"{int(num)} {addr_name}", ""
+                return f"{street_num} {before.strip()}", f"{separator}{after}"
+        return f"{street_num} {addr_name.strip()}", ""
 
     def _create_location(
         self, street_address_1, street_address_2, city, state_abbr, loc_type, subtype
@@ -32,6 +33,7 @@ class LocationProvider(BaseProvider):
 
     def home(self):
         state_abbr = self.generator.state_abbr()
+        state_abbr = "NJ"
         addr = self.generator.street_address()
         street_address_1, street_address_2 = self._parse_address(addr)
         city = self.generator.city()
@@ -55,14 +57,3 @@ class LocationProvider(BaseProvider):
         return self._create_location(
             street_address_1, "", city, state_abbr, loc_type, subtype
         )
-
-    # def company_locations(self):
-    #     state_abbr = self.generator.state_abbr()
-    #     addr = self.generator.street_address()
-    #     street_address_1, _ = self._parse_address(addr)
-    #     city = self.generator.city()
-    #     loc_type = LocationTypes.BUSINESS
-    #     subtype = BusinessTypes.HQ
-    #     return self._create_location(
-    #         street_address_1, "", city, state_abbr, loc_type, subtype
-    #     )

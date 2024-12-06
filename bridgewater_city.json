@@ -1,0 +1,26 @@
+{
+  "STATE": "Cotina",
+  "NAME": "Bridgewater City",
+  "MAP_ROWS": "15",
+  "MAP_COLS": "90",
+  "ROADS": {
+    "First Avenue": {
+      "START_ROW": "3",
+      "START_COL": "3",
+      "IS_VERT": "False",
+      "LENGTH": "50",
+      "LOCATIONS": {
+        "50": {
+          "BUILDING_TYPE": "Residence",
+          "LOT_SIZE": "12",
+          "ST_2_NUMBER_TYPE": "C",
+          "ST_2_TEXT": "Unit",
+          "START_FLOOR": "1",
+          "END_FLOOR": "15",
+          "START_UNIT": "1",
+          "END_UNIT": "10"
+        },
+        
+    }
+  }
+}

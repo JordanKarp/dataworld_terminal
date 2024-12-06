@@ -1,0 +1,162 @@
+{
+  "Grocery": {
+    "WEIGHT": "1",
+    "NOUNS": "Health, Grocery, Mart, Produce, Food",
+    "PLURALS": "Food, Organics, Shops, Goods",
+    "VERBS": "Shop, Stock, Scan, Bag, Eat",
+    "GERUNDS": "Shopping, Food Shopping, Delivering, Saving",
+    "ADJECTIVES": "Fresh, Organic, Affordable, Convenient, Local",
+    "PRODUCTS": "apples, bananas, oranges, strawberries, blueberries, spinach, lettuce, carrots, broccoli, tomatoes, potatoes, onions, garlic, bell peppers, cucumbers, mushrooms, chicken breast, ground beef, pork chops, salmon fillets, shrimp, eggs, milk, yogurt, cheese, butter, bread, rice, pasta, cereal, oatmeal, canned beans, canned tomatoes, olive oil, peanut butter, jam, coffee, tea, sugar, flour, salt",
+    "HOURS": [8, 22],
+    "FREQUENCY_RANGE": [0.1, 0.2],
+    "FAVORITE_STORE_RATE": 0.7,
+    "PURCHASE_RANGE": [20, 200],
+    "CHECKIN": false,
+    "PROPRIETORS": ["Corporation"],
+    "SCOPES": {
+      "Local": {
+        "Store": {
+          "LOCATION_TYPE": "Retail",
+          "LOCATION_RANGE": [1, 1],
+          "EMPLOYEE_STRUCTURE": [
+            [[1, 1], "Owner", "General", 2000],
+            [[1, 4], "Employee", "General", 1000]
+          ]
+        }
+      },
+      "Regional": {
+        "Store": {
+          "LOCATION_TYPE": "Retail",
+          "LOCATION_RANGE": [1, 3],
+          "EMPLOYEE_STRUCTURE": [
+            [[1, 1], "Owner", "General", 3000],
+            [[2, 2], "Manager", "General", 2000],
+            [[3, 5], "Employee", "General", 1000]
+          ]
+        },
+        "Headquarters": {
+          "LOCATION_TYPE": "Office",
+          "LOCATION_RANGE": [1, 1],
+          "EMPLOYEE_STRUCTURE": [
+            [[1, 1], "Owner", "General", 3000],
+            [[1, 1], "Vice President", "General", 2000],
+            [[2, 3], "Secretary", "General", 1000]
+          ]
+        }
+      }
+    },
+    "Additional Data": ""
+  },
+  "Gym": {
+    "WEIGHT": "1",
+    "NOUNS": "Gym, Dumbbell, Trainer, Fit, Workout",
+    "PLURALS": "Gains, Weights, Exercises, Mats, Classes",
+    "VERBS": "Lift, Run, Stretch, Sweat, Train, Flex",
+    "GERUNDS": "Gifting, Running, Stretching, Sweating, Training",
+    "ADJECTIVES": "Fit, Strong, Energetic, Sweaty, Athletic",
+    "PRODUCTS": "Monthly Membership, Two Week Pass, Single Class, Protein Shakes, Workout clothes",
+    "HOURS": [8, 22],
+    "FREQUENCY_RANGE": [0, 0.5],
+    "FAVORITE_STORE_RATE": 0.7,
+    "PURCHASE_RANGE": [20, 200],
+    "CHECKIN": true,
+    "PROPRIETORS": ["Corporation"],
+    "SCOPES": {
+      "Local": {
+        "Store": {
+          "LOCATION_TYPE": "Retail",
+          "LOCATION_RANGE": [1, 1],
+          "EMPLOYEE_STRUCTURE": [
+            [[1, 1], "Owner", "General", 2000],
+            [[1, 4], "Trainer", "General", 1000]
+          ]
+        }
+      }
+    },
+    "Additional Data": ""
+  },
+  "Hardware": {
+    "WEIGHT": "1",
+    "NOUNS": "Tools, Hardware, Store, Equipment, Supplies",
+    "PLURALS": "Nails, Screws, Hammers, Drills, Saws",
+    "VERBS": "Build, Fix, Measure, Cut, Install",
+    "GERUNDS": "Building, Repairing, Measuring, Cutting, Installing",
+    "ADJECTIVES": "Durable, Reliable, Heavy-duty, Industrial, Precision",
+    "PRODUCTS": "hammers, screwdrivers, pliers, wrenches, saws, drills, screws, nails, bolts, nuts, washers, sandpaper, tape measures, levels, toolboxes, paint, brushes, rollers, wood, plywood, metal sheets, pipes, fittings, adhesives, sealants, gloves, safety goggles, work boots, ladders, power tools, hand tools",
+    "HOURS": [8, 22],
+    "FREQUENCY_RANGE": [0.01, 0.15],
+    "FAVORITE_STORE_RATE": 0.7,
+    "PURCHASE_RANGE": [5, 500],
+    "CHECKIN": false,
+    "PROPRIETORS": ["Corporation"],
+    "SCOPES": {
+      "Local": {
+        "Store": {
+          "LOCATION_TYPE": "Retail",
+          "LOCATION_RANGE": [1, 1],
+          "EMPLOYEE_STRUCTURE": [
+            [[1, 1], "Owner", "General", 2000],
+            [[1, 4], "Employee", "General", 1000]
+          ]
+        }
+      }
+    },
+    "Additional Data": ""
+  },
+  "Clothing": {
+    "WEIGHT": "1",
+    "NOUNS": "Fashion, Apparel, Store, Wardrobe, Garments",
+    "PLURALS": "Shirts, Pants, Dresses, Jackets, Shoes",
+    "VERBS": "Wear, Shop, Try, Fit, Purchase",
+    "GERUNDS": "Wearing, Shopping, Trying, Fitting, Buying",
+    "ADJECTIVES": "Stylish, Comfortable, Trendy, Casual, Formal",
+    "PRODUCTS": "t-shirts, jeans, sweaters, coats, blouses, skirts, suits, ties, scarves, belts, socks, sneakers, boots, sandals, hats, gloves, sunglasses, watches, handbags, wallets, dresses, jackets, leggings, shorts, pajamas, swimsuits, underwear, bras, activewear, outerwear, accessories",
+    "HOURS": [8, 22],
+    "FREQUENCY_RANGE": [0.01, 0.2],
+    "FAVORITE_STORE_RATE": 0.5,
+    "PURCHASE_RANGE": [5, 500],
+    "CHECKIN": false,
+    "PROPRIETORS": ["Corporation"],
+    "SCOPES": {
+      "Local": {
+        "Store": {
+          "LOCATION_TYPE": "Retail",
+          "LOCATION_RANGE": [1, 1],
+          "EMPLOYEE_STRUCTURE": [
+            [[1, 1], "Owner", "General", 2000],
+            [[1, 4], "Employee", "General", 1000]
+          ]
+        }
+      }
+    },
+    "Additional Data": ""
+  },
+  "Electronics": {
+    "WEIGHT": "1",
+    "NOUNS": "Gadgets, Electronics, Store, Devices, Equipment",
+    "PLURALS": "Phones, Laptops, Tablets, TVs, Cameras",
+    "VERBS": "Buy, Charge, Connect, Use, Upgrade",
+    "GERUNDS": "Buying, Charging, Connecting, Using, Upgrading",
+    "ADJECTIVES": "Advanced, Portable, High-tech, Smart, Durable",
+    "PRODUCTS": "smartphones, laptops, tablets, desktop computers, smartwatches, televisions, cameras, headphones, speakers, gaming consoles, routers, printers, monitors, keyboards, mice, chargers, power banks, USB drives, external hard drives, smart home devices, fitness trackers, drones, VR headsets, projectors, software, cables, adapters, batteries, memory cards",
+    "HOURS": [8, 22],
+    "FREQUENCY_RANGE": [0.01, 0.2],
+    "FAVORITE_STORE_RATE": 0.5,
+    "PURCHASE_RANGE": [5, 500],
+    "CHECKIN": false,
+    "PROPRIETORS": ["Corporation"],
+    "SCOPES": {
+      "Local": {
+        "Store": {
+          "LOCATION_TYPE": "Retail",
+          "LOCATION_RANGE": [1, 1],
+          "EMPLOYEE_STRUCTURE": [
+            [[1, 1], "Owner", "General", 2000],
+            [[1, 2], "Employee", "General", 1000]
+          ]
+        }
+      }
+    },
+    "Additional Data": ""
+  }
+}

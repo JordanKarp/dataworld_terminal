@@ -1,0 +1,57 @@
+{
+  "STATE": "Cotina",
+  "NAME": "Bridgewater City",
+  "MAP_ROWS": "15",
+  "MAP_COLS": "90",
+  "ROADS": {
+    "First Avenue": {
+      "START_ROW": "3",
+      "START_COL": "3",
+      "IS_VERT": "False",
+      "LENGTH": "50",
+      "LOCATIONS": {}
+    },
+    "Second Avenue": {
+      "START_ROW": "8",
+      "START_COL": "5",
+      "IS_VERT": "False",
+      "LENGTH": "60",
+      "LOCATIONS": {
+        "81R": {
+          "START_NUM": "81",
+          "END_NUM": "102",
+          "INC_NUM": "3",
+          "BUILDING_TYPE": "Residence",
+          "LOT_SIZE": "Small",
+          "ST_2_NUMBER_TYPE": "A",
+          "ST_2_TEXT": "Apt.",
+          "START_FLOOR": "1",
+          "END_FLOOR": "5",
+          "START_UNIT": "1",
+          "END_UNIT": "4"
+        }
+      }
+    },
+    "Cross Street": {
+      "START_ROW": "2",
+      "START_COL": "20",
+      "IS_VERT": "True",
+      "LENGTH": "13",
+      "LOCATIONS": {
+        "8R": {
+          "START_NUM": "8",
+          "END_NUM": "15",
+          "INC_NUM": "3",
+          "BUILDING_TYPE": "Residence",
+          "LOT_SIZE": "14",
+          "ST_2_NUMBER_TYPE": "C",
+          "ST_2_TEXT": "Unit",
+          "START_FLOOR": "1",
+          "END_FLOOR": "6",
+          "START_UNIT": "1",
+          "END_UNIT": "4"
+        }
+      }
+    }
+  }
+}

@@ -1,21 +1,2 @@
 id,company_name,website,industry,sub_industry,founded,client_scope,hq,market_share,abbreviation
-C00017,School Campus Primary,kttp://www.schoolcampusprimary.com,Education,Public K-6,2080,Male,"Business: 2072 Christine Parks , Lopezburgh, MD - 21032",0.57,SCP
-C00029,Educate Hub Junior High,kttps://www.educatehubjuniorhigh.com,Education,Public 7-9,2089,Regional,"Business: 520 Anna Lake, West Mindyberg, AZ - 86149",0.65,EHJH
-C00051,Knowledge Center Academic,kttps://www.knowledgecenteracademic.com,Education,College,2084,Local,"Business: 28839 James Trail, West William, KY - 42350",0.53,KCA
-C00058,Academy Campus Primary,kttps://www.academycampusprimary.com,Education,Public K-6,2022,Male,"Business: 69528 Michael Squares, West Rickburgh, MD - 21304",0.36,ACP
-C00061,EducateCampus University,kttp://www.educatecampusuniversity.com,Education,University,2073,Male,"Business: 6068 Sloan Lane, Bryanhaven, SD - 57498",0.3,ECU
-C00075,SchoolCampus ,kttp://www.schoolcampus.com,Education,Public 10-12,2084,National,"Business: 4034 Jones Shoal , East Melvinville, DC - 20037",0.77,SC
-C00079,Learn Primary,kttp://www.learnprimary.com,Education,Public K-6,2098,Female,"Business: 25836 Goodman Ports, Hutchinsonville, DE - 19724",0.77,LP
-C00091,InstituteHub Institute,kttps://www.institutehubinstitute.com,Education,University,2084,Regional,"Business: 859 Ponce Lakes, New Deborahmouth, WA - 99258",0.7,IHI
-C00104,AcademyCenter College,kttp://www.academycentercollege.com,Education,College,2098,Female,"Business: 80577 Tammy Field , Port Courtneyshire, NV - 89675",0.94,ACC
-C00116,InstituteCenter University,kttps://www.institutecenteruniversity.com,Education,University,2096,Regional,"Business: 66413 Jones Hills , East Sarahhaven, IL - 62828",0.32,ICU
-C00137,School School,kttps://www.schoolschool.com,Education,Public K-6,2063,National,"Business: 67013 Deborah Plains , North Martin, CO - 81072",0.09,SS
-C00147,Study University,kttps://www.studyuniversity.com,Education,University,2096,National,"Business: 9092 Stephanie Station, West Joseph, NE - 68076",0.38,SU
-C00169,School Institute,kttp://www.schoolinstitute.com,Education,University,2082,Male,"Business: 588 Victoria Lights , Sarahton, NH - 03415",1.0,SI
-C00173,Learn Campus Learn,kttp://www.learncampuslearn.com,Education,University,2090,Female,"Business: 4938 Kristina Throughway, Stephaniechester, WV - 25669",0.81,LCL
-C00176,AcademyCampus Learn,kttp://www.academycampuslearn.com,Education,Technical / Trade School,2080,National,"Business: 1183 Jones Ridge, Lake Joseph, CT - 06242",0.53,ACL
-C00179,Academy Institution School,kttp://www.academyinstitutionschool.com,Education,Public 7-9,2099,Male,"Business: 5517 Jill Coves , Toddton, OR - 97670",0.89,AIS
-C00189,School Institution Elementary,kttps://www.schoolinstitutionelementary.com,Education,Public K-6,2056,Female,"Business: 227 Tiffany Garden , Port Barryborough, IN - 47473",0.8,SIE
-C00194,Knowledge University,kttps://www.knowledgeuniversity.com,Education,University,2096,Regional,"Business: 2279 Richard Forges , West Tiffanyland, UT - 84132",0.51,KU
-C00199,Educate Hub Academic,kttps://www.educatehubacademic.com,Education,College,2070,Male,"Business: 6284 Erica Haven , Lake Leahton, CT - 06290",0.49,EHA
-C00200,StudyPlace School,kttps://www.studyplaceschool.com,Education,Public K-6,2088,Local,"Business: 98 Johnston Groves , Lake Crystalport, CT - 06272",0.05,SPS
+C00006,Busyly,,Education,Community College,2065,National,"Office (val:4/size:3): 11A East Chestnut Street - Suite 314, Baxter Center, Dumphrey - 00000",0.99,B

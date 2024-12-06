@@ -1,0 +1,732 @@
+{
+  "STATE": "Dumphrey",
+  "NAME": "Baxter Center",
+  "ROADS": {
+    "North Route 66": {
+      "200": {
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "6",
+        "LOT_SIZE": "7",
+        "ST_2_NUMBER_TYPE": "C",
+        "ST_2_TEXT": "Unit",
+        "START_FLOOR": "1",
+        "END_FLOOR": "3",
+        "START_UNIT": "1",
+        "END_UNIT": "7"
+      },
+      "211": {
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "5",
+        "LOT_SIZE": "8",
+        "ST_2_NUMBER_TYPE": "A",
+        "ST_2_TEXT": "Apt.",
+        "START_FLOOR": "1",
+        "END_FLOOR": "1",
+        "START_UNIT": "1",
+        "END_UNIT": "16"
+      },
+      "300R": {
+        "START_NUM": "300",
+        "VALUE": "3",
+        "END_NUM": "340",
+        "INC_NUM": "2",
+        "BUILDING_TYPE": "Retail",
+        "LOT_SIZE": "2"
+      },
+      "341": {
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "4",
+        "LOT_SIZE": "5",
+        "ST_2_NUMBER_TYPE": "A",
+        "ST_2_TEXT": "Apt.",
+        "START_FLOOR": "1",
+        "END_FLOOR": "1",
+        "START_UNIT": "1",
+        "END_UNIT": "9"
+      },
+      "350": {
+        "BUILDING_TYPE": "Retail",
+        "VALUE": "3",
+        "LOT_SIZE": "3"
+      },
+      "360": {
+        "BUILDING_TYPE": "Retail",
+        "VALUE": "4",
+        "LOT_SIZE": "6"
+      },
+      "370": {
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "6",
+        "LOT_SIZE": "13",
+        "ST_2_NUMBER_TYPE": "C",
+        "ST_2_TEXT": "Apartment",
+        "START_FLOOR": "1",
+        "END_FLOOR": "4",
+        "START_UNIT": "1",
+        "END_UNIT": "6"
+      },
+      "371R": {
+        "START_NUM": "371",
+        "END_NUM": "383",
+        "INC_NUM": "2",
+        "BUILDING_TYPE": "Retail",
+        "VALUE": "1",
+        "LOT_SIZE": "1"
+      }
+    },
+    "West Maple Street": {
+      "10R": {
+        "START_NUM": "10",
+        "END_NUM": "18",
+        "INC_NUM": "4",
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "3",
+        "LOT_SIZE": "1"
+      },
+      "20R": {
+        "START_NUM": "20",
+        "END_NUM": "28",
+        "INC_NUM": "2",
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "5",
+        "LOT_SIZE": "4"
+      },
+      "30R": {
+        "START_NUM": "30",
+        "END_NUM": "38",
+        "INC_NUM": "2",
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "5",
+        "LOT_SIZE": "5"
+      }
+    },
+    "East Maple Street": {
+      "15": {
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "3",
+        "LOT_SIZE": "19",
+        "ST_2_NUMBER_TYPE": "C",
+        "ST_2_TEXT": "Apartment",
+        "START_FLOOR": "1",
+        "END_FLOOR": "15",
+        "START_UNIT": "1",
+        "END_UNIT": "8"
+      },
+      "10R": {
+        "START_NUM": "10",
+        "END_NUM": "18",
+        "INC_NUM": "4",
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "6",
+        "LOT_SIZE": "5"
+      },
+      "20R": {
+        "START_NUM": "20",
+        "END_NUM": "28",
+        "INC_NUM": "2",
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "4",
+        "LOT_SIZE": "4"
+      },
+      "30R": {
+        "START_NUM": "30",
+        "END_NUM": "38",
+        "INC_NUM": "2",
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "5",
+        "LOT_SIZE": "5"
+      }
+    },
+    "West Alder Street": {
+      "1R": {
+        "START_NUM": "1",
+        "END_NUM": "30",
+        "INC_NUM": "3",
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "5",
+        "LOT_SIZE": "4"
+      },
+      "2R": {
+        "START_NUM": "2",
+        "END_NUM": "29",
+        "INC_NUM": "3",
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "5",
+        "LOT_SIZE": "4"
+      }
+    },
+    "East Alder Street": {
+      "1R": {
+        "START_NUM": "1",
+        "END_NUM": "30",
+        "INC_NUM": "3",
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "4",
+        "LOT_SIZE": "4"
+      },
+      "2R": {
+        "START_NUM": "2",
+        "END_NUM": "29",
+        "INC_NUM": "3",
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "0",
+        "LOT_SIZE": "4"
+      }
+    },
+    "Park Place North": {
+      "15R": {
+        "START_NUM": "15",
+        "END_NUM": "35",
+        "INC_NUM": "10",
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "7",
+        "LOT_SIZE": "6"
+      }
+    },
+    "Park Place South": {
+      "10R": {
+        "START_NUM": "10",
+        "END_NUM": "30",
+        "INC_NUM": "10",
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "7",
+        "LOT_SIZE": "6"
+      }
+    },
+    "West Birch Street": {
+      "20R": {
+        "START_NUM": "20",
+        "END_NUM": "29",
+        "INC_NUM": "1",
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "5",
+        "LOT_SIZE": "5"
+      }
+    },
+    "East Birch Street": {
+      "20R": {
+        "START_NUM": "20",
+        "END_NUM": "29",
+        "INC_NUM": "1",
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "5",
+        "LOT_SIZE": "5"
+      }
+    },
+    "West Larch Street": {
+      "6R": {
+        "START_NUM": "6",
+        "END_NUM": "8",
+        "INC_NUM": "1",
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "3",
+        "LOT_SIZE": "2"
+      },
+      "16R": {
+        "START_NUM": "16",
+        "END_NUM": "29",
+        "INC_NUM": "1",
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "3",
+        "LOT_SIZE": "2"
+      }
+    },
+    "East Larch Street": {
+      "3A": {
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "3",
+        "LOT_SIZE": "2",
+        "ST_2_NUMBER_TYPE": "E",
+        "ST_2_TEXT": "Apartment",
+        "START_FLOOR": "2",
+        "END_FLOOR": "16",
+        "START_UNIT": "1",
+        "END_UNIT": "8"
+      },
+      "3B": {
+        "BUILDING_TYPE": "Retail",
+        "VALUE": "2",
+        "LOT_SIZE": "2",
+        "ST_2_NUMBER_TYPE": "A",
+        "ST_2_TEXT": "Unit",
+        "START_FLOOR": "1",
+        "END_FLOOR": "1",
+        "START_UNIT": "1",
+        "END_UNIT": "9"
+      },
+      "7A": {
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "2",
+        "LOT_SIZE": "2",
+        "ST_2_NUMBER_TYPE": "D",
+        "ST_2_TEXT": "Apartment",
+        "START_FLOOR": "2",
+        "END_FLOOR": "4",
+        "START_UNIT": "1",
+        "END_UNIT": "4"
+      },
+      "7B": {
+        "BUILDING_TYPE": "Retail",
+        "VALUE": "3",
+        "LOT_SIZE": "2",
+        "ST_2_NUMBER_TYPE": "A",
+        "ST_2_TEXT": "Unit",
+        "START_FLOOR": "1",
+        "END_FLOOR": "1",
+        "START_UNIT": "1",
+        "END_UNIT": "4"
+      },
+      "9A": {
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "1",
+        "LOT_SIZE": "2",
+        "ST_2_NUMBER_TYPE": "C",
+        "ST_2_TEXT": "Apartment",
+        "START_FLOOR": "2",
+        "END_FLOOR": "4",
+        "START_UNIT": "201",
+        "END_UNIT": "206"
+      },
+      "9B": {
+        "BUILDING_TYPE": "Retail",
+        "VALUE": "1",
+        "LOT_SIZE": "2",
+        "ST_2_NUMBER_TYPE": "B",
+        "ST_2_TEXT": "Unit",
+        "START_FLOOR": "1",
+        "END_FLOOR": "1",
+        "START_UNIT": "1",
+        "END_UNIT": "6"
+      },
+      "27": {
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "2",
+        "LOT_SIZE": "4",
+        "ST_2_NUMBER_TYPE": "C",
+        "ST_2_TEXT": "Apartment",
+        "START_FLOOR": "1",
+        "END_FLOOR": "4",
+        "START_UNIT": "1",
+        "END_UNIT": "6"
+      },
+      "24": {
+        "BUILDING_TYPE": "Retail",
+        "VALUE": "3",
+        "LOT_SIZE": "8",
+        "ST_2_NUMBER_TYPE": "F",
+        "ST_2_TEXT": "Unit",
+        "START_FLOOR": "1",
+        "END_FLOOR": "1",
+        "START_UNIT": "1",
+        "END_UNIT": "4"
+      }
+    },
+    "East Chestnut Street": {
+      "11R": {
+        "START_NUM": "11",
+        "END_NUM": "29",
+        "INC_NUM": "2",
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "2",
+        "LOT_SIZE": "1"
+      },
+      "7A": {
+        "BUILDING_TYPE": "Office",
+        "VALUE": "4",
+        "LOT_SIZE": "3",
+        "ST_2_NUMBER_TYPE": "C",
+        "ST_2_TEXT": "Suite",
+        "START_FLOOR": "1",
+        "END_FLOOR": "5",
+        "START_UNIT": "1",
+        "END_UNIT": "9"
+      },
+      "7B": {
+        "BUILDING_TYPE": "Retail",
+        "VALUE": "3",
+        "LOT_SIZE": "3",
+        "ST_2_NUMBER_TYPE": "F",
+        "ST_2_TEXT": "Unit",
+        "START_FLOOR": "1",
+        "END_FLOOR": "1",
+        "START_UNIT": "1",
+        "END_UNIT": "9"
+      },
+      "11A": {
+        "BUILDING_TYPE": "Office",
+        "VALUE": "4",
+        "LOT_SIZE": "3",
+        "ST_2_NUMBER_TYPE": "B",
+        "ST_2_TEXT": "Suite",
+        "START_FLOOR": "1",
+        "END_FLOOR": "4",
+        "START_UNIT": "11",
+        "END_UNIT": "17"
+      },
+      "11B": {
+        "BUILDING_TYPE": "Retail",
+        "VALUE": "3",
+        "LOT_SIZE": "3",
+        "ST_2_NUMBER_TYPE": "B",
+        "ST_2_TEXT": "Suite",
+        "START_FLOOR": "1",
+        "END_FLOOR": "1",
+        "START_UNIT": "1",
+        "END_UNIT": "7"
+      }
+    },
+    "West Chestnut Street": {
+      "5R": {
+        "START_NUM": "5",
+        "END_NUM": "9",
+        "INC_NUM": "2",
+        "BUILDING_TYPE": "Retail",
+        "VALUE": "1",
+        "LOT_SIZE": "1",
+        "ST_2_NUMBER_TYPE": "A",
+        "ST_2_TEXT": "Unit",
+        "START_FLOOR": "1",
+        "END_FLOOR": "1",
+        "START_UNIT": "1",
+        "END_UNIT": "3"
+      },
+      "23": {
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "3",
+        "LOT_SIZE": "4",
+        "ST_2_NUMBER_TYPE": "C",
+        "ST_2_TEXT": "Apartment",
+        "START_FLOOR": "1",
+        "END_FLOOR": "6",
+        "START_UNIT": "1",
+        "END_UNIT": "7"
+      },
+      "27": {
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "3",
+        "LOT_SIZE": "4",
+        "ST_2_NUMBER_TYPE": "C",
+        "ST_2_TEXT": "Apartment",
+        "START_FLOOR": "1",
+        "END_FLOOR": "12",
+        "START_UNIT": "1",
+        "END_UNIT": "11"
+      },
+      "31": {
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "4",
+        "LOT_SIZE": "4",
+        "ST_2_NUMBER_TYPE": "E",
+        "ST_2_TEXT": "Apartment",
+        "START_FLOOR": "1",
+        "END_FLOOR": "10",
+        "START_UNIT": "1",
+        "END_UNIT": "8"
+      }
+    },
+    "Baxter Boulevard": {
+      "13R": {
+        "START_NUM": "13",
+        "END_NUM": "15",
+        "INC_NUM": "2",
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "3",
+        "LOT_SIZE": "2"
+      },
+      "14R": {
+        "START_NUM": "14",
+        "END_NUM": "16",
+        "INC_NUM": "2",
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "2",
+        "LOT_SIZE": "2"
+      },
+      "21R": {
+        "START_NUM": "21",
+        "END_NUM": "27",
+        "INC_NUM": "2",
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "2",
+        "LOT_SIZE": "2"
+      },
+      "22R": {
+        "START_NUM": "22",
+        "END_NUM": "28",
+        "INC_NUM": "2",
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "2",
+        "LOT_SIZE": "2"
+      },
+      "31R": {
+        "START_NUM": "31",
+        "END_NUM": "39",
+        "INC_NUM": "2",
+        "BUILDING_TYPE": "Retail",
+        "VALUE": "2",
+        "LOT_SIZE": "1",
+        "ST_2_NUMBER_TYPE": "F",
+        "ST_2_TEXT": "Unit",
+        "START_FLOOR": "1",
+        "END_FLOOR": "1",
+        "START_UNIT": "1",
+        "END_UNIT": "2"
+      },
+      "32R": {
+        "START_NUM": "32",
+        "END_NUM": "38",
+        "INC_NUM": "2",
+        "BUILDING_TYPE": "Retail",
+        "VALUE": "1",
+        "LOT_SIZE": "1",
+        "ST_2_NUMBER_TYPE": "F",
+        "ST_2_TEXT": "Unit",
+        "START_FLOOR": "1",
+        "END_FLOOR": "1",
+        "START_UNIT": "1",
+        "END_UNIT": "2"
+      },
+      "41": {
+        "BUILDING_TYPE": "Retail",
+        "VALUE": "3",
+        "LOT_SIZE": "5",
+        "ST_2_NUMBER_TYPE": "F",
+        "ST_2_TEXT": "Unit",
+        "START_FLOOR": "1",
+        "END_FLOOR": "1",
+        "START_UNIT": "1",
+        "END_UNIT": "10"
+      },
+      "42": {
+        "BUILDING_TYPE": "Retail",
+        "VALUE": "0",
+        "LOT_SIZE": "5",
+        "ST_2_NUMBER_TYPE": "F",
+        "ST_2_TEXT": "Unit",
+        "START_FLOOR": "1",
+        "END_FLOOR": "1",
+        "START_UNIT": "1",
+        "END_UNIT": "7"
+      }
+    },
+    "Denville Road": {
+      "13R": {
+        "START_NUM": "13",
+        "END_NUM": "15",
+        "INC_NUM": "2",
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "3",
+        "LOT_SIZE": "2"
+      },
+      "14R": {
+        "START_NUM": "14",
+        "END_NUM": "16",
+        "INC_NUM": "2",
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "3",
+        "LOT_SIZE": "2"
+      },
+      "33R": {
+        "START_NUM": "33",
+        "END_NUM": "35",
+        "INC_NUM": "2",
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "3",
+        "LOT_SIZE": "2"
+      },
+      "34R": {
+        "START_NUM": "34",
+        "END_NUM": "36",
+        "INC_NUM": "2",
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "3",
+        "LOT_SIZE": "2"
+      },
+      "44R": {
+        "START_NUM": "44",
+        "END_NUM": "58",
+        "INC_NUM": "2",
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "2",
+        "LOT_SIZE": "1"
+      },
+      "60": {
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "2",
+        "LOT_SIZE": "4",
+        "ST_2_NUMBER_TYPE": "C",
+        "ST_2_TEXT": "Apartment",
+        "START_FLOOR": "1",
+        "END_FLOOR": "11",
+        "START_UNIT": "1",
+        "END_UNIT": "8"
+      }
+    },
+    "Greenaway Road": {
+      "13R": {
+        "START_NUM": "13",
+        "END_NUM": "15",
+        "INC_NUM": "2",
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "3",
+        "LOT_SIZE": "2"
+      },
+      "14R": {
+        "START_NUM": "14",
+        "END_NUM": "16",
+        "INC_NUM": "2",
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "3",
+        "LOT_SIZE": "2"
+      },
+      "33R": {
+        "START_NUM": "33",
+        "END_NUM": "35",
+        "INC_NUM": "2",
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "2",
+        "LOT_SIZE": "2"
+      },
+      "45": {
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "2",
+        "LOT_SIZE": "4",
+        "ST_2_NUMBER_TYPE": "C",
+        "ST_2_TEXT": "Apartment",
+        "START_FLOOR": "1",
+        "END_FLOOR": "15",
+        "START_UNIT": "1",
+        "END_UNIT": "11"
+      }
+    },
+    "Cantor Street": {
+      "13R": {
+        "START_NUM": "13",
+        "END_NUM": "15",
+        "INC_NUM": "2",
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "2",
+        "LOT_SIZE": "2"
+      },
+      "14R": {
+        "START_NUM": "14",
+        "END_NUM": "16",
+        "INC_NUM": "2",
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "2",
+        "LOT_SIZE": "2"
+      },
+      "33R": {
+        "START_NUM": "33",
+        "END_NUM": "35",
+        "INC_NUM": "2",
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "1",
+        "LOT_SIZE": "2"
+      },
+      "34R": {
+        "START_NUM": "34",
+        "END_NUM": "36",
+        "INC_NUM": "2",
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "1",
+        "LOT_SIZE": "2"
+      },
+      "43R": {
+        "START_NUM": "43",
+        "END_NUM": "45",
+        "INC_NUM": "2",
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "1",
+        "LOT_SIZE": "2"
+      },
+      "46": {
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "1",
+        "LOT_SIZE": "4",
+        "ST_2_NUMBER_TYPE": "C",
+        "ST_2_TEXT": "Apartment",
+        "START_FLOOR": "1",
+        "END_FLOOR": "12",
+        "START_UNIT": "1",
+        "END_UNIT": "9"
+      },
+      "48": {
+        "BUILDING_TYPE": "Office",
+        "VALUE": "2",
+        "LOT_SIZE": "4",
+        "ST_2_NUMBER_TYPE": "C",
+        "ST_2_TEXT": "Suite",
+        "START_FLOOR": "1",
+        "END_FLOOR": "9",
+        "START_UNIT": "1",
+        "END_UNIT": "7"
+      }
+    },
+    "Rogers Street": {
+      "13R": {
+        "START_NUM": "13",
+        "END_NUM": "15",
+        "INC_NUM": "2",
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "2",
+        "LOT_SIZE": "2"
+      },
+      "14R": {
+        "START_NUM": "14",
+        "END_NUM": "16",
+        "INC_NUM": "2",
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "2",
+        "LOT_SIZE": "2"
+      },
+      "23R": {
+        "START_NUM": "23",
+        "END_NUM": "25",
+        "INC_NUM": "2",
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "2",
+        "LOT_SIZE": "2"
+      },
+      "24R": {
+        "START_NUM": "24",
+        "END_NUM": "26",
+        "INC_NUM": "2",
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "2",
+        "LOT_SIZE": "2"
+      },
+      "33R": {
+        "START_NUM": "33",
+        "END_NUM": "35",
+        "INC_NUM": "2",
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "1",
+        "LOT_SIZE": "2"
+      },
+      "34R": {
+        "START_NUM": "34",
+        "END_NUM": "36",
+        "INC_NUM": "2",
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "1",
+        "LOT_SIZE": "2"
+      }, 
+      "43R": {
+        "START_NUM": "43",
+        "END_NUM": "45",
+        "INC_NUM": "2",
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "1",
+        "LOT_SIZE": "2"
+      },
+      "44R": {
+        "START_NUM": "44",
+        "END_NUM": "46",
+        "INC_NUM": "2",
+        "BUILDING_TYPE": "Residence",
+        "VALUE": "1",
+        "LOT_SIZE": "2"
+      }
+    }
+  }
+}

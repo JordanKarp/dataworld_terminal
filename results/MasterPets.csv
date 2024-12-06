@@ -1,429 +1,85 @@
-pet~name,last_name,pet~animal_type,pet~breed,pet~age,pet~gender,full_name
-Tiger,Rivera,Cat,Selkirk Rex,13,Female,Antonio Adrian Rivera
-Willow,Sanchez,Bird,Fischer's Lovebird,9,Female,Diana Sarah Sanchez
-Comet,Hill,Dog,Bergamasco Shepherd,14,Female,Trevor Timothy Hill
-Tigger,Newton,Cat,Ocicat,13,Female,Morgan Robin Newton
-Caramel,Fry,Rabbit,Belgian Hare,20,Male,Taylor Karen Fry
-Bounce,Cooper,Rodent,Peruvian Guinea Pig,2,Female,Tara Rebecca Cooper
-Jasper,Walter,Cat,Persian (Traditional),10,Male,Shelly Walter
-Mo,Hicks,Dog,Volpino Italiano,12,Male,Pam Traci Hicks
-Marshmallow,Gardner,Rodent,Chinchilla,1,Male,Mary Sandra Gardner
-Splash,Moore,Amphibian,Budgett's Frog,7,Male,James James Moore
-Joe,Lester,Dog,Great Dane,10,Female,Robyn Lester
-Ginger,Becker,Cat,Nebelung,6,Female,Melissa Laura Becker
-Luna,Smith,Cat,Egyptian Mau,3,Female,Stephen Anthony Smith
-Oliver,Garrison,Cat,Balinese,15,Male,Linda Krystal Garrison
-Kaida,Walsh,Reptile,Anole Lizard,0,Male,Noah Kenneth Walsh
-Shadow,Espinoza,Cat,Snowshoe,2,Female,Angela Dana Espinoza
-Ziggy,Valentine,Reptile,Russian Tortoise,7,Female,Michelle Jill Valentine
-Sushi,Harris,Dog,Tosa,12,Male,Michelle Lindsey Harris
-Tiger,Hill,Cat,Oriental Longhair,5,Female,Linda Brenda Hill
-Bella,Cruz,Cat,Turkish Van,0,Male,Stephen Kevin Cruz
-Draco,Webb,Reptile,Tegu Lizard,3,Female,Tiffany Teresa Webb
-Indiana,Le,Dog,Rastreador Brasileiro,1,Male,Timothy Le
-Kodi,Brooks,Dog,Pražský Krysařík,15,Male,Corey Walter Brooks
-Chloe,Arias,Cat,Exotic Shorthair,11,Female,Keith Brian Arias
-Quinn,Reed,Dog,Pomeranian,12,Female,Heather Crystal Reed
-Shadow,Stephens,Cat,Russian White Black and Tabby,13,Male,Christina Jasmine Stephens
-Frankie,Ryan,Cat,Devon Rex,6,Male,Bradley Robert Ryan
-Poppy,Castillo,Cat,Cornish Rex,6,Female,Sheila Castillo
-Boy,Sutton,Dog,Norfolk Terrier,2,Female,Helen Terry Sutton
-Lili,Hamilton,Dog,American Foxhound,14,Male,Mary Kimberly Hamilton
-Lulu,Wright,Cat,Birman,6,Female,Laura Wright
-Tasha,Sparks,Cat,Ragamuffin,6,Male,Ryan Colton Sparks
-Cesar,Spencer,Dog,St. Bernard,15,Female,Erik Daniel Spencer
-Warty,Taylor,Amphibian,Smooth Newt,6,Male,Nicholas Louis Taylor
-Chloe,Roberts,Cat,Ukrainian Levkoy,9,Female,Cindy Roberts
-Riley,Campbell,Dog,Beauceron,11,Female,Gabrielle Emily Campbell
-Sunny,Stephens,Bird,Amazon Parrot,0,Female,Jason Roger Stephens
-Gazer,Hayes,Amphibian,Golden Mantella,10,Female,Mark Hayes
-Sunny,Juarez,Bird,Eclectus Parrot,1,Female,Tiffany Amanda Juarez
-Tiger,Williams,Cat,Snowshoe,15,Male,Cynthia Michelle Williams
-Oscar,Orr,Cat,Burmilla,10,Male,Jeffrey Orr
-Blaze,Peterson,Fish,Siamese Fighting Fish (Gourami),8,Female,Jason Eric Peterson
-Red,Page,Dog,Black and Tan Virginia Foxhound,1,Female,Samantha Monica Page
-Whiskers,Sandoval,Cat,German Rex,14,Male,Jesse Sandoval
-Guppy,Hartman,Fish,Goldfish,4,Male,Todd Hartman
-Charlie,Diaz,Bird,Parakeet,6,Female,Laura Diaz
-Snickers,Ramirez,Rabbit,Giant Chinchilla,3,Male,Matthew Brendan Ramirez
-Glisten,Tate,Amphibian,Axolotl,0,Male,Jessica Tate
-Marmalade,Wood,Cat,Savannah,12,Male,Jenny Sara Wood
-Misty,Harris,Cat,Havana Brown,11,Female,Regina Erica Harris
-Draco,Graham,Reptile,Crested Gecko,4,Male,Amanda Melissa Graham
-Willow,Johnson,Bird,Pionus Parrot,10,Female,Kelly Amanda Johnson
-Tuxedo,Terry,Cat,Turkish Van,5,Female,Jessica Melissa Terry
-Pecan,Smith,Rodent,Gerbil,4,Male,Michael Smith
-Tasha,Scott,Cat,American Bobtail,13,Male,Kelly Richard Scott
-Emma,Hobbs,Dog,German Spaniel,6,Male,Dale Hunter Hobbs
-Buffy,Curtis,Dog,Grand Anglo-Français Blanc et Orange,10,Male,Ronnie Thomas Curtis
-Peanut,Gilmore,Cat,Siamese,13,Female,Shirley Katelyn Gilmore
-Hailey,Sutton,Dog,Cesky Terrier,11,Male,Jessica Shelia Sutton
-Milo,Lee,Cat,Burmilla,15,Male,David Mark Lee
-Zena,Chavez,Dog,Tibetan Terrier,15,Female,Tammy Chavez
-Scarlett,Rice,Dog,Sealyham Terrier,6,Female,Brandon Matthew Rice
-Tess,Marks,Dog,Braque d'Auvergne,0,Female,Robert Jesse Marks
-Melo,Baxter,Dog,Basenji,8,Female,Kyle Baxter
-Nimbus,Villarreal,Fish,Goldfish,7,Male,Richard Villarreal
-Flopsy,Ramos,Rabbit,Silver Marten,9,Male,Eric Donald Ramos
-Rocky,Martinez,Bird,Cockatoo,9,Male,Zachary Edgar Martinez
-George,Bass,Dog,Dunker,5,Female,Jessica Autumn Bass
-Harlem,Parsons,Dog,French Bulldog,14,Female,Rachel Crystal Parsons
-Almond,Gordon,Rodent,Chinchilla,0,Male,Elizabeth Gordon
-Tasha,Ramos,Reptile,Veiled Chameleon,1,Female,Lauren Victoria Ramos
-Frankie,Gates,Cat,Chantilly-Tiffany,9,Male,Kimberly Gates
-Guppy,Marsh,Fish,Corydoras Catfish,3,Male,Valerie Kayla Marsh
-Gizmo,Thomas,Bird,Macaw,1,Female,Christina Thomas
-Gill,Mclean,Fish,Cherry Barb,0,Male,Courtney Tammy Mclean
-Misty,Benson,Cat,Ragamuffin,5,Male,Megan Morgan Benson
-Apple,Anderson,Dog,Bernese Mountain Dog,10,Female,Gregory Anderson
-Skyler,Shaw,Dog,Braque du Puy,5,Female,Kent Richard Shaw
-Abigail,Hoover,Dog,Mucuchies,10,Female,Andrea Jennifer Hoover
-Darby,Winters,Dog,Indian pariah dog,4,Female,Chad Jason Winters
-Casper,Cantrell,Dog,Tyrolean Hound,5,Male,John Cantrell
-Suzie,Smith,Dog,Cimarrón Uruguayo,10,Male,Sarah Jennifer Smith
-Boo,Wood,Dog,Polish Lowland Sheepdog,3,Female,Steven William Wood
-Bucky,Levy,Dog,Treeing Cur,0,Female,Trevor James Levy
-Luna,Hill,Rabbit,Holland Lop,16,Female,Hannah Stephanie Hill
-Zorro,Pacheco,Reptile,Bearded Dragon,5,Female,Zachary Bradley Pacheco
-Felix,Juarez,Cat,Turkish Van,0,Female,Thomas Rodney Juarez
-Tasha,Allison,Reptile,Russian Tortoise,0,Female,Melissa Allison
-Simba,Baker,Cat,Oriental Bicolor,1,Female,Joel Brandon Baker
-Ginger,Avila,Dog,Podenco Canario,13,Female,Ryan Thomas Avila
-Shimmer,Jennings,Fish,Discus Fish,6,Male,Victoria Mary Jennings
-Jelly,Cervantes,Dog,Kooikerhondje,7,Female,Robert Frank Cervantes
-Smokey,Nguyen,Cat,Chausie,5,Male,Kristin Rachel Nguyen
-Tango,Peters,Bird,Finch,13,Male,Michael Jacob Peters
-Freya,Wells,Dog,Komondor,12,Male,Daniel Joseph Wells
-Skittles,Miller,Bird,Society Finch,12,Male,Bailey Cheryl Miller
-Chelsea,Thomas,Dog,Saint-Usuge Spaniel,6,Female,Robert Christopher Thomas
-Chloe,Bullock,Cat,Korat,5,Female,Nicholas Christian Bullock
-Miles,Smith,Dog,Canaan Dog,14,Male,Patricia Wendy Smith
-Oliver,Miller,Cat,British Semi-longhair,6,Female,Aaron Richard Miller
-Kali,Brooks,Dog,Bruno Jura Hound,7,Male,Hayden Adam Brooks
-Seraphina,Walter,Reptile,Leopard Gecko,5,Female,Brianna Walter
-Mia,Davis,Cat,Norwegian Forest cat,15,Female,Rachel Carl Davis
-Tigger,Perkins,Cat,Burmilla,15,Female,Danny Grant Perkins
-Hopper,Potter,Amphibian,Cane Toad,8,Female,Samantha Kimberly Potter
-Griffin,Brown,Dog,Azawakh,12,Male,Timothy Marcus Brown
-Ruby,Torres,Bird,Canary,4,Male,Emily Torres
-Thumper,Johnson,Rodent,Gerbil,1,Female,Tami Nichole Johnson
-Toby,Sanders,Cat,Burmilla,10,Female,Patricia Kathleen Sanders
-Sassy,Espinoza,Cat,Colorpoint Shorthair,1,Male,Jeremy Mitchell Espinoza
-Rocket,Harvey,Dog,Telomian,8,Male,James Richard Harvey
-Suki,Stanley,Dog,Southern Hound,11,Female,Terri Andrea Stanley
-Titan,Johnson,Reptile,Kingsnake,9,Male,Chad Edwin Johnson
-Rocky,Lawrence,Cat,American Shorthair,15,Female,Samantha Erika Lawrence
-Felix,White,Cat,Javanese,6,Female,William Dale White
-Frankie,Moore,Cat,Minskin,6,Female,Christopher Casey Moore
-Oreo,Smith,Cat,Abyssinian,11,Female,Melissa Smith
-Tony,Mata,Dog,Chien Français Blanc et Noir,7,Female,Vanessa Anita Mata
-Chico,Stark,Bird,Pionus Parrot,8,Male,Eric Jesse Stark
-Nimbus,Mckee,Fish,Discus Fish,4,Male,Daniel Randy Mckee
-Nala,Hall,Reptile,Corn Snake,8,Female,Jasmine Cathy Hall
-Diamond,Lambert,Dog,Schweizer Laufhund,8,Female,Mary Anne Lambert
-Nigel,Benson,Dog,Norwegian Elkhound,13,Male,Nathan Brian Benson
-Gizmo,Montoya,Cat,Arabian Mau,6,Male,Deborah Dana Montoya
-Slimy,Young,Amphibian,Pac-Man Frog,1,Female,Caroline Casey Young
-Oliver,Russell,Bird,Parakeet,8,Male,Brittany Janice Russell
-Aqua,Garrison,Fish,Swordtail,6,Male,Anthony Kevin Garrison
-Boris,King,Dog,Fila Brasileiro,1,Female,Kenneth Keith King
-Oliver,Sherman,Cat,Donskoy,1,Male,Cheryl Sherman
-Sebastian,Baker,Dog,Bedlington Terrier,0,Male,Samuel John Baker
-Splash,Salazar,Fish,Siamese Fighting Fish (Gourami),5,Female,Nicholas Richard Salazar
-Fifi,Dominguez,Dog,Poodle,2,Female,Ryan Dominguez
-Sammy,Gomez,Cat,Oregon Rex,0,Female,Morgan Lindsay Gomez
-Bluebell,Dalton,Bird,Bourke's Parakeet,10,Male,Jeremiah Franklin Dalton
-Puddle,Hill,Fish,Clownfish,8,Male,Joseph Marvin Hill
-Biscuit,Lozano,Fish,Tiger Barb,3,Female,Angela Lozano
-Chase,Moore,Dog,Italian Greyhound,14,Male,Judith Jennifer Moore
-Oscar,Gonzalez,Cat,Asian Semi-longhair,9,Female,Michael Stanley Gonzalez
-Dexter,Henry,Cat,Russian White Black and Tabby,15,Male,Edward Joseph Henry
-Dory,Smith,Dog,Boerboel,1,Male,James Smith
-Mocha,Adams,Cat,Burmese,7,Male,Jeremy Brandon Adams
-Roscoe,Brown,Dog,Indian pariah dog,5,Female,Olivia Maria Brown
-Flopsy,Shaw,Rabbit,Cinnamon,19,Male,John Christopher Shaw
-Angel,Roberts,Dog,Bruno Jura Hound,9,Female,Kimberly Susan Roberts
-Mya,Brennan,Dog,Saint-Usuge Spaniel,0,Female,Charles Nicholas Brennan
-Mocha,Buck,Dog,Black and Tan Coonhound,8,Female,Paul Buck
-Clyde,Griffith,Dog,Chien Français Blanc et Orange,6,Male,Allison Hailey Griffith
-Nala,White,Cat,Oriental Shorthair,10,Female,Lisa Crystal White
-Bella,Gonzalez,Cat,Russian Blue,1,Male,Kathleen Rebecca Gonzalez
-Skittles,Bell,Rabbit,Beveren,11,Female,Kristi Denise Bell
-Tiger,Avila,Cat,Raas,3,Male,Katelyn Kelly Avila
-Gotti,Butler,Dog,Catahoula Cur,7,Female,David Justin Butler
-Oliver,Crane,Cat,Cymric,4,Male,Ann Nicole Crane
-Gill,Nguyen,Fish,Molly,0,Female,Patrick Jonathan Nguyen
-Mocha,Dougherty,Cat,Turkish Angora,1,Female,Gina Kayla Dougherty
-Rocky,Hubbard,Cat,Raas,8,Male,Joseph Daniel Hubbard
-Perla,Smith,Dog,Shar Pei,5,Female,Matthew Timothy Smith
-Murphy,Snyder,Cat,Oriental Longhair,12,Male,Ian Craig Snyder
-Dexter,Wright,Cat,Pixie-bob,3,Male,Sherry Kiara Wright
-Flash,Brown,Fish,Betta Fish,5,Female,John Shawn Brown
-Tango,Robinson,Fish,African Cichlid,2,Male,Seth Daniel Robinson
-Harley,Campbell,Dog,Billy,10,Male,Steve Ryan Campbell
-Splash,Ryan,Fish,Zebrafish (Zebra Danio),2,Male,Danielle Haley Ryan
-Mia,Lozano,Cat,California Spangled,0,Male,Alexandra Andrea Lozano
-Cleo,Clark,Cat,Korn Ja,12,Female,Karen Carrie Clark
-Snapper,James,Fish,Platies,8,Male,Candice Susan James
-Leo,Pacheco,Reptile,Red-footed Tortoise,6,Female,Rhonda Jessica Pacheco
-Sable,Hicks,Rabbit,Rex,5,Female,Erin Valerie Hicks
-Luna,Chambers,Cat,Birman,2,Female,Ellen Chambers
-Bebe,Estrada,Dog,French Bulldog,13,Female,Doris Ashley Estrada
-Puddle,Garza,Fish,Neon Tetra,7,Female,Sarah Melissa Garza
-Luna,Dalton,Rabbit,Checkered Giant,14,Male,Michelle Toni Dalton
-Tobey,Hart,Dog,English White Terrier,8,Male,Lori Rachel Hart
-Jasper,Avila,Cat,Sam Sawet,0,Female,Andrew William Avila
-Nellie,Aguilar,Dog,Small Greek Domestic Dog,9,Female,Michael James Aguilar
-Angel,Frost,Cat,Birman,5,Female,Sarah Rebecca Frost
-Noel,Lowe,Dog,Serbian Hound,13,Female,Brandon Adam Lowe
-Mocha,Torres,Rabbit,Rex,11,Female,Ashley Torres
-Shadow,Griffin,Cat,Korn Ja,9,Male,Juan Douglas Griffin
-Gizmo,Sutton,Cat,Snowshoe,12,Female,Austin Sutton
-Aqua,Bauer,Fish,Betta Fish,0,Male,Vanessa Debra Bauer
-Cookie,Bauer,Bird,Cockatoo,14,Female,Nicole Sabrina Bauer
-Kylie,Anderson,Dog,Jagdterrier,11,Male,Molly Anderson
-Whiskers,Torres,Cat,American Wirehair,10,Male,Samuel Timothy Torres
-Arthur,Ware,Dog,Wire Fox Terrier,5,Female,Brittany Cynthia Ware
-Sparkle,Castaneda,Bird,Macaw,12,Male,Hannah Anna Castaneda
-Bella,Hill,Cat,Maine Coon,2,Male,Nathan Hill
-Puddle,King,Rodent,Sugar Glider,11,Male,Laura Carrie King
-Tango,Martin,Bird,Quaker Parrot,14,Male,Robert Martin
-Max,Preston,Bird,Quaker Parrot,0,Female,Christopher Derrick Preston
-Kayla,Duran,Dog,Ratonero Bodeguero Andaluz,5,Female,Clayton Jack Duran
-Winter,Smith,Dog,Briquet Griffon Vendéen,12,Male,Garrett David Smith
-Seashell,Hogan,Fish,Plecostomus (Pleco),0,Female,Candice Hogan
-Pookie,Terry,Dog,Transylvanian Hound,9,Female,Seth James Terry
-Kaida,Moore,Reptile,Gargoyle Gecko,7,Female,Briana Michelle Moore
-Bella,Brown,Cat,Ocicat,7,Male,Bryan Spencer Brown
-Yoshi,Rich,Dog,Lithuanian Hound,15,Male,John Marcus Rich
-Dory,Long,Fish,African Cichlid,7,Male,Richard Jeremiah Long
-Diesel,Miller,Dog,Istrian Coarse-haired Hound,0,Male,Lynn Miller
-Phoenix,Jones,Bird,Jenday Conure,2,Male,Nathan Michael Jones
-Chiquita,Delgado,Dog,Chihuahua,1,Male,Angela Lauren Delgado
-Max,Spencer,Cat,British Shorthair,13,Male,Nichole Amanda Spencer
-Mugsy,Bryan,Dog,German Longhaired Pointer,3,Male,Mark Bryan Bryan
-Nala,Davis,Cat,Scottish Fold,13,Female,Sean Juan Davis
-Max,Williams,Cat,European Shorthair,7,Male,Bruce Marc Williams
-Pippin,Barton,Bird,Jenday Conure,4,Female,Daniel Barton
-Venom,Hernandez,Reptile,Red-footed Tortoise,0,Female,Sara Stephanie Hernandez
-Glimmer,Walters,Fish,Plecostomus (Pleco),7,Male,Jesus John Walters
-Eli,Frost,Dog,Chinese Imperial Dog,3,Female,Bradley Leonard Frost
-Shadow,Johnson,Cat,Sam Sawet,12,Male,Matthew Johnson
-Marley,Carter,Bird,Parakeet,13,Female,Carol Sophia Carter
-Jasper,Roberts,Cat,Serengeti,7,Male,Jeffrey David Roberts
-Tasha,Dixon,Cat,Thai Lilac,11,Male,John Aaron Dixon
-Tiger,Hoover,Cat,California Spangled,8,Male,Scott Ian Hoover
-Sassy,Mason,Cat,American Curl,2,Male,Margaret Mason
-Bubble,Dixon,Fish,Neon Tetra,1,Male,Jose Jordan Dixon
-Franklin,Young,Dog,Estrela Mountain Dog,5,Male,Dennis Nicholas Young
-Evie,Mccoy,Dog,Caucasian Shepherd Dog,13,Male,Caroline April Mccoy
-Reef,Hall,Fish,Cherry Barb,4,Male,Devin James Hall
-Smokey,Guerrero,Cat,Peterbald,10,Female,Danielle Sandra Guerrero
-Major,Phillips,Dog,Portuguese Water Dog,5,Female,Jessica Jacqueline Phillips
-Sunny,Myers,Bird,Eclectus Parrot,4,Female,Tracy Lisa Myers
-Sunny,Snyder,Bird,Cockatoo,7,Female,Johnny Steven Snyder
-Charles,Frost,Dog,Maremma Sheepdog,7,Female,Michael Jerry Frost
-Herbie,Moore,Dog,Perro de Presa Canario,13,Female,Jose Moore
-Blu,Davis,Fish,Siamese Fighting Fish (Gourami),6,Female,Kimberly Davis
-Benny,Woodard,Rabbit,Champagne D'argent,8,Female,Carrie Woodard
-Desi,Herring,Dog,Taigan,0,Male,Matthew Taylor Herring
-Lilly,Cantrell,Dog,Tibetan Terrier,5,Female,Pedro Arthur Cantrell
-Fudge,Miller,Rodent,Rex Mouse,1,Female,Devin James Miller
-Rugby,Gardner,Dog,Sealyham Terrier,5,Male,Stephanie Sara Gardner
-Jasper,Alvarado,Bird,Eclectus Parrot,3,Female,Alicia Brittany Alvarado
-Nino,Turner,Dog,Wetterhoun,11,Male,Alexander Jake Turner
-Slimy,Lozano,Amphibian,Marbled Salamander,7,Male,Philip Joseph Lozano
-Sparkle,Brennan,Dog,Pug,9,Female,Jeanne Kaitlyn Brennan
-Petey,Jackson,Dog,Hawaiian Poi Dog,4,Female,Joel Nicholas Jackson
-Sunny,Wagner,Bird,Lovebird,7,Female,Craig Brett Wagner
-Indy,Thompson,Dog,Kyi-Leo,3,Female,Tracy Thompson
-Aqua,Brown,Fish,Tiger Barb,3,Female,Daniel Alan Brown
-Rolo,Shaw,Rodent,Rex Mouse,8,Male,Diane Rebecca Shaw
-Bounce,Arnold,Rodent,Hairless Rat,9,Female,Rachel Arnold
-Bubbles,Collins,Rabbit,English Lop,11,Male,Ryan Richard Collins
-Jellybean,Lynch,Rodent,African Pygmy Hedgehog,5,Female,Lori Lynch
-Baci,Mitchell,Dog,Sporting Lucas Terrier,9,Male,April Mitchell
-Pumpkin,Petty,Rodent,Hairless Rat,2,Male,Steven Robert Petty
-Smokey,Boyer,Cat,Chartreux,3,Male,Brian Justin Boyer
-Tweety,Decker,Bird,Amazon Parrot,2,Female,Joshua Julian Decker
-Tasha,Shepherd,Cat,Somali,15,Female,Matthew Robert Shepherd
-Lacy,Brown,Dog,Glen of Imaal Terrier,12,Female,Amy Kelsey Brown
-Thistle,Brown,Rabbit,Thrianta,16,Female,Robert Christopher Brown
-Skylar,Sanchez,Dog,Sporting Lucas Terrier,4,Female,Ann Cynthia Sanchez
-Frankie,Sanchez,Cat,British Shorthair,14,Male,Willie Christopher Sanchez
-Luna,Hill,Bird,Fischer's Lovebird,3,Female,Ricky David Hill
-Aj,Hill,Dog,Briard,4,Male,Steven Hill
-Leo,Hart,Cat,Asian,4,Female,Christopher Brian Hart
-Sparky,Hart,Bird,Finch,4,Male,Donna Christopher Hart
-Paco,Walter,Dog,Kyi-Leo,8,Female,William Eric Walter
-Cole,Walter,Dog,Black Norwegian Elkhound,12,Female,Robert Shawn Walter
-Nova,Lamb,Dog,Icelandic Sheepdog,7,Female,Michelle Kimberly Lamb
-Jade,Wilson,Dog,Sinhala Hound,6,Female,Michele Wilson
-Angel,Collins,Cat,Abyssinian,0,Female,Aimee Jill Collins
-Sushi,Wood,Fish,Angelfish,0,Male,Madison Wood
-Dior,Wood,Dog,Pudelpointer,5,Male,Sarah Barbara Wood
-Kaya,Wood,Dog,Bulldog,13,Female,Julia Carolyn Wood
-Mochi,Saunders,Rabbit,Cinnamon,8,Female,Michael Terri Saunders
-Lexy,Beltran,Dog,Toy Trawler Spaniel,4,Male,Nicholas Jeff Beltran
-Oscar,Hooper,Cat,Singapura,11,Female,Denise Tammy Hooper
-Presley,Beltran,Dog,Combai,15,Female,Nicole Melissa Beltran
-Nala,Adams,Cat,Aegean,13,Female,Robin Kristin Adams
-Mac,Lester,Dog,Shar Pei,2,Female,Jennifer Ashley Lester
-Luna,Lester,Dog,Skye Terrier,8,Female,Zachary Thomas Lester
-Tino,Lester,Dog,Hygenhund,1,Male,Julie Lester
-Murphy,Higgins,Cat,American Bobtail,2,Male,Travis Higgins
-Charlie,Sherman,Cat,Kurilian Bobtail,12,Female,Adam Sherman
-Mocha,Nelson,Cat,Persian (Modern),15,Female,Brittany Nelson
-Noodle,Espinoza,Dog,Pungsan Dog,10,Male,Michael Evan Espinoza
-Mochi,Hill,Bird,Amazon Parrot,11,Male,Michael James Hill
-Hazel,Cruz,Rabbit,French Angora,1,Female,Ian Thomas Cruz
-Raisin,Fuentes,Rodent,Texel Guinea Pig,5,Female,Kaitlin Michelle Fuentes
-Pumpkin,Mclean,Rodent,Gerbil,2,Male,David Randall Mclean
-Melo,Webb,Dog,Newfoundland,13,Female,Tyler Webb
-Midnight,Davis,Cat,Serengeti,7,Male,Max Nathan Davis
-Mookie,Decker,Dog,Formosan Mountain Dog,12,Male,Julie Kara Decker
-Coraline,Decker,Fish,Cherry Barb,7,Male,Kevin Jeffrey Decker
-Captain,Stephens,Dog,American Pit Bull Terrier,7,Male,Tyler Luis Stephens
-Sawyer,Hill,Dog,Anglo-Français de Petite Vénerie,9,Female,Nicole Amanda Hill
-Tess,Baker,Dog,Estrela Mountain Dog,11,Male,Frederick James Baker
-Willie,Decker,Dog,Blue Lacy,3,Female,Joanna Jessica Decker
-Seashell,Chavez,Fish,Siamese Fighting Fish (Gourami),2,Female,Heidi Chavez
-Mollie,Campbell,Dog,Norwegian Buhund,4,Male,Rebekah Campbell
-Pippin,Freeman,Rodent,Dumbo Rat,5,Female,Maria Freeman
-Samantha,Carter,Dog,Grand Anglo-Français Blanc et Noir,10,Female,Sandra Carter
-Raisin,Chambers,Rodent,Peruvian Guinea Pig,11,Male,Kevin Chambers
-Pumpkin,Smith,Rodent,Rex Mouse,10,Male,Alyssa Kathy Smith
-Lily,Moore,Dog,Kurī,14,Male,Matthew Jason Moore
-Sir,Williams,Dog,North Country Beagle,2,Male,Gregory Brian Williams
-Jax,Brown,Bird,Macaw,6,Male,Patricia Nicole Brown
-Chloe,Brown,Cat,Bambino,1,Female,Kristie Linda Brown
-Whiskers,Brown,Cat,Russian Blue,11,Female,Catherine Brenda Brown
-Aj,Jones,Dog,Drentse Patrijshond,1,Female,Nicholas Ronald Jones
-Shadow,Johnson,Cat,Korean Bobtail,10,Female,Bradley George Johnson
-Bella,Terry,Dog,Glen of Imaal Terrier,12,Female,Crystal Terry
-Ziggy,Kelly,Cat,British Shorthair,12,Male,Jason Michael Kelly
-Butters,Kelly,Dog,Paisley Terrier,8,Male,Lisa Kelly
-Skittles,Nelson,Bird,Finch,1,Male,Denise Claire Nelson
-Nala,Nelson,Cat,Egyptian Mau,10,Female,David Nelson
-Chewbacca,Nelson,Dog,Beagle-Harrier,2,Female,Tyler Anthony Nelson
-Lenny,Preston,Dog,Serbian Hound,9,Female,Sarah Monica Preston
-Lily,Sutton,Cat,European Shorthair,9,Male,Caroline Brittany Sutton
-Tango,Sutton,Dog,Keeshond,11,Female,Dennis Samuel Sutton
-Yogi,Martinez,Dog,Aidi,3,Female,Charles James Martinez
-Tino,Marks,Dog,Boykin Spaniel,7,Male,Glenda Andrea Marks
-Benjamin,Marks,Dog,German Spaniel,10,Male,Jessica Jessica Marks
-Crystal,Villarreal,Dog,Spanish Water Dog,3,Female,Frank Brandon Villarreal
-Thumper,Roberts,Rodent,Mongolian Gerbil,12,Female,Kathryn Erica Roberts
-Lacey,Collins,Dog,Border Terrier,2,Male,Douglas Matthew Collins
-Daisy,Mosley,Cat,Siamese,6,Female,Rachel Margaret Mosley
-Oscar,Walters,Cat,Sokoke,0,Female,Adam Shane Walters
-Yoyo,Thomas,Dog,Tweed Water Spaniel,2,Female,David Kyle Thomas
-Misty,Roy,Cat,American Bobtail,5,Male,Taylor Roy
-Binky,Winters,Rodent,Dumbo Rat,12,Male,Joshua Juan Winters
-Nola,Winters,Dog,Alaskan Klee Kai,2,Male,Benjamin Brandon Winters
-Morgan,Wood,Dog,Armenian Gampr dog,6,Female,John Wood
-Oreo,Pacheco,Cat,Chantilly-Tiffany,13,Male,Steven Steve Pacheco
-Lucas,Fuentes,Dog,Kooikerhondje,8,Female,Benjamin Fuentes
-Pumpkin,Robinson,Rodent,Sugar Glider,3,Male,Erica Teresa Robinson
-Kitty,Robinson,Cat,Siberian,10,Male,Andrea Linda Robinson
-Bubbles,Avila,Fish,Goldfish,5,Female,Olivia Kelly Avila
-Coraline,Walters,Fish,Corydoras Catfish,4,Female,Michael Brett Walters
-Xena,Martinez,Reptile,Green Iguana,9,Female,Katherine Carrie Martinez
-Sweetie,Wells,Dog,German Pinscher,5,Male,Lisa Wells
-Cleo,Wells,Cat,Devon Rex,4,Female,Stacy Sara Wells
-Dolce,Wells,Dog,Finnish Lapphund,7,Male,Javier Alexander Wells
-Poppy,Bauer,Cat,Minskin,3,Male,Brittany Mary Bauer
-Norman,Hernandez,Dog,Karst Shepherd,2,Male,Amy Julia Hernandez
-Captain,Hernandez,Fish,Koi,2,Male,Sara Danielle Hernandez
-Casey,Young,Dog,Dutch Smoushond,7,Male,Alicia Debra Young
-Kodi,Wang,Dog,Patterdale Terrier,3,Male,Frank David Wang
-Jelly,Wang,Dog,Dogo Cubano,9,Female,Aaron David Wang
-Nikko,Wang,Dog,Russo-European Laika,0,Female,Jordan Edward Wang
-Dash,Burke,Fish,Angelfish,3,Male,Margaret Megan Burke
-Luka,Hogan,Dog,Kurī,11,Female,Drew Hogan
-Ripple,Perez,Amphibian,Golden Mantella,4,Male,Brian Alan Perez
-Pinky,Stephens,Dog,Irish Wolfhound,1,Male,Donna Stephens
-Willow,Gomez,Rabbit,New Zealand,4,Female,Aaron Frank Gomez
-Tofu,Smith,Rodent,Chinchilla,3,Female,Gail Taylor Smith
-Peanut,Davis,Dog,Central Asian Shepherd Dog,10,Male,Alexis Sandra Davis
-Comet,Roberts,Fish,Swordtail,2,Male,Peggy Roberts
-Smokey,Brennan,Dog,Harrier,15,Male,Alison Martha Brennan
-Rocky,Crane,Bird,Indian Ringneck Parakeet,6,Female,Michael Daniel Crane
-Snapper,Pacheco,Fish,Cherry Barb,3,Female,Stacy Veronica Pacheco
-Lana,Nguyen,Dog,Boston Terrier,8,Female,Linda Dana Nguyen
-Luna,Bauer,Cat,Persian (Modern),5,Male,Mark Brady Bauer
-Oreo,Wells,Cat,Chantilly-Tiffany,12,Male,Virginia Nancy Wells
-Zorro,Saunders,Fish,Siamese Fighting Fish (Gourami),8,Female,Samuel Jose Saunders
-Rex,Saunders,Reptile,Green Iguana,6,Male,Robin Cathy Saunders
-Tiger,Bauer,Cat,Oregon Rex,14,Male,Taylor Bauer
-Waffles,Chambers,Rodent,Mongolian Gerbil,2,Female,Anthony Chambers
-Coco,Bauer,Bird,Eclectus Parrot,7,Female,Ashley Kimberly Bauer
-Simba,Hall,Cat,Manx,2,Female,Melissa Norma Hall
-Blinky,Preston,Fish,Platies,8,Male,Charles Reginald Preston
-Chelsea,Preston,Dog,Bull and Terrier,3,Male,Regina Lorraine Preston
-Whiskers,Preston,Rodent,Blue Russian Dwarf Hamster,12,Male,Travis Jason Preston
-Mochi,Martinez,Cat,Himalayan,13,Female,April Martinez
-Hershey,Martinez,Dog,Braque Francais,4,Male,Crystal Kristen Martinez
-Cookie,Brown,Bird,Quaker Parrot,12,Female,Matthew Jesse Brown
-Nala,Frederick,Cat,Japanese Bobtail,5,Female,Virginia Frederick
-Odie,Frost,Dog,Field Spaniel,6,Male,Laura Catherine Frost
-Daisy,Hoover,Cat,Chausie,11,Female,Christopher Micheal Hoover
-Poppy,Hamilton,Cat,Egyptian Mau,3,Male,Donna Leslie Hamilton
-Bubblegum,Hall,Fish,Goldfish,2,Female,Melissa Hall
-Spike,Hall,Reptile,Uromastyx Lizard,10,Female,Tyler Peter Hall
-Gio,Vaughn,Dog,Bucovina Shepherd Dog,4,Female,Kayla Danielle Vaughn
-Splash,Collins,Fish,Molly,8,Female,Margaret Emily Collins
-Rita,Pacheco,Dog,Ariege Pointer,1,Male,Amanda Lori Pacheco
-Sushi,Smith,Fish,Siamese Fighting Fish (Gourami),7,Female,Michael David Smith
-Hopper,Brown,Rabbit,Lionhead,11,Female,Nichole Christina Brown
-Simba,Wilson,Dog,Old Danish Pointer,2,Male,John David Wilson
-Goldie,Wilson,Fish,Guppy,5,Male,Roy Edward Wilson
-Jaws,Hill,Fish,Discus Fish,7,Female,Michael Antonio Hill
-Boots,Wells,Dog,Curly Coated Retriever,6,Male,Rachel Ruth Wells
-Cleopatra,Farrell,Reptile,Kingsnake,5,Male,Derek Farrell
-Jewel,Smith,Fish,Neon Tetra,3,Male,Brianna Michelle Smith
-Murphy,Hooper,Cat,Oriental Shorthair,8,Male,Lee Jordan Hooper
-Cherry,Beltran,Dog,Griffon Bleu de Gascogne,3,Male,Kayla Ashlee Beltran
-Biscuit,Beltran,Fish,Discus Fish,8,Female,Lee Beltran
-Tango,Beltran,Dog,Shetland Sheepdog,6,Female,Roy John Beltran
-Kiwi,Bauer,Bird,Jenday Conure,0,Male,Karen Bauer
-Whiskers,Higgins,Cat,Cyprus,1,Male,John Robert Higgins
-Mango,Sherman,Bird,Fischer's Lovebird,8,Female,Kevin Lance Sherman
-Fidget,Nelson,Rodent,Hairless Rat,14,Male,Maurice Nelson
-Boo,Mclean,Dog,Lithuanian Hound,9,Male,Allison Abigail Mclean
-Tasha,Nelson,Cat,Cyprus,1,Male,Tamara Morgan Nelson
-Sprout,Decker,Rodent,"Dwarf Hamster (Campbell's, Winter White, Roborovski)",11,Male,Jennifer Donna Decker
-Tiger,Decker,Cat,Siberian,10,Female,Patricia Alexis Decker
-Snoop,Stephens,Dog,Irish Setter,15,Male,Sarah Lori Stephens
-Harlow,Hamilton,Dog,Plott Hound,1,Male,David Allen Hamilton
-Tiger,Bauer,Cat,Sphynx,2,Female,Susan Christy Bauer
-Tasha,Hamilton,Dog,Mudi,10,Female,Paul Christopher Hamilton
-Leroy,Baker,Dog,Tosa,4,Male,Michael Matthew Baker
-Cottontail,Fry,Rabbit,Britannia Petite,13,Male,Patricia Fry
-Zorro,Chavez,Reptile,Ball Python,1,Female,Christopher Timothy Chavez
-Max,Hooper,Cat,Snowshoe,11,Female,Courtney Donna Hooper
-Mocha,Chambers,Dog,Bruno Jura Hound,11,Female,Joshua Johnny Chambers
-Cashew,Smith,Rodent,Texel Guinea Pig,8,Female,Jason Antonio Smith
-Kiwi,Williams,Bird,Macaw,5,Female,Amy Tamara Williams
-Guppy,Brown,Fish,Corydoras Catfish,0,Male,Jacob Brown
-Fudge,Wang,Rodent,Gerbil,12,Female,Rachel Allison Wang
-Albert,Wang,Dog,Bloodhound,15,Male,Bethany Julie Wang
-Chloe,Roberts,Cat,Lykoi,12,Male,Tina Cindy Roberts
-Hunter,Pacheco,Dog,Beagle-Harrier,0,Male,Christina Amy Pacheco
-Bruno,Pacheco,Dog,Deutsche Bracke,14,Female,Jamie Shirley Pacheco
-Tasha,Moore,Cat,Donskoy,11,Male,Natasha Sarah Moore
-Tiger,Fuentes,Cat,Sam Sawet,7,Female,Linda Nichole Fuentes
-Lucy,Martinez,Cat,Siberian,15,Female,John Martinez
-Kiki,Winters,Cat,German Rex,13,Female,Mary Christy Winters
-Tiger,Bauer,Cat,German Rex,0,Female,David Bauer
-Rocky,Smith,Bird,Lovebird,15,Male,Justin Smith
-Bella,Brown,Cat,Ukrainian Levkoy,2,Male,Debra Brown
-Daisy,Freeman,Bird,Canary,5,Female,Denise April Freeman
-Oreo,Bauer,Rodent,Angora Hamster,11,Male,Olivia Debra Bauer
-Smokey,Brown,Cat,Lykoi,7,Male,Robert Jason Brown
-Medusa,Saunders,Reptile,Uromastyx Lizard,5,Female,Allison Sarah Saunders
-Milo,Preston,Cat,German Rex,10,Male,Deborah Sara Preston
-Oliver,Hall,Cat,Cymric,3,Female,Anita Stacy Hall
-Cheech,Pacheco,Dog,Lithuanian Hound,13,Male,Craig Jeremy Pacheco
-Laika,Higgins,Dog,Boykin Spaniel,2,Female,Nicole Cathy Higgins
-Hazel,Brown,Rabbit,Giant Angora,5,Female,Jessica Tammy Brown
+pet~name,last_name,pet~animal_type,pet~breed,pet~age,pet~gender,name
+Shimmer,Ware,Amphibian,Oriental Fire-Bellied Toad,5,Female,Jordan Ware
+Flash,Malone,Fish,Discus Fish,4,Female,Tracey Malone
+Wally,Holland,Dog,Posavac Hound,11,Male,Barry Holland
+Sassy,Atkinson,Cat,Maine Coon,8,Male,John Atkinson
+Misty,Phillips,Cat,Cheetoh,10,Female,Sherri Phillips
+Tweety,Smith,Bird,Canary,8,Male,Justina Smith
+Zack,Marshall,Dog,Miniature Shar Pei,1,Female,Lissia Marshall
+Snapper,Miller,Fish,Angelfish,1,Female,Mick Miller
+Cara,Williams,Dog,Dalmatian,5,Female,Diana Williams
+Scooby,Horn,Dog,St. John's water dog,3,Female,Cynthia Horn
+Sable,Williams,Fish,Guppy,3,Female,Sylvia Williams
+Cleo,Brown,Cat,Ojos Azules,2,Female,David Brown
+Joe,Lopez,Dog,Great Dane,10,Female,Jody Lopez
+Mango,Foley,Bird,Fischer's Lovebird,4,Male,Troy Foley
+Duke,Johnson,Dog,Bracco Italiano,0,Male,Shelley Johnson
+Ziggy,Silva,Reptile,Kingsnake,1,Female,Jon Silva
+Moxie,Leon,Dog,Cane Corso,0,Female,Coco Leon
+Victoria,Roberson,Dog,Vizsla,6,Female,Leah Roberson
+Oliver,Baker,Cat,British Longhair,9,Male,Bryan Baker
+Cocoa,Blevins,Dog,Braque du Puy,8,Female,Mandy Blevins
+Pippin,Carr,Rabbit,Lilac,9,Male,Daniel Carr
+Tango,Holland,Fish,Corydoras Catfish,4,Female,Micky Holland
+Luna,Lee,Cat,Pixie-bob,2,Male,Nan Lee
+Comet,Johnson,Bird,Eclectus Parrot,8,Female,Katie Johnson
+Mickey,Kim,Dog,German Shepherd,4,Female,Jon Kim
+Comet,Thompson,Bird,Lovebird,12,Female,Christina Thompson
+Smokey,Hendrix,Cat,Cymric,14,Male,Amber Hendrix
+Cleo,Bradley,Cat,Savannah,0,Female,Kimberli Bradley
+Lila,Gonzalez,Dog,Entlebucher Mountain Dog,11,Female,Mickey Gonzalez
+Tango,Lewis,Bird,Fischer's Lovebird,5,Female,Ronny Lewis
+Kato,Johnson,Dog,Borzoi,3,Female,Day Johnson
+Misty,Jones,Cat,Kurilian Bobtail,8,Female,Michael Jones
+Ice,Calhoun,Dog,Chihuahua,5,Female,Jeff Calhoun
+Luna,Robinson,Cat,Thai,3,Female,Jose Robinson
+Tiki,Martin,Bird,Cockatiel,7,Male,Ally Martin
+Snickers,Castro,Rabbit,Satin,5,Female,Zachary Castro
+Leo,Skinner,Cat,Russian Blue,5,Female,Susan Skinner
+Gia,Huerta,Dog,Grand Basset Griffon Vendéen,11,Male,Christopher Huerta
+Tiki,Skinner,Bird,Lovebird,5,Female,Ry Skinner
+Chirpy,Hoover,Bird,Eclectus Parrot,15,Male,Scott Hoover
+Sadie,Hall,Dog,Sapsali,15,Male,Dann Hall
+Kylie,Soto,Dog,Sloughi,8,Female,Andrew Soto
+Tigger,Soto,Cat,Thai Lilac,0,Male,Michael Soto
+Corky,Smith,Dog,Dogo Cubano,4,Male,Joey Smith
+Chloe,Malone,Cat,Ocicat,9,Male,Angel Malone
+Ziggy,Holland,Cat,Dwarf cat,10,Male,Christopher Holland
+Cookie,Phillips,Cat,Russian Blue,1,Male,Thomas Phillips
+Peanut,Marshall,Cat,Siamese,13,Female,Richard Marshall
+Dory,Marshall,Fish,Tiger Barb,2,Female,Brendan Marshall
+Nala,Torres,Cat,Khao Manee,1,Female,Jennifer Torres
+Angel,Sharp,Cat,British Longhair,9,Female,Al Sharp
+Mia,Bradley,Cat,Lykoi,1,Female,Denise Bradley
+Rocky,Silva,Cat,Japanese Bobtail,4,Female,Anne Silva
+Skittles,Silva,Bird,Fischer's Lovebird,14,Male,Emmy Silva
+Mocha,Silva,Cat,Devon Rex,8,Male,Christine Silva
+Sprout,Marshall,Amphibian,Budgett's Frog,2,Male,Willie Marshall
+Nala,Smith,Cat,American Wirehair,13,Female,Hob Smith
+Whiskers,Lee,Cat,Himalayan,10,Male,Joshua Lee
+Nebula,Miller,Reptile,Crested Gecko,2,Female,Chelle Miller
+Popcorn,Zuniga,Dog,Labrador Retriever,1,Male,Christina Zuniga
+Luna,Marshall,Cat,Aegean,7,Male,Mikey Marshall
+Caramel,Johnson,Dog,Pachon Navarro,3,Female,Will Johnson
+Tango,Brown,Fish,Angelfish,4,Male,Shawn Brown
+Tasha,Brown,Cat,Serengeti,2,Female,Cesar Brown
+Pebbles,Hendrix,Fish,Betta Fish,3,Male,Jordan Hendrix
+Guppy,Rhodes,Fish,Molly,7,Male,Daniel Rhodes
+Darby,Zuniga,Dog,Indian pariah dog,4,Female,Philip Zuniga
+Bubble,Holland,Fish,Discus Fish,2,Female,Pam Holland
+Rocket,Smith,Dog,English Cocker Spaniel,11,Male,Willy Smith
+Boo,Smith,Dog,Polish Lowland Sheepdog,3,Female,Jay Smith
+Bucky,Smith,Dog,Treeing Cur,0,Female,Timothy Smith
+Pete,Smith,Dog,Shiloh Shepherd Dog,15,Female,Jos Smith
+Tigger,Smith,Cat,Ragdoll,10,Female,Pate Smith
+Bucky,Holland,Dog,Australian Kelpie,13,Male,Amanda Holland
+Milo,Holland,Cat,Oriental Shorthair,14,Male,Martin Holland
+Tiger,Holland,Cat,Korn Ja,2,Male,Kristen Holland
+Tango,Johnson,Fish,Harlequin Rasbora,1,Female,Christopher Johnson
+Oscar,Torres,Cat,Colorpoint Shorthair,12,Male,Day Torres
+Snuggle,Bradley,Rodent,Mongolian Gerbil,0,Male,Kevin Bradley
+Boomer,Smith,Dog,Drever,5,Male,Al Smith
+PJ,Smith,Dog,Kerry Blue Terrier,12,Male,Lena Smith
+Tasha,Marshall,Cat,Oriental Longhair,14,Female,Seth Marshall
+Phoenix,Johnson,Bird,Society Finch,9,Male,Virginia Johnson
+Bubble,Zuniga,Fish,Betta Fish,6,Female,Teri Zuniga

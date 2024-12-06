@@ -1,18 +1,20 @@
 from __future__ import annotations
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from datetime import date
 from typing import Optional
 
 from classes.email import Email
 
 # from classes.employee import EmployeeRole
-from classes.phone_number import PhoneNumber
+from classes.phone_number import Phone
 from classes.location import Location
 from classes.vehicle import Vehicle
 from classes.drivers_license import DriversLicense
 from classes.passport import Passport
 from classes.age_groups import AgeGroups
 from classes.animal import Animal
+from classes.bank_account import BankAccount
+from classes.social_connect import SocialConnect
 
 from data.person.person_averages import WORKING_AGE, MARRIAGE_AGE
 
@@ -43,13 +45,17 @@ class Person:
     positive_traits: str = ""
     neutral_traits: str = ""
     negative_traits: str = ""
+    favorites: dict = field(default_factory=dict, repr=True)
+
+    phone_number: Optional[Phone] = None
+    email: Optional[Email] = None
 
     passport: Optional[Passport] = None
-    phone_number: Optional[PhoneNumber] = None
-    email: Optional[Email] = None
+    drivers_license: Optional[DriversLicense] = None
+
     home: Optional[Location] = None
     vehicle: Optional[Vehicle] = None
-    drivers_license: Optional[DriversLicense] = None
+    bank_account: Optional[BankAccount] = None
 
     pet: Optional[Animal] = None
 
@@ -61,12 +67,35 @@ class Person:
     parent_a: Optional[Person] = None
     parent_b: Optional[Person] = None
 
+    social_connect: Optional[SocialConnect] = None
+    friends: set = field(default_factory=set, init=True, repr=True)
+
     employer: Optional[str] = None
     role: Optional[str] = None
+    salary: Optional[int] = None
+    work_days: Optional[list[str]] = None
+    work_hours: Optional[list[str]] = None
     patron_of: Optional[list[str]] = None
 
     def __getitem__(self, item):
         return getattr(self, item, "")
+
+    @property
+    def list_of_family(self):
+        family = []
+        if isinstance(self.parent_a, Person):
+            family.append(self.parent_a)
+        if isinstance(self.parent_b, Person):
+            family.append(self.parent_b)
+        if isinstance(self.spouse, Person):
+            family.append(self.spouse)
+        if isinstance(self.children, list) and self.children != []:
+            family.extend(child for child in self.children if isinstance(child, Person))
+        if isinstance(self.siblings, list) and self.siblings != []:
+            family.extend(
+                sibling for sibling in self.siblings if isinstance(sibling, Person)
+            )
+        return [f for f in family if f is not None]
 
     @property
     def is_alive(self):
@@ -100,11 +129,25 @@ class Person:
         if self.middle_name:
             return f"{self.first_name} {self.middle_name} {self.last_name}"
         else:
-            return self.name
+            return f"{self.first_name} {self.last_name}"
 
     @property
     def name(self):
-        return f"{self.first_name} {self.last_name}"
+        if self.nickname:
+            return f"{self.nickname} {self.last_name}"
+        else:
+            return f"{self.first_name} {self.last_name}"
+
+    @property
+    def last_name_first_initial(self):
+        if self.middle_name:
+            return f"{self.last_name}, {self.first_name[0]}. {self.middle_name[0]}."
+        else:
+            return f"{self.last_name}, {self.first_name[0]}."
+
+    @property
+    def name_slug(self):
+        return "".join(self.name.split(" "))
 
     @property
     def title(self):
@@ -151,6 +194,12 @@ class Person:
         abo = _abo if _abo == "AB" else _abo[0]
         rh = "-" if _rh == "dd" else "+"
         return f"{abo}{rh}"
+
+    def __hash__(self):
+        # Here we define how we should compute
+        # the hash for a given User. In this example
+        # we use the hash of the '__email' attribute
+        return hash(self.id)
 
     def __repr__(self):
         return self.id

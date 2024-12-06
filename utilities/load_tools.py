@@ -12,9 +12,9 @@ def load_json(file_name):
         return json.load(f)
 
 
-def load_csv(file_name):
+def load_csv(file_name, delim=","):
     with open(file_name) as csv_file:
-        csv_reader = csv.reader(csv_file, delimiter=",")
+        csv_reader = csv.reader(csv_file, delimiter=delim)
         return list(csv_reader)
 
 

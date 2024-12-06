@@ -109,8 +109,7 @@
         "Knowledge",
         "Study",
         "School",
-        "Academy"
-      ],
+        "Academy"],
       "names_b": ["Hub", "Center", "Place", "Campus", "Institution", ""],
       "subindustries": {
         "Public K-6": {
@@ -360,8 +359,19 @@
       "names_b": ["Hub","Edge","Wise","Vault","Tech",""],
       "subindustries": {
         "Bank": {
-          
-        }
+          "subindustry_weight": 0.05,
+          "proprietors": ["Corporation"],
+          "scopes": ["National"],
+          "employee_structures": [
+            [
+              [[1, 1], "President", "General"],
+              [[1, 2], "Vice President", "General"],
+              [[20, 50], "Manager", "General"],
+              [[200, 400], "Employee", "General"]
+            ]
+          ],
+          "names_c": ["Productions", "Studios", "Entertainment", "Cinema"]
+        },
     }
   }
 }

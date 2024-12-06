@@ -1,0 +1,7 @@
+Hit and Run,f'According to the {guilty.home.city} Police Department, witnesses reported seeing a {guilty.vehicle.color} {guilty.vehicle.make} speeding along Main Street when it struck a pedestrian crossing the intersection.
+
+"The vehicle failed to stop at the scene and continued driving away from the area," {guilty.home.city} police said in a statement. "Luckily the pedestrian is okay, but we are still searching for the guilty person."
+
+Police said they currently lack a detailed description of the vehicle, though the {guilty.vehicle.make} was described as having tinted windows, and a license plate ending in {guilty.vehicle.license_plate_num[-4} Authorities are asking anyone with information to come forward.',"$1,000",guilty_person[name],guilty_person
+Suspicious Person,"Multiple eye witnesses have reported a suspicious looking person. The person was walking out of Guilty_person.favorite.gym,  wearing a red tshirt. they were described as Guilty_person.height and about Guilty_person.weight","$2,000",guilty_person[name],guilty_person
+Company under investigation,"We're looking into some complaints about the company Guilty_person.employer.  These complaints have been anonymoous, but serious enough for us to look into. Who is the head of this organization? ",$250,guilty_person[name],guilty_person

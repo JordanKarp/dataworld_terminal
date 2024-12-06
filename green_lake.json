@@ -1,0 +1,36 @@
+{
+  "STATE": "Morton",
+  "NAME": "Green Lake",
+  "ROADS": {
+    "Green Lake Drive": {
+      "10R": {
+        "START_NUM": "10",
+        "END_NUM": "40",
+        "INC_NUM": "10",
+        "BUILDING_TYPE": "Residence",
+        "LOT_SIZE": "10"
+      },
+      "13R": {
+        "START_NUM": "13",
+        "END_NUM": "93",
+        "INC_NUM": "10",
+        "BUILDING_TYPE": "Residence",
+        "LOT_SIZE": "9"
+      },
+      "17R": {
+        "START_NUM": "17",
+        "END_NUM": "47",
+        "INC_NUM": "10",
+        "BUILDING_TYPE": "Residence",
+        "LOT_SIZE": "8"
+      },
+      "67R": {
+        "START_NUM": "67",
+        "END_NUM": "87",
+        "INC_NUM": "10",
+        "BUILDING_TYPE": "Residence",
+        "LOT_SIZE": "7"
+      }
+    }
+  }
+}

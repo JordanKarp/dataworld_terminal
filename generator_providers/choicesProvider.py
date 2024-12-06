@@ -1,5 +1,6 @@
 from faker.providers import BaseProvider
 from collections import OrderedDict
+import numpy as np
 
 
 class ChoicesProvider(BaseProvider):
@@ -10,6 +11,14 @@ class ChoicesProvider(BaseProvider):
 
     def norm_dist_rand(self, mean, stdev):
         return self.generator.random.normalvariate(mean, stdev)
+
+    # TODO test this
+    def lognorm_dist_rand(self, mean, sigma):
+        mu = np.log(mean**2 / np.sqrt(sigma**2 + mean**2))
+        s = np.sqrt(np.log(1 + (sigma**2 / mean**2)))
+
+        # Generate a random number from the log-normal distribution
+        return self.generator.random.lognormal(mu, s)
 
     def percent_check(self, percent):
         return self.generator.random.random() <= percent

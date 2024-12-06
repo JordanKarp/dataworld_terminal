@@ -1,0 +1,497 @@
+   startup names
+   
+    results.push(commonWord(seed) + "r");
+    results.push(commonWord(seed) + "it");
+    results.push(commonWord(seed) + "ly");
+    results.push(commonWord(seed) + "ify");
+    results.push(commonWord(seed) + "hub");
+    results.push(commonWord(seed) + "y");
+    results.push(commonWord(seed));
+    results.push(commonWord(seed) + "me");
+    results.push("you" + commonWord(seed));
+    results.push(commonWord(seed) + "n");
+    results.push(commonWord(seed) + "str");
+    results.push(removeLastVowel(seed));
+    results.push(commonWord(seed) + "Now");
+    results.push(commonWord(seed) + "Link");
+    results.push(commonWord(seed) + "in");
+    results.push(commonWord(seed) + "able");
+    results.push("Smart" + commonWord(seed));
+    results.push(commonWord(seed) + capitalizeFirst(commonWord(seed + 1)));
+
+
+function makeComplement (color) {
+  newR = (297 - color.r()) % 255;
+  newG = (297 - color.g()) % 255;
+  newB = (297 - color.b()) % 255;
+  return new Color([newR, newG, newB]);
+}
+
+
+
+//Here are functions to make slogans
+function threeVerbs (seed) {
+    var resultList = someChoices(seed, inspVerbs, 3);
+    return (capitalizeFirst(resultList[0]) + ". " + capitalizeFirst(resultList[1]) + ". " + capitalizeFirst(resultList[2]) + ".");
+}
+
+function threeAdjs (seed) {
+    var resultList = someChoices(seed, bizAdjs, 3);
+    return (capitalizeFirst(resultList[0]) + ". " + capitalizeFirst(resultList[1]) + ". " + capitalizeFirst(resultList[2]) + ".");
+}
+
+function adjNoun (seed) {
+    if (seedChoice(seed, nouns) == commonWord(seed)) {
+        return "Your " + seedChoice(seed + 1, bizAdjs) + " " + seedChoice(seed, nouns) + ".";
+    } else {
+        return "Dare to " + commonWord(seed) + ".";
+    }
+}
+
+function neverBefore (seed) {
+    if (seedChoice(seed, nouns) == commonWord(seed)) {
+        return "Like no other " + noun(seed) + ".";
+    } else {
+        return capitalizeFirst(commonWord(seed)) + " like never before.";
+    }
+}
+
+function worldsMost (seed) {
+    if (seedChoice(seed, nouns) == commonWord(seed)) {
+        return "World's most " + seedChoice(seed + 1, bizAdjs) + " " + noun(seed) + ".";
+    } else {
+        return "The " + seedChoice(seed + 1, bizAdjs) + " way to " + verb(seed) + ".";
+    }
+}
+
+function doSomethingGreat (seed) {
+    if (seedChoice(seed, nouns) == commonWord(seed)) {
+        return "The " + seedChoice(seed + 1, bizAdjs) + " " + noun(seed) + ".";
+    } else {
+        return capitalizeFirst(verb(seed)) + " something " + seedChoice(seed + 1, bizAdjs) + ".";
+    }
+}
+
+function aShift (seed) {
+    if (seedChoice(seed, nouns) == commonWord(seed)) {
+        return "Your " + seedChoice(seed + 1, bizAdjs) + " new " + noun(seed) + ".";
+    } else {
+        return "We " + verb(seed) + ".";
+    }
+}
+
+function madeEasy (seed) {
+    if (seedChoice(seed, nouns) == commonWord(seed)) {
+        return "The evolution of the " + noun(seed) + ".";
+    } else {
+        return "For those who " + verb(seed) + ".";
+    }
+}
+
+function doYou (seed) {
+    if (seedChoice(seed, nouns) == commonWord(seed)) {
+        return "Your " + noun(seed) + ". " + capitalizeFirst(seedChoice(seed + 1, bizAdjs)) + ".";
+    } else {
+        return "Do you " + verb(seed) + "?";
+    }
+}
+
+function youllNever (seed) {
+    if (seedChoice(seed, nouns) == commonWord(seed)) {
+        return "The " + noun(seed) + " you've been waiting for.";
+    } else {
+        var resultList = someChoices(seed, inspVerbs, 2);
+        return  capitalizeFirst(resultList[0]) + ". " + capitalizeFirst(resultList[1]) + ". " + capitalizeFirst(verb(seed)) + ".";
+    }
+}
+
+function doMore (seed) {
+    if (seedChoice(seed, nouns) == commonWord(seed)) {
+        return capitalizeFirst(seedChoice(seed + 1, inspVerbs)) + " your " + noun(seed) + ".";
+    } else {
+        return "Start " + seedChoice(seed, gerunds) + ".";
+    }
+}
+
+function ally (seed) {
+    if (seedChoice(seed, nouns) == commonWord(seed)) {
+        return capitalizeFirst(seedChoice(seed + 1, inspGerunds)) + " your " + seedChoice(seed, nouns) + ".";
+    } else {
+        return capitalizeFirst(seedChoice(seed + 1, bizAdvbs)) + " " + seedChoice(seed, gerunds) + ".";
+    }
+}
+
+
+
+function makeSlogan (seed) {
+    var results = [];
+    results.push(threeVerbs(seed));
+    results.push(threeAdjs(seed));
+    results.push(adjNoun(seed));
+    results.push(neverBefore(seed));
+    results.push(worldsMost(seed));
+    results.push("We Are " + startupify(seed) + ".");
+    results.push(doSomethingGreat(seed));
+    results.push(aShift(seed));
+    results.push(madeEasy(seed));
+    results.push("Meet " + startupify(seed) + ".");
+    results.push(doYou(seed));
+    results.push(youllNever(seed));
+    results.push(doMore(seed));
+    results.push(ally(seed));
+    return seedChoice(seed + 1000, results);
+}
+
+
+
+//Here are functions to make openers
+function isRevo (seed) {
+    if (seedChoice(seed, nouns) == commonWord(seed)) {
+        return startupify(seed) + " is revolutionizing the way people think about " + seedChoice(seed, plurals) + ".";
+    } else {
+        return startupify(seed) + " is why you'll never " + seedChoice(seed, verbs) + " the same way again.";
+    }
+}
+
+function isLocal (seed) {
+    if (seedChoice(seed, nouns) == commonWord(seed)) {
+        return startupify(seed) + " was created to help you find " + seedChoice(seed, plurals) + " in your area. From local " + seedChoice(seed, plurals) + " to national brands, no one knows " + seedChoice(seed, plurals) + " like " + startupify(seed) + ". No one.";
+    } else {
+        return startupify(seed) + " is a place for people who enjoy " + seedChoice(seed, gerunds) + " to connect. Find local " + seedChoice(seed, gerunds) + " events or just share your favorite tips and stories with others who love to " + seedChoice(seed, verbs) + ".";
+    }
+}
+
+function shareAnd (seed) {
+    if (seedChoice(seed, nouns) == commonWord(seed)) {
+        return "Share your favorite " + seedChoice(seed, plurals) + " and discover new ones. With " + startupify(seed) + " you never know what you might find!";
+    } else {
+        return startupify(seed) + " was founded by people who love " + seedChoice(seed, gerunds) + " just like you! Enter your favorite ways to " + seedChoice(seed, verbs) + " and we'll help you fit it all in. Since we're using " + seedChoice(seed, bizAdjs) + " technologies, you can count on us next time you " + seedChoice(seed, verbs) + ".";
+    }
+}
+
+function theMax (seed) {
+    if (seedChoice(seed, nouns) == commonWord(seed)) {
+        return startupify(seed) + " is the last word in " + seedChoice(seed + 1, bizAdjs) + " " + seedChoice(seed, plurals) + ". We know you never settle for less than the best and neither do we. " + capitalizeFirst(seedChoice(seed, inspVerbs)) + " with professional grade tools and " + seedChoice(seed + 1, inspVerbs) + " your future.";
+    } else {
+        return capitalizeFirst(seedChoice(seed, gerunds)) + ". Everyone talks about it but only the truly " + seedChoice(seed, bizAdjs) + " are able to " + seedChoice(seed, verbs) + " day in and day out. Here at " + startupify(seed) + " we understand your commitment and want to give you what you need to take your " + seedChoice(seed, gerunds) + " to the next level.";
+    }
+}
+
+function anApp (seed) {
+    if (seedChoice(seed, nouns) == commonWord(seed)) {
+        return startupify(seed) + " is a different kind of " + seedChoice(seed, nouns) + " app.";
+    } else {
+        return startupify(seed) + " is a different kind of " + seedChoice(seed, gerunds) + " app.";
+    }
+}
+
+function anApp (seed) {
+    if (seedChoice(seed, nouns) == commonWord(seed)) {
+        return startupify(seed) + " is a different kind of " + seedChoice(seed, nouns) + " app.";
+    } else {
+        return startupify(seed) + " is a different kind of " + seedChoice(seed, gerunds) + " app.";
+    }
+}
+
+function builtBy (seed) {
+    if (seedChoice(seed, nouns) == commonWord(seed)) {
+        return capitalizeFirst(seedChoice(seed + 3, inspVerbs)) + " your niche in the " + seedChoice(seed, nouns) + " ecosystem with online branding that’s built by " + seedChoice(seed + 1, bizAdjs) + " people for " + seedChoice(seed + 2, bizAdjs) + " consumers.";
+    } else {
+        return capitalizeFirst(seedChoice(seed + 3, inspVerbs)) + " your niche in the " + seedChoice(seed, gerunds) + " ecosystem with online branding that’s built by " + seedChoice(seed + 1, bizAdjs) + " people for " + seedChoice(seed + 2, bizAdjs) + " consumers.";
+    }
+}
+
+function intoCash (seed) {
+    if (seedChoice(seed, nouns) == commonWord(seed)) {
+        return startupify(seed) + " is a " + seedChoice(seed + 7, bizAdjs) + " " + seedChoice(seed, nouns) + " service that makes it easy to turn your " + seedChoice(seed, plurals) + " into cash.";
+    } else {
+        return capitalizeFirst(seedChoice(seed + 7, inspVerbs)) + " & " + capitalizeFirst(seedChoice(seed, verbs)) + " together with your team.";
+    }
+}
+
+function weUse (seed) {
+    if (seedChoice(seed, nouns) == commonWord(seed)) {
+        return "We use " + seedChoice(seed, plurals) + " to " + seedChoice(seed + 43, inspVerbs) + " things that matter.";
+    } else {
+        return "We're " + seedChoice(seed, gerunds) + " to " + seedChoice(seed + 43, inspVerbs) + " things that matter.";
+    }
+}
+
+function gotBetter (seed) {
+    if (seedChoice(seed, nouns) == commonWord(seed)) {
+        return "Buying " + seedChoice(seed, plurals) + " just got a whole lot better…";
+    } else {
+        return capitalizeFirst(seedChoice(seed, gerunds)) + " just got a whole lot better…";
+    }
+}
+
+function manageYour (seed) {
+    if (seedChoice(seed, nouns) == commonWord(seed)) {
+        return "Manage your organisation's " + seedChoice(seed, plurals) + " online, with our cloud software.";
+    } else {
+        return "Manage your organisation's " + seedChoice(seed, gerunds) + " online, with our cloud software."
+    }
+}
+
+function worldsFirst (seed) {
+    if (seedChoice(seed, nouns) == commonWord(seed)) {
+        return "Introducing the world’s first " + seedChoice(seed + 6543, bizAdjs) + " " + seedChoice(seed, nouns) + ".";
+    } else {
+        return "You like to " + seedChoice(seed, verbs) + ". " + startupify(seed) + " does too.";
+    }
+}
+
+function makeOpener (seed) {
+    var results = [];
+    results.push(isRevo(seed));
+    results.push(isLocal(seed));
+    results.push(shareAnd(seed));
+    results.push(theMax(seed));
+    results.push(anApp(seed));
+    results.push(builtBy(seed));
+    results.push(intoCash(seed));
+    results.push(weUse(seed));
+    results.push(gotBetter(seed));
+    results.push(manageYour(seed));
+    results.push(worldsFirst(seed));
+    return seedChoice(seed + 999, results);
+}
+
+function makeSubDescs (seed) {
+    var results = [];
+    results.push("What makes " + startupify(seed) + " *? Our commitment to + pursuing excellence at every turn.");
+    results.push("You know what you want, something * that doesn't hold you back. With the latest * technologies, " + startupify(seed) + " has your back.");
+    results.push("Unlike our competitors, we'll always be + looking for new ways to move forward.");
+    results.push(startupify(seed) + " is * from the ground up. We have * products, * prices, and most of all * service.");
+    results.push(startupify(seed) + " is a different kind of startup. We know what it means to be * and will never compromise when it comes to + delivering what you need.");
+    results.push("Includes everything you need, find and buy in a truly * manner.");
+    results.push("Our completely * calculator ensures you'll never overpay.");
+    results.push("Fits you and your * lifestyle.");
+    results.push("Get a complete picture of the * landscape in as little as 60 seconds.");
+    results.push("Optimize your changes for a truly * impact.");
+    results.push("Be the first to see * news in your area.");
+    results.push(startupify(seed) + " is inherently * and community centric. It's time for the * community to have a voice.");
+    results.push("In this market, only the * survive." );
+    results.push("Worried about what happens next? We've got you covered.");
+    results.push("Find out what people are saying using our * tools.");
+    results.push("Say goodbye to spreadsheets forever.");
+    results.push("Share and collaborate with others inside and outside your organization.");
+    results.push("Turn Research into a Team Sport.");
+    results.push("Welcome to the next generation of * insight and engagement.");
+    results.push("Build * relationships with your customers.");
+    results.push("Cut through the clutter and get * results in a fresh & exciting way.");
+    results.push(startupify(seed) + " is easy to use, no matter who you are.");
+    results.push(startupify(seed) + " customers love the product and the company. We love them too!");
+    results.push("We provide 24x7x365 support with knowledgeable " + startupify(seed) + " staff answering your requests.");
+    results.push("Our * information gathering system completes the view of the customer.");
+    results.push("Found in * communities throughout the world.");
+    results.push("Discover 100% more * content.");
+    results.push("Your * workspace evolves your ideas into finished products.");
+    results.push("Simply * results for teams of all sizes.");
+    results.push("Our state-of-the-art technology keeps things *.");
+    results.push("Engage your customers with a * campaign.");
+    results.push(startupify(seed) + " is a simple and powerful tool that automatically organizes for * results.");
+    results.push("Finding a * fit just got a whole lot easier.");
+    return someChoices(seed + 11, results, 3);
+}
+
+//Generators for testimonials
+function thanksTo (seed) {
+    if (seedChoice(seed, nouns) == commonWord(seed)) {
+        return "Thanks to " + startupify(seed) + " we now have beautiful, " + seedChoice(seed + 4, bizAdjs) + " " + seedChoice(seed, plurals) + " every day. Our customers are happy and engagement has drastically increased. Highly recommend!";
+    } else {
+        return "I've been " + seedChoice(seed, gerunds) + " for 15 years and I've never seen anything like " + startupify(seed) + ". They're really something else.";
+    }
+}
+
+function allMy (seed) {
+    if (seedChoice(seed, nouns) == commonWord(seed)) {
+        return "When my friends need new " + seedChoice(seed, plurals) + " there's only one word I tell them, " + startupify(seed) + ".";
+    } else {
+        return "As a professional in the " + seedChoice(seed, gerunds) + " industry, I tell all my new clients to start out with an account on " + startupify(seed) + ". It puts them miles ahead of the competition and makes my job that much easier!";
+    }
+}
+
+function forMe (seed) {
+    if (seedChoice(seed, nouns) == commonWord(seed)) {
+        return "We’ve tried every " + seedChoice(seed, nouns) + " program available. " + startupify(seed) + " was the easiest to setup & the most effective.";
+    } else {
+        return capitalizeFirst(seedChoice(seed, gerunds)) + " apps are not for me. Being recommended by a friend on " + startupify(seed) + " is exactly what I need.";
+    }
+}
+
+function toLearn (seed) {
+    if (seedChoice(seed, nouns) == commonWord(seed)) {
+        return "When I needed a new " + seedChoice(seed, nouns) + " my best friend told me about " + startupify(seed) + ". I gave it a try and was completely thrilled!";
+    } else {
+        return startupify(seed) + " is a great idea, I started " + seedChoice(seed, gerunds) + " to learn this skill set! ";
+    }
+}
+
+function tinderFor (seed) {
+    if (seedChoice(seed, nouns) == commonWord(seed)) {
+        return startupify(seed) + " is like Tinder... but for " + seedChoice(seed, plurals) + "!";
+    } else {
+        return startupify(seed) + " is like Tinder... but for " + seedChoice(seed, gerunds) + "!";
+    }
+}
+
+function facebookFor (seed) {
+    if (seedChoice(seed, nouns) == commonWord(seed)) {
+        return startupify(seed) + " is the Facebook of " + seedChoice(seed, plurals) + ".";
+    } else {
+        return startupify(seed) + " is the Facebook of " + seedChoice(seed, gerunds) + ".";
+    }
+}
+
+function makeTest (seed, n) {
+    var results = [];
+    results.push(startupify(seed) + " was " + seedChoice(seed + 4, bizAdjs) + ", " + seedChoice(seed + 5, bizAdjs) + ", and " + seedChoice(seed + 6, bizAdjs) + ". Ten out of ten!");
+    results.push("I was skeptical at first but " + startupify(seed) + " really came through. They answered all my questions and made the whole experience a plesant one.");
+    results.push(thanksTo(seed));
+    results.push(allMy(seed));
+    results.push("One of the biggest challenges we faced after we hit our early goals was how do we stay top-of-mind and keep our users engaged? Enter " + startupify(seed) + ". Problem solved.");
+    results.push(forMe(seed));
+    results.push(toLearn(seed));
+    results.push(startupify(seed) + " is the real deal. No doubt about it.");
+    results.push("Pure and simple. You guys have nailed it.");
+    results.push("I have to say this is probably the best platform I have seen of its kind.");
+    results.push("Definitely recommended.  Great experience, which gave us a better perspective and helped to solve several business problems.");
+    results.push(startupify(seed) + " was very useful not only in case of our project but just good basis for every business we would start in the future.");
+    results.push("You shouldn’t think about whether to apply - just do it! It’s an unique opportunity to meet awesome people and change the world!");
+    results.push("Once again, " + startupify(seed) + " came through. And even before estimated delivery date! Just impressive! Thank you! You’re awesome!");
+    results.push(startupify(seed) + " was excellent - especially relative to other services I tried - and certainly 1000x better than the experiences I had with other providers.");
+    results.push(tinderFor(seed));
+    results.push(facebookFor(seed));
+    results.push("I have to say I love this idea, it solved a big problem.");
+    results.push("It feels good to be part of the " + startupify(seed) + " family.");
+    results.push("We searched through a lot of providers and plans to find a good fit for our business. " + startupify(seed) + " made it easy to find the right fit for my business and my budget.");
+    return someChoices(seed + 12, results, n);
+}
+
+
+
+
+function ourSponsors(seed) {
+    var results = [];
+    results.push("Our Sponsors");
+    results.push("Our Clients");
+    results.push("Proudly Partenering With");
+    results.push("As Seen On");
+    results.push("Current Clients");
+    return seedChoice(seed + 13, results);
+}
+
+function beTheFirst(seed) {
+    var results = [];
+    results.push("Be the first to try out ");
+    results.push("Find out what's next at ");
+    results.push("Keep up with what's happening at ");
+    results.push("Learn more about ");
+    results.push("Sign up for ");
+    return seedChoice(seed + 14, results) + startupify(seed);
+}
+
+
+var verbs = ["accept", "add", "admire", "admit", "advise", "afford", "agree", "alert", "allow", "amuse", "analyze", "announce", "annoy", "answer", "apologise", "appear", "applaud", "appreciate", "approve", "argue", "arrange", "arrest", "arrive", "ask", "attach", "attack", "attempt", "attend", "attract", "avoid", "back", "bake", "balance", "ban", "bang", "bare", "bat", "bathe", "battle", "beam", "beg", "behave", "belong", "bleach", "bless", "blind", "blink", "blot", "blush", "boast", "boil", "bolt", "bomb", "book", "bore", "borrow", "bounce", "bow", "box", "brake", "branch", "breathe", "bruise", "brush", "bubble", "bump", "burn", "bury", "buzz", "calculate", "call", "camp", "care", "carry", "carve", "cause", "challenge", "change", "charge", "chase", "cheat", "check", "cheer", "chew", "choke", "chop", "claim", "clap", "clean", "clear", "clip", "close", "coach", "coil", "collect", "colour", "comb", "command", "communicate", "compare", "compete", "complain", "complete", "concentrate", "concern", "confess", "confuse", "connect", "consider", "consist", "contain", "continue", "copy", "correct", "cough", "count", "cover", "crack", "crash", "crawl", "cross", "crush", "cry", "cure", "curl", "curve", "cycle", "dam", "damage", "dance", "dare", "decay", "deceive", "decide", "decorate", "delay", "delight", "deliver", "depend", "describe", "desert", "deserve", "destroy", "detect", "develop", "disagree", "disappear", "disapprove", "disarm", "discover", "dislike", "divide", "double", "doubt", "drag", "drain", "dream", "dress", "drip", "drop", "drown", "drum", "dry", "dust", "earn", "educate", "embarrass", "employ", "empty", "encourage", "end", "enjoy", "enter", "entertain", "escape", "examine", "excite", "excuse", "exercise", "exist", "expand", "expect", "explain", "explode", "extend", "face", "fade", "fail", "fancy", "fasten", "fax", "fear", "fence", "fetch", "file", "fill", "film", "fire", "fit", "fix", "flap", "flash", "float", "flood", "flow", "flower", "fold", "follow", "fool", "force", "form", "found", "frame", "frighten", "fry", "gather", "gaze", "glow", "glue", "grab", "grate", "grease", "greet", "grin", "grip", "groan", "guarantee", "guard", "guess", "guide", "hammer", "hand", "handle", "hang", "happen", "harass", "harm", "hate", "haunt", "head", "heal", "heap", "heat", "help", "hook", "hop", "hover", "hug", "hum", "hunt", "hurry", "identify", "ignore", "imagine", "impress", "improve", "include", "increase", "influence", "inform", "inject", "injure", "instruct", "intend", "interest", "interfere", "interrupt", "introduce", "invent", "invite", "irritate", "itch", "jail", "jam", "jog", "join", "joke", "judge", "juggle", "jump", "kick", "kill", "kiss", "kneel", "knit", "knock", "knot", "label", "land", "last", "laugh", "launch", "learn", "level", "license", "lick", "lie", "lighten", "like", "list", "listen", "live", "load", "lock", "long", "look", "love", "man", "manage", "march", "mark", "marry", "match", "mate", "matter", "measure", "meddle", "melt", "memorise", "mend", "mess", "up", "milk", "mine", "miss", "mix", "moan", "mourn", "move", "muddle", "mug", "multiply", "murder", "nail", "name", "need", "nest", "nod", "note", "notice", "number", "obey", "object", "observe", "obtain", "occur", "offend", "offer", "open", "order", "overflow", "owe", "own", "pack", "paddle", "paint", "park", "part", "pass", "paste", "pat", "pause", "peck", "pedal", "perform", "permit", "phone", "pick", "pinch", "pine", "place", "plan", "plant", "play", "please", "plug", "point", "poke", "polish", "pop", "possess", "post", "pour", "practice", "pray", "preach", "precede", "prefer", "prepare", "present", "preserve", "press", "pretend", "prevent", "prick", "print", "produce", "program", "promise", "protect", "provide", "pull", "pump", "punch", "puncture", "punish", "push", "question", "queue", "race", "radiate", "rain", "raise", "reach", "realise", "receive", "recognise", "record", "reduce", "reflect", "refuse", "reign", "reject", "rejoice", "relax", "release", "rely", "remain", "remember", "remind", "remove", "repair", "repeat", "replace", "reply", "report", "reproduce", "request", "rescue", "retire", "return", "rhyme", "rinse", "risk", "rob", "rock", "roll", "rot", "rub", "rule", "rush", "sack", "sail", "satisfy", "save", "saw", "scare", "scatter", "scold", "scrape", "scratch", "scream", "screw", "scribble", "scrub", "seal", "search", "separate", "serve", "settle", "shade", "share", "shave", "shelter", "shock", "shop", "shrug", "sigh", "sign", "signal", "sin", "sip", "ski", "skip", "slap", "slip", "slow", "smash", "smell", "smile", "smoke", "snatch", "sniff", "snore", "snow", "soak", "soothe", "sound", "spare", "spark", "sparkle", "spell", "spill", "spoil", "spot", "spray", "sprout", "squash", "squeak", "squeal", "squeeze", "stain", "stamp", "stare", "start", "stay", "steer", "step", "stir", "stitch", "stop", "store", "strap", "strengthen", "stretch", "strip", "stroke", "stuff", "subtract", "succeed", "suck", "suffer", "suggest", "suit", "supply", "support", "suppose", "surprise", "surround", "suspect", "suspend", "switch", "talk", "tame", "tap", "taste", "tease", "tempt", "terrify", "test", "thank", "thaw", "tick", "tickle", "tie", "time", "tip", "tire", "touch", "tour", "tow", "trace", "trade", "train", "transport", "trap", "travel", "treat", "tremble", "trick", "trip", "trot", "trouble", "trust", "try", "tug", "tumble", "turn", "twist", "type", "undress", "unfasten", "unite", "unlock", "unpack", "untidy", "use", "vanish", "visit", "wail", "wait", "walk", "wander", "want", "warm", "warn", "wash", "waste", "watch", "water", "wave", "weigh", "welcome", "whip", "whirl", "whisper", "whistle", "wink", "wipe", "wish", "wobble", "wonder", "work", "worry", "wrap", "wreck", "wrestle", "wriggle", "x-ray", "yawn", "yell", "zip", "zoom"];
+
+var gerunds = ["accepting", "adding", "admiring", "admitting", "advising", "affording", "agreeing", "alerting", "allowing", "amusing", "analyzing", "announcing", "annoying", "answering", "apologizing", "appearing", "applauding", "appreciating", "approving", "arguing", "arranging", "arresting", "arriving", "asking", "attaching", "attacking", "attempting", "attending", "attracting", "avoiding", "backing", "baking", "balancing", "banning", "banging", "baring", "bating", "bathing", "battling", "beaming", "begging", "behaving", "belonging", "bleaching", "blessing", "blinding", "blinking", "blotting", "blushing", "boasting", "boiling", "bolting", "bombing", "booking", "boring", "borrowing", "bouncing", "bowing", "boxing", "braking", "branching", "breathing", "bruising", "brushing", "bubbling", "bumping", "burning", "burying", "buzzing", "calculating", "calling", "camping", "caring", "carrying", "carving", "causing", "challenging", "changing", "charging", "chasing", "cheating", "checking", "cheering", "chewing", "choking", "chopping", "claiming", "clapping", "cleaning", "clearing", "clipping", "closing", "coaching", "coiling", "collecting", "coloring", "combing", "commanding", "communicating", "comparing", "competing", "complaining", "completing", "concentrating", "concerning", "confessing", "confusing", "connecting", "considering", "consisting", "containing", "continuing", "copying", "correcting", "coughing", "counting", "covering", "cracking", "crashing", "crawling", "crossing", "crushing", "crying", "curing", "curling", "curving", "cycling", "damming", "damaging", "dancing", "daring", "decaying", "deceiving", "deciding", "decorating", "delaying", "delighting", "delivering", "depending", "describing", "deserting", "deserving", "destroying", "detecting", "developing", "disagreeing", "disappearing", "disapproving", "disarming", "discovering", "disliking", "dividing", "doubling", "doubting", "dragging", "draining", "dreaming", "dressing", "dripping", "dropping", "drowning", "drumming", "drying", "dusting", "earning", "educating", "embarrassing", "employing", "emptying", "encouraging", "ending", "enjoying", "entering", "entertaining", "escaping", "examining", "exciting", "excusing", "exercising", "existing", "expanding", "expecting", "explaining", "exploding", "extending", "facing", "fading", "failing", "fancying", "fastening", "faxing", "fearing", "fencing", "fetching", "filing", "filling", "filming", "firing", "fitting", "fixing", "flapping", "flashing", "floating", "flooding", "flowing", "flowering", "folding", "following", "fooling", "forcing", "forming", "founding", "framing", "frightening", "frying", "gathering", "gazing", "glowing", "gluing", "grabbing", "grating", "greasing", "greeting", "grinning", "griping", "groaning", "guaranteeing", "guarding", "guessing", "guiding", "hammering", "handing", "handling", "hanging", "happening", "harassing", "harming", "hating", "haunting", "heading", "healing", "heaping", "heating", "helping", "hooking", "hopping", "hovering", "hugging", "humming", "hunting", "hurrying", "identifying", "ignoring", "imagining", "impressing", "improving", "including", "increasing", "influencing", "informing", "injecting", "injuring", "instructing", "intending", "interesting", "interfering", "interrupting", "introducing", "inventing", "inviting", "irritating", "itching", "jailing", "jamming", "jogging", "joining", "joking", "judging", "juggling", "jumping", "kicking", "killing", "kissing", "kneeling", "knitting", "knocking", "knotting", "labeling", "landing", "lasting", "laughing", "launching", "learning", "leveling", "licensing", "licking", "lying", "lightening", "liking", "listing", "listening", "living", "loading", "locking", "longing", "looking", "loving", "manning", "managing", "marching", "marking", "marrying", "matching", "mating", "mattering", "measuring", "meddling", "melting", "memorizing", "mending", "messing", "upping", "milking", "mining", "missing", "mixing", "moaning", "mourning", "moving", "muddling", "mugging", "multiplying", "murdering", "nailing", "naming", "needing", "nesting", "nodding", "noting", "noticing", "numbering", "obeying", "objecting", "observing", "obtaining", "occurring", "offending", "offering", "opening", "ordering", "overflowing", "owing", "owning", "packing", "paddling", "painting", "parking", "parting", "passing", "pasting", "patting", "pausing", "pecking", "pedaling", "performing", "permitting", "phoning", "picking", "pinching", "pining", "placing", "planning", "planting", "playing", "pleasing", "plugging", "pointing", "poking", "polishing", "popping", "possessing", "posting", "pouring", "practicing", "praying", "preaching", "preceding", "preferring", "preparing", "presenting", "preserving", "pressing", "pretending", "preventing", "pricking", "printing", "producing", "programing", "promising", "protecting", "providing", "pulling", "pumping", "punching", "puncturing", "punishing", "pushing", "questioning", "queuing", "racing", "radiating", "raining", "raising", "reaching", "realizing", "receiving", "recognizing", "recording", "reducing", "reflecting", "refusing", "reigning", "rejecting", "rejoicing", "relaxing", "releasing", "relying", "remaining", "remembering", "reminding", "removing", "repairing", "repeating", "replacing", "replying", "reporting", "reproducing", "requesting", "rescuing", "retiring", "returning", "rhyming", "rinsing", "risking", "robing", "rocking", "rolling", "rotting", "rubbing", "ruling", "rushing", "sacking", "sailing", "satisfying", "saving", "sawing", "scaring", "scattering", "scolding", "scraping", "scratching", "screaming", "screwing", "scribbling", "scrubbing", "sealing", "searching", "separating", "serving", "settling", "shading", "sharing", "shaving", "sheltering", "shocking", "shopping", "shrugging", "sighing", "signing", "signaling", "sinning", "sipping", "skiing", "skipping", "slapping", "slipping", "slowing", "smashing", "smelling", "smiling", "smoking", "snatching", "sniffing", "snoring", "snowing", "soaking", "soothing", "sounding", "sparing", "sparking", "sparkling", "spelling", "spilling", "spoiling", "spotting", "spraying", "sprouting", "squashing", "squeaking", "squealing", "squeezing", "staining", "stamping", "staring", "starting", "staying", "steering", "stepping", "stirring", "stitching", "stopping", "storing", "strapping", "strengthening", "stretching", "striping", "stroking", "stuffing", "subtracting", "succeeding", "sucking", "suffering", "suggesting", "suiting", "supplying", "supporting", "supposing", "surprising", "surrounding", "suspecting", "suspending", "switching", "talking", "taming", "taping", "tasting", "teasing", "tempting", "terrifying", "testing", "thanking", "thawing", "ticking", "tickling", "tying", "timing", "tipping", "tiring", "touching", "touring", "towing", "tracing", "trading", "training", "transporting", "trapping", "traveling", "treating", "trembling", "tricking", "tripping", "trotting", "troubling", "trusting", "trying", "tugging", "tumbling", "turning", "twisting", "typing", "undressing", "unfastening", "uniting", "unlocking", "unpacking", "untidying", "using", "vanishing", "visiting", "wailing", "waiting", "walking", "wandering", "wanting", "warming", "warning", "washing", "wasting", "watching", "watering", "waving", "weighing", "welcoming", "whipping", "whirling", "whispering", "whistling", "winking", "wiping", "wishing", "wobbling", "wondering", "working", "worrying", "wrapping", "wrecking", "wrestling", "wriggling", "x-raying", "yawning", "yelling", "zipping", "zooming"];
+
+var nouns = ["people", "history", "way", "art", "world", "information", "map", "two", "family", "government", "health", "system", "computer", "meat", "year", "thanks", "music", "person", "reading", "method", "data", "food", "understanding", "theory", "law", "bird", "literature", "problem", "software", "control", "knowledge", "power", "ability", "economics", "love", "internet", "television", "science", "library", "nature", "fact", "product", "idea", "temperature", "investment", "area", "society", "activity", "story", "industry", "media", "thing", "oven", "community", "definition", "safety", "quality", "development", "language", "management", "player", "variety", "video", "week", "security", "country", "exam", "movie", "organization", "equipment", "physics", "analysis", "policy", "series", "thought", "basis", "boyfriend", "direction", "strategy", "technology", "army", "camera", "freedom", "paper", "environment", "child", "instance", "month", "truth", "marketing", "university", "writing", "article", "department", "difference", "goal", "news", "audience", "fishing", "growth", "income", "marriage", "user", "combination", "failure", "meaning", "medicine", "philosophy", "teacher", "communication", "night", "chemistry", "disk", "energy", "nation", "road", "role", "soup", "advertising", "location", "success", "addition", "apartment", "education", "math", "moment", "painting", "politics", "attention", "decision", "event", "property", "shopping", "student", "wood", "competition", "distribution", "entertainment", "office", "population", "president", "unit", "category", "cigarette", "context", "introduction", "opportunity", "performance", "driver", "flight", "length", "magazine", "newspaper", "relationship", "teaching", "cell", "dealer", "finding", "lake", "member", "message", "phone", "scene", "appearance", "association", "concept", "customer", "death", "discussion", "housing", "inflation", "insurance", "mood", "woman", "advice", "blood", "effort", "expression", "importance", "opinion", "payment", "reality", "responsibility", "situation", "skill", "statement", "wealth", "application", "city", "county", "depth", "estate", "foundation", "grandmother", "heart", "perspective", "photo", "recipe", "studio", "topic", "collection", "depression", "imagination", "passion", "percentage", "resource", "setting", "ad", "agency", "college", "connection", "criticism", "debt", "description", "memory", "patience", "secretary", "solution", "aspect", "attitude", "director", "personality", "psychology", "recommendation", "response", "selection", "storage", "version", "alcohol", "argument", "complaint", "contract", "emphasis", "highway", "loss", "membership", "possession", "preparation", "steak", "union", "agreement", "currency", "employment", "engineering", "entry", "interaction", "mixture", "preference", "region", "republic", "tradition", "actor", "classroom", "delivery", "device", "difficulty", "drama", "election", "engine", "football", "guidance", "hotel", "owner", "priority", "protection", "suggestion", "tension", "variation", "anxiety", "atmosphere", "awareness", "bath", "bread", "candidate", "climate", "comparison", "confusion", "construction", "elevator", "emotion", "employee", "employer", "guest", "height", "leadership", "mall", "manager", "operation", "recording", "sample", "transportation", "charity", "cousin", "disaster", "editor", "efficiency", "excitement", "extent", "feedback", "guitar", "homework", "leader", "mom", "outcome", "permission", "presentation", "promotion", "reflection", "refrigerator", "resolution", "revenue", "session", "singer", "tennis", "basket", "bonus", "cabinet", "childhood", "church", "clothes", "coffee", "dinner", "drawing", "hair", "hearing", "initiative", "judgment", "lab", "measurement", "mode", "mud", "alert", "poetry", "police", "possibility", "procedure", "queen", "ratio", "relation", "restaurant", "satisfaction", "sector", "signature", "significance", "song", "tooth", "town", "vehicle", "volume", "wife", "accident", "airport", "appointment", "arrival", "assumption", "baseball", "chapter", "committee", "conversation", "database", "enthusiasm", "error", "explanation", "farmer", "gate", "girl", "hall", "historian", "hospital", "injury", "instruction", "maintenance", "manufacturer", "meal", "perception", "pie", "poem", "presence", "proposal", "reception", "replacement", "revolution", "river", "son", "speech", "tea", "village", "warning", "winner", "worker", "writer", "assistance", "breath", "buyer", "chest", "chocolate", "conclusion", "contribution", "cookie", "courage", "dad", "desk", "drawer", "establishment", "examination", "garbage", "grocery", "honey", "impression", "improvement", "independence", "insect", "inspection", "inspector", "king", "ladder", "menu", "penalty", "piano", "potato", "profession", "professor", "quantity", "reaction", "requirement", "salad", "sister", "supermarket", "tongue", "weakness", "wedding", "affair", "ambition", "analyst", "apple", "assignment", "assistant", "bathroom", "bedroom", "beer", "birthday", "celebration", "championship", "client", "consequence", "departure", "diamond", "dirt", "ear", "fortune", "friendship", "funeral", "gene", "girlfriend", "hat", "indication", "intention", "lady", "midnight", "negotiation", "obligation", "passenger", "pizza", "platform", "poet", "pollution", "recognition", "reputation", "shirt", "sir", "speaker", "stranger", "surgery", "sympathy", "tale", "throat", "trainer", "uncle", "youth", "time", "work", "film", "water", "money", "example", "while", "business", "study", "game", "life", "form", "air", "day", "place", "number", "part", "field", "fish", "back", "process", "heat", "hand", "experience", "job", "book", "end", "point", "type", "home", "economy", "value", "body", "market", "guide", "interest", "state", "radio", "course", "company", "price", "size", "card", "list", "mind", "trade", "line", "care", "group", "risk", "word", "fat", "force", "key", "light", "training", "name", "school", "top", "amount", "level", "order", "practice", "research", "sense", "service", "piece", "web", "boss", "sport", "fun", "house", "page", "term", "test", "answer", "sound", "focus", "matter", "kind", "soil", "board", "oil", "picture", "access", "garden", "range", "rate", "reason", "future", "site", "demand", "exercise", "image", "case", "cause", "coast", "action", "age", "bad", "boat", "record", "result", "section", "building", "mouse", "cash", "class", "nothing", "period", "plan", "store", "tax", "side", "subject", "space", "rule", "stock", "weather", "chance", "figure", "man", "model", "source", "beginning", "earth", "program", "chicken", "design", "feature", "head", "material", "purpose", "question", "rock", "salt", "act", "birth", "car", "dog", "object", "scale", "sun", "note", "profit", "rent", "speed", "style", "war", "bank", "craft", "half", "inside", "outside", "standard", "bus", "exchange", "eye", "fire", "position", "pressure", "stress", "advantage", "benefit", "box", "frame", "issue", "step", "cycle", "face", "item", "metal", "paint", "review", "room", "screen", "structure", "view", "account", "ball", "discipline", "medium", "share", "balance", "bit", "portal", "bottom", "choice", "gift", "impact", "machine", "shape", "tool", "wind", "address", "average", "career", "culture", "morning", "pot", "sign", "table", "task", "condition", "contact", "credit", "egg", "hope", "ice", "network", "north", "square", "attempt", "date", "effect", "link", "post", "star", "voice", "capital", "challenge", "friend", "self", "shot", "brush", "couple", "debate", "exit", "front", "function", "lack", "living", "plant", "plastic", "spot", "summer", "taste", "theme", "track", "wing", "brain", "button", "click", "desire", "foot", "gas", "influence", "notice", "rain", "wall", "base", "damage", "distance", "feeling", "pair", "savings", "staff", "sugar", "target", "text", "animal", "author", "budget", "discount", "file", "ground", "lesson", "minute", "officer", "phase", "reference", "register", "sky", "stage", "stick", "title", "trouble", "bridge", "campaign", "character", "club", "edge", "evidence", "fan", "letter", "lock", "maximum", "novel", "option", "pack", "park", "plenty", "quarter", "skin", "sort", "weight", "baby", "background", "carry", "dish", "factor", "fruit", "glass", "joint", "master", "muscle", "device", "strength", "traffic", "trip", "vegetable", "appeal", "chart", "gear", "ideal", "kitchen", "land", "log", "mother", "net", "party", "principle", "relative", "sale", "season", "signal", "spirit", "street", "tree", "wave", "belt", "bench", "commission", "copy", "drop", "minimum", "path", "progress", "project", "sea", "south", "status", "stuff", "ticket", "tour", "angle", "podcast", "breakfast", "confidence", "daughter", "degree", "doctor", "dot", "dream", "duty", "essay", "father", "fee", "finance", "hour", "juice", "limit", "luck", "milk", "mouth", "peace", "pipe", "seat", "stable", "storm", "substance", "team", "trick", "afternoon", "bat", "beach", "blank", "catch", "chain", "consideration", "cream", "crew", "detail", "gold", "interview", "kid", "mark", "match", "mission", "pain", "pleasure", "score", "screw", "sex", "shop", "shower", "suit", "tone", "window", "agent", "band", "block", "bone", "calendar", "cap", "coat", "contest", "corner", "court", "cup", "district", "door", "east", "finger", "garage", "guarantee", "hole", "hook", "implement", "layer", "lecture", "lie", "manner", "meeting", "nose", "parking", "partner", "profile", "respect", "rice", "routine", "schedule", "swimming", "tip", "winter", "airline", "bag", "battle", "bed", "bill", "bother", "cake", "code", "curve", "designer", "dimension", "dress", "ease", "emergency", "evening", "extension", "farm", "fight", "gap", "grade", "holiday", "horror", "horse", "host", "husband", "loan", "mistake", "mountain", "nail", "noise", "occasion", "package", "patient", "pause", "phrase", "proof", "race", "relief", "sand", "sentence", "shoulder", "smoke", "stomach", "string", "tourist", "towel", "vacation", "west", "wheel", "wine", "arm", "aside", "associate", "bet", "blow", "border", "branch", "breast", "brother", "buddy", "bunch", "chip", "coach", "cross", "document", "draft", "dust", "expert", "floor", "god", "golf", "habit", "iron", "judge", "knife", "landscape", "league", "mail", "mess", "native", "opening", "parent", "pattern", "pin", "pool", "pound", "request", "salary", "shame", "shelter", "shoe", "silver", "tackle", "tank", "trust", "assist", "bake", "bar", "bell", "bike", "blame", "boy", "brick", "chair", "closet", "clue", "collar", "comment", "conference", "devil", "diet", "fear", "fuel", "glove", "jacket", "lunch", "monitor", "mortgage", "nurse", "pace", "panic", "peak", "plane", "reward", "row", "sandwich", "shock", "spite", "spray", "surprise", "till", "transition", "weekend", "welcome", "yard", "alarm", "bend", "bicycle", "bite", "blind", "bottle", "cable", "candle", "clerk", "cloud", "concert", "counter", "flower", "grandfather", "harm", "knee", "lawyer", "leather", "load", "mirror", "neck", "pension", "plate", "workflow", "ship", "skirt", "slice", "snow", "specialist", "stroke", "switch", "trash", "tune", "zone", "anger", "award", "bid", "bitter", "boot", "bug", "camp", "candy", "carpet", "cat", "champion", "channel", "clock", "comfort", "cow", "crack", "engineer", "entrance", "fault", "grass", "guy", "hell", "highlight", "incident", "island", "joke", "jury", "leg", "lip", "mate", "motor", "nerve", "passage", "pen", "pride", "priest", "prize", "promise", "resident", "resort", "ring", "roof", "rope", "sail", "scheme", "script", "sock", "station", "toe", "tower", "truck", "witness", "a", "you", "it", "can", "will", "if", "one", "many", "most", "other", "use", "make", "good", "look", "help", "go", "great", "being", "few", "might", "still", "public", "read", "keep", "start", "give", "human", "local", "general", "she", "specific", "long", "play", "feel", "high", "tonight", "put", "common", "set", "change", "simple", "past", "big", "possible", "particular", "today", "major", "personal", "current", "national", "cut", "natural", "physical", "show", "try", "check", "second", "call", "move", "pay", "let", "increase", "single", "individual", "turn", "ask", "buy", "guard", "hold", "main", "offer", "potential", "professional", "international", "travel", "cook", "alternative", "following", "special", "working", "whole", "dance", "excuse", "cold", "commercial", "low", "purchase", "deal", "primary", "worth", "fall", "necessary", "positive", "produce", "search", "present", "spend", "talk", "creative", "tell", "cost", "drive", "microservice", "support", "glad", "remove", "return", "run", "complex", "due", "effective", "middle", "regular", "reserve", "independent", "leave", "original", "reach", "rest", "serve", "watch", "beautiful", "charge", "active", "break", "negative", "safe", "stay", "visit", "visual", "affect", "cover", "report", "rise", "walk", "frontend", "beyond", "junior", "pick", "unique", "anything", "classic", "final", "lift", "mix", "private", "stop", "teach", "western", "concern", "familiar", "fly", "official", "broad", "comfortable", "gain", "maybe", "rich", "save", "stand", "young", "fail", "heavy", "hello", "lead", "listen", "valuable", "worry", "handle", "leading", "meet", "release", "sell", "finish", "normal", "press", "ride", "secret", "spread", "spring", "tough", "wait", "brown", "deep", "display", "flow", "hit", "objective", "shoot", "touch", "cancel", "chemical", "cry", "dump", "extreme", "push", "conflict", "eat", "fill", "formal", "jump", "kick", "opposite", "pass", "pitch", "remote", "total", "treat", "vast", "abuse", "beat", "burn", "deposit", "print", "raise", "sleep", "somewhere", "advance", "anywhere", "consist", "dark", "double", "draw", "equal", "fix", "hire", "internal", "join", "kill", "sensitive", "tap", "win", "attack", "claim", "constant", "drag", "drink", "guess", "minor", "pull", "raw", "soft", "solid", "wear", "weird", "wonder", "annual", "count", "dead", "doubt", "feed", "forever", "impress", "nobody", "repeat", "round", "sing", "slide", "strip", "whereas", "wish", "combine", "command", "dig", "divide", "equivalent", "hang", "hunt", "initial", "march", "mention", "smell", "spiritual", "survey", "tie", "adult", "brief", "crazy", "escape", "gather", "hate", "prior", "repair", "rough", "sad", "scratch", "sick", "strike", "employ", "external", "hurt", "illegal", "laugh", "lay", "mobile", "nasty", "ordinary", "respond", "royal", "senior", "split", "strain", "struggle", "swim", "train", "upper", "wash", "dashboard", "convert", "crash", "dependent", "fold", "funny", "grab", "hide", "miss", "permit", "quote", "recover", "resolve", "roll", "sink", "slip", "spare", "suspect", "sweet", "swing", "twist", "upstairs", "usual", "abroad", "brave", "calm", "concentrate", "estimate", "grand", "male", "mine", "prompt", "quiet", "refuse", "reveal", "rush", "shake", "shift", "shine", "steal", "suck", "surround", "anybody", "bear", "brilliant", "dare", "dear", "delay", "drunk", "female", "hurry", "inevitable", "invite", "kiss", "neat", "pop", "punch", "quit", "reply", "representative", "resist", "rip", "rub", "silly", "smile", "spell", "stretch", "stupid", "tear", "temporary", "tomorrow", "wake", "wrap", "yesterday", "pipeline", "bioinformatics", "field", "innovation", "webinar", "money", "vacation", "equity", "email", "data", "network", "application", "laptop", "computer", "back-end"];
+
+var plurals = ["peoples", "histories", "ways", "arts", "worlds", "pieces of information", "maps", "twos", "families", "governments", "health needs", "systems", "computers", "meats", "years", "thanks", "musical needs", "persons", "readings", "methods", "data", "foods", "understandings", "theories", "laws", "birds", "literatures", "problems", "pieces of software", "controls", "pieces of knowledge", "powers", "abilities", "economics", "loves", "internets", "televisions", "sciences", "libraries", "natures", "facts", "products", "ideas", "temperatures", "investments", "areas", "societies", "activities", "stories", "industries", "medias", "things", "ovens", "communities", "definitions", "safeties", "qualities", "developments", "languages", "managements", "players", "varieties", "videos", "weeks", "securities", "countries", "exams", "movies", "organizations", "pieces of equipment", "physics", "analyses", "policies", "series", "thoughts", "basis", "boyfriends", "directions", "strategies", "technologies", "armies", "cameras", "freedoms", "papers", "environments", "children", "instances", "months", "truths", "marketing", "universities", "writings", "articles", "departments", "differences", "goals", "news", "audiences", "fishing", "growths", "incomes", "marriages", "users", "combinations", "failures", "meanings", "medicines", "philosophies", "teachers", "communications", "nights", "chemistries", "disks", "energies", "nations", "roads", "roles", "soups", "advertising", "locations", "successes", "additions", "apartments", "educations", "math", "moments", "paintings", "politics", "attentions", "decisions", "events", "properties", "shopping", "students", "woods", "competitions", "distributions", "entertainments", "offices", "populations", "presidents", "units", "categories", "cigarettes", "contexts", "introductions", "opportunities", "performances", "drivers", "flights", "lengths", "magazines", "newspapers", "relationships", "teachings", "cells", "dealers", "findings", "lakes", "members", "messages", "phones", "scenes", "appearances", "associations", "concepts", "customers", "deaths", "discussions", "housings", "inflations", "insurances", "moods", "women", "advice", "bloods", "efforts", "expressions", "importance", "opinions", "payments", "realities", "responsibilities", "situations", "skills", "statements", "wealth", "applications", "cities", "counties", "depths", "estates", "foundations", "grandmothers", "hearts", "perspectives", "photos", "recipes", "studios", "topics", "collections", "depressions", "imaginations", "passions", "percentages", "resources", "settings", "ads", "agencies", "colleges", "connections", "criticisms", "debts", "descriptions", "memories", "patience", "secretaries", "solutions", "aspects", "attitudes", "directors", "personalities", "psychologies", "recommendations", "responses", "selections", "storage", "versions", "alcohols", "arguments", "complaints", "contracts", "emphases", "highways", "losses", "memberships", "possessions", "preparations", "steaks", "unions", "agreements", "currencies", "employments", "engineering", "entries", "interactions", "mixtures", "preferences", "regions", "republics", "traditions", "actors", "classrooms", "deliveries", "devices", "difficulties", "dramas", "elections", "engines", "footballs", "guidance", "hotels", "owners", "priorities", "protections", "suggestions", "tensions", "variations", "anxieties", "atmospheres", "awareness", "baths", "breads", "candidates", "climates", "comparisons", "confusions", "constructions", "elevators", "emotions", "employees", "employers", "guests", "heights", "leaderships", "malls", "managers", "operations", "recordings", "samples", "transportations", "charities", "cousins", "disasters", "editors", "efficiencies", "excitements", "extents", "feedbacks", "guitars", "homework assignments", "leaders", "moms", "outcomes", "permissions", "presentations", "promotions", "reflections", "refrigerators", "resolutions", "revenues", "sessions", "singers", "tennis", "baskets", "bonuses", "cabinets", "childhoods", "churches", "clothes", "coffees", "dinners", "drawings", "hairs", "hearings", "initiatives", "judgments", "labs", "measurements", "modes", "muds", "alerts", "poetries", "polices", "possibilities", "procedures", "queens", "ratios", "relations", "restaurants", "satisfactions", "sectors", "signatures", "significances", "songs", "teeth", "towns", "vehicles", "volumes", "wives", "accidents", "airports", "appointments", "arrivals", "assumptions", "baseballs", "chapters", "committees", "conversations", "databases", "enthusiasms", "errors", "explanations", "farmers", "gates", "girls", "halls", "historians", "hospitals", "injuries", "instructions", "maintenances", "manufacturers", "meals", "perceptions", "pies", "poems", "presences", "proposals", "receptions", "replacements", "revolutions", "rivers", "sons", "speeches", "teas", "villages", "warnings", "winners", "workers", "writers", "assistances", "breaths", "buyers", "chests", "chocolates", "conclusions", "contributions", "cookies", "courage", "dads", "desks", "drawers", "establishments", "examinations", "garbage", "groceries", "honeys", "impressions", "improvements", "independences", "insects", "inspections", "inspectors", "kings", "ladders", "menus", "penalties", "pianos", "potatoes", "professions", "professors", "quantities", "reactions", "requirements", "salads", "sisters", "supermarkets", "tongues", "weaknesses", "weddings", "affairs", "ambitions", "analysts", "apples", "assignments", "assistants", "bathrooms", "bedrooms", "beers", "birthdays", "celebrations", "championships", "clients", "consequences", "departures", "diamonds", "dirt", "ears", "fortunes", "friendships", "funerals", "genes", "girlfriends", "hats", "indications", "intentions", "ladies", "midnights", "negotiations", "obligations", "passengers", "pizzas", "platforms", "poets", "pollutions", "recognitions", "reputations", "shirts", "sirs", "speakers", "strangers", "surgeries", "sympathies", "tales", "throats", "trainers", "uncles", "youths", "times", "works", "films", "waters", "moneys", "examples", "whiles", "businesses", "studies", "games", "lives", "forms", "airs", "days", "places", "numbers", "parts", "fields", "fishes", "backs", "processes", "heats", "hands", "experiences", "jobs", "books", "ends", "points", "types", "homes", "economies", "values", "bodies", "markets", "guides", "interests", "states", "radios", "courses", "companies", "prices", "sizes", "cards", "lists", "minds", "trades", "lines", "cares", "groups", "risks", "words", "fats", "forces", "keys", "lights", "trainings", "names", "schools", "tops", "amounts", "levels", "orders", "practices", "researches", "senses", "services", "pieces", "webs", "bosses", "sports", "funs", "houses", "pages", "terms", "tests", "answers", "sounds", "focuses", "matters", "kinds", "soils", "boards", "oils", "pictures", "accesses", "gardens", "ranges", "rates", "reasons", "futures", "sites", "demands", "exercises", "images", "cases", "causes", "coasts", "actions", "ages", "bads", "boats", "records", "results", "sections", "buildings", "mice", "cash", "classes", "nothings", "periods", "plans", "stores", "taxes", "sides", "subjects", "spaces", "rules", "stocks", "weathers", "chances", "figures", "men", "models", "sources", "beginnings", "earths", "programs", "chickens", "designs", "features", "heads", "materials", "purposes", "questions", "rocks", "salts", "acts", "births", "cars", "dogs", "objects", "scales", "suns", "notes", "profits", "rents", "speeds", "styles", "wars", "banks", "crafts", "halves", "insides", "outsides", "standards", "buss", "exchanges", "eyes", "fires", "positions", "pressures", "stresses", "advantages", "benefits", "boxes", "frames", "issues", "steps", "cycles", "faces", "items", "metals", "paints", "reviews", "rooms", "screens", "structures", "views", "accounts", "balls", "disciplines", "mediums", "shares", "balances", "bits", "portals", "bottoms", "choices", "gifts", "impacts", "machines", "shapes", "tools", "winds", "addresses", "averages", "careers", "cultures", "mornings", "pots", "signs", "tables", "tasks", "conditions", "contacts", "credits", "eggs", "hopes", "ices", "networks", "directions", "squares", "attempts", "dates", "effects", "links", "posts", "stars", "voices", "capitals", "challenges", "friends", "selves", "shots", "brushes", "couples", "debates", "exits", "fronts", "functions", "lacks", "livings", "plants", "plastics", "spots", "summers", "tastes", "themes", "tracks", "wings", "brains", "buttons", "clicks", "desires", "feet", "gases", "influences", "notices", "rains", "walls", "bases", "damages", "distances", "feelings", "pairs", "savings", "staffs", "sugars", "targets", "texts", "animals", "authors", "budgets", "discounts", "files", "grounds", "lessons", "minutes", "officers", "phases", "references", "registers", "skies", "stages", "sticks", "titles", "troubles", "bridges", "campaigns", "characters", "clubs", "edges", "evidences", "fans", "letters", "locks", "maximums", "novels", "options", "packs", "parks", "plenty", "quarters", "skins", "sorts", "weights", "babies", "backgrounds", "carries", "dishes", "factors", "fruits", "glasses", "joints", "masters", "muscles", "devices", "strengths", "traffics", "trips", "vegetables", "appeals", "charts", "gears", "ideals", "kitchens", "lands", "logs", "mothers", "nets", "parties", "principles", "relatives", "sales", "seasons", "signals", "spirits", "streets", "trees", "waves", "belts", "benches", "commissions", "copies", "drops", "minimums", "paths", "progresses", "projects", "seas", "directions", "statuses", "stuffs", "tickets", "tours", "angles", "podcasts", "breakfasts", "confidences", "daughters", "degrees", "doctors", "dots", "dreams", "duties", "essays", "fathers", "fees", "finances", "hours", "juices", "limits", "lucks", "milks", "mouths", "peace", "pipes", "seats", "stables", "storms", "substances", "teams", "tricks", "afternoons", "bats", "beaches", "blanks", "catches", "chains", "considerations", "creams", "crews", "details", "golds", "interviews", "kids", "marks", "matches", "missions", "pains", "pleasures", "scores", "screws", "sexes", "shops", "showers", "suits", "tones", "windows", "agents", "bands", "blocks", "bones", "calendars", "caps", "coats", "contests", "corners", "courts", "cups", "districts", "doors", "easts", "fingers", "garages", "guarantees", "holes", "hooks", "implements", "layers", "lectures", "lies", "manners", "meetings", "noses", "parking needs", "partners", "profiles", "respects", "rices", "routines", "schedules", "swimming", "tips", "winters", "airlines", "bags", "battles", "beds", "bills", "bothers", "cakes", "codes", "curves", "designers", "dimensions", "dresses", "eases", "emergencies", "evenings", "extensions", "farms", "fights", "gaps", "grades", "holidays", "horrors", "horses", "hosts", "husbands", "loans", "mistakes", "mountains", "nails", "noises", "occasions", "packages", "patients", "pauses", "phrases", "proofs", "races", "reliefs", "sands", "sentences", "shoulders", "smokes", "stomachs", "strings", "tourists", "towels", "vacations", "wests", "wheels", "wines", "arms", "asides", "associates", "bets", "blows", "borders", "branches", "breasts", "brothers", "buddies", "bunches", "chips", "coaches", "crosses", "documents", "drafts", "dusts", "experts", "floors", "gods", "golfs", "habits", "irons", "judges", "knifes", "landscapes", "leagues", "mails", "messes", "natives", "openings", "parents", "patterns", "pins", "pools", "pounds", "requests", "salaries", "shames", "shelters", "shoes", "silvers", "tackles", "tanks", "trusts", "assists", "bakes", "bars", "bells", "bikes", "blames", "boys", "bricks", "chairs", "closets", "clues", "collars", "comments", "conferences", "devils", "diets", "fears", "fuels", "gloves", "jackets", "lunches", "monitors", "mortgages", "nurses", "paces", "panics", "peaks", "planes", "rewards", "rows", "sandwiches", "shocks", "spites", "sprays", "surprises", "tills", "transitions", "weekends", "welcomes", "yards", "alarms", "bends", "bicycles", "bites", "blinds", "bottles", "cables", "candles", "clerks", "clouds", "concerts", "counters", "flowers", "grandfathers", "harms", "knees", "lawyers", "leathers", "loads", "mirrors", "necks", "pensions", "plates", "workflows", "ships", "skirts", "slices", "snows", "specialists", "strokes", "switches", "trash", "tunes", "zones", "angers", "awards", "bids", "bitters", "boots", "bugs", "camps", "candies", "carpets", "cats", "champions", "channels", "clocks", "comforts", "cows", "cracks", "engineers", "entrances", "faults", "grasses", "guys", "hells", "highlights", "incidents", "islands", "jokes", "juries", "legs", "lips", "mates", "motors", "nerves", "passages", "pens", "prides", "priests", "prizes", "promises", "residents", "resorts", "rings", "roofs", "ropes", "sails", "schemes", "scripts", "socks", "stations", "toes", "towers", "trucks", "witnesses", "as", "all of you", "its", "cans", "wills", "ifs", "ones", "many", "musts", "others", "uses", "makes", "goods", "looks", "helps", "goes", "greats", "beings", "few", "might", "stills", "publics", "reads", "keeps", "starts", "gives", "humans", "locals", "generals", "girls", "specifics", "longs", "plays", "feels", "highs", "nights", "puts", "commons", "sets", "changes", "simples", "pasts", "big", "possible", "particulars", "todays", "majors", "personals", "currents", "nationals", "cuts", "naturals", "physicals", "shows", "tries", "checks", "seconds", "calls", "moves", "pays", "lets", "increases", "singles", "individuals", "turns", "asks", "buys", "guards", "holds", "mains", "offers", "potentials", "professionals", "internationals", "travels", "cooks", "alternatives", "followings", "specials", "workings", "wholes", "dances", "excuses", "colds", "commercials", "lows", "purchases", "deals", "primaries", "worth", "falls", "necessaries", "positives", "produces", "searches", "presents", "spends", "talks", "creative", "tells", "costs", "drives", "microservices", "supports", "glad", "removes", "returns", "runs", "complexes", "dues", "effectives", "middles", "regulars", "reserves", "independents", "leaves", "originals", "reaches", "rests", "serves", "watches", "beautiful", "charges", "actives", "breaks", "negatives", "safes", "stays", "visits", "visuals", "affects", "covers", "reports", "rises", "walks", "frontends", "beyond", "juniors", "picks", "unique", "anything", "classics", "finals", "lifts", "mixes", "privates", "stops", "teaches", "westerns", "concerns", "familiars", "flies", "officials", "broads", "comfortable", "gains", "maybes", "riches", "saves", "stands", "young", "fails", "heavies", "hellos", "leads", "listens", "valuables", "worries", "handles", "leadings", "meets", "releases", "sells", "finishes", "normal", "presses", "rides", "secrets", "spreads", "springs", "toughs", "waits", "browns", "deeps", "displays", "flows", "hits", "objectives", "shoots", "touches", "cancels", "chemicals", "cries", "dumps", "extremes", "pushes", "conflicts", "eats", "fills", "formals", "jumps", "kicks", "opposites", "passes", "pitches", "remotes", "totals", "treats", "vast", "abuses", "beats", "burns", "deposits", "prints", "raises", "sleeps", "somewhere", "advances", "anywhere", "consists", "darks", "doubles", "draws", "equals", "fixes", "hires", "internals", "joins", "kills", "sensitive", "taps", "wins", "attacks", "claims", "constants", "drags", "drinks", "guesses", "minors", "pulls", "raws", "softs", "solids", "wears", "weirdos", "wonders", "annuals", "counts", "dead", "doubts", "feeds", "forever", "impress", "nobodies", "repeats", "rounds", "sings", "slides", "strips", "whereas", "wishes", "combines", "commands", "digs", "divides", "equivalents", "hangs", "hunts", "initials", "marches", "mentions", "smells", "spirituals", "surveys", "ties", "adults", "briefs", "crazies", "escapes", "gathers", "hates", "priors", "repairs", "roughs", "sad", "scratches", "sick", "strikes", "employs", "externals", "hurts", "illegals", "laughs", "lays", "mobiles", "nasties", "ordinaries", "responds", "royals", "seniors", "splits", "strains", "struggles", "swims", "trains", "uppers", "washes", "dashboards", "converts", "crashes", "dependents", "folds", "funnies", "grabs", "hides", "misses", "permits", "quotes", "recovers", "resolves", "rolls", "sinks", "slips", "spares", "suspects", "sweets", "swings", "twists", "upstairs", "usual", "abroad", "braves", "calms", "concentrates", "estimates", "grand", "males", "mines", "prompts", "quiets", "refuses", "reveals", "rushes", "shakes", "shifts", "shines", "steals", "sucks", "surrounds", "anybody", "bears", "brilliants", "dares", "dears", "delays", "drunks", "females", "hurries", "inevitable", "invites", "kisses", "neat", "pops", "punches", "quits", "replies", "representatives", "resists", "rips", "rubs", "sillies", "smiles", "spells", "stretches", "stupid", "tears", "temporaries", "tomorrows", "wakes", "wraps", "yesterdays", "pipelines", "bioinformatics", "fields", "innovations", "webinars", "moneys", "vacations", "equities", "emails", "data", "networks", "applications", "laptops", "computers", "back-ends"];
+
+var inspVerbs = ["accomplish", "achieve", "act", "adventure", "appreciate", "attain", "believe", "build", "overcome", "challenge", "commit", "concentrate", "control", "conquer", "create", "dedicate", "desire", "determine", "dream", "drive", "empower", "encourage", "endure", "enjoy", "envision", "finish", "focus", "fulfill", "work", "harmonize", "honor", "humble", "imagine", "inspire", "know", "learn", "journey", "love", "motivate", "overcome", "persevere", "persist", "plan", "prioritize", "reach", "satisfy", "succeed", "sustain", "teach", "trust", "value", "ignite", "grow", "invest", "benefit", "perform", "strike", "give", "earn", "change", "explore", "think", "analyze", "sweat", "devote"];
+
+var inspGerunds = ["accomplishing", "achieving", "acting", "adventuring", "appreciating", "attaining", "believing", "building", "overcoming", "challenging", "committing", "concentrating", "controlling", "conquering", "creating", "dedicating", "desiring", "determining", "dreaming", "driving", "empowering", "encouraging", "enduring", "enjoying", "envisioning", "finishing", "focusing", "fulfilling", "working", "harmonizing", "honoring", "humbling", "imagining", "inspiring", "knowing", "learning", "journeying", "loving", "motivating", "overcoming", "persevering", "persisting", "planning", "prioritizing", "reaching", "satisfying", "succeeding", "sustaining", "teaching", "trusting", "valuing", "igniting", "growing", "investing", "benefiting", "performing", "striking", "giving", "earning", "changing", "exploring", "thinking", "analyzing", "sweating", "devoting"];
+
+var bizAdjs = ["fast", "simple", "secure", "real", "friendly", "efficient", "mobile", "responsive", "open", "safe", "different", "daring", "current", "accessible", "experienced", "driven", "responsible", "right", "easy", "focused", "targeted", "motivated", "peerless", "persistant", "trusted", "earned", "reliable", "devoted", "unstoppable", "unyielding", "able", "committed", "defined", "diverse", "connected", "selected", "tested", "agile", "flexible", "resilient", "active", "positive", "dedicated", "confident", "beautiful", "proactive", "diligent", "thorough", "prompt", "extensive", "innovative", "determined", "trustworthy", "loyal", "attentive", "dynamic", "aggressive", "consistent", "flawless", "organized", "professional", "skillful", "passionate", "alluring", "boundless", "brave", "bright", "capable", "cheerful", "coherent", "understandable", "credible", "cultured", "dashing", "dazzling", "decisive", "delightful", "detailed", "discreet", "enchanting", "exclusive", "fair", "faithful", "fearless", "knowledgeable", "mature", "modern", "perfect", "hip", "receptive", "resolute", "righteous", "sincere", "steadfast", "tough", "unbiased", "upbeat", "integrated", "affordable", "interactive", "progressive", "free", "undeniable", "clever", "devious"];
+
+var bizAdvbs = ["quickly", "simply", "securely", "genuinely", "nicely", "efficiently", "portably", "responsively", "openly", "safely", "differently", "daringly", "currently", "accessibly", "knowledgeably", "purposefully", "responsibly", "correctly", "easily", "elegantly", "accurately", "authoritatively", "peerlessly", "persistently", "honestly", "deservingly", "reliably", "devotedly", "unstoppably", "unyieldingly", "ably", "committedly", "definitively", "diversely", "connectedly", "specifically", "accurately", "agilely", "flexibly", "resiliently", "actively", "positively", "dedicatedly", "confidently", "beautifully", "proactively", "diligently", "thoroughly", "promptly", "extensively", "innovatively", "determinedly", "trustworthily", "loyally", "attentively", "dynamically", "aggressively", "consistently", "flawlessly", "orderly", "professionally", "skillfully", "passionately", "alluringly", "boundlessly", "bravely", "brilliantly", "capably", "cheerfully", "coherently", "understandably", "credibly", "culturally", "dashingly", "dazzlingly", "decisively", "delightfully", "descriptively", "discreetly", "enchantingly", "exclusively", "fairly", "faithfully", "fearlessly", "knowledgeably", "maturely", "modernly", "perfectly", "smoothly", "receptively", "resolutely", "righteously", "sincerely", "steadfastly", "toughly", "unbiasedly", "positively", "integrally", "affordably", "interactively", "progressively", "freely", "undeniably", "cleverly", "deviously"];
+
+verbs = verbs.concat(inspVerbs);
+
+gerunds = gerunds.concat(inspGerunds);
+
+var titles = ["CAO", "CBO", "CCO", "CDO", "CEO", "CFO", "CGO", "CHO", "CIO", "CJO", "CKO", "CLO", "CMO", "CNO", "COO", "CPO", "CQO", "CRO", "CSO", "CTO", "CUO", "CVO", "CWO", "CXO", "CYO", "CZO", "Chairman", "President", "Creative Director", "Executive Director", "Team Leader", "Developer", "Developer", "Developer", "Founder", "Angel Investor", "Product", "Community", "Marketing", "Marketing", "Engineering", "Engineering", "Support", "Sales", "Sales", "Sales", "Full Stack Developer", "Designer", "Design", "Frontend Developer", "Support", "Data", "Customer Success", "Customer Success Director", "Interactive Marketing Manager", "VP of Marketing Services", "Marketing Director", "Marketing Services Manager", "Solution Consulting Director", "Automation Specialist", "Office Manager", "Billing and Revenue", "Product Manager", "International Sales", "Operations", "Wholesale Fulfillment", "Fulfillment", "Warehousing", "Warehouse Supervisor", "Accounting", "Finance", "Art Director", "Creative Director", "Content", "Content", "Retail Support", "Customer Experience", "Cofounder", "Director of Software Development"];
+
+
+
+
+
+HEXACO:
+
+Domain-Level Scales
+Honesty-Humility: Persons with very high scores on the Honesty-Humility scale avoid manipulating others for personal gain, feel little temptation to break rules, are uninterested in lavish wealth and luxuries, and feel no special entitlement to elevated social status. Conversely, persons with very low scores on this scale will flatter others to get what they want, are inclined to break rules for personal profit, are motivated by material gain, and feel a strong sense of self-importance.
+
+Emotionality: Persons with very high scores on the Emotionality scale experience fear of physical dangers, experience anxiety in response to life's stresses, feel a need for emotional support from others, and feel empathy and sentimental attachments with others. Conversely, persons with very low scores on this scale are not deterred by the prospect of physical harm, feel little worry even in stressful situations, have little need to share their concerns with others, and feel emotionally detached from others.
+
+eXtraversion: Persons with very high scores on the Extraversion scale feel positively about themselves, feel confident when leading or addressing groups of people, enjoy social gatherings and interactions, and experience positive feelings of enthusiasm and energy. Conversely, persons with very low scores on this scale consider themselves unpopular, feel awkward when they are the center of social attention, are indifferent to social activities, and feel less lively and optimistic than others do.
+
+Agreeableness (versus Anger): Persons with very high scores on the Agreeableness scale forgive the wrongs that they suffered, are lenient in judging others, are willing to compromise and cooperate with others, and can easily control their temper. Conversely, persons with very low scores on this scale hold grudges against those who have harmed them, are rather critical of others' shortcomings, are stubborn in defending their point of view, and feel anger readily in response to mistreatment.
+
+Conscientiousness: Persons with very high scores on the Conscientiousness scale organize their time and their physical surroundings, work in a disciplined way toward their goals, strive for accuracy and perfection in their tasks, and deliberate carefully when making decisions. Conversely, persons with very low scores on this scale tend to be unconcerned with orderly surroundings or schedules, avoid difficult tasks or challenging goals, are satisfied with work that contains some errors, and make decisions on impulse or with little reflection.
+
+Openness to Experience: Persons with very high scores on the Openness to Experience scale become absorbed in the beauty of art and nature, are inquisitive about various domains of knowledge, use their imagination freely in everyday life, and take an interest in unusual ideas or people. Conversely, persons with very low scores on this scale are rather unimpressed by most works of art, feel little intellectual curiosity, avoid creative pursuits, and feel little attraction toward ideas that may seem radical or unconventional.
+
+
+Facet-Level Scales
+
+Honesty-Humility Domain
+The Sincerity scale assesses a tendency to be genuine in interpersonal relations. Low scorers will flatter others or pretend to like them in order to obtain favors, whereas high scorers are unwilling to manipulate others.
+The Fairness scale assesses a tendency to avoid fraud and corruption. Low scorers are willing to gain by cheating or stealing, whereas high scorers are unwilling to take advantage of other individuals or of society at large.
+The Greed Avoidance scale assesses a tendency to be uninterested in possessing lavish wealth, luxury goods, and signs of high social status. Low scorers want to enjoy and to display wealth and privilege, whereas high scorers are not especially motivated by monetary or social-status considerations.
+The Modesty scale assesses a tendency to be modest and unassuming. Low scorers consider themselves as superior and as entitled to privileges that others do not have, whereas high scorers view themselves as ordinary people without any claim to special treatment.
+
+Emotionality Domain
+The Fearfulness scale assesses a tendency to experience fear. Low scorers feel little fear of injury and are relatively tough, brave, and insensitive to physical pain, whereas high scorers are strongly inclined to avoid physical harm.
+The Anxiety scale assesses a tendency to worry in a variety of contexts. Low scorers feel little stress in response to difficulties, whereas high scorers tend to become preoccupied even by relatively minor problems.
+The Dependence scale assesses one's need for emotional support from others. Low scorers feel self-assured and able to deal with problems without any help or advice, whereas high scorers want to share their difficulties with those who will provide encouragement and comfort.
+The Sentimentality scale assesses a tendency to feel strong emotional bonds with others. Low scorers feel little emotion when saying good-bye or in reaction to the concerns of others, whereas high scorers feel strong emotional attachments and an empathic sensitivity to the feelings of others.
+
+Extraversion Domain
+The Social Self-Esteem scale assesses a tendency to have positive self-regard, particularly in social contexts. High scorers are generally satisfied with themselves and consider themselves to have likable qualities, whereas low scorers tend to have a sense of personal worthlessness and to see themselves as unpopular.
+The Social Boldness scale assesses one's comfort or confidence within a variety of social situations. Low scorers feel shy or awkward in positions of leadership or when speaking in public, whereas high scorers are willing to approach strangers and are willing to speak up within group settings.
+The Sociability scale assesses a tendency to enjoy conversation, social interaction, and parties. Low scorers generally prefer solitary activities and do not seek out conversation, whereas high scorers enjoy talking, visiting, and celebrating with others.
+The Liveliness scale assesses one's typical enthusiasm and energy. Low scorers tend not to feel especially cheerful or dynamic, whereas high scorers usually experience a sense of optimism and high spirits.
+
+Agreeableness Domain
+The Forgivingness scale assesses one's willingness to feel trust and liking toward those who may have caused one harm. Low scorers tend "hold a grudge" against those who have offended them, whereas high scorers are usually ready to trust others again and to re-establish friendly relations after having been treated badly.
+The Gentleness scale assesses a tendency to be mild and lenient in dealings with other people. Low scorers tend to be critical in their evaluations of others, whereas high scorers are reluctant to judge others harshly.
+The Flexibility scale assesses one's willingness to compromise and cooperate with others. Low scorers are seen as stubborn and are willing to argue, whereas high scorers avoid arguments and accommodate others' suggestions, even when these may be unreasonable.
+The Patience scale assesses a tendency to remain calm rather than to become angry. Low scorers tend to lose their tempers quickly, whereas high scorers have a high threshold for feeling or expressing anger.
+
+Conscientiousness Domain
+The Organization scale assesses a tendency to seek order, particularly in one's physical surroundings. Low scorers tend to be sloppy and haphazard, whereas high scorers keep things tidy and prefer a structured approach to tasks.
+The Diligence scale assesses a tendency to work hard. Low scorers have little self-discipline and are not strongly motivated to achieve, whereas high scorers have a strong "'work ethic" and are willing to exert themselves.
+The Perfectionism scale assesses a tendency to be thorough and concerned with details. Low scorers tolerate some errors in their work and tend to neglect details, whereas high scorers check carefully for mistakes and potential improvements.
+The Prudence scale assesses a tendency to deliberate carefully and to inhibit impulses. Low scorers act on impulse and tend not to consider consequences, whereas high scorers consider their options carefully and tend to be cautious and self-controlled.
+
+Openness to Experience Domain
+The Aesthetic Appreciation scale assesses one's enjoyment of beauty in art and in nature. Low scorers tend not to become absorbed in works of art or in natural wonders, whereas high scorers have a strong appreciation of various art forms and of natural wonders.
+The Inquisitiveness scale assesses a tendency to seek information about, and experience with, the natural and human world. Low scorers have little curiosity about the natural or social sciences, whereas high scorers read widely and are interested in travel.
+The Creativity scale assesses one's preference for innovation and experiment. Low scorers have little inclination for original thought, whereas high scorers actively seek new solutions to problems and express themselves in art.
+The Unconventionality scale assesses a tendency to accept the unusual. Low scorers avoid eccentric or nonconforming persons, whereas high scorers are receptive to ideas that might seem strange or radical.
+
+Interstitial Scale
+The Altruism (versus Antagonism) scale assesses a tendency to be sympathetic and soft-hearted toward others. High scorers avoid causing harm and react with generosity toward those who are weak or in need of help, whereas low scorers are not upset by the prospect of hurting others and may be seen as hard-hearted.
+
+
+
+
+
+
+
+,
+  "Coffee": {
+    "WEIGHT": ".5",
+    "NOUNS": "Barista, Espresso, Latte, Coffee, Cafe",
+    "PLURALS": "Coffees, Drinks",
+    "VERBS": "Brew, Serve, Grind, Drink, Sip",
+    "GERUNDS": "Brewing, Serving, Drinking, Ordering, Sipping",
+    "ADJECTIVES": "Aromatic, Cozy, Busy, Delicious, Bustling",
+    "PRODUCTS": "coffee, espresso, latte, cappuccino, americano, mocha, macchiato, flat white, cold brew, drip coffee, chai latte, matcha latte, iced coffee, hot chocolate, croissant, muffin, scone, bagel, sandwich, salad, smoothie",
+    "PRODUCT_PURCHASE_RANGE": "1, 4",
+    "PRODUCT_PRICE_RANGE": "0.95, 6",
+    "Additional Data": ""
+  }

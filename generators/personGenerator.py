@@ -10,14 +10,20 @@ from generator_providers.internetProvider import InternetProvider
 from generator_providers.documentProvider import DocumentProvider
 from generator_providers.animalProvider import AnimalProvider
 
+from data.person.person_averages import WORKING_AGE
+
 
 class PersonGenerator:
-    def __init__(self, seed=None):
+    def __init__(self, seed=None, locations=[]):
         self.gen = Faker()
         if seed:
             Faker.seed(seed)
+        self.locations = locations
+        self.residences = [
+            loc for loc in self.locations if loc.building_type == "Residence"
+        ]
         self.gen.add_provider(PersonalDetailsProvider)
-        self.gen.add_provider(LocationProvider)
+        # self.gen.add_provider(LocationProvider)
         self.gen.add_provider(CustomVehicleProvider)
         self.gen.add_provider(InternetProvider)
         self.gen.add_provider(DocumentProvider)
@@ -58,6 +64,9 @@ class PersonGenerator:
             self.gen.date_of_death(p.date_of_birth, p.generation),
         )
         p.age = kwargs.get("age", self.gen.age(p.date_of_birth, p.date_of_death))
+
+        # add cause of death
+
         p.time_of_birth = kwargs.get("time_of_birth", self.gen.time_of_birth())
         p.ssn = kwargs.get("ssn", self.gen.ssn())
         p.blood_type_allele = kwargs.get("blood_type", self.gen.blood_type_allele())
@@ -89,6 +98,7 @@ class PersonGenerator:
             self.gen.email(p.first_name, p.last_name, p.date_of_birth),
         )
         p.passport = kwargs.get("passport", self.gen.passport(p.date_of_death))
+        p.social_connect = kwargs.get("social_connect", self.gen.social_connect(p.name))
 
         # PERSONALITY
         p.mannerisms = kwargs.get("mannerisms", self.gen.mannerisms())
@@ -104,7 +114,17 @@ class PersonGenerator:
             "sexual_orientation", self.gen.sexual_orientation()
         )
 
+        # SIXTEEN
+        if p.age < WORKING_AGE:
+            return p
+
         p.patron_of = kwargs.get("patron_of", [])
+        p.bank_account = kwargs.get("bank_account", self.gen.bank_account())
+        # CAR
+        p.drivers_license = kwargs.get(
+            "drivers_license", self.gen.drivers_license(p.date_of_death)
+        )
+        p.vehicle = kwargs.get("vehicle", self.gen.personal_vehicle())
 
         # EIGHTEEN #
         ############
@@ -114,18 +134,17 @@ class PersonGenerator:
         # PET
         p.pet = kwargs.get("pet", self.gen.new_pet())
 
-        # CAR
-        p.vehicle = kwargs.get("vehicle", self.gen.personal_vehicle())
-        p.drivers_license = kwargs.get(
-            "drivers_license", self.gen.drivers_license(p.date_of_death)
-        )
-
         # Marriage
         p.marital_status = kwargs.get("marital_status", "Single")
 
         # ADULTS #
         ###########
         # LOCATIONS
-        p.home = kwargs.get("home", self.gen.home())
 
+        p.home = kwargs.get("home", self.get_location())
         return p
+
+    def get_location(self):
+        home = self.gen.random_element(self.residences)
+        self.residences.remove(home)
+        return home

@@ -1,15 +1,2 @@
 id,company_name,website,industry,sub_industry,founded,client_scope,hq,market_share,abbreviation
-C00002,Shop Outlet Grocer,kttp://www.shopoutletgrocer.com,Retail,Grocery,2093,Regional,"Business: 14355 Jane Crossing , East Holly, AR - 72327",0.46,SOG
-C00012,MarketStore Electro,kttps://www.marketstoreelectro.com,Retail,Electronics,2097,National,"Business: 516 James Street , Lake Courtneyport, CA - 93485",0.51,MSE
-C00039,MarketStore Hardware,kttp://www.marketstorehardware.com,Retail,Hardware,2031,Regional,"Business: 56242 Juan Walks , New Nathanside, NC - 28597",0.03,MSH
-C00041,StyleHub Electro,kttps://www.stylehubelectro.com,Retail,Electronics,2099,Regional,"Business: 27170 Hall Pike, Friedmanburgh, IA - 50669",0.04,SHE
-C00046,Style Hub Spark,kttps://www.stylehubspark.com,Retail,Jeweler,2081,Regional,"Business: 8556 Kelli Villages, New Loretta, MI - 48787",0.38,SHS
-C00055,BuyMall Market,kttps://www.buymallmarket.com,Retail,Wholesale,2090,Male,"Business: 7826 Joseph Centers, Michaelchester, KY - 42464",0.49,BMM
-C00059,ShopMall Glam,kttps://www.shopmallglam.com,Retail,Jeweler,2097,Regional,"Business: 6791 Webb Bypass , Port Michaelville, WI - 53711",0.65,SMG
-C00071,Style Place Market,kttps://www.styleplacemarket.com,Retail,Wholesale,2090,Male,"Business: 772 Charles Circles , Samanthaside, NJ - 07151",0.2,SPM
-C00072,SelectHub Tools,kttps://www.selecthubtools.com,Retail,Hardware,2082,Local,"Business: 203 Wiley Avenue, Port Lauren, NC - 27116",0.55,SHT
-C00094,Buy Hub Grocer,kttp://www.buyhubgrocer.com,Retail,Grocery,2096,Regional,"Business: 8724 Colleen Village, Bowersmouth, GA - 31028",0.12,BHG
-C00099,SelectMall Gadget,kttp://www.selectmallgadget.com,Retail,Electronics,2097,National,"Business: 9731 Palmer Spurs, North Patriciaville, LA - 70743",0.7,SMG
-C00110,Trend Hub Mart,kttps://www.trendhubmart.com,Retail,Convenience,2084,Female,"Business: 113 Brown Vista , Port Megan, IL - 62254",0.7,THM
-C00143,SelectPlace Tools,kttps://www.selectplacetools.com,Retail,Hardware,2097,Male,"Business: 5289 Miller Circle , Josephshire, MN - 55998",0.79,SPT
-C00165,StylePlace Market,kttp://www.styleplacemarket.com,Retail,Wholesale,2098,Local,"Business: 992 Tran Union , Douglaston, IN - 46871",0.37,SPM
+C00007,Eatly,,Retail,Electronics,2094,Female,"Office (val:4/size:3): 7A East Chestnut Street - Suite 203, Baxter Center, Dumphrey - 00000",0.11,E

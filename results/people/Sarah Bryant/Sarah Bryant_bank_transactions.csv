@@ -1,0 +1,185 @@
+date,description,amount,balance
+2023-01-02 13:04:40,Healthn - Payment,$-102.21,"$4,811.86"
+2023-01-06 15:05:51,AffordableHub - Payment,$-102.30,"$4,709.56"
+2023-01-08 16:12:54,Foodr - Payment,$-29.51,"$4,680.05"
+2023-01-14 18:33:11,Foodr - Payment,$-146.30,"$4,533.75"
+2023-01-17 08:25:44,youGrocery - Payment,$-48.79,"$4,484.96"
+2023-01-18 17:26:42,Foodr - Payment,$-51.45,"$4,433.51"
+2023-01-20 18:27:09,Flexin - Payment,$-34.70,"$4,398.81"
+2023-01-21 16:18:02,youGrocery - Payment,$-193.31,"$4,205.50"
+2023-01-24 14:51:21,Foodr - Payment,$-165.14,"$4,040.36"
+2023-01-25 11:09:56,StrongLink - Payment,$-130.75,"$3,826.66"
+2023-01-25 19:53:29,youGrocery - Payment,$-82.95,"$3,957.41"
+2023-01-28 09:00:20,StrongLink - Payment,$-75.34,"$3,751.32"
+2023-01-29 17:17:40,Fitr - Payment,$-46.64,"$3,704.68"
+2023-01-30 14:34:23,StrongLink - Payment,$-40.93,"$3,663.75"
+2023-02-15 18:04:53,AffordableHub - Payment,$-123.85,"$3,539.90"
+2023-02-17 14:04:40,Foodr - Payment,$-106.20,"$3,433.70"
+2023-02-17 21:47:49,StrongLink - Payment,$-95.15,"$3,338.55"
+2023-02-21 17:19:18,StrongLink - Payment,$-75.32,"$3,263.23"
+2023-02-23 13:24:13,Foodr - Payment,$-114.72,"$3,148.51"
+2023-02-26 10:30:23,Foodr - Payment,$-26.57,"$3,121.94"
+2023-03-01 16:46:17,Foodr - Payment,$-127.70,"$2,994.24"
+2023-03-02 20:13:02,StrongLink - Payment,$-147.00,"$2,847.24"
+2023-03-05 18:01:12,Foodr - Payment,$-166.63,"$2,680.61"
+2023-03-07 20:54:22,Foodr - Payment,$-96.87,"$2,583.74"
+2023-03-08 17:42:11,StrongLink - Payment,$-192.20,"$2,391.54"
+2023-03-10 18:02:40,StrongLink - Payment,$-93.20,"$2,298.34"
+2023-03-11 10:45:18,AffordableHub - Payment,$-34.40,"$2,263.94"
+2023-03-14 12:03:47,StrongLink - Payment,$-191.16,"$2,072.78"
+2023-03-20 17:31:36,Foodr - Payment,$-76.83,"$1,995.95"
+2023-03-24 19:42:37,Fitr - Payment,$-30.70,"$1,965.25"
+2023-03-29 13:00:51,Healthn - Payment,$-158.64,"$1,806.61"
+2023-03-30 16:59:49,Fitr - Payment,$-191.72,"$1,614.89"
+2023-04-01 10:51:08,StrongLink - Payment,$-164.84,"$1,450.05"
+2023-04-07 15:40:18,StrongLink - Payment,$-97.68,"$1,352.37"
+2023-04-10 19:19:03,StrongLink - Payment,$-116.18,"$1,177.54"
+2023-04-10 21:22:26,Foodr - Payment,$-58.65,"$1,293.72"
+2023-04-22 12:52:41,Foodr - Payment,$-176.15,"$1,001.39"
+2023-04-25 21:20:45,Foodr - Payment,$-105.90,$895.49
+2023-04-27 09:45:04,Foodr - Payment,$-193.85,$701.64
+2023-04-28 08:46:28,Foodr - Payment,$-104.81,$596.83
+2023-04-28 15:22:32,Flexin - Payment,$-56.33,$540.50
+2023-05-05 20:44:08,StrongLink - Payment,$-119.60,$420.90
+2023-05-10 20:38:31,StrongLink - Payment,$-49.80,$371.10
+2023-05-11 13:24:34,Fitr - Payment,$-197.82,$173.28
+2023-05-12 11:32:32,Invalid Withdrawal,$0.00,$173.28
+2023-05-14 20:36:43,Foodr - Payment,$-101.71,$71.57
+2023-05-15 08:18:53,StrongLink - Payment,$-59.14,$12.43
+2023-05-20 12:07:44,Invalid Withdrawal,$0.00,$12.43
+2023-05-21 14:06:55,Invalid Withdrawal,$0.00,$12.43
+2023-05-22 13:39:26,Invalid Withdrawal,$0.00,$12.43
+2023-05-24 11:44:00,Invalid Withdrawal,$0.00,$12.43
+2023-05-28 20:51:53,Invalid Withdrawal,$0.00,$12.43
+2023-06-02 19:38:30,Invalid Withdrawal,$0.00,$12.43
+2023-06-03 12:56:45,Invalid Withdrawal,$0.00,$12.43
+2023-06-04 11:38:29,Invalid Withdrawal,$0.00,$12.43
+2023-06-07 09:48:01,Invalid Withdrawal,$0.00,$12.43
+2023-06-09 18:13:57,Invalid Withdrawal,$0.00,$12.43
+2023-06-10 18:13:02,Invalid Withdrawal,$0.00,$12.43
+2023-06-10 18:17:09,Invalid Withdrawal,$0.00,$12.43
+2023-06-14 08:01:57,Invalid Withdrawal,$0.00,$12.43
+2023-06-20 08:51:50,Invalid Withdrawal,$0.00,$12.43
+2023-06-24 11:26:18,Invalid Withdrawal,$0.00,$12.43
+2023-06-28 09:04:22,Invalid Withdrawal,$0.00,$12.43
+2023-06-29 16:43:15,Invalid Withdrawal,$0.00,$12.43
+2023-06-30 14:07:41,Invalid Withdrawal,$0.00,$12.43
+2023-07-07 10:49:51,Invalid Withdrawal,$0.00,$12.43
+2023-07-08 09:48:08,Invalid Withdrawal,$0.00,$12.43
+2023-07-11 19:34:21,Invalid Withdrawal,$0.00,$12.43
+2023-07-16 17:25:49,Invalid Withdrawal,$0.00,$12.43
+2023-07-21 20:51:28,Invalid Withdrawal,$0.00,$12.43
+2023-07-29 12:47:39,Invalid Withdrawal,$0.00,$12.43
+2023-08-03 09:21:09,Invalid Withdrawal,$0.00,$12.43
+2023-08-14 10:32:30,Invalid Withdrawal,$0.00,$12.43
+2023-08-17 11:43:37,Invalid Withdrawal,$0.00,$12.43
+2023-08-22 18:05:34,Invalid Withdrawal,$0.00,$12.43
+2023-08-26 19:27:38,Invalid Withdrawal,$0.00,$12.43
+2023-09-02 10:55:02,Invalid Withdrawal,$0.00,$12.43
+2023-09-04 08:46:21,Invalid Withdrawal,$0.00,$12.43
+2023-09-05 09:36:09,Invalid Withdrawal,$0.00,$12.43
+2023-09-07 21:23:27,Invalid Withdrawal,$0.00,$12.43
+2023-09-11 21:06:32,Invalid Withdrawal,$0.00,$12.43
+2023-09-12 12:38:57,Invalid Withdrawal,$0.00,$12.43
+2023-09-13 21:14:50,Invalid Withdrawal,$0.00,$12.43
+2023-09-15 17:33:20,Invalid Withdrawal,$0.00,$12.43
+2023-09-16 14:32:03,Invalid Withdrawal,$0.00,$12.43
+2023-09-23 13:30:12,Invalid Withdrawal,$0.00,$12.43
+2023-09-27 19:15:51,Invalid Withdrawal,$0.00,$12.43
+2023-10-01 17:59:15,Invalid Withdrawal,$0.00,$12.43
+2023-10-03 13:04:39,Invalid Withdrawal,$0.00,$12.43
+2023-10-04 10:13:37,Invalid Withdrawal,$0.00,$12.43
+2023-10-08 17:17:15,Invalid Withdrawal,$0.00,$12.43
+2023-10-17 15:17:09,Invalid Withdrawal,$0.00,$12.43
+2023-10-18 19:09:35,Invalid Withdrawal,$0.00,$12.43
+2023-10-19 13:59:55,Invalid Withdrawal,$0.00,$12.43
+2023-10-21 18:53:04,Invalid Withdrawal,$0.00,$12.43
+2023-10-24 19:03:45,Invalid Withdrawal,$0.00,$12.43
+2023-10-25 09:37:53,Invalid Withdrawal,$0.00,$12.43
+2023-10-30 17:18:29,Invalid Withdrawal,$0.00,$12.43
+2023-11-03 13:54:10,Invalid Withdrawal,$0.00,$12.43
+2023-11-04 12:10:59,Invalid Withdrawal,$0.00,$12.43
+2023-11-05 21:45:19,Invalid Withdrawal,$0.00,$12.43
+2023-11-07 14:42:52,Invalid Withdrawal,$0.00,$12.43
+2023-11-08 18:36:56,Invalid Withdrawal,$0.00,$12.43
+2023-11-10 11:43:20,Invalid Withdrawal,$0.00,$12.43
+2023-11-13 10:30:33,Invalid Withdrawal,$0.00,$12.43
+2023-11-15 10:34:50,Invalid Withdrawal,$0.00,$12.43
+2023-11-16 21:14:56,Invalid Withdrawal,$0.00,$12.43
+2023-11-20 10:53:44,Invalid Withdrawal,$0.00,$12.43
+2023-11-23 09:22:31,Invalid Withdrawal,$0.00,$12.43
+2023-11-30 19:14:07,Invalid Withdrawal,$0.00,$12.43
+2023-12-02 18:24:52,Invalid Withdrawal,$0.00,$12.43
+2023-12-04 14:40:23,Invalid Withdrawal,$0.00,$12.43
+2023-12-23 19:19:08,Invalid Withdrawal,$0.00,$12.43
+2023-12-25 13:09:44,Invalid Withdrawal,$0.00,$12.43
+2024-01-04 20:03:13,Invalid Withdrawal,$0.00,$12.43
+2024-01-05 20:27:26,Invalid Withdrawal,$0.00,$12.43
+2024-01-06 17:15:32,Invalid Withdrawal,$0.00,$12.43
+2024-01-10 09:39:32,Invalid Withdrawal,$0.00,$12.43
+2024-01-12 12:08:40,Invalid Withdrawal,$0.00,$12.43
+2024-01-14 12:14:17,Invalid Withdrawal,$0.00,$12.43
+2024-01-17 21:39:04,Invalid Withdrawal,$0.00,$12.43
+2024-01-21 19:59:31,Invalid Withdrawal,$0.00,$12.43
+2024-01-23 17:58:40,Invalid Withdrawal,$0.00,$12.43
+2024-01-26 09:35:25,Invalid Withdrawal,$0.00,$12.43
+2024-01-30 08:25:37,Invalid Withdrawal,$0.00,$12.43
+2024-02-02 08:20:51,Invalid Withdrawal,$0.00,$12.43
+2024-02-02 16:18:15,Invalid Withdrawal,$0.00,$12.43
+2024-02-10 21:07:18,Invalid Withdrawal,$0.00,$12.43
+2024-02-11 16:45:39,Invalid Withdrawal,$0.00,$12.43
+2024-02-12 15:26:05,Invalid Withdrawal,$0.00,$12.43
+2024-02-19 08:19:12,Invalid Withdrawal,$0.00,$12.43
+2024-02-22 19:24:28,Invalid Withdrawal,$0.00,$12.43
+2024-02-23 13:17:31,Invalid Withdrawal,$0.00,$12.43
+2024-02-25 19:36:32,Invalid Withdrawal,$0.00,$12.43
+2024-02-27 19:07:57,Invalid Withdrawal,$0.00,$12.43
+2024-03-05 11:43:51,Invalid Withdrawal,$0.00,$12.43
+2024-03-08 17:41:59,Invalid Withdrawal,$0.00,$12.43
+2024-03-11 10:33:04,Invalid Withdrawal,$0.00,$12.43
+2024-03-16 17:33:16,Invalid Withdrawal,$0.00,$12.43
+2024-03-16 18:01:08,Invalid Withdrawal,$0.00,$12.43
+2024-03-22 12:05:39,Invalid Withdrawal,$0.00,$12.43
+2024-03-26 11:57:31,Invalid Withdrawal,$0.00,$12.43
+2024-03-27 19:32:34,Invalid Withdrawal,$0.00,$12.43
+2024-03-29 12:32:06,Invalid Withdrawal,$0.00,$12.43
+2024-03-29 20:02:57,Invalid Withdrawal,$0.00,$12.43
+2024-04-03 12:46:05,Invalid Withdrawal,$0.00,$12.43
+2024-04-08 19:52:00,Invalid Withdrawal,$0.00,$12.43
+2024-04-14 13:41:10,Invalid Withdrawal,$0.00,$12.43
+2024-04-15 13:44:55,Invalid Withdrawal,$0.00,$12.43
+2024-04-17 10:13:30,Invalid Withdrawal,$0.00,$12.43
+2024-04-21 16:28:06,Invalid Withdrawal,$0.00,$12.43
+2024-04-22 15:24:47,Invalid Withdrawal,$0.00,$12.43
+2024-04-25 08:57:44,Invalid Withdrawal,$0.00,$12.43
+2024-04-26 12:38:03,Invalid Withdrawal,$0.00,$12.43
+2024-05-03 17:48:12,Invalid Withdrawal,$0.00,$12.43
+2024-05-06 19:12:32,Invalid Withdrawal,$0.00,$12.43
+2024-05-10 09:48:23,Invalid Withdrawal,$0.00,$12.43
+2024-05-14 14:09:55,Invalid Withdrawal,$0.00,$12.43
+2024-05-15 11:48:24,Invalid Withdrawal,$0.00,$12.43
+2024-05-22 19:29:44,Invalid Withdrawal,$0.00,$12.43
+2024-06-01 19:45:29,Invalid Withdrawal,$0.00,$12.43
+2024-06-03 14:55:07,Invalid Withdrawal,$0.00,$12.43
+2024-06-16 16:16:40,Invalid Withdrawal,$0.00,$12.43
+2024-06-18 09:47:05,Invalid Withdrawal,$0.00,$12.43
+2024-06-18 21:09:20,Invalid Withdrawal,$0.00,$12.43
+2024-06-21 21:06:27,Invalid Withdrawal,$0.00,$12.43
+2024-06-23 12:28:37,Invalid Withdrawal,$0.00,$12.43
+2024-06-27 11:28:08,Invalid Withdrawal,$0.00,$12.43
+2024-06-30 19:28:39,Invalid Withdrawal,$0.00,$12.43
+2024-07-01 12:37:47,Invalid Withdrawal,$0.00,$12.43
+2024-07-04 17:48:43,Invalid Withdrawal,$0.00,$12.43
+2024-07-05 19:01:19,Invalid Withdrawal,$0.00,$12.43
+2024-07-05 21:40:36,Invalid Withdrawal,$0.00,$12.43
+2024-07-08 16:56:10,Invalid Withdrawal,$0.00,$12.43
+2024-07-11 09:54:58,Invalid Withdrawal,$0.00,$12.43
+2024-07-17 14:47:00,Invalid Withdrawal,$0.00,$12.43
+2024-07-20 20:54:40,Invalid Withdrawal,$0.00,$12.43
+2024-07-23 15:02:00,Invalid Withdrawal,$0.00,$12.43
+2024-07-27 17:47:46,Invalid Withdrawal,$0.00,$12.43
+2024-07-30 15:12:27,Invalid Withdrawal,$0.00,$12.43
+2024-08-01 20:16:23,Invalid Withdrawal,$0.00,$12.43
+2024-08-03 21:11:31,Invalid Withdrawal,$0.00,$12.43
+2024-08-05 12:10:13,Invalid Withdrawal,$0.00,$12.43
+2024-08-12 14:10:08,Invalid Withdrawal,$0.00,$12.43

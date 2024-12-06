@@ -1,22 +1,3 @@
 id,company_name,website,industry,sub_industry,founded,client_scope,hq,market_share,abbreviation
-C00011,Circuit Community,kttps://www.circuitcommunity.com,Technology,Community,2009,Male,"Business: 62106 Michael Inlet , Brownbury, LA - 70377",0.33,CC
-C00018,Tech Net,kttps://www.technet.com,Technology,Mobile Providers,2096,Regional,"Business: 779 Padilla Knolls, Pierceland, WA - 98587",0.33,TN
-C00021,Tech Hub,kttps://www.techhub.com,Technology,Social Media,2016,Female,"Business: 33417 Clayton Ports , West Christina, WV - 26784",0.4,TH
-C00022,TechSolutions Tech,kttps://www.techsolutionstech.com,Technology,Manufacturers,2032,Male,"Business: 42682 Stephenson Ramp , Lake Jeffreybury, NY - 12456",0.9,TST
-C00054,Code Sync ISP,kttps://www.codesyncisp.com,Technology,Internet Service Providers,2030,Female,"Business: 2262 Wood Station, Jakehaven, WY - 82535",0.19,CSISP
-C00080,Cyber Sync Wireless,kttps://www.cybersyncwireless.com,Technology,Mobile Providers,2014,Male,"Business: 8238 Susan Village , West Oliviachester, MS - 39406",0.41,CSW
-C00088,Logic Net,kttps://www.logicnet.com,Technology,Internet Service Providers,2041,Female,"Business: 27 Cain Junctions , East Isaacmouth, NE - 68028",0.14,LN
-C00100,CodeWare Connect,kttps://www.codewareconnect.com,Technology,Social Media,2052,Female,"Business: 450 Barrett Prairie, Port Sherry, WY - 82347",0.64,CWC
-C00106,Inno Connect,kttps://www.innoconnect.com,Technology,Social Media,2081,Local,"Business: 3427 Wang Harbors, Kristenshire, VT - 05281",0.88,IC
-C00109,Tech Solutions ISP,kttp://www.techsolutionsisp.com,Technology,Internet Service Providers,2098,Male,"Business: 276 Paul Junctions, Port Jessicastad, SD - 57571",0.6,TSISP
-C00111,Logic Hub Network,kttp://www.logichubnetwork.com,Technology,Community,2094,Local,"Business: 18 Jose Turnpike , Kristinamouth, MT - 59006",0.94,LHN
-C00115,Logic Systems Connect,kttps://www.logicsystemsconnect.com,Technology,Internet Service Providers,1999,Female,"Business: 34996 Swanson Ranch, Stephaniemouth, VT - 05346",0.47,LSC
-C00117,InnoSolutions Web,kttp://www.innosolutionsweb.com,Technology,Internet Service Providers,2083,Male,"Business: 5708 Katherine Mill , Mirandaberg, MD - 21102",0.38,ISW
-C00118,LogicWare Media,kttps://www.logicwaremedia.com,Technology,Social Media,2082,Female,"Business: 722 Ortiz Pines, Harveyville, DE - 19965",0.57,LWM
-C00121,Tech Sync Wireless,kttps://www.techsyncwireless.com,Technology,Mobile Providers,2091,Male,"Business: 22753 Regina Cape , Atkinsonburgh, KS - 66083",0.8,TSW
-C00127,ByteSync Hub,kttp://www.bytesynchub.com,Technology,Community,2071,Female,"Business: 1068 Danielle Forge, Port Robertburgh, HI - 96854",0.83,BSH
-C00148,LogicSync Connect,kttps://www.logicsyncconnect.com,Technology,Mobile Providers,2096,Local,"Business: 941 Leonard Underpass, New Bryan, NC - 27407",0.79,LSC
-C00152,Inno Systems Network,kttps://www.innosystemsnetwork.com,Technology,Community,2099,Regional,"Business: 46833 Duncan Ports, Lewisville, AZ - 86547",0.15,ISN
-C00157,Inno Net,kttp://www.innonet.com,Technology,Internet Service Providers,2057,National,"Business: 7990 Sandra Estate , Ericton, HI - 96880",0.82,IN
-C00171,Tech Ware Net,kttps://www.techwarenet.com,Technology,Mobile Providers,2098,National,"Business: 5803 Veronica Spring, South Jenniferview, KY - 41402",0.66,TWN
-C00184,TechSync Community,kttps://www.techsynccommunity.com,Technology,Community,2084,Male,"Business: 515 Obrien Cliff, New Jacob, SD - 57264",0.18,TSC
+C00004,Busyable,,Technology,Community,2090,Local,"Office (val:4/size:3): 11A East Chestnut Street - Suite 411, Baxter Center, Dumphrey - 00000",0.42,B
+C00005,Cozyin,,Technology,Mobile Providers,2092,National,"Office (val:2/size:4): 48 Cantor Street - Suite 503, Baxter Center, Dumphrey - 00000",0.93,C

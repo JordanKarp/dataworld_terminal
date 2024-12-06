@@ -1,0 +1,82 @@
+{
+    "M1": {
+        "id": "M1",
+        "status": "OFFERED",
+        "title": "Suspicious Person",
+        "text": "Multiple eye witnesses have reported a suspicious looking person. The person was walking out of Wearn,  wearing a red tshirt. they were described as 56.1 and about 150.0",
+        "reward": "$2,000",
+        "_solution": "Betsy Miller"
+    },
+    "M2": {
+        "id": "M2",
+        "status": "OFFERED",
+        "title": "Suspicious Person",
+        "text": "Multiple eye witnesses have reported a suspicious looking person. The person was walking out of Wearn,  wearing a red tshirt. they were described as 70.0 and about 131.2",
+        "reward": "$2,000",
+        "_solution": "Hetty Adams"
+    },
+    "M3": {
+        "id": "M3",
+        "status": "OFFERED",
+        "title": "Hit and Run",
+        "text": "According to the Baxter Center Police Department, witnesses reported seeing a White Kia speeding along Main Street when it struck a pedestrian crossing the intersection.  \"The vehicle failed to stop at the scene and continued driving away from the area,\" Baxter Center police said in a statement. \"Luckily the pedestrian is okay, but we are still searching for the guilty person.\"  Police said they currently lack a detailed description of the vehicle, though the Kia was described as having tinted windows, and a license plate ending in U61 8EB Authorities are asking anyone with information to come forward.",
+        "reward": "$1,000",
+        "_solution": "Gerry Lewis"
+    },
+    "M4": {
+        "id": "M4",
+        "status": "OFFERED",
+        "title": "Company under investigation",
+        "text": "We're looking into some complaints about the company Durableable.  These complaints have been anonymous, but serious enough for us to look into. Who is the head of this organization? ",
+        "reward": "$250",
+        "_solution": "Gerald Lee"
+    },
+    "M5": {
+        "id": "M5",
+        "status": "OFFERED",
+        "title": "Hit and Run",
+        "text": "According to the Baxter Center Police Department, witnesses reported seeing a White Mercedes-Benz speeding along Main Street when it struck a pedestrian crossing the intersection.  \"The vehicle failed to stop at the scene and continued driving away from the area,\" Baxter Center police said in a statement. \"Luckily the pedestrian is okay, but we are still searching for the guilty person.\"  Police said they currently lack a detailed description of the vehicle, though the Mercedes-Benz was described as having tinted windows, and a license plate ending in 12Y 4493 Authorities are asking anyone with information to come forward.",
+        "reward": "$1,000",
+        "_solution": "Betsy Miller"
+    },
+    "M6": {
+        "id": "M6",
+        "status": "OFFERED",
+        "title": "Hit and Run",
+        "text": "According to the Baxter Center Police Department, witnesses reported seeing a White Mercedes-Benz speeding along Main Street when it struck a pedestrian crossing the intersection.  \"The vehicle failed to stop at the scene and continued driving away from the area,\" Baxter Center police said in a statement. \"Luckily the pedestrian is okay, but we are still searching for the guilty person.\"  Police said they currently lack a detailed description of the vehicle, though the Mercedes-Benz was described as having tinted windows, and a license plate ending in 4T482 Authorities are asking anyone with information to come forward.",
+        "reward": "$1,000",
+        "_solution": "Jake Brewer"
+    },
+    "M7": {
+        "id": "M7",
+        "status": "OFFERED",
+        "title": "Hit and Run",
+        "text": "According to the Baxter Center Police Department, witnesses reported seeing a White Lexus speeding along Main Street when it struck a pedestrian crossing the intersection.  \"The vehicle failed to stop at the scene and continued driving away from the area,\" Baxter Center police said in a statement. \"Luckily the pedestrian is okay, but we are still searching for the guilty person.\"  Police said they currently lack a detailed description of the vehicle, though the Lexus was described as having tinted windows, and a license plate ending in 108-GDC Authorities are asking anyone with information to come forward.",
+        "reward": "$1,000",
+        "_solution": "Danny Reyes"
+    },
+    "M8": {
+        "id": "M8",
+        "status": "OFFERED",
+        "title": "Hit and Run",
+        "text": "According to the Baxter Center Police Department, witnesses reported seeing a White Mercedes-Benz speeding along Main Street when it struck a pedestrian crossing the intersection.  \"The vehicle failed to stop at the scene and continued driving away from the area,\" Baxter Center police said in a statement. \"Luckily the pedestrian is okay, but we are still searching for the guilty person.\"  Police said they currently lack a detailed description of the vehicle, though the Mercedes-Benz was described as having tinted windows, and a license plate ending in 12Y 4493 Authorities are asking anyone with information to come forward.",
+        "reward": "$1,000",
+        "_solution": "Betsy Miller"
+    },
+    "M9": {
+        "id": "M9",
+        "status": "OFFERED",
+        "title": "Suspicious Person",
+        "text": "Multiple eye witnesses have reported a suspicious looking person. The person was walking out of Wearn,  wearing a red tshirt. they were described as 70.0 and about 131.2",
+        "reward": "$2,000",
+        "_solution": "Hetty Adams"
+    },
+    "M10": {
+        "id": "M10",
+        "status": "OFFERED",
+        "title": "Suspicious Person",
+        "text": "Multiple eye witnesses have reported a suspicious looking person. The person was walking out of youFormal,  wearing a red tshirt. they were described as 66.8 and about 124.9",
+        "reward": "$2,000",
+        "_solution": "Curt Frank"
+    }
+}
